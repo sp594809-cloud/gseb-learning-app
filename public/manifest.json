@@ -1,0 +1,17 @@
+{
+  "name": "GSEB Maths Std. 12 (ધોરણ ૧૨ ગણિત)",
+  "short_name": "GSEB Maths",
+  "description": "GSEB Class 12 Mathematics Notebook Solutions & Practice Hub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "ch06-ex6.1-q01",
+    "chapterNumber": "06",
+    "exerciseNumber": "6.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Rate of Change of Area of a Circle",
+      "gu": "વર્તુળના ક્ષેત્રફળમાં ફેરફારનો દર"
+    },
+    "originalQuestion": {
+      "en": "Find the rate of change of the area of a circle with respect to its radius \\( r \\) when: (a) \\( r = 3 \\text{ cm} \\), (b) \\( r = 4 \\text{ cm} \\).",
+      "gu": "વર્તુળના ક્ષેત્રફળમાં તેની ત્રિજ્યા \\( r \\) ની સાપેક્ષ થતા ફેરફારનો દર શોધો જ્યારે: (a) \\( r = 3 \\text{ cm} \\), (b) \\( r = 4 \\text{ cm} \\)."
+    },
+    "given": {
+      "en": [
+        "Area of a circle is a function of radius \\( r \\): \\( A = \\pi r^2 \\).",
+        "Radius values: Case (a) \\( r = 3 \\text{ cm} \\), Case (b) \\( r = 4 \\text{ cm} \\)."
+      ],
+      "gu": [
+        "વર્તુળનું ક્ષેત્રફળ એ ત્રિજ્યા \\( r \\) નું વિધેય છે: \\( A = \\pi r^2 \\).",
+        "ત્રિજ્યાના મૂલ્યો: વિકલ્પ (a) \\( r = 3 \\text{ સેમી} \\), વિકલ્પ (b) \\( r = 4 \\text{ સેમી} \\)."
+      ]
+    },
+    "requiredResult": {
+      "en": "Find the derivative \\( \\frac{dA}{dr} \\) evaluated at \\( r = 3 \\) and \\( r = 4 \\).",
+      "gu": "\\( r = 3 \\) અને \\( r = 4 \\) આગળ વિકલિત \\( \\frac{dA}{dr} \\) નું મૂલ્ય શોધો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Area of circle: \\( A = \\pi r^2 \\)",
+        "Rate of change with respect to \\( r \\): \\( \\frac{dA}{dr} = \\frac{d}{dr}(\\pi r^2) = 2\\pi r \\)"
+      ],
+      "gu": [
+        "વર્તુળનું ક્ષેત્રફળ: \\( A = \\pi r^2 \\)",
+        "ત્રિજ્યા \\( r \\) સાપેક્ષ ફેરફારનો દર: \\( \\frac{dA}{dr} = \\frac{d}{dr}(\\pi r^2) = 2\\pi r \\)"
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Differentiate area formula \\( A = \\pi r^2 \\) with respect to radius \\( r \\).",
+          "gu": "ક્ષેત્રફળના સૂત્ર \\( A = \\pi r^2 \\) નું ત્રિજ્યા \\( r \\) સાપેક્ષ વિકલન કરો."
+        },
+        "math": "\\frac{dA}{dr} = \\frac{d}{dr}(\\pi r^2) = \\pi \\cdot (2r) = 2\\pi r",
+        "reason": {
+          "en": "Power rule of differentiation: \\( \\frac{d}{dr}(r^2) = 2r \\).",
+          "gu": "વિકલનનો ઘાત નિયમ: \\( \\frac{d}{dr}(r^2) = 2r \\)."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Case (a): Substitute \\( r = 3 \\text{ cm} \\) into \\( \\frac{dA}{dr} \\).",
+          "gu": "વિકલ્પ (a): \\( \\frac{dA}{dr} \\) માં \\( r = 3 \\text{ સેમી} \\) મૂકો."
+        },
+        "math": "\\left. \\frac{dA}{dr} \\right|_{r=3} = 2\\pi (3) = 6\\pi \\text{ cm}^2/\\text{cm}",
+        "reason": {
+          "en": "Direct substitution of \\( r = 3 \\).",
+          "gu": "\\( r = 3 \\) ની સીધી કિંમત મૂકતાં."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Case (b): Substitute \\( r = 4 \\text{ cm} \\) into \\( \\frac{dA}{dr} \\).",
+          "gu": "વિકલ્પ (b): \\( \\frac{dA}{dr} \\) માં \\( r = 4 \\text{ સેમી} \\) મૂકો."
+        },
+        "math": "\\left. \\frac{dA}{dr} \\right|_{r=4} = 2\\pi (4) = 8\\pi \\text{ cm}^2/\\text{cm}",
+        "reason": {
+          "en": "Direct substitution of \\( r = 4 \\).",
+          "gu": "\\( r = 4 \\) ની સીધી કિંમત મૂકતાં."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "(a) 6π cm²/cm, (b) 8π cm²/cm",
+      "gu": "(a) 6π સેમી²/સેમી, (b) 8π સેમી²/સેમી"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Editorial Review",
+    "verifiedDate": "2026-10-18",
+    "graph": {
+      "type": "function",
+      "title": {
+        "en": "Area \\( A(r) = \\pi r^2 \\) vs Rate of Change \\( A'(r) = 2\\pi r \\)",
+        "gu": "ક્ષેત્રફળ \\( A(r) = \\pi r^2 \\) વિરુદ્ધ ફેરફારનો દર \\( A'(r) = 2\\pi r \\)"
+      },
+      "xRange": [0, 6],
+      "yRange": [0, 50],
+      "xLabel": "r (cm)",
+      "yLabel": "Rate / Area",
+      "curves": [
+        {
+          "fn": "2 * 3.14159 * x",
+          "label": "dA/dr = 2πr",
+          "color": "#6366f1"
+        }
+      ],
+      "points": [
+        { "x": 3, "y": 18.85, "label": "(3, 6π ≈ 18.85)", "color": "#10b981" },
+        { "x": 4, "y": 25.13, "label": "(4, 8π ≈ 25.13)", "color": "#f59e0b" }
+      ]
+    },
+    "practiceOptions": [
+      {
+        "text": "\\text{(a) } 6\\pi \\text{ cm}^2/\\text{cm}, \\, \\text{(b) } 8\\pi \\text{ cm}^2/\\text{cm}",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. \\( dA/dr = 2\\pi r \\). For r=3, 2π(3)=6π. For r=4, 2π(4)=8π.",
+          "gu": "સાચું. \\( dA/dr = 2\\pi r \\). r=3 માટે 6π અને r=4 માટે 8π થાય."
+        }
+      },
+      {
+        "text": "\\text{(a) } 9\\pi \\text{ cm}^2/\\text{cm}, \\, \\text{(b) } 16\\pi \\text{ cm}^2/\\text{cm}",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. This is the area \\( \\pi r^2 \\), not the derivative \\( 2\\pi r \\).",
+          "gu": "ખોટું. આ ક્ષેત્રફળ \\( \\pi r^2 \\) છે, વિકલિત નથી."
+        }
+      }
+    ]
+  }
+]

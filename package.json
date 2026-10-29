@@ -2,10 +2,13 @@
   "name": "gseb-learning-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
     "next": "^15.5.0",

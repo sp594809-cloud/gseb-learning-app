@@ -1,0 +1,153 @@
+[
+  {
+    "id": "ch12-ex12.1-q01",
+    "chapterNumber": "12",
+    "exerciseNumber": "12.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Graphical Linear Programming - Maximization",
+      "gu": "આલેખની રીતથી સુરેખ આયોજન - મહત્તમીકરણ"
+    },
+    "originalQuestion": {
+      "en": "Maximize \\( Z = 3x + 4y \\) subject to constraints: \\( x + y \\le 4 \\), \\( x \\ge 0 \\), \\( y \\ge 0 \\).",
+      "gu": "શરતોને આધીન \\( Z = 3x + 4y \\) નું મહત્તમ મૂલ્ય શોધો: \\( x + y \\le 4 \\), \\( x \\ge 0 \\), \\( y \\ge 0 \\)."
+    },
+    "given": {
+      "en": [
+        "Objective function: \\( Z = 3x + 4y \\)",
+        "Inequality constraint: \\( x + y \\le 4 \\)",
+        "Non-negativity constraints: \\( x \\ge 0, y \\ge 0 \\) (First quadrant)"
+      ],
+      "gu": [
+        "હેતુલક્ષી વિધેય: \\( Z = 3x + 4y \\)",
+        "મર્યાદા અસમતા: \\( x + y \\le 4 \\)",
+        "અનૃણ શરતો: \\( x \\ge 0, y \\ge 0 \\) (પ્રથમ ચરણ)"
+      ]
+    },
+    "requiredResult": {
+      "en": "Determine the maximum value of \\( Z \\) and the corresponding optimal point \\( (x, y) \\).",
+      "gu": "\\( Z \\) નું મહત્તમ મૂલ્ય અને તે બિંદુ \\( (x, y) \\) મેળવો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Corner Point Theorem: If the feasible region is bounded, the objective function \\( Z \\) attains both its maximum and minimum values at the corner points (vertices) of the feasible region."
+      ],
+      "gu": [
+        "શિરોબિંદુ પ્રમેય (Corner Point Theorem): જો શક્ય ઉકેલનો પ્રદેશ સીમિત હોય, તો હેતુલક્ષી વિધેય \\( Z \\) નું મહત્તમ અને ન્યૂનતમ મૂલ્ય શક્ય ઉકેલના પ્રદેશના શિરોબિંદુઓ આગળ જ મળે છે."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Convert the inequality \\( x + y \\le 4 \\) to equation \\( x + y = 4 \\) to plot the boundary line.",
+          "gu": "સીમારેખા દોરવા અસમતા \\( x + y \\le 4 \\) ને સમીકરણ \\( x + y = 4 \\) માં ફેરવો."
+        },
+        "math": "x = 0 \\implies y = 4 \\quad \\text{બિંદુ } B(0, 4); \\quad y = 0 \\implies x = 4 \\quad \\text{બિંદુ } A(4, 0)",
+        "reason": {
+          "en": "Intercepts of line on coordinate axes.",
+          "gu": "યામાક્ષો પરના રેખાના અંતઃખંડો."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Test the origin \\( (0, 0) \\) in inequality \\( x + y \\le 4 \\).",
+          "gu": "અસમતા \\( x + y \\le 4 \\) માં ઉગમબિંદુ \\( (0, 0) \\) ચકાસો."
+        },
+        "math": "0 + 0 = 0 \\le 4 \\quad (\\text{સત્ય / True})",
+        "reason": {
+          "en": "The half-plane containing origin is the feasible region.",
+          "gu": "ઉગમબિંદુ ધરાવતું અર્ધતલ શક્ય ઉકેલ દર્શાવે છે."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Identify corner points (vertices) of bounded region \\( OAB \\) formed with \\( x \\ge 0, y \\ge 0 \\).",
+          "gu": "\\( x \\ge 0, y \\ge 0 \\) સાથે રચાતા સીમિત પ્રદેશ \\( OAB \\) ના શિરોબિંદુઓ મેળવો."
+        },
+        "math": "O(0, 0), \\quad A(4, 0), \\quad B(0, 4)",
+        "reason": {
+          "en": "Bounded region formed by axes and line segment AB.",
+          "gu": "અક્ષો અને રેખાખંડ AB થી ઘેરાયેલો ત્રિકોણાકાર પ્રદેશ."
+        }
+      },
+      {
+        "stepNumber": 4,
+        "explanation": {
+          "en": "Evaluate objective function \\( Z = 3x + 4y \\) at each corner point.",
+          "gu": "દરેક શિરોબિંદુ આગળ હેતુલક્ષી વિધેય \\( Z = 3x + 4y \\) ની કિંમત શોધો."
+        },
+        "math": "\\begin{aligned} \\text{At } O(0, 0): & \\quad Z = 3(0) + 4(0) = 0 \\\\ \\text{At } A(4, 0): & \\quad Z = 3(4) + 4(0) = 12 \\\\ \\text{At } B(0, 4): & \\quad Z = 3(0) + 4(4) = 16 \\quad (\\text{મહત્તમ / Maximum}) \\end{aligned}",
+        "reason": {
+          "en": "The highest value among all corner points is 16 at point B(0, 4).",
+          "gu": "બધા શિરોબિંદુઓ પૈકી સૌથી મોટું મૂલ્ય 16 બિંદુ B(0, 4) આગળ મળે છે."
+        }
+      }
+    ],
+    "table": {
+      "title": {
+        "en": "Corner Point Evaluation Table",
+        "gu": "શિરોબિંદુ મૂલ્યાંકન કોષ્ટક"
+      },
+      "headers": ["શિરોબિંદુ (Corner Point)", "હેતુલક્ષી વિધેય Z = 3x + 4y", "પરિણામ (Result)"],
+      "rows": [
+        ["O(0, 0)", "Z = 3(0) + 4(0) = 0", "ન્યૂનતમ"],
+        ["A(4, 0)", "Z = 3(4) + 4(0) = 12", "-"],
+        ["B(0, 4)", "Z = 3(0) + 4(4) = 16", "મહત્તમ (Maximum)"]
+      ]
+    },
+    "graph": {
+      "type": "lpp",
+      "title": {
+        "en": "Feasible Region for \\( x + y \\le 4 \\)",
+        "gu": "\\( x + y \\le 4 \\) માટે શક્ય ઉકેલનો પ્રદેશ"
+      },
+      "xRange": [-1, 6],
+      "yRange": [-1, 6],
+      "xLabel": "x",
+      "yLabel": "y",
+      "lines": [
+        { "x1": 0, "y1": 4, "x2": 4, "y2": 0, "label": "x + y = 4", "color": "#ef4444" }
+      ],
+      "regions": [
+        {
+          "points": [[0, 0], [4, 0], [0, 4]],
+          "color": "rgba(99, 102, 241, 0.25)",
+          "label": "Feasible Region (OAB)"
+        }
+      ],
+      "points": [
+        { "x": 0, "y": 0, "label": "O(0,0)", "color": "#64748b" },
+        { "x": 4, "y": 0, "label": "A(4,0)", "color": "#3b82f6" },
+        { "x": 0, "y": 4, "label": "B(0,4) [Max Z=16]", "color": "#10b981" }
+      ]
+    },
+    "finalAnswer": {
+      "en": "Maximum value of Z is 16 at point (0, 4).",
+      "gu": "Z નું મહત્તમ મૂલ્ય 16 છે જે બિંદુ (0, 4) આગળ મળે છે."
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Board Review",
+    "verifiedDate": "2026-10-22",
+    "practiceOptions": [
+      {
+        "text": "\\text{મહત્તમ } Z = 16 \\text{ બિંદુ } (0, 4) \\text{ આગળ}",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. Z(0,4) = 16, which is greater than Z(4,0)=12 and Z(0,0)=0.",
+          "gu": "સાચું. Z(0,4) = 16, જે Z(4,0)=12 અને Z(0,0)=0 કરતાં મોટું છે."
+        }
+      },
+      {
+        "text": "\\text{મહત્તમ } Z = 12 \\text{ બિંદુ } (4, 0) \\text{ આગળ}",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. 12 is less than 16.",
+          "gu": "ખોટું. 12 એ 16 કરતાં નાનું છે."
+        }
+      }
+    ]
+  }
+]

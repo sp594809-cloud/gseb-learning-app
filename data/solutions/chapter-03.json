@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ch03-ex3.1-q01",
+    "chapterNumber": "03",
+    "exerciseNumber": "3.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Order and Elements of a Matrix",
+      "gu": "શ્રેણિકની કક્ષા અને ઘટકો"
+    },
+    "originalQuestion": {
+      "en": "In the matrix \\( A = \\begin{bmatrix} 2 & 5 & 19 & -7 \\\\ 35 & -2 & \\frac{5}{2} & 12 \\\\ \\sqrt{3} & 1 & -5 & 17 \\end{bmatrix} \\), write: (i) The order of the matrix, (ii) The number of elements, (iii) Write the elements \\( a_{13}, a_{21}, a_{33}, a_{24}, a_{23} \\).",
+      "gu": "શ્રેણિક \\( A = \\begin{bmatrix} 2 & 5 & 19 & -7 \\\\ 35 & -2 & \\frac{5}{2} & 12 \\\\ \\sqrt{3} & 1 & -5 & 17 \\end{bmatrix} \\) માટે: (i) શ્રેણિકની કક્ષા, (ii) ઘટકોની સંખ્યા, (iii) ઘટકો \\( a_{13}, a_{21}, a_{33}, a_{24}, a_{23} \\) લખો."
+    },
+    "given": {
+      "en": [
+        "Matrix \\( A \\) with rows \\( R_1, R_2, R_3 \\) and columns \\( C_1, C_2, C_3, C_4 \\)."
+      ],
+      "gu": [
+        "શ્રેણિક \\( A \\) જેમાં 3 હાર \\( R_1, R_2, R_3 \\) અને 4 સ્તંભ \\( C_1, C_2, C_3, C_4 \\) આપેલ છે."
+      ]
+    },
+    "requiredResult": {
+      "en": "Determine the matrix order, total number of entries, and specified element values.",
+      "gu": "શ્રેણિકની કક્ષા, ઘટકોની કુલ સંખ્યા અને નિર્દિષ્ટ ઘટકોના મૂલ્યો નક્કી કરો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "A matrix having \\( m \\) rows and \\( n \\) columns has order \\( m \\times n \\).",
+        "Total number of elements in an \\( m \\times n \\) matrix is \\( m \\cdot n \\).",
+        "\\( a_{ij} \\) denotes the element in the \\( i \\)-th row and \\( j \\)-th column."
+      ],
+      "gu": [
+        "\\( m \\) હાર અને \\( n \\) સ્તંભ ધરાવતા શ્રેણિકની કક્ષા \\( m \\times n \\) કહેવાય.",
+        "\\( m \\times n \\) કક્ષાના શ્રેણિકમાં કુલ ઘટકોની સંખ્યા \\( m \\cdot n \\) થાય.",
+        "\\( a_{ij} \\) એ \\( i \\)-મી હાર અને \\( j \\)-મા સ્તંભમાં રહેલો ઘટક દર્શાવે છે."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "(i) Count the horizontal rows \\( m \\) and vertical columns \\( n \\).",
+          "gu": "(i) આડી હાર \\( m \\) અને ઊભા સ્તંભ \\( n \\) ની ગણતરી કરો."
+        },
+        "math": "m = 3 \\text{ (હાર)}, \\quad n = 4 \\text{ (સ્તંભ)} \\implies \\text{કક્ષા } = 3 \\times 4",
+        "reason": {
+          "en": "Matrix has 3 horizontal lines and 4 vertical lines.",
+          "gu": "શ્રેણિકમાં 3 હાર અને 4 સ્તંભ છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "(ii) Multiply the number of rows by the number of columns to get total elements.",
+          "gu": "(ii) હાર અને સ્તંભની સંખ્યાનો ગુણાકાર કરી કુલ ઘટકો મેળવો."
+        },
+        "math": "\\text{કુલ ઘટકો} = 3 \\times 4 = 12",
+        "reason": {
+          "en": "Formula: Number of elements in \\( m \\times n \\) matrix is \\( mn \\).",
+          "gu": "સૂત્ર: \\( m \\times n \\) શ્રેણિકમાં કુલ ઘટકો \\( mn \\) થાય."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "(iii) Locate each entry at row index \\( i \\) and column index \\( j \\).",
+          "gu": "(iii) \\( i \\)-મી હાર અને \\( j \\)-મા સ્તંભમાં આવેલ દરેક ઘટક ઓળખો."
+        },
+        "math": "\\begin{aligned} a_{13} &= \\text{1લી હાર, 3જો સ્તંભ} = 19 \\\\ a_{21} &= \\text{2જી હાર, 1લો સ્તંભ} = 35 \\\\ a_{33} &= \\text{3જી હાર, 3જો સ્તંભ} = -5 \\\\ a_{24} &= \\text{2જી હાર, 4થો સ્તંભ} = 12 \\\\ a_{23} &= \\text{2જી હાર, 3જો સ્તંભ} = \\frac{5}{2} \\end{aligned}",
+        "reason": {
+          "en": "Intersection of corresponding rows and columns in matrix \\( A \\).",
+          "gu": "શ્રેણિક \\( A \\) ની અનુરૂપ હાર અને સ્તંભના છેદન પરનો ઘટક."
+        }
+      }
+    ],
+    "table": {
+      "title": {
+        "en": "Element Grid Representation of Matrix A",
+        "gu": "શ્રેણિક A ના ઘટકોનું કોષ્ટક"
+      },
+      "headers": ["હાર / સ્તંભ", "સ્તંભ 1 (j=1)", "સ્તંભ 2 (j=2)", "સ્તંભ 3 (j=3)", "સ્તંભ 4 (j=4)"],
+      "rows": [
+        ["હાર 1 (i=1)", "2", "5", "19", "-7"],
+        ["હાર 2 (i=2)", "35", "-2", "5/2", "12"],
+        ["હાર 3 (i=3)", "√3", "1", "-5", "17"]
+      ]
+    },
+    "subQuestions": [
+      {
+        "id": "ch03-ex3.1-q01-sub1",
+        "chapterNumber": "03",
+        "exerciseNumber": "3.1",
+        "questionNumber": "1(i)",
+        "topic": { "en": "Order of Matrix", "gu": "શ્રેણિકની કક્ષા" },
+        "originalQuestion": { "en": "Find the order of matrix \\( A \\).", "gu": "શ્રેણિક \\( A \\) ની કક્ષા શોધો." },
+        "given": { "en": ["Matrix has 3 rows and 4 columns."], "gu": ["શ્રેણિકમાં 3 હાર અને 4 સ્તંભ છે."] },
+        "requiredResult": { "en": "Order of \\( A \\)", "gu": "\\( A \\) ની કક્ષા" },
+        "formulaOrTheorem": { "en": ["Order = \\( m \\times n \\)"], "gu": ["કક્ષા = \\( m \\times n \\)"] },
+        "steps": [
+          {
+            "stepNumber": 1,
+            "explanation": { "en": "Count rows and columns.", "gu": "હાર અને સ્તંભ ગણો." },
+            "math": "\\text{Order} = 3 \\times 4"
+          }
+        ],
+        "finalAnswer": { "en": "3 \\times 4", "gu": "3 \\times 4" },
+        "verificationStatus": "verified"
+      },
+      {
+        "id": "ch03-ex3.1-q01-sub2",
+        "chapterNumber": "03",
+        "exerciseNumber": "3.1",
+        "questionNumber": "1(ii)",
+        "topic": { "en": "Number of Elements", "gu": "ઘટકોની સંખ્યા" },
+        "originalQuestion": { "en": "Find the number of elements in \\( A \\).", "gu": "શ્રેણિક \\( A \\) ના ઘટકોની સંખ્યા શોધો." },
+        "given": { "en": ["Order is \\( 3 \\times 4 \\)."], "gu": ["કક્ષા \\( 3 \\times 4 \\) છે."] },
+        "requiredResult": { "en": "Total number of elements", "gu": "કુલ ઘટકોની સંખ્યા" },
+        "formulaOrTheorem": { "en": ["\\( 3 \\times 4 = 12 \\)"], "gu": ["\\( 3 \\times 4 = 12 \\)"] },
+        "steps": [
+          {
+            "stepNumber": 1,
+            "explanation": { "en": "Calculate product.", "gu": "ગુણાકાર કરો." },
+            "math": "3 \\times 4 = 12"
+          }
+        ],
+        "finalAnswer": { "en": "12", "gu": "12" },
+        "verificationStatus": "verified"
+      }
+    ],
+    "finalAnswer": {
+      "en": "(i) 3 × 4, (ii) 12 elements, (iii) a₁₃ = 19, a₂₁ = 35, a₃₃ = -5, a₂₄ = 12, a₂₃ = 5/2",
+      "gu": "(i) 3 × 4, (ii) 12 ઘટકો, (iii) a₁₃ = 19, a₂₁ = 35, a₃₃ = -5, a₂₄ = 12, a₂₃ = 5/2"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Faculty Review",
+    "verifiedDate": "2026-10-18",
+    "practiceOptions": [
+      {
+        "text": "\\text{Order: } 3 \\times 4, \\text{ Elements: } 12, \\, a_{13}=19, \\, a_{21}=35",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. There are 3 rows, 4 columns, total 12 elements. First row third column is 19.",
+          "gu": "સાચો જવાબ. 3 હાર, 4 સ્તંભ, કુલ 12 ઘટકો અને પ્રથમ હાર ત્રીજો સ્તંભ 19 છે."
+        }
+      },
+      {
+        "text": "\\text{Order: } 4 \\times 3, \\text{ Elements: } 12, \\, a_{13}=35",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. Order is rows × columns (3 × 4), not columns × rows (4 × 3).",
+          "gu": "ખોટું. કક્ષા હંમેશા હાર × સ્તંભ (3 × 4) લખાય, સ્તંભ × હાર નહીં."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch03-ex3.2-q02",
+    "chapterNumber": "03",
+    "exerciseNumber": "3.2",
+    "questionNumber": "2",
+    "topic": {
+      "en": "Matrix Addition and Simplification",
+      "gu": "શ્રેણિકોનો સરવાળો"
+    },
+    "originalQuestion": {
+      "en": "Compute the sum: \\( \\begin{bmatrix} a & b \\\\ -b & a \\end{bmatrix} + \\begin{bmatrix} a & b \\\\ b & a \\end{bmatrix} \\)",
+      "gu": "સરવાળાની ગણતરી કરો: \\( \\begin{bmatrix} a & b \\\\ -b & a \\end{bmatrix} + \\begin{bmatrix} a & b \\\\ b & a \\end{bmatrix} \\)"
+    },
+    "given": {
+      "en": ["Two \\( 2 \\times 2 \\) square matrices."],
+      "gu": ["બે \\( 2 \\times 2 \\) ચોરસ શ્રેણિકો આપેલા છે."]
+    },
+    "requiredResult": {
+      "en": "Compute the sum of the two matrices.",
+      "gu": "બે શ્રેણિકોનો સરવાળો મેળવો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Matrix addition is defined element-wise for matrices of identical order: \\( [a_{ij}] + [b_{ij}] = [a_{ij} + b_{ij}] \\)."
+      ],
+      "gu": [
+        "સમાન કક્ષાના શ્રેણિકો માટે સરવાળો અનુરૂપ ઘટકો ઉમેરીને થાય: \\( [a_{ij}] + [b_{ij}] = [a_{ij} + b_{ij}] \\)."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Verify that both matrices have the same order \\( 2 \\times 2 \\).",
+          "gu": "ચકાસો કે બંને શ્રેણિકો સમાન કક્ષા \\( 2 \\times 2 \\) ના છે."
+        },
+        "math": "\\text{Order of both matrices} = 2 \\times 2",
+        "reason": {
+          "en": "Addition is defined only when orders are equal.",
+          "gu": "કક્ષા સમાન હોય ત્યારે જ સરવાળો વ્યાખ્યાયિત થાય છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Add corresponding entries from both matrices.",
+          "gu": "બંને શ્રેણિકોના અનુરૂપ ઘટકોનો સરવાળો કરો."
+        },
+        "math": "\\begin{bmatrix} a & b \\\\ -b & a \\end{bmatrix} + \\begin{bmatrix} a & b \\\\ b & a \\end{bmatrix} = \\begin{bmatrix} a+a & b+b \\\\ -b+b & a+a \\end{bmatrix}",
+        "reason": {
+          "en": "Element-wise addition.",
+          "gu": "અનુરૂપ ઘટકોનો સરવાળો."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Simplify each entry.",
+          "gu": "દરેક ઘટકનું સાદુરૂપ આપો."
+        },
+        "math": "= \\begin{bmatrix} 2a & 2b \\\\ 0 & 2a \\end{bmatrix}",
+        "reason": {
+          "en": "\\( a+a = 2a \\), \\( b+b = 2b \\), and \\( -b+b = 0 \\).",
+          "gu": "\\( a+a = 2a \\), \\( b+b = 2b \\), અને \\( -b+b = 0 \\)."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "\\begin{bmatrix} 2a & 2b \\\\ 0 & 2a \\end{bmatrix}",
+      "gu": "\\begin{bmatrix} 2a & 2b \\\\ 0 & 2a \\end{bmatrix}"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Faculty Review",
+    "verifiedDate": "2026-10-18",
+    "practiceOptions": [
+      {
+        "text": "\\begin{bmatrix} 2a & 2b \\\\ 0 & 2a \\end{bmatrix}",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. Adding corresponding elements yields 2a, 2b, 0, 2a.",
+          "gu": "સાચું. અનુરૂપ ઘટકો ઉમેરતાં 2a, 2b, 0, 2a મળે છે."
+        }
+      },
+      {
+        "text": "\\begin{bmatrix} a^2 & b^2 \\\\ -b^2 & a^2 \\end{bmatrix}",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. This is multiplication of terms, not addition.",
+          "gu": "ખોટું. આ ગુણાકાર નથી, સરવાળો કરવાનો છે."
+        }
+      }
+    ]
+  }
+]

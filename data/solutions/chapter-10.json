@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ch10-ex10.2-q01",
+    "chapterNumber": "10",
+    "exerciseNumber": "10.2",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Magnitude of Vectors",
+      "gu": "સદિશોનું માન"
+    },
+    "originalQuestion": {
+      "en": "Compute the magnitude of the following vectors: \\( \\vec{a} = \\hat{i} + \\hat{j} + \\hat{k} \\), \\( \\vec{b} = 2\\hat{i} - 7\\hat{j} - 3\\hat{k} \\), \\( \\vec{c} = \\frac{1}{\\sqrt{3}}\\hat{i} + \\frac{1}{\\sqrt{3}}\\hat{j} - \\frac{1}{\\sqrt{3}}\\hat{k} \\).",
+      "gu": "નીચે આપેલા સદિશોના માનની ગણતરી કરો: \\( \\vec{a} = \\hat{i} + \\hat{j} + \\hat{k} \\), \\( \\vec{b} = 2\\hat{i} - 7\\hat{j} - 3\\hat{k} \\), \\( \\vec{c} = \\frac{1}{\\sqrt{3}}\\hat{i} + \\frac{1}{\\sqrt{3}}\\hat{j} - \\frac{1}{\\sqrt{3}}\\hat{k} \\)."
+    },
+    "given": {
+      "en": [
+        "Three vectors in component form along Cartesian unit vectors \\( \\hat{i}, \\hat{j}, \\hat{k} \\)."
+      ],
+      "gu": [
+        "કાર્તેઝીય એકમ સદિશો \\( \\hat{i}, \\hat{j}, \\hat{k} \\) ના ઘટક સ્વરૂપમાં ત્રણ સદિશો આપેલા છે."
+      ]
+    },
+    "requiredResult": {
+      "en": "Calculate \\( |\\vec{a}| \\), \\( |\\vec{b}| \\), and \\( |\\vec{c}| \\).",
+      "gu": "\\( |\\vec{a}| \\), \\( |\\vec{b}| \\) અને \\( |\\vec{c}| \\) ની ગણતરી કરો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Magnitude formula: For \\( \\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k} \\), \\( |\\vec{r}| = \\sqrt{x^2 + y^2 + z^2} \\)."
+      ],
+      "gu": [
+        "સદિશના માનનું સૂત્ર: \\( \\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k} \\) માટે, \\( |\\vec{r}| = \\sqrt{x^2 + y^2 + z^2} \\)."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Calculate the magnitude of \\( \\vec{a} = \\hat{i} + \\hat{j} + \\hat{k} \\).",
+          "gu": "\\( \\vec{a} = \\hat{i} + \\hat{j} + \\hat{k} \\) નું માન ગણો."
+        },
+        "math": "|\\vec{a}| = \\sqrt{1^2 + 1^2 + 1^2} = \\sqrt{1 + 1 + 1} = \\sqrt{3}",
+        "reason": {
+          "en": "Components are \\( x=1, y=1, z=1 \\).",
+          "gu": "ઘટકો \\( x=1, y=1, z=1 \\) છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Calculate the magnitude of \\( \\vec{b} = 2\\hat{i} - 7\\hat{j} - 3\\hat{k} \\).",
+          "gu": "\\( \\vec{b} = 2\\hat{i} - 7\\hat{j} - 3\\hat{k} \\) નું માન ગણો."
+        },
+        "math": "|\\vec{b}| = \\sqrt{2^2 + (-7)^2 + (-3)^2} = \\sqrt{4 + 49 + 9} = \\sqrt{62}",
+        "reason": {
+          "en": "Components are \\( x=2, y=-7, z=-3 \\).",
+          "gu": "ઘટકો \\( x=2, y=-7, z=-3 \\) છે."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Calculate the magnitude of \\( \\vec{c} = \\frac{1}{\\sqrt{3}}\\hat{i} + \\frac{1}{\\sqrt{3}}\\hat{j} - \\frac{1}{\\sqrt{3}}\\hat{k} \\).",
+          "gu": "\\( \\vec{c} = \\frac{1}{\\sqrt{3}}\\hat{i} + \\frac{1}{\\sqrt{3}}\\hat{j} - \\frac{1}{\\sqrt{3}}\\hat{k} \\) નું માન ગણો."
+        },
+        "math": "|\\vec{c}| = \\sqrt{\\left(\\frac{1}{\\sqrt{3}}\\right)^2 + \\left(\\frac{1}{\\sqrt{3}}\\right)^2 + \\left(-\\frac{1}{\\sqrt{3}}\\right)^2} = \\sqrt{\\frac{1}{3} + \\frac{1}{3} + \\frac{1}{3}} = \\sqrt{1} = 1",
+        "reason": {
+          "en": "\\( \\vec{c} \\) is a unit vector since its magnitude is 1.",
+          "gu": "\\( \\vec{c} \\) નું માન 1 હોવાથી તે એકમ સદિશ છે."
+        }
+      }
+    ],
+    "diagram": {
+      "type": "vector_diagram",
+      "title": {
+        "en": "Vector Components in 3D Space",
+        "gu": "ત્રિ-પરિમાણમાં સદિશના ઘટકો"
+      },
+      "description": {
+        "en": "Vector \\( \\vec{r} \\) resolved into orthogonal components \\( x\\hat{i}, y\\hat{j}, z\\hat{k} \\).",
+        "gu": "પરસ્પર લંબ ઘટકો \\( x\\hat{i}, y\\hat{j}, z\\hat{k} \\) માં વિભાજિત સદિશ \\( \\vec{r} \\)."
+      }
+    },
+    "finalAnswer": {
+      "en": "|a⃗| = √3, |b⃗| = √62, |c⃗| = 1",
+      "gu": "|a⃗| = √3, |b⃗| = √62, |c⃗| = 1"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Board Review",
+    "verifiedDate": "2026-10-20",
+    "practiceOptions": [
+      {
+        "text": "|\\vec{a}| = \\sqrt{3}, \\, |\\vec{b}| = \\sqrt{62}, \\, |\\vec{c}| = 1",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. Squares of components sum to 3, 62, and 1 respectively.",
+          "gu": "સાચો જવાબ. ઘટકોના વર્ગોનો સરવાળો અનુક્રમે 3, 62 અને 1 થાય છે."
+        }
+      },
+      {
+        "text": "|\\vec{a}| = 3, \\, |\\vec{b}| = 62, \\, |\\vec{c}| = 1",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. Do not forget to take the square root of the sum of squares.",
+          "gu": "ખોટો જવાબ. વર્ગોના સરવાળાનું વર્ગમૂળ લેવાનું ભૂલશો નહીં."
+        }
+      }
+    ]
+  }
+]

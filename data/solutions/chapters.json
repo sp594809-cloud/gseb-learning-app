@@ -1,0 +1,93 @@
+[
+  {
+    "chapterNumber": "01",
+    "title": { "en": "Relations and Functions", "gu": "સંબંધ અને વિધેયો" },
+    "part": 1,
+    "description": { "en": "Types of relations, equivalence relations, one-one and onto functions, composite functions and invertible functions.", "gu": "સંબંધના પ્રકારો, સામ્ય સંબંધ, એક-એક અને વ્યાપ્ત વિધેયો, સંયોજિત વિધેયો અને વ્યસ્તસંપન્ન વિધેયો." },
+    "exercises": ["1.1", "1.2", "1.3", "1.4", "પ્રકીર્ણ સ્વાધ્યાય 1"]
+  },
+  {
+    "chapterNumber": "02",
+    "title": { "en": "Inverse Trigonometric Functions", "gu": "ત્રિકોણમિતીય પ્રતિવિધેયો" },
+    "part": 1,
+    "description": { "en": "Definition, range, domain, principal value branches, graphs and properties of inverse trigonometric functions.", "gu": "વ્યાખ્યા, પ્રદેશ, સહપ્રદેશ, મુખ્ય કિંમત શાખાઓ, આલેખ અને પ્રતિવિધેયોના ગુણધર્મો." },
+    "exercises": ["2.1", "2.2", "પ્રકીર્ણ સ્વાધ્યાય 2"]
+  },
+  {
+    "chapterNumber": "03",
+    "title": { "en": "Matrices", "gu": "શ્રેણિક" },
+    "part": 1,
+    "description": { "en": "Matrix concept, notation, order, types, operations, transpose, symmetric and skew-symmetric matrices, elementary row operations and inverse.", "gu": "શ્રેણિકની સંકલ્પના, કક્ષા, પ્રકારો, શ્રેણિક પરની ક્રિયાઓ, પરિવર્ત શ્રેણિક, સંમિત અને વિસંમિત શ્રેણિક, પ્રાથમિક પ્રક્રિયાઓ અને વ્યસ્ત શ્રેણિક." },
+    "exercises": ["3.1", "3.2", "3.3", "3.4", "પ્રકીર્ણ સ્વાધ્યાય 3"]
+  },
+  {
+    "chapterNumber": "04",
+    "title": { "en": "Determinants", "gu": "નિશ્ચાયક" },
+    "part": 1,
+    "description": { "en": "Determinant of a square matrix, minors, cofactors, adjoint, inverse of a matrix, and applications in solving systems of linear equations.", "gu": "ચોરસ શ્રેણિકનો નિશ્ચાયક, ઉપનિશ્ચાયક, સહઅવયવ, સહઅવયવજ શ્રેણિક, વ્યસ્ત શ્રેણિક અને સુરેખ સમીકરણ સંહતિનો ઉકેલ." },
+    "exercises": ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "પ્રકીર્ણ સ્વાધ્યાય 4"]
+  },
+  {
+    "chapterNumber": "05",
+    "title": { "en": "Continuity and Differentiability", "gu": "સાતત્ય અને વિકલનીયતા" },
+    "part": 1,
+    "description": { "en": "Continuity, differentiability, chain rule, derivative of implicit functions, logarithmic differentiation, and second order derivatives.", "gu": "વિધેયનું સાતત્ય, વિકલનીયતા, સાંકળ નિયમ, ગૂઢ વિધેયોનું વિકલન, લઘુગણકીય વિકલન અને દ્વિતીય કક્ષાના વિકલિતો." },
+    "exercises": ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "5.7", "5.8", "પ્રકીર્ણ સ્વાધ્યાય 5"]
+  },
+  {
+    "chapterNumber": "06",
+    "title": { "en": "Applications of Derivatives", "gu": "વિકલનના ઉપયોગો" },
+    "part": 1,
+    "description": { "en": "Rate of change of quantities, increasing and decreasing functions, tangents and normals, approximations, maxima and minima.", "gu": "રાશિઓમાં થતા ફેરફારનો દર, વધતા અને ઘટતા વિધેયો, સ્પર્શક અને અભિલંબ, આસન્ન મૂલ્ય, મહત્તમ અને ન્યૂનતમ મૂલ્યો." },
+    "exercises": ["6.1", "6.2", "6.3", "6.4", "6.5", "પ્રકીર્ણ સ્વાધ્યાય 6"]
+  },
+  {
+    "chapterNumber": "07",
+    "title": { "en": "Integrals", "gu": "સંકલન" },
+    "part": 2,
+    "description": { "en": "Integration as inverse process of differentiation, substitution method, partial fractions, integration by parts, and fundamental theorem of calculus.", "gu": "વિકલનની પ્રતિવર્તી ક્રિયા તરીકે સંકલન, આદેશની રીત, આંશિક અપૂર્ણાંકની રીત, ભાગશઃ સંકલન અને નિયત સંકલનના મૂળભૂત પ્રમેયો." },
+    "exercises": ["7.1", "7.2", "7.3", "7.4", "7.5", "7.6", "7.7", "7.8", "7.9", "7.10", "7.11", "પ્રકીર્ણ સ્વાધ્યાય 7"]
+  },
+  {
+    "chapterNumber": "08",
+    "title": { "en": "Applications of the Integrals", "gu": "સંકલનના ઉપયોગો" },
+    "part": 2,
+    "description": { "en": "Applications in finding the area under simple curves, lines, circles, parabolas, and ellipses.", "gu": "સરળ વક્રો, રેખાઓ, વર્તુળો, પરવલય અને ઉપવલય દ્વારા ઘેરાયેલા પ્રદેશનું ક્ષેત્રફળ શોધવા માટે સંકલનનો ઉપયોગ." },
+    "exercises": ["8.1", "8.2", "પ્રકીર્ણ સ્વાધ્યાય 8"]
+  },
+  {
+    "chapterNumber": "09",
+    "title": { "en": "Differential Equations", "gu": "વિકલ સમીકરણો" },
+    "part": 2,
+    "description": { "en": "Order and degree, general and particular solutions, separation of variables, homogeneous differential equations, and linear differential equations.", "gu": "વિકલ સમીકરણની કક્ષા અને પરિમાણ, વ્યાપક અને વિશિષ્ટ ઉકેલ, વિયોજનીય ચલની રીત, સમપરિમાણ વિકલ સમીકરણો અને સુરેખ વિકલ સમીકરણો." },
+    "exercises": ["9.1", "9.2", "9.3", "9.4", "9.5", "9.6", "પ્રકીર્ણ સ્વાધ્યાય 9"]
+  },
+  {
+    "chapterNumber": "10",
+    "title": { "en": "Vector Algebra", "gu": "સદિશ બીજગણિત" },
+    "part": 2,
+    "description": { "en": "Vectors and scalars, magnitude and direction, direction cosines, types of vectors, dot product, cross product, and projections.", "gu": "સદિશ અને અદિશ, માન અને દિશા, દિકકોસાઇન, સદિશોના પ્રકારો, અદિશ ગુણાકાર (ડોટ પ્રોડક્ટ), સદિશ ગુણાકાર (ક્રોસ પ્રોડક્ટ) અને પ્રક્ષેપ." },
+    "exercises": ["10.1", "10.2", "10.3", "10.4", "પ્રકીર્ણ સ્વાધ્યાય 10"]
+  },
+  {
+    "chapterNumber": "11",
+    "title": { "en": "Three Dimensional Geometry", "gu": "ત્રિ-પરિમાણીય ભૂમિતિ" },
+    "part": 2,
+    "description": { "en": "Direction cosines and ratios of a line, Cartesian and vector equation of a line, coplanar and skew lines, and shortest distance between lines.", "gu": "રેખાની દિકકોસાઇન અને દિકગુણોત્તર, રેખાના કાર્તેઝીય અને સદિશ સમીકરણો, સમતલીય અને વિષમતલીય રેખાઓ, અને બે રેખાઓ વચ્ચેનું લઘુતમ અંતર." },
+    "exercises": ["11.1", "11.2", "11.3", "પ્રકીર્ણ સ્વાધ્યાય 11"]
+  },
+  {
+    "chapterNumber": "12",
+    "title": { "en": "Linear Programming", "gu": "સુરેખ આયોજન" },
+    "part": 2,
+    "description": { "en": "Linear programming problems, formulation, graphical method of solution for problems in two variables, feasible and infeasible regions, optimal solutions.", "gu": "સુરેખ આયોજનની સમસ્યાઓ, ગાણિતિક સ્વરૂપ, આલેખની રીતથી બે ચલવાળી સમસ્યાઓનો ઉકેલ, શક્ય ઉકેલનો પ્રદેશ અને ઇષ્ટતમ ઉકેલ." },
+    "exercises": ["12.1", "12.2", "પ્રકીર્ણ સ્વાધ્યાય 12"]
+  },
+  {
+    "chapterNumber": "13",
+    "title": { "en": "Probability", "gu": "સંભાવના" },
+    "part": 2,
+    "description": { "en": "Conditional probability, multiplication rule, independent events, total probability, Bayes' theorem, random variables and probability distributions.", "gu": "શરતી સંભાવના, ગુણાકારનો નિયમ, નિરપેક્ષ ઘટનાઓ, પૂર્ણ સંભાવનાનું પ્રમેય, બેઇઝનું પ્રમેય, યાદચ્છિક ચલ અને સંભાવના વિતરણ." },
+    "exercises": ["13.1", "13.2", "13.3", "13.4", "13.5", "પ્રકીર્ણ સ્વાધ્યાય 13"]
+  }
+]

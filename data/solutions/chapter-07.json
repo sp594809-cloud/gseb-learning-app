@@ -1,0 +1,369 @@
+[
+  {
+    "id": "ch07-ex7.6-q01",
+    "chapterNumber": "07",
+    "exerciseNumber": "7.6",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Integration by Parts",
+      "gu": "ભાગશઃ સંકલન"
+    },
+    "originalQuestion": {
+      "en": "Evaluate the integral: \\( \\int x \\sin x \\, dx \\)",
+      "gu": "સંકલિત મેળવો: \\( \\int x \\sin x \\, dx \\)"
+    },
+    "given": {
+      "en": ["Integrand is a product of algebraic function \\( x \\) and trigonometric function \\( \\sin x \\)."],
+      "gu": ["સંકલ્ય એ બૈજિક વિધેય \\( x \\) અને ત્રિકોણમિતીય વિધેય \\( \\sin x \\) નો ગુણાકાર છે."]
+    },
+    "requiredResult": {
+      "en": "Find the indefinite integral \\( I = \\int x \\sin x \\, dx \\).",
+      "gu": "અનિયત સંકલિત \\( I = \\int x \\sin x \\, dx \\) નું મૂલ્ય શોધો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Integration by parts formula: \\( \\int u v \\, dx = u \\int v \\, dx - \\int \\left( \\frac{du}{dx} \\int v \\, dx \\right) dx \\)",
+        "Priority order of functions by ILATE rule: Algebraic (A) before Trigonometric (T)."
+      ],
+      "gu": [
+        "ભાગશઃ સંકલનનું સૂત્ર: \\( \\int u v \\, dx = u \\int v \\, dx - \\int \\left( \\frac{du}{dx} \\int v \\, dx \\right) dx \\)",
+        "ILATE નિયમ અનુસાર વિધેયની પસંદગી: બૈજિક વિધેય (A) ત્રિકોણમિતીય વિધેય (T) કરતાં પ્રથમ આવે છે."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Choose first function \\( u \\) and second function \\( v \\) using the ILATE rule.",
+          "gu": "ILATE નિયમ મુજબ પ્રથમ વિધેય \\( u \\) અને દ્વિતીય વિધેય \\( v \\) ની પસંદગી કરો."
+        },
+        "math": "u = x \\quad \\text{અને} \\quad v = \\sin x",
+        "reason": {
+          "en": "Here \\( x \\) is Algebraic and \\( \\sin x \\) is Trigonometric.",
+          "gu": "અહીં \\( x \\) બૈજિક વિધેય અને \\( \\sin x \\) ત્રિકોણમિતીય વિધેય છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Compute the derivative \\( \\frac{du}{dx} \\) and the integral \\( \\int v \\, dx \\).",
+          "gu": "\\( \\frac{du}{dx} \\) નું વિકલન અને \\( \\int v \\, dx \\) નું સંકલન મેળવો."
+        },
+        "math": "\\frac{du}{dx} = \\frac{d}{dx}(x) = 1, \\quad \\int v \\, dx = \\int \\sin x \\, dx = -\\cos x",
+        "reason": {
+          "en": "Standard differentiation and integration formulas.",
+          "gu": "પ્રમાણિત વિકલન અને સંકલન સૂત્રો મુજબ."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Apply the integration by parts formula to the integral.",
+          "gu": "ભાગશઃ સંકલન સૂત્રમાં કિંમતો મૂકો."
+        },
+        "math": "I = x (-\\cos x) - \\int 1 \\cdot (-\\cos x) \\, dx = -x \\cos x + \\int \\cos x \\, dx",
+        "reason": {
+          "en": "Substitution into \\( \\int u v \\, dx = u \\int v \\, dx - \\int (u' \\int v \\, dx) dx \\).",
+          "gu": "સૂત્ર \\( \\int u v \\, dx = u \\int v \\, dx - \\int (u' \\int v \\, dx) dx \\) માં આદેશ આપતાં."
+        }
+      },
+      {
+        "stepNumber": 4,
+        "explanation": {
+          "en": "Evaluate the remaining integral \\( \\int \\cos x \\, dx \\) and add constant of integration \\( C \\).",
+          "gu": "બાકી રહેલા સંકલિત \\( \\int \\cos x \\, dx \\) નું સંકલન કરી સ્વૈર અચળાંક \\( C \\) ઉમેરો."
+        },
+        "math": "I = -x \\cos x + \\sin x + C",
+        "reason": {
+          "en": "Since \\( \\int \\cos x \\, dx = \\sin x + C \\).",
+          "gu": "કારણ કે \\( \\int \\cos x \\, dx = \\sin x + C \\)."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "-x \\cos x + \\sin x + C",
+      "gu": "-x \\cos x + \\sin x + C"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Editorial Review",
+    "verifiedDate": "2026-10-15",
+    "graph": {
+      "type": "function",
+      "title": {
+        "en": "Graphs of \\( f(x) = x \\sin x \\) and its antiderivative \\( F(x) = \\sin x - x \\cos x \\)",
+        "gu": "\\( f(x) = x \\sin x \\) અને તેના પ્રતિવિકલિત \\( F(x) = \\sin x - x \\cos x \\) નો આલેખ"
+      },
+      "xRange": [-6.28, 6.28],
+      "yRange": [-6, 6],
+      "xLabel": "x",
+      "yLabel": "y",
+      "curves": [
+        {
+          "fn": "x * sin(x)",
+          "label": "f(x) = x sin(x)",
+          "color": "#ef4444"
+        },
+        {
+          "fn": "sin(x) - x * cos(x)",
+          "label": "F(x) = sin(x) - x cos(x)",
+          "color": "#3b82f6"
+        }
+      ],
+      "points": [
+        { "x": 0, "y": 0, "label": "Origin (0,0)", "color": "#10b981" }
+      ]
+    },
+    "hints": {
+      "en": [
+        "Identify the two functions: algebraic \\( u=x \\) and trigonometric \\( v=\\sin x \\).",
+        "Recall that \\( \\int \\sin x \\, dx = -\\cos x \\).",
+        "Don't forget the negative sign when subtracting the integral of the derivative."
+      ],
+      "gu": [
+        "બે વિધેયો ઓળખો: બૈજિક \\( u=x \\) અને ત્રિકોણમિતીય \\( v=\\sin x \\).",
+        "યાદ રાખો કે \\( \\int \\sin x \\, dx = -\\cos x \\) થાય.",
+        "સૂત્રમાં માઇનસ અને માઇનસ ભેગા થઈને પ્લસ થાય તે ચિહ્નની કાળજી રાખો."
+      ]
+    },
+    "practiceOptions": [
+      {
+        "text": "-x \\cos x + \\sin x + C",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct! Applying integration by parts gives \\( -x \\cos x + \\int \\cos x \\, dx = -x \\cos x + \\sin x + C \\).",
+          "gu": "સાચો જવાબ! ભાગશઃ સંકલન કરતા \\( -x \\cos x + \\int \\cos x \\, dx = -x \\cos x + \\sin x + C \\) મળે છે."
+        }
+      },
+      {
+        "text": "x \\cos x - \\sin x + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. Notice that \\( \\int \\sin x \\, dx = -\\cos x \\), so the first term must have a negative sign.",
+          "gu": "ખોટો જવાબ. \\( \\int \\sin x \\, dx = -\\cos x \\) હોવાથી પ્રથમ પદ ઋણ આવશે."
+        }
+      },
+      {
+        "text": "-x \\cos x - \\sin x + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. The integral of \\( -(-\\cos x) \\) is \\( +\\sin x \\), not \\( -\\sin x \\).",
+          "gu": "ખોટો જવાબ. \\( -(-\\cos x) \\) નું સંકલન \\( +\\sin x \\) થશે."
+        }
+      },
+      {
+        "text": "x \\sin x + \\cos x + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. This formula does not match integration by parts of \\( x \\sin x \\).",
+          "gu": "ખોટો જવાબ. આ સૂત્ર \\( x \\sin x \\) ના ભાગશઃ સંકલન સાથે સુસંગત નથી."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch07-ex7.6-q02",
+    "chapterNumber": "07",
+    "exerciseNumber": "7.6",
+    "questionNumber": "2",
+    "topic": {
+      "en": "Integration by Parts with Exponential Functions",
+      "gu": "ઘાતાંકીય વિધેય સાથે ભાગશઃ સંકલન"
+    },
+    "originalQuestion": {
+      "en": "Evaluate: \\( \\int x e^x \\, dx \\)",
+      "gu": "સંકલિત મેળવો: \\( \\int x e^x \\, dx \\)"
+    },
+    "given": {
+      "en": ["Integrand has algebraic part \\( u = x \\) and exponential part \\( dv = e^x \\, dx \\)."],
+      "gu": ["સંકલ્યમાં બૈજિક ભાગ \\( u = x \\) અને ઘાતાંકીય ભાગ \\( dv = e^x \\, dx \\) છે."]
+    },
+    "requiredResult": {
+      "en": "Find the primitive function \\( \\int x e^x \\, dx \\).",
+      "gu": "\\( \\int x e^x \\, dx \\) નું મૂળ વિધેય મેળવો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Integration by parts: \\( \\int u \\, dv = uv - \\int v \\, du \\)",
+        "\\( \\frac{d}{dx}(x) = 1 \\), \\( \\int e^x \\, dx = e^x + C \\)"
+      ],
+      "gu": [
+        "ભાગશઃ સંકલન: \\( \\int u \\, dv = uv - \\int v \\, du \\)",
+        "\\( \\frac{d}{dx}(x) = 1 \\), \\( \\int e^x \\, dx = e^x + C \\)"
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Assign \\( u = x \\) and \\( dv = e^x \\, dx \\).",
+          "gu": "\\( u = x \\) અને \\( dv = e^x \\, dx \\) ધારો."
+        },
+        "math": "u = x \\implies du = dx, \\quad dv = e^x \\, dx \\implies v = e^x",
+        "reason": {
+          "en": "ILATE rule: Algebraic before Exponential.",
+          "gu": "ILATE નિયમ અનુસાર બૈજિક વિધેય ઘાતાંકીય વિધેયથી પહેલા આવે છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Substitute into the integration by parts formula.",
+          "gu": "ભાગશઃ સંકલન સૂત્રમાં કિંમતો મૂકો."
+        },
+        "math": "\\int x e^x \\, dx = x e^x - \\int e^x \\cdot 1 \\, dx",
+        "reason": {
+          "en": "By formula \\( uv - \\int v \\, du \\).",
+          "gu": "સૂત્ર \\( uv - \\int v \\, du \\) પરથી."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Integrate \\( e^x \\) and factor out \\( e^x \\).",
+          "gu": "\\( e^x \\) નું સંકલન કરી સામાન્ય અવયવ \\( e^x \\) બહાર કાઢો."
+        },
+        "math": "= x e^x - e^x + C = e^x (x - 1) + C",
+        "reason": {
+          "en": "Factoring \\( e^x \\) from both terms.",
+          "gu": "બંને પદોમાંથી \\( e^x \\) સામાન્ય લેતાં."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "e^x (x - 1) + C",
+      "gu": "e^x (x - 1) + C"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Editorial Review",
+    "verifiedDate": "2026-10-15",
+    "practiceOptions": [
+      {
+        "text": "e^x(x - 1) + C",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct: \\( x e^x - \\int e^x dx = x e^x - e^x + C = e^x(x-1) + C \\).",
+          "gu": "સાચો જવાબ: \\( x e^x - \\int e^x dx = x e^x - e^x + C = e^x(x-1) + C \\)."
+        }
+      },
+      {
+        "text": "e^x(x + 1) + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect sign in parentheses. Derivative of \\( e^x(x+1) \\) is \\( x e^x + 2e^x \\).",
+          "gu": "કૌંસમાં ચિહ્ન ખોટું છે. \\( e^x(x+1) \\) નું વિકલન \\( x e^x + 2e^x \\) થાય."
+        }
+      },
+      {
+        "text": "\\frac{x^2}{2} e^x + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. You cannot integrate product of functions as product of integrals.",
+          "gu": "ખોટો જવાબ. ગુણાકારનું સંકલન સીધું અલગ-અલગ ગુણાકાર સ્વરૂપે ન કરી શકાય."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch07-ex7.2-q01",
+    "chapterNumber": "07",
+    "exerciseNumber": "7.2",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Integration by Substitution",
+      "gu": "આદેશની રીતથી સંકલન"
+    },
+    "originalQuestion": {
+      "en": "Find the integral: \\( \\int \\frac{2x}{1 + x^2} \\, dx \\)",
+      "gu": "સંકલિત શોધો: \\( \\int \\frac{2x}{1 + x^2} \\, dx \\)"
+    },
+    "given": {
+      "en": ["Numerator \\( 2x \\) is the exact derivative of denominator \\( 1 + x^2 \\)."],
+      "gu": ["અંશ \\( 2x \\) એ છેદ \\( 1 + x^2 \\) નું ચોક્કસ વિકલિત છે."]
+    },
+    "requiredResult": {
+      "en": "Evaluate \\( \\int \\frac{2x}{1 + x^2} \\, dx \\).",
+      "gu": "\\( \\int \\frac{2x}{1 + x^2} \\, dx \\) નું મૂલ્ય મેળવો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Standard substitution formula: \\( \\int \\frac{f'(x)}{f(x)} \\, dx = \\log |f(x)| + C \\)",
+        "Or setting \\( t = f(x) \\implies dt = f'(x) \\, dx \\)."
+      ],
+      "gu": [
+        "પ્રમાણિત આદેશ સૂત્ર: \\( \\int \\frac{f'(x)}{f(x)} \\, dx = \\log |f(x)| + C \\)",
+        "અથવા \\( t = f(x) \\implies dt = f'(x) \\, dx \\) આદેશ લેતાં."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Substitute \\( t = 1 + x^2 \\).",
+          "gu": "\\( t = 1 + x^2 \\) આદેશ લો."
+        },
+        "math": "t = 1 + x^2 \\implies \\frac{dt}{dx} = 2x \\implies dt = 2x \\, dx",
+        "reason": {
+          "en": "Differentiating both sides with respect to \\( x \\).",
+          "gu": "બંને બાજુ \\( x \\) સાપેક્ષ વિકલન કરતાં."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Rewrite the integral in terms of variable \\( t \\).",
+          "gu": "સંકલિતને ચલ \\( t \\) ના સ્વરૂપમાં ફેરવો."
+        },
+        "math": "\\int \\frac{2x}{1 + x^2} \\, dx = \\int \\frac{1}{t} \\, dt",
+        "reason": {
+          "en": "Replacing \\( 2x \\, dx \\) with \\( dt \\) and \\( 1 + x^2 \\) with \\( t \\).",
+          "gu": "\\( 2x \\, dx \\) ની જગ્યાએ \\( dt \\) અને \\( 1+x^2 \\) ની જગ્યાએ \\( t \\) મૂકતાં."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Integrate \\( \\frac{1}{t} \\) and substitute back \\( t = 1 + x^2 \\).",
+          "gu": "\\( \\frac{1}{t} \\) નું સંકલન કરી \\( t = 1 + x^2 \\) ની મૂળ કિંમત પાછી મૂકો."
+        },
+        "math": "= \\log |t| + C = \\log |1 + x^2| + C = \\log(1 + x^2) + C",
+        "reason": {
+          "en": "Since \\( 1 + x^2 > 0 \\) for all real \\( x \\), the absolute value sign is optional.",
+          "gu": "દરેક વાસ્તવિક \\( x \\) માટે \\( 1 + x^2 > 0 \\) હોવાથી માનાંક જરૂરી નથી."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "\\log(1 + x^2) + C",
+      "gu": "\\log(1 + x^2) + C"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Editorial Review",
+    "verifiedDate": "2026-10-15",
+    "practiceOptions": [
+      {
+        "text": "\\log(1 + x^2) + C",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. Using \\( \\int \\frac{f'(x)}{f(x)} dx = \\log |f(x)| + C \\).",
+          "gu": "સાચું. \\( \\int \\frac{f'(x)}{f(x)} dx = \\log |f(x)| + C \\) નો સીધો ઉપયોગ."
+        }
+      },
+      {
+        "text": "\\frac{1}{1 + x^2} + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. This would be the derivative of \\( \\tan^{-1} x \\), not the integral.",
+          "gu": "ખોટું. આ \\( \\tan^{-1} x \\) નું વિકલિત છે, સંકલિત નહીં."
+        }
+      },
+      {
+        "text": "2x \\log(1 + x^2) + C",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. \\( 2x \\, dx \\) is absorbed into \\( dt \\).",
+          "gu": "ખોટું. \\( 2x \\, dx \\) નો સમાવેશ \\( dt \\) માં થઈ જાય છે."
+        }
+      }
+    ]
+  }
+]
