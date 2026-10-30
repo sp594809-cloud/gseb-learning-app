@@ -1,0 +1,188 @@
+[
+  {
+    "schemaVersion": "2.0",
+    "id": "ch02-ex2.1-q01",
+    "chapterNumber": "02",
+    "exerciseNumber": "2.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Principal Value of Inverse Trigonometric Functions",
+      "gu": "ત્રિકોણમિતીય પ્રતિવિધેયનું મુખ્ય મૂલ્ય"
+    },
+    "questionType": "fraction",
+    "originalQuestion": {
+      "en": "Find the principal value of \\( \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\).",
+      "gu": "\\( \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\) નું મુખ્ય કિંમત (મૂલ્ય) શોધો."
+    },
+    "given": {
+      "en": [
+        "Expression: \\( y = \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\)",
+        "Principal branch of \\( \\sin^{-1}(x) \\) is \\( \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\)"
+      ],
+      "gu": [
+        "પદાવલિ: \\( y = \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\)",
+        "\\( \\sin^{-1}(x) \\) ની મુખ્ય કિંમત શાખા \\( \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\) છે."
+      ]
+    },
+    "requiredResult": {
+      "en": "Evaluate the exact angle \\( y \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\).",
+      "gu": "\\( y \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\) નું ચોક્કસ મૂલ્ય મેળવો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "\\( \\sin^{-1}(-x) = -\\sin^{-1}(x) \\; \\text{for } x \\in [-1, 1] \\)",
+        "\\( \\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2} \\implies \\sin^{-1}\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{6} \\)"
+      ],
+      "gu": [
+        "\\( x \\in [-1, 1] \\) માટે \\( \\sin^{-1}(-x) = -\\sin^{-1}(x) \\)",
+        "\\( \\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2} \\implies \\sin^{-1}\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{6} \\)"
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Let \\( y = \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\). By definition of inverse sine:",
+          "gu": "ધારો કે \\( y = \\sin^{-1}\\left(-\\frac{1}{2}\\right) \\). પ્રતિવિધેયની વ્યાખ્યા મુજબ:"
+        },
+        "math": "\\sin(y) = -\\frac{1}{2}, \\quad y \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]",
+        "reason": {
+          "en": "The range of principal value branch of sine inverse is [-pi/2, pi/2].",
+          "gu": "મુખ્ય કિંમત શાખાનો વિસ્તાર [-pi/2, pi/2] છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Express \\( \\frac{1}{2} \\) in terms of standard sine angle:",
+          "gu": "\\( \\frac{1}{2} \\) ને પ્રમાણિત સાઇન ખૂણા સ્વરૂપે લખો:"
+        },
+        "math": "\\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2} \\implies -\\frac{1}{2} = -\\sin\\left(\\frac{\\pi}{6}\\right)",
+        "reason": {
+          "en": "Standard trigonometric ratio for 30 degrees (pi/6 radians).",
+          "gu": "30 અંશ (pi/6 રેડિયન) માટે પ્રમાણિત ગુણોત્તર."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Use the odd property of sine function: \\( -\\sin(\\theta) = \\sin(-\\theta) \\):",
+          "gu": "સાઇન વિધેયના અયુગ્મ ગુણધર્મ \\( -\\sin(\\theta) = \\sin(-\\theta) \\) નો ઉપયોગ કરો:"
+        },
+        "math": "\\sin(y) = \\sin\\left(-\\frac{\\pi}{6}\\right)",
+        "reason": {
+          "en": "Sine is an odd function.",
+          "gu": "સાઇન અયુગ્મ વિધેય છે."
+        }
+      },
+      {
+        "stepNumber": 4,
+        "explanation": {
+          "en": "Check if \\( -\\frac{\\pi}{6} \\) lies in the principal value branch:",
+          "gu": "ચકાસો કે શું \\( -\\frac{\\pi}{6} \\) મુખ્ય કિંમત શાખામાં સમાવિષ્ટ છે:"
+        },
+        "math": "-\\frac{\\pi}{6} \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]",
+        "reason": {
+          "en": "-pi/6 is between -pi/2 and pi/2, hence valid.",
+          "gu": "-pi/6 એ -pi/2 અને pi/2 વચ્ચે આવતું હોવાથી યોગ્ય છે."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "-\\frac{\\pi}{6}",
+      "gu": "-\\frac{\\pi}{6}"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Board Reviewer",
+    "verifiedDate": "2026-10-30",
+    "graph": {
+      "type": "function",
+      "title": {
+        "en": "Graph of y = arcsin(x) on Domain [-1, 1]",
+        "gu": "પ્રદેશ [-1, 1] પર y = arcsin(x) નો આલેખ"
+      },
+      "xRange": [-1.5, 1.5],
+      "yRange": [-2.0, 2.0],
+      "xLabel": "x",
+      "yLabel": "y",
+      "curves": [
+        {
+          "fn": "asin(x)",
+          "label": "y = arcsin(x)",
+          "color": "#4f46e5",
+          "domain": [-1, 1]
+        }
+      ],
+      "points": [
+        {
+          "x": -0.5,
+          "y": -0.5236,
+          "label": "(-1/2, -π/6)",
+          "color": "#ef4444"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "label": "(0, 0)",
+          "color": "#10b981"
+        },
+        {
+          "x": 0.5,
+          "y": 0.5236,
+          "label": "(1/2, π/6)",
+          "color": "#4f46e5"
+        }
+      ]
+    },
+    "hints": {
+      "en": [
+        "Recall that the principal value branch of sin^-1 is [-pi/2, pi/2].",
+        "Use sin^-1(-x) = -sin^-1(x).",
+        "Find the angle whose sine is 1/2."
+      ],
+      "gu": [
+        "યાદ કરો કે sin^-1 ની મુખ્ય કિંમત શાખા [-pi/2, pi/2] છે.",
+        "સૂત્ર sin^-1(-x) = -sin^-1(x) નો ઉપયોગ કરો.",
+        "જે ખૂણાનું મૂલ્ય sin માટે 1/2 થતું હોય તે શોધો."
+      ]
+    },
+    "practiceValidation": {
+      "type": "fraction",
+      "expectedAlgebraic": "-pi/6"
+    },
+    "practiceOptions": [
+      {
+        "text": "\\( -\\frac{\\pi}{6} \\)",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct! sin(-pi/6) = -1/2 and -pi/6 is in [-pi/2, pi/2].",
+          "gu": "સાચું! sin(-pi/6) = -1/2 અને -pi/6 એ [-pi/2, pi/2] માં છે."
+        }
+      },
+      {
+        "text": "\\( \\frac{\\pi}{6} \\)",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. sin(pi/6) is positive 1/2, but we need -1/2.",
+          "gu": "ખોટું. sin(pi/6) = +1/2 થાય, પરંતુ આપણને -1/2 જોઈએ છે."
+        }
+      },
+      {
+        "text": "\\( \\frac{5\\pi}{6} \\)",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. 5pi/6 is not in the principal value branch [-pi/2, pi/2].",
+          "gu": "ખોટું. 5pi/6 એ મુખ્ય કિંમત શાખા [-pi/2, pi/2] ની બહાર છે."
+        }
+      },
+      {
+        "text": "\\( -\\frac{\\pi}{3} \\)",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. sin(-pi/3) = -sqrt(3)/2, not -1/2.",
+          "gu": "ખોટું. sin(-pi/3) = -sqrt(3)/2 થાય, -1/2 નહિ."
+        }
+      }
+    ]
+  }
+]

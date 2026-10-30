@@ -1,6 +1,15 @@
 export type Language = 'en' | 'gu';
 
-export type VerificationStatus = 'verified' | 'unverified' | 'under_review';
+export type VerificationStatus = 'missing' | 'draft' | 'needs_review' | 'verified' | 'published';
+
+export type QuestionType =
+  | 'mcq'
+  | 'multi_select'
+  | 'numerical'
+  | 'fraction'
+  | 'algebraic'
+  | 'proof'
+  | 'multi_part';
 
 export interface BilingualText {
   en: string;
@@ -19,12 +28,23 @@ export interface SolutionStep {
   reason?: BilingualText; // Optional reason/justification e.g. "બંને બાજુ વર્ગ કરતાં" / "Squaring both sides"
 }
 
+export interface ParameterSlider {
+  name: string; // e.g. "a", "k"
+  label: BilingualText;
+  min: number;
+  max: number;
+  step: number;
+  defaultValue: number;
+}
+
 export interface GraphCurve {
-  fn?: string;
+  fn?: string; // Expression in terms of x and sliders, e.g. "a * sin(x)"
   points?: Array<[number, number]>;
   label?: string;
   color?: string;
   dashed?: boolean;
+  domain?: [number, number]; // Explicit domain restriction e.g. [-1, 1] for arcsin
+  discontinuities?: number[]; // Points of discontinuity e.g. [0] for 1/x
 }
 
 export interface GraphPoint {
@@ -32,6 +52,7 @@ export interface GraphPoint {
   y: number;
   label?: string;
   color?: string;
+  isOpenCircle?: boolean; // For removable/jump discontinuities
 }
 
 export interface GraphLine {
@@ -62,6 +83,15 @@ export interface GraphData {
   points?: GraphPoint[];
   lines?: GraphLine[];
   regions?: GraphRegion[];
+  sliders?: ParameterSlider[];
+  interactiveTangent?: boolean; // Enables scrubbable tangent line visualizer
+  interactiveLimits?: {
+    point: number;
+    leftLimit: number;
+    rightLimit: number;
+    value?: number;
+  };
+  extremaPoints?: Array<{ x: number; y: number; type: 'min' | 'max'; label?: string }>;
 }
 
 export interface TableData {
@@ -78,37 +108,58 @@ export interface DiagramData {
 }
 
 export interface PracticeOption {
+  id?: string;
   text: string;
   isCorrect: boolean;
   explanation: BilingualText;
 }
 
+export interface PracticeValidationConfig {
+  type: QuestionType;
+  expectedNumerical?: number;
+  tolerance?: number; // e.g. 0.01
+  expectedFraction?: {
+    numerator: number;
+    denominator: number;
+  };
+  expectedAlgebraic?: string; // Standard algebraic expression to check equivalence against
+  variableNames?: string[]; // e.g. ["x"] or ["x", "y"]
+  domainSampleRange?: [number, number]; // e.g. [0.1, 5] for log
+}
+
 export interface SolutionItem {
-  id: string; // Stable unique identifier e.g. "ch07-ex7.6-q01"
-  chapterNumber: string; // e.g. "07"
-  exerciseNumber: string; // e.g. "7.6" or "સ્વાધ્યાય 7.6"
+  schemaVersion?: string; // e.g. "2.0"
+  id: string; // Stable unique identifier e.g. "ch01-ex1.1-q01"
+  chapterNumber: string; // e.g. "01"
+  exerciseNumber: string; // e.g. "1.1" or "સ્વાધ્યાય 1.1"
   questionNumber: string; // e.g. "1" or "1(i)"
-  topic: BilingualText; // Topic name e.g. "Integration by parts" / "ભાગશઃ સંકલન"
+  topic: BilingualText; // Topic name e.g. "Equivalence Relations" / "સામ્ય સંબંધ"
+  questionType?: QuestionType; // Question classification
   
-  // Task 2 requirements:
+  // Content details
   originalQuestion: BilingualText; // Question text with LaTeX
   given: BilingualList | BilingualText; // Given information
   requiredResult: BilingualText; // Required result (To Find / To Prove)
   formulaOrTheorem: BilingualList | BilingualText; // Formulas or theorems used
   steps: SolutionStep[]; // Complete step-by-step solution
   finalAnswer: BilingualText | string; // Final answer clearly stated
-  verificationStatus: VerificationStatus; // 'verified' | 'unverified' | 'under_review'
-  verifiedBy?: string; // Verifier name
-  verifiedDate?: string; // Date of verification
+  alternativeMethods?: SolutionStep[][]; // Alternative solution approaches
   
-  // Rich media support:
+  // Verification and Status
+  verificationStatus: VerificationStatus; // 'missing' | 'draft' | 'needs_review' | 'verified' | 'published'
+  verifiedBy?: string; // Verifier name or "ChatGPT Verified"
+  verifiedDate?: string; // Date of verification (ISO format)
+  reviewNotes?: string;
+  
+  // Rich media support
   subQuestions?: SolutionItem[];
   graph?: GraphData;
   diagram?: DiagramData;
   table?: TableData;
   
-  // Practice mode support:
+  // Practice mode support
   practiceOptions?: PracticeOption[];
+  practiceValidation?: PracticeValidationConfig;
   hints?: BilingualList;
 }
 
@@ -118,4 +169,39 @@ export interface ChapterMeta {
   part: 1 | 2; // GSEB Part 1 or Part 2
   description: BilingualText;
   exercises: string[];
+}
+
+// Grok's Raw PDF Extraction Inventory Format
+export interface GrokQuestionInventoryItem {
+  id: string;
+  chapterNumber: string;
+  exerciseNumber: string;
+  questionNumber: string;
+  rawQuestionGujarati: string;
+  rawQuestionEnglish?: string;
+  pageNumber?: number;
+  hasFigure?: boolean;
+  questionType?: string;
+  options?: string[];
+  notes?: string;
+}
+
+// Importer Reporting
+export interface ImportReport {
+  timestamp: string;
+  totalParsed: number;
+  importedCount: number;
+  updatedCount: number;
+  skippedCount: number;
+  errors: Array<{
+    itemIndex: number;
+    id?: string;
+    field?: string;
+    message: string;
+  }>;
+  warnings: Array<{
+    itemIndex: number;
+    id?: string;
+    message: string;
+  }>;
 }

@@ -1,0 +1,170 @@
+[
+  {
+    "schemaVersion": "2.0",
+    "id": "ch05-ex5.1-q01",
+    "chapterNumber": "05",
+    "exerciseNumber": "5.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Continuity of a Function at a Point",
+      "gu": "બિંદુ આગળ વિધેયનું સાતત્ય"
+    },
+    "questionType": "proof",
+    "originalQuestion": {
+      "en": "Prove that the function \\( f(x) = 5x - 3 \\) is continuous at \\( x = 0 \\), \\( x = -3 \\), and \\( x = 5 \\).",
+      "gu": "સાબિત કરો કે વિધેય \\( f(x) = 5x - 3 \\) એ \\( x = 0 \\), \\( x = -3 \\) અને \\( x = 5 \\) આગળ સતત છે."
+    },
+    "given": {
+      "en": [
+        "Function: \\( f(x) = 5x - 3 \\)",
+        "Points to check: \\( x = 0, \\; x = -3, \\; x = 5 \\)"
+      ],
+      "gu": [
+        "વિધેય: \\( f(x) = 5x - 3 \\)",
+        "ચકાસણી માટેના બિંદુઓ: \\( x = 0, \\; x = -3, \\; x = 5 \\)"
+      ]
+    },
+    "requiredResult": {
+      "en": "Demonstrate that \\( \\lim_{x \\to c} f(x) = f(c) \\) for each given value of \\( c \\).",
+      "gu": "દરેક બિંદુ \\( c \\) માટે \\( \\lim_{x \\to c} f(x) = f(c) \\) સાબિત કરો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "A function \\( f \\) is continuous at \\( x = c \\) if \\( \\lim_{x \\to c} f(x) = f(c) \\).",
+        "Every polynomial function is continuous at all points in its domain \\( \\mathbb{R} \\)."
+      ],
+      "gu": [
+        "જો \\( \\lim_{x \\to c} f(x) = f(c) \\) થાય, તો વિધેય \\( f \\) એ \\( x = c \\) આગળ સતત કહેવાય.",
+        "દરેક બહુપદી વિધેય તેના પ્રદેશ \\( \\mathbb{R} \\) ના પ્રત્યેક બિંદુએ સતત હોય છે."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Check continuity at \\( x = 0 \\): Compute \\( f(0) \\) and \\( \\lim_{x \\to 0} f(x) \\).",
+          "gu": "\\( x = 0 \\) આગળ સાતત્ય: \\( f(0) \\) અને \\( \\lim_{x \\to 0} f(x) \\) નું મૂલ્ય મેળવો."
+        },
+        "math": "f(0) = 5(0) - 3 = -3, \\quad \\lim_{x \\to 0} (5x - 3) = 5(0) - 3 = -3 \\implies \\lim_{x \\to 0} f(x) = f(0)",
+        "reason": {
+          "en": "Limit equals the function value at x = 0.",
+          "gu": "લક્ષનું મૂલ્ય વિધેયના મૂલ્ય જેટલું જ મળે છે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Check continuity at \\( x = -3 \\): Compute \\( f(-3) \\) and \\( \\lim_{x \\to -3} f(x) \\).",
+          "gu": "\\( x = -3 \\) આગળ સાતત્ય: \\( f(-3) \\) અને \\( \\lim_{x \\to -3} f(x) \\) નું મૂલ્ય મેળવો."
+        },
+        "math": "f(-3) = 5(-3) - 3 = -18, \\quad \\lim_{x \\to -3} (5x - 3) = -18 \\implies \\lim_{x \\to -3} f(x) = f(-3)",
+        "reason": {
+          "en": "Limit equals function value at x = -3.",
+          "gu": "x = -3 આગળ લક્ષનું મૂલ્ય વિધેયના મૂલ્ય બરાબર છે."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Check continuity at \\( x = 5 \\): Compute \\( f(5) \\) and \\( \\lim_{x \\to 5} f(x) \\).",
+          "gu": "\\( x = 5 \\) આગળ સાતત્ય: \\( f(5) \\) અને \\( \\lim_{x \\to 5} f(x) \\) નું મૂલ્ય મેળવો."
+        },
+        "math": "f(5) = 5(5) - 3 = 22, \\quad \\lim_{x \\to 5} (5x - 3) = 22 \\implies \\lim_{x \\to 5} f(x) = f(5)",
+        "reason": {
+          "en": "Limit equals function value at x = 5.",
+          "gu": "x = 5 આગળ લક્ષ અને વિધેય મૂલ્ય સમાન છે."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "f(x) is continuous at x = 0, x = -3, and x = 5.",
+      "gu": "વિધેય f(x) એ x = 0, x = -3 અને x = 5 આગળ સતત છે."
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Board Reviewer",
+    "verifiedDate": "2026-10-30",
+    "graph": {
+      "type": "function",
+      "title": {
+        "en": "Continuous Linear Function f(x) = 5x - 3",
+        "gu": "સતત સુરેખ વિધેય f(x) = 5x - 3 નો આલેખ"
+      },
+      "xRange": [-4, 6],
+      "yRange": [-20, 25],
+      "xLabel": "x",
+      "yLabel": "f(x)",
+      "curves": [
+        {
+          "fn": "5*x - 3",
+          "label": "f(x) = 5x - 3",
+          "color": "#4f46e5"
+        }
+      ],
+      "points": [
+        {
+          "x": -3,
+          "y": -18,
+          "label": "(-3, -18)",
+          "color": "#ef4444"
+        },
+        {
+          "x": 0,
+          "y": -3,
+          "label": "(0, -3)",
+          "color": "#10b981"
+        },
+        {
+          "x": 5,
+          "y": 22,
+          "label": "(5, 22)",
+          "color": "#8b5cf6"
+        }
+      ],
+      "interactiveTangent": true,
+      "interactiveLimits": {
+        "point": 0,
+        "leftLimit": -3,
+        "rightLimit": -3,
+        "value": -3
+      }
+    },
+    "hints": {
+      "en": [
+        "A function is continuous at c if lim_{x -> c} f(x) = f(c).",
+        "Since f(x) = 5x - 3 is a polynomial, limits can be found by direct substitution.",
+        "Calculate f(0), f(-3), and f(5) and compare with the respective limits."
+      ],
+      "gu": [
+        "જો lim_{x -> c} f(x) = f(c) થાય તો વિધેય બિંદુ c આગળ સતત કહેવાય.",
+        "f(x) = 5x - 3 બહુપદી હોવાથી સીધી કિંમત મૂકીને લક્ષ મેળવી શકાય.",
+        "f(0), f(-3) અને f(5) ગણીને સંબંધિત લક્ષ સાથે સરખાવો."
+      ]
+    },
+    "practiceOptions": [
+      {
+        "text": "વિધેય ત્રણેય બિંદુઓ આગળ સતત છે",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. f(x) is a polynomial function, hence continuous everywhere on R.",
+          "gu": "સાચું. f(x) બહુપદી વિધેય હોવાથી સમગ્ર વાસ્તવિક સંખ્યા ગણ R પર સતત છે."
+        }
+      },
+      {
+        "text": "માત્ર x = 0 આગળ સતત છે",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. It is also continuous at x = -3 and x = 5.",
+          "gu": "ખોટું. તે x = -3 અને x = 5 આગળ પણ સતત છે."
+        }
+      },
+      {
+        "text": "કોઈ પણ બિંદુ આગળ સતત નથી",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. There are no discontinuities or division by zero.",
+          "gu": "ખોટું. અહીં છેદ શૂન્ય થતો નથી કે કોઈ અસતતતા નથી."
+        }
+      }
+    ]
+  }
+]

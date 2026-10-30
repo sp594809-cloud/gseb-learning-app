@@ -1,15 +1,21 @@
-import type { SolutionItem, ChapterMeta, Language } from '../types/solution';
+import type { SolutionItem, ChapterMeta, Language, VerificationStatus } from '../types/solution';
 import chaptersData from '../data/solutions/chapters.json' with { type: 'json' };
+import ch01Solutions from '../data/solutions/chapter-01.json' with { type: 'json' };
+import ch02Solutions from '../data/solutions/chapter-02.json' with { type: 'json' };
 import ch03Solutions from '../data/solutions/chapter-03.json' with { type: 'json' };
+import ch04Solutions from '../data/solutions/chapter-04.json' with { type: 'json' };
+import ch05Solutions from '../data/solutions/chapter-05.json' with { type: 'json' };
 import ch06Solutions from '../data/solutions/chapter-06.json' with { type: 'json' };
 import ch07Solutions from '../data/solutions/chapter-07.json' with { type: 'json' };
 import ch10Solutions from '../data/solutions/chapter-10.json' with { type: 'json' };
 import ch12Solutions from '../data/solutions/chapter-12.json' with { type: 'json' };
 import { lessons } from '../data/lessons.ts';
+import { migrateSolutionToV2 } from './schema.ts';
 
-// Convert existing legacy lessons from lessons.ts into the reusable SolutionItem format to preserve working features
+// Adapt legacy prototype lessons into SolutionItem format
 function adaptLegacyLesson(lesson: typeof lessons[0]): SolutionItem {
   return {
+    schemaVersion: '2.0',
     id: `legacy-${lesson.id}`,
     chapterNumber: lesson.chapter,
     exerciseNumber: 'ઉદાહરણ / Example',
@@ -18,6 +24,7 @@ function adaptLegacyLesson(lesson: typeof lessons[0]): SolutionItem {
       en: lesson.subtitle.en,
       gu: lesson.subtitle.gu,
     },
+    questionType: 'mcq',
     originalQuestion: {
       en: `Find the value: \\( ${lesson.worked.question} \\)`,
       gu: `મૂલ્ય શોધો: \\( ${lesson.worked.question} \\)`,
@@ -48,6 +55,7 @@ function adaptLegacyLesson(lesson: typeof lessons[0]): SolutionItem {
     },
     verificationStatus: 'verified',
     verifiedBy: 'Original Prototype Verification',
+    verifiedDate: '2026-08-01',
     practiceOptions: lesson.questions.flatMap((q) =>
       q.options.map((opt, i) => ({
         text: opt,
@@ -63,15 +71,22 @@ function adaptLegacyLesson(lesson: typeof lessons[0]): SolutionItem {
 
 const legacyAdaptedSolutions: SolutionItem[] = lessons.map(adaptLegacyLesson);
 
-// Aggregate all solutions with stable IDs
-export const allSolutions: SolutionItem[] = [
-  ...(ch07Solutions as SolutionItem[]),
+// Combined static solutions collection
+const rawSolutionItems: SolutionItem[] = [
+  ...(ch01Solutions as SolutionItem[]),
+  ...(ch02Solutions as SolutionItem[]),
   ...(ch03Solutions as SolutionItem[]),
+  ...(ch04Solutions as SolutionItem[]),
+  ...(ch05Solutions as SolutionItem[]),
   ...(ch06Solutions as SolutionItem[]),
+  ...(ch07Solutions as SolutionItem[]),
   ...(ch10Solutions as SolutionItem[]),
   ...(ch12Solutions as SolutionItem[]),
   ...legacyAdaptedSolutions,
 ];
+
+// Ensure all items are migrated to v2 format
+export const allSolutions: SolutionItem[] = rawSolutionItems.map(migrateSolutionToV2);
 
 export const allChapters: ChapterMeta[] = chaptersData as ChapterMeta[];
 
@@ -89,7 +104,6 @@ export function getAllSolutions(): SolutionItem[] {
 }
 
 export function getSolutionById(id: string): SolutionItem | undefined {
-  // Search main solutions and subquestions
   for (const sol of allSolutions) {
     if (sol.id === id) return sol;
     if (sol.subQuestions) {
@@ -114,24 +128,38 @@ export function getSolutionsByExercise(chapterNumber: string, exerciseNumber: st
   );
 }
 
+export function getSolutionsByStatus(status: VerificationStatus): SolutionItem[] {
+  return allSolutions.filter((s) => s.verificationStatus === status);
+}
+
+export function getNextSolution(currentId: string): SolutionItem | undefined {
+  const idx = allSolutions.findIndex((s) => s.id === currentId);
+  if (idx >= 0 && idx < allSolutions.length - 1) {
+    return allSolutions[idx + 1];
+  }
+  return undefined;
+}
+
+export function getPrevSolution(currentId: string): SolutionItem | undefined {
+  const idx = allSolutions.findIndex((s) => s.id === currentId);
+  if (idx > 0) {
+    return allSolutions[idx - 1];
+  }
+  return undefined;
+}
+
 export function searchSolutions(query: string, lang: Language = 'gu'): SolutionItem[] {
   if (!query || !query.trim()) return [];
   const q = query.toLowerCase().trim();
 
   return allSolutions.filter((sol) => {
-    // Check chapter number / exercise / question
     if (sol.chapterNumber.includes(q)) return true;
     if (sol.exerciseNumber.toLowerCase().includes(q)) return true;
     if (sol.questionNumber.toLowerCase().includes(q)) return true;
     if (sol.id.toLowerCase().includes(q)) return true;
-
-    // Check topic
     if (sol.topic.en.toLowerCase().includes(q) || sol.topic.gu.toLowerCase().includes(q)) return true;
-
-    // Check question text
     if (sol.originalQuestion.en.toLowerCase().includes(q) || sol.originalQuestion.gu.toLowerCase().includes(q)) return true;
 
-    // Check final answer
     const ansEn = typeof sol.finalAnswer === 'string' ? sol.finalAnswer : sol.finalAnswer.en;
     const ansGu = typeof sol.finalAnswer === 'string' ? sol.finalAnswer : sol.finalAnswer.gu;
     if (ansEn.toLowerCase().includes(q) || ansGu.toLowerCase().includes(q)) return true;

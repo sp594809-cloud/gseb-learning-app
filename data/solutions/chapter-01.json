@@ -1,0 +1,147 @@
+[
+  {
+    "schemaVersion": "2.0",
+    "id": "ch01-ex1.1-q01",
+    "chapterNumber": "01",
+    "exerciseNumber": "1.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Equivalence Relations: Reflexive, Symmetric, and Transitive",
+      "gu": "સામ્ય સંબંધ: સ્વવાચક, સંમિત અને પરંપરિત સંબંધ"
+    },
+    "questionType": "proof",
+    "originalQuestion": {
+      "en": "Determine whether the relation \\( R \\) in the set \\( A = \\{1, 2, 3, \\dots, 13, 14\\} \\) defined as \\( R = \\{(x, y) : 3x - y = 0\\} \\) is reflexive, symmetric, or transitive.",
+      "gu": "ગણ \\( A = \\{1, 2, 3, \\dots, 13, 14\\} \\) પર વ્યાખ્યાયિત સંબંધ \\( R = \\{(x, y) : 3x - y = 0\\} \\) સ્વવાચક, સંમિત કે પરંપરિત છે કે નહિ તે નક્કી કરો."
+    },
+    "given": {
+      "en": [
+        "Set \\( A = \\{1, 2, 3, \\dots, 14\\} \\)",
+        "Relation condition: \\( 3x - y = 0 \\implies y = 3x \\) where \\( x, y \\in A \\)"
+      ],
+      "gu": [
+        "ગણ \\( A = \\{1, 2, 3, \\dots, 14\\} \\)",
+        "સંબંધની શરત: \\( 3x - y = 0 \\implies y = 3x \\) જ્યાં \\( x, y \\in A \\)"
+      ]
+    },
+    "requiredResult": {
+      "en": "Verify whether relation \\( R \\) satisfies reflexivity, symmetry, and transitivity.",
+      "gu": "સંબંધ \\( R \\) સ્વવાચકતા, સંમિતતા અને પરંપરિતતાના ગુણધર્મો સંતોષે છે કે નહિ તેની ચકાસણી કરો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "Reflexive: \\( (x, x) \\in R, \\; \\forall x \\in A \\)",
+        "Symmetric: \\( (x, y) \\in R \\implies (y, x) \\in R \\)",
+        "Transitive: \\( (x, y) \\in R \\text{ and } (y, z) \\in R \\implies (x, z) \\in R \\)"
+      ],
+      "gu": [
+        "સ્વવાચક સંબંધ: પ્રત્યેક \\( x \\in A \\) માટે \\( (x, x) \\in R \\) થવું જોઈએ.",
+        "સંમિત સંબંધ: \\( (x, y) \\in R \\implies (y, x) \\in R \\) થવું જોઈએ.",
+        "પરંપરિત સંબંધ: \\( (x, y) \\in R \\) અને \\( (y, z) \\in R \\implies (x, z) \\in R \\) થવું જોઈએ."
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "List the explicit ordered pairs of \\( R \\) satisfying \\( y = 3x \\) within set \\( A \\).",
+          "gu": "ગણ \\( A \\) ની મર્યાદામાં \\( y = 3x \\) શરત સંતોષતી ક્રમયુક્ત જોડો મેળવો."
+        },
+        "math": "R = \\{(1, 3), (2, 6), (3, 9), (4, 12)\\}",
+        "reason": {
+          "en": "For \\( x = 5 \\), \\( y = 15 \\notin A \\), so pairs stop at \\( x = 4 \\).",
+          "gu": "\\( x = 5 \\) માટે \\( y = 15 \\notin A \\) હોવાથી માત્ર 4 જોડીઓ મળશે."
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Check Reflexivity: For \\( 1 \\in A \\), does \\( (1, 1) \\in R \\)?",
+          "gu": "સ્વવાચકતાની ચકાસણી: \\( 1 \\in A \\) માટે \\( (1, 1) \\in R \\) છે કે નહિ?"
+        },
+        "math": "3(1) - 1 = 2 \\neq 0 \\implies (1, 1) \\notin R",
+        "reason": {
+          "en": "Since \\( (1, 1) \\notin R \\), \\( R \\) is not reflexive.",
+          "gu": "\\( (1, 1) \\notin R \\) હોવાથી \\( R \\) સ્વવાચક સંબંધ નથી."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Check Symmetry: Note that \\( (1, 3) \\in R \\), check if \\( (3, 1) \\in R \\).",
+          "gu": "સંમિતતાની ચકાસણી: \\( (1, 3) \\in R \\) છે, પરંતુ \\( (3, 1) \\in R \\) થાય છે?"
+        },
+        "math": "(1, 3) \\in R, \\quad \\text{પરંતુ } 3(3) - 1 = 8 \\neq 0 \\implies (3, 1) \\notin R",
+        "reason": {
+          "en": "Because \\( (1, 3) \\in R \\) but \\( (3, 1) \\notin R \\), \\( R \\) is not symmetric.",
+          "gu": "\\( (1, 3) \\in R \\) પરંતુ \\( (3, 1) \\notin R \\) હોવાથી \\( R \\) સંમિત સંબંધ નથી."
+        }
+      },
+      {
+        "stepNumber": 4,
+        "explanation": {
+          "en": "Check Transitivity: Notice \\( (1, 3) \\in R \\) and \\( (3, 9) \\in R \\). Check if \\( (1, 9) \\in R \\).",
+          "gu": "પરંપરિતતાની ચકાસણી: \\( (1, 3) \\in R \\) અને \\( (3, 9) \\in R \\) છે. શું \\( (1, 9) \\in R \\) છે?"
+        },
+        "math": "(1, 3) \\in R \\text{ અને } (3, 9) \\in R, \\quad \\text{પરંતુ } 3(1) - 9 = -6 \\neq 0 \\implies (1, 9) \\notin R",
+        "reason": {
+          "en": "Therefore, \\( R \\) is not transitive.",
+          "gu": "આથી \\( R \\) પરંપરિત સંબંધ નથી."
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "The relation R is neither reflexive, nor symmetric, nor transitive.",
+      "gu": "આપેલ સંબંધ R સ્વવાચક નથી, સંમિત નથી અને પરંપરિત પણ નથી."
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Expert Committee",
+    "verifiedDate": "2026-10-30",
+    "hints": {
+      "en": [
+        "First write down all elements of R explicitly: (1, 3), (2, 6), (3, 9), (4, 12).",
+        "Check if (1, 1) satisfies 3(1) - 1 = 0.",
+        "Check if (1, 3) in R implies (3, 1) in R."
+      ],
+      "gu": [
+        "સૌપ્રથમ સંબંધ R ના તમામ ઘટકો યાદીની રીતે લખો: (1, 3), (2, 6), (3, 9), (4, 12).",
+        "ચકાસો કે શું (1, 1) માટે 3(1) - 1 = 0 થાય છે?",
+        "ચકાસો કે (1, 3) પરથી શું (3, 1) R માં છે?"
+      ]
+    },
+    "practiceOptions": [
+      {
+        "text": "સ્વવાચક, સંમિત અને પરંપરિત છે (Equivalence relation)",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. None of (x, x) are present in R, so it fails all three tests.",
+          "gu": "ખોટું. R માં (x, x) પ્રકારનો કોઈ ઘટક નથી, તેથી તે કોઈ પણ શરત સંતોષતો નથી."
+        }
+      },
+      {
+        "text": "માત્ર સ્વવાચક છે",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. (1, 1) is not in R because 3(1) - 1 = 2 != 0.",
+          "gu": "ખોટું. (1, 1) R માં નથી કારણ કે 3(1) - 1 = 2 != 0."
+        }
+      },
+      {
+        "text": "સ્વવાચક નથી, સંમિત નથી અને પરંપરિત પણ નથી",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct. It fails reflexivity (1,1 not in R), symmetry ((1,3) in R but (3,1) not in R), and transitivity ((1,3), (3,9) in R but (1,9) not in R).",
+          "gu": "સાચું. R સ્વવાચક નથી (1,1 નથી), સંમિત નથી ((1,3) છે પણ (3,1) નથી), અને પરંપરિત પણ નથી ((1,3), (3,9) છે પણ (1,9) નથી)."
+        }
+      },
+      {
+        "text": "માત્ર સંમિત છે",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. (3, 1) is not in R.",
+          "gu": "ખોટું. (3, 1) R માં નથી."
+        }
+      }
+    ]
+  }
+]

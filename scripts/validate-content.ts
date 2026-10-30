@@ -183,7 +183,14 @@ function validateSolutionItem(sol: SolutionItem, file: string) {
   if (sol.practiceOptions && Array.isArray(sol.practiceOptions)) {
     sol.practiceOptions.forEach((opt, oIdx) => {
       if (opt.text) {
-        testKatexFormula(opt.text, file, id, `practiceOptions[${oIdx}].text`);
+        const formulas = extractFormulas(opt.text);
+        if (formulas.length > 0) {
+          for (const f of formulas) {
+            testKatexFormula(f, file, id, `practiceOptions[${oIdx}].text`);
+          }
+        } else {
+          testKatexFormula(opt.text, file, id, `practiceOptions[${oIdx}].text`);
+        }
       }
       validateBilingualText(opt.explanation, file, id, `practiceOptions[${oIdx}].explanation`);
     });

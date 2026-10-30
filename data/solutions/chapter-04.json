@@ -1,0 +1,134 @@
+[
+  {
+    "schemaVersion": "2.0",
+    "id": "ch04-ex4.1-q01",
+    "chapterNumber": "04",
+    "exerciseNumber": "4.1",
+    "questionNumber": "1",
+    "topic": {
+      "en": "Evaluation of Second-Order Determinants",
+      "gu": "દ્વિતીય કક્ષાના નિશ્ચાયકનું મૂલ્ય"
+    },
+    "questionType": "numerical",
+    "originalQuestion": {
+      "en": "Evaluate the determinant: \\( \\begin{vmatrix} 2 & 4 \\\\ -5 & -1 \\end{vmatrix} \\).",
+      "gu": "નિશ્ચાયકનું મૂલ્ય શોધો: \\( \\begin{vmatrix} 2 & 4 \\\\ -5 & -1 \\end{vmatrix} \\)."
+    },
+    "given": {
+      "en": [
+        "A \\( 2 \\times 2 \\) determinant with entries: \\( a_{11}=2, a_{12}=4, a_{21}=-5, a_{22}=-1 \\)"
+      ],
+      "gu": [
+        "\\( 2 \\times 2 \\) નિશ્ચાયકના ઘટકો: \\( a_{11}=2, a_{12}=4, a_{21}=-5, a_{22}=-1 \\)"
+      ]
+    },
+    "requiredResult": {
+      "en": "Compute the numerical value of the determinant \\( \\Delta \\).",
+      "gu": "નિશ્ચાયક \\( \\Delta \\) નું સાચું સંખ્યાત્મક મૂલ્ય શોધો."
+    },
+    "formulaOrTheorem": {
+      "en": [
+        "\\( \\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = ad - bc \\)"
+      ],
+      "gu": [
+        "\\( 2 \\times 2 \\) નિશ્ચાયકનું વિસ્તરણ: \\( \\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = ad - bc \\)"
+      ]
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "explanation": {
+          "en": "Apply the product of main diagonal elements minus product of off-diagonal elements:",
+          "gu": "અગ્ર વિકર્ણના ઘટકોના ગુણાકારમાંથી પ્રતિ વિકર્ણના ઘટકોનો ગુણાકાર બાદ કરો:"
+        },
+        "math": "\\Delta = (2)(-1) - (4)(-5)",
+        "reason": {
+          "en": "Formula: ad - bc",
+          "gu": "સૂત્ર: ad - bc"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "explanation": {
+          "en": "Perform the multiplications and simplify the signs:",
+          "gu": "ગુણાકાર કરો અને ચિહ્નો સાદુંરૂપ આપો:"
+        },
+        "math": "\\Delta = -2 - (-20) = -2 + 20",
+        "reason": {
+          "en": "Minus times minus is positive.",
+          "gu": "ઋણ અને ઋણનો ગુણાકાર ધન થાય."
+        }
+      },
+      {
+        "stepNumber": 3,
+        "explanation": {
+          "en": "Add the integers to obtain the final determinant value:",
+          "gu": "સરવાળો કરી અંતિમ પરિણામ મેળવો:"
+        },
+        "math": "\\Delta = 18",
+        "reason": {
+          "en": "20 - 2 = 18",
+          "gu": "20 - 2 = 18"
+        }
+      }
+    ],
+    "finalAnswer": {
+      "en": "18",
+      "gu": "18"
+    },
+    "verificationStatus": "verified",
+    "verifiedBy": "GSEB Mathematics Board Reviewer",
+    "verifiedDate": "2026-10-30",
+    "practiceValidation": {
+      "type": "numerical",
+      "expectedNumerical": 18,
+      "tolerance": 0
+    },
+    "hints": {
+      "en": [
+        "Use the cross-multiplication formula: ad - bc.",
+        "Be careful with negative signs: 4 * (-5) = -20.",
+        "-2 - (-20) = -2 + 20."
+      ],
+      "gu": [
+        "ચોકડી ગુણાકારનું સૂત્ર ad - bc વાપરો.",
+        "ઋણ ચિહ્નનું ધ્યાન રાખો: 4 * (-5) = -20.",
+        "-2 - (-20) = -2 + 20 થાય."
+      ]
+    },
+    "practiceOptions": [
+      {
+        "text": "18",
+        "isCorrect": true,
+        "explanation": {
+          "en": "Correct! (2)(-1) - (4)(-5) = -2 + 20 = 18.",
+          "gu": "સાચું! (2)(-1) - (4)(-5) = -2 + 20 = 18."
+        }
+      },
+      {
+        "text": "-22",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. Check the sign: -2 - (+20) would be -22, but here we subtract -20.",
+          "gu": "ખોટું. ચિહ્નની ભૂલ છે: -2 - (-20) = +18 થાય."
+        }
+      },
+      {
+        "text": "22",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. (2)(-1) gives -2, not +2.",
+          "gu": "ખોટું. (2)(-1) = -2 થાય, +2 નહિ."
+        }
+      },
+      {
+        "text": "-18",
+        "isCorrect": false,
+        "explanation": {
+          "en": "Incorrect. The positive term +20 dominates -2.",
+          "gu": "ખોટું. +20 માંથી 2 બાદ કરતાં +18 વધે."
+        }
+      }
+    ]
+  }
+]
