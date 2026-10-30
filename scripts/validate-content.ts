@@ -162,8 +162,10 @@ function validateSolutionItem(sol: SolutionItem, file: string) {
   }
 
   // 9. Verification Status
-  const validStatuses: VerificationStatus[] = ['verified', 'unverified', 'under_review'];
-  if (!validStatuses.includes(sol.verificationStatus)) {
+  const validStatuses: VerificationStatus[] = ['missing', 'draft', 'needs_review', 'verified', 'published'];
+  // Also accept legacy v1 values that migrateSolutionToV2 will have converted
+  const legacyStatuses = ['unverified', 'under_review'];
+  if (!validStatuses.includes(sol.verificationStatus) && !legacyStatuses.includes(sol.verificationStatus as string)) {
     errors.push({
       file,
       id,

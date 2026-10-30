@@ -14,7 +14,11 @@ import { PracticeMode } from '@/components/PracticeMode';
 import { ChapterSidebar } from '@/components/ChapterSidebar';
 import { StudentHeader } from '@/components/StudentHeader';
 import { SearchModal } from '@/components/SearchModal';
+import { MasteryDashboard } from '@/components/MasteryDashboard';
+import { AdminCMS } from '@/components/AdminCMS';
 import { MixedText } from '@/components/MathRenderer';
+import { registerServiceWorker } from '@/lib/offline';
+import { recordStudentAttempt } from '@/lib/progress';
 import {
   BookOpen,
   CheckCircle2,
@@ -37,6 +41,8 @@ export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [filterMode, setFilterMode] = useState<'all' | 'bookmarks' | 'completed'>('all');
+  const [masteryOpen, setMasteryOpen] = useState(false);
+  const [cmsOpen, setCmsOpen] = useState(false);
 
   // Persistence States
   const [bookmarks, setBookmarks] = useState<string[]>([]);
@@ -64,6 +70,8 @@ export default function Home() {
     } catch {
       // ignore parsing error
     }
+    // Register offline service worker
+    registerServiceWorker();
   }, []);
 
   // Save changes to localStorage
@@ -159,6 +167,23 @@ export default function Home() {
     return chapterSolutions.filter((s) => s.exerciseNumber === activeSolution.exerciseNumber);
   }, [activeSolution, chapterSolutions]);
 
+  // Global prev/next solution navigation
+  const globalSolutionIndex = useMemo(() => {
+    if (!activeSolutionId) return -1;
+    return allSolutions.findIndex((s) => s.id === activeSolutionId);
+  }, [activeSolutionId]);
+
+  const hasPrev = globalSolutionIndex > 0;
+  const hasNext = globalSolutionIndex < allSolutions.length - 1;
+
+  const goToPrevSolution = () => {
+    if (hasPrev) handleSelectSolution(allSolutions[globalSolutionIndex - 1]);
+  };
+
+  const goToNextSolution = () => {
+    if (hasNext) handleSelectSolution(allSolutions[globalSolutionIndex + 1]);
+  };
+
   // Calculations for dashboard stats
   const totalSolutions = allSolutions.length;
   const completedCount = completedList.length;
@@ -182,6 +207,8 @@ export default function Home() {
           setFilterMode('bookmarks');
           setSidebarOpen(true);
         }}
+        onOpenMastery={() => setMasteryOpen(true)}
+        onOpenCMS={() => setCmsOpen(true)}
       />
 
       {/* Main Container */}
@@ -301,13 +328,20 @@ export default function Home() {
                   onToggleBookmark={toggleBookmark}
                   isCompleted={completedList.includes(activeSolution.id)}
                   onToggleComplete={toggleComplete}
+                  onNextQuestion={hasNext ? goToNextSolution : undefined}
+                  onPrevQuestion={hasPrev ? goToPrevSolution : undefined}
+                  hasNext={hasNext}
+                  hasPrev={hasPrev}
                 />
               ) : (
                 <PracticeMode
                   solution={activeSolution}
                   lang={lang}
                   onViewNotebook={() => setActiveTab('notebook')}
-                  onRecordScore={recordPracticeScore}
+                  onRecordScore={(id, correct) => {
+                    recordPracticeScore(id, correct);
+                    if (activeSolution) recordStudentAttempt(activeSolution, correct);
+                  }}
                 />
               )}
 
@@ -575,6 +609,33 @@ export default function Home() {
         lang={lang}
         onSelectSolution={handleSelectSolution}
       />
+
+      {/* Mastery Dashboard Modal — self-contains fixed overlay */}
+      {masteryOpen && (
+        <MasteryDashboard
+          lang={lang}
+          onClose={() => setMasteryOpen(false)}
+          onSelectQuestion={(qId) => {
+            const sol = getSolutionById(qId);
+            if (sol) {
+              handleSelectSolution(sol);
+              setMasteryOpen(false);
+            }
+          }}
+        />
+      )}
+
+      {/* Admin CMS Modal — self-contains fixed overlay */}
+      {cmsOpen && (
+        <AdminCMS
+          lang={lang}
+          onClose={() => setCmsOpen(false)}
+          onPreviewSolution={(sol) => {
+            handleSelectSolution(sol);
+            setCmsOpen(false);
+          }}
+        />
+      )}
 
     </div>
   );

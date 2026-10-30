@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Language } from '@/types/solution';
-import { Menu, Search, Globe, Bookmark, Sparkles } from 'lucide-react';
+import { Menu, Search, Globe, Bookmark, Award, ShieldCheck } from 'lucide-react';
 
 interface StudentHeaderProps {
   lang: Language;
@@ -13,6 +13,8 @@ interface StudentHeaderProps {
   completedCount: number;
   totalCount: number;
   onOpenBookmarks: () => void;
+  onOpenMastery?: () => void;
+  onOpenCMS?: () => void;
 }
 
 export function StudentHeader({
@@ -24,6 +26,8 @@ export function StudentHeader({
   completedCount,
   totalCount,
   onOpenBookmarks,
+  onOpenMastery,
+  onOpenCMS,
 }: StudentHeaderProps) {
   return (
     <header className="print:hidden sticky top-0 z-30 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 transition-all">
@@ -40,7 +44,7 @@ export function StudentHeader({
           </button>
 
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center font-black text-white text-lg shadow-md shadow-indigo-600/30">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center font-black text-white text-lg shadow-md shadow-indigo-600/30 select-none">
               ∫
             </div>
             <div className="hidden min-[420px]:block">
@@ -49,7 +53,7 @@ export function StudentHeader({
                 <span className="text-indigo-400 font-semibold">Learning Hub</span>
               </div>
               <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">
-                {lang === 'gu' ? 'ધોરણ ૧૨ ગણિત સોલ્યુશન્સ' : 'Class 12 Mathematics'}
+                {lang === 'gu' ? 'ધોરણ ૧૨ ગણિત સોલ્યુશન્સ' : 'Class 12 Mathematics Engine'}
               </div>
             </div>
           </div>
@@ -76,6 +80,30 @@ export function StudentHeader({
         {/* Right: Quick Actions */}
         <div className="flex items-center gap-1.5 sm:gap-2">
           
+          {/* Mastery Dashboard Trigger */}
+          {onOpenMastery && (
+            <button
+              onClick={onOpenMastery}
+              className="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-amber-300 border border-slate-700/60 text-xs font-semibold flex items-center gap-1.5 transition-all"
+              title={lang === 'gu' ? 'પ્રગતિ અને સિદ્ધિ ડેશબોર્ડ' : 'Mastery Dashboard'}
+            >
+              <Award className="w-4 h-4 text-amber-400" />
+              <span className="hidden lg:inline">{lang === 'gu' ? 'સિદ્ધિ' : 'Mastery'}</span>
+            </button>
+          )}
+
+          {/* Admin CMS Trigger */}
+          {onOpenCMS && (
+            <button
+              onClick={onOpenCMS}
+              className="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-indigo-300 border border-slate-700/60 text-xs font-semibold flex items-center gap-1.5 transition-all"
+              title={lang === 'gu' ? 'કન્ટેન્ટ મેનેજમેન્ટ (CMS)' : 'Content Management'}
+            >
+              <ShieldCheck className="w-4 h-4 text-indigo-400" />
+              <span className="hidden lg:inline">CMS</span>
+            </button>
+          )}
+
           {/* Bookmarks Counter */}
           <button
             onClick={onOpenBookmarks}
