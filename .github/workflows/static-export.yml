@@ -1,0 +1,27 @@
+name: Verify static export
+
+on:
+  push:
+    branches:
+      - feature/static-export
+  pull_request:
+
+jobs:
+  build-static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build static site
+        run: npm run build
+      - name: Verify export
+        run: test -f out/index.html
+      - name: Upload static website
+        uses: actions/upload-artifact@v4
+        with:
+          name: gseb-static-site
+          path: out/
