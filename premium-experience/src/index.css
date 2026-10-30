@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-indigo-deep: #1E3A5F;
+  --color-indigo: #3B82F6;
+  --color-saffron: #F59E0B;
+  --color-emerald: #10B981;
+  --color-canvas: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-muted: #64748B;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: 'Inter', 'Noto Sans Gujarati', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-indigo-deep);
+  min-height: 100dvh;
+}
+
+.gujarati {
+  font-family: 'Noto Sans Gujarati', 'Nirmala UI', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.card-elevated {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid #E2E8F0;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
