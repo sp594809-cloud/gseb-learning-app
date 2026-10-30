@@ -1,84 +1,66 @@
 # GANIT Interactive Mathematics Lab — Progress Report
 
-**Branch target**: `feature/ganit-maths-lab` (or main until branch permissions available)  
-**Date**: 2026-10-30  
-**Repository**: https://github.com/sp594809-cloud/gseb-learning-app
+**Branch**: `feature/ganit-maths-lab`  
+**Repository**: https://github.com/sp594809-cloud/gseb-learning-app  
+**Updated**: 2026-10-30
 
-## What is delivered
+## Delivered
 
-### Phase 1 — Relations and Functions Lab (WORKING)
+### Phase 1 — Relations and Functions Lab ✅
+- `app/lab/relations/page.tsx`
+- `lib/math/relations.ts`
+- Interactive set editors, clickable pair matrix, SVG arrow diagram
+- Exhaustive reflexivity / symmetry / transitivity / equivalence
+- Function mode: one-one, onto, bijective
+- Gujarati explanations + missing-pair feedback
+- Presets + reset
+- Automated tests in `__tests__/math/relations.test.ts`
 
-**Location**: `app/lab/relations/page.tsx` + `lib/math/relations.ts`
+### Phase 2 — Inverse Trigonometric Functions Lab ✅
+- `app/lab/inverse-trig/page.tsx`
+- `lib/math/inverseTrig.ts`
+- Interactive unit circle with angle slider
+- Live sin / cos values
+- arcsin, arccos, arctan graphs with principal-value ranges
+- Domain restriction handling (undefined outside domain)
+- Radians / degrees toggle
+- Gujarati principal-value explanation
 
-Features implemented and mathematically verified:
-
-- Create / edit finite sets A and B
-- Add / remove ordered pairs via clickable matrix
-- Live arrow-diagram visualization (SVG)
-- **Reflexivity** — exhaustive check of all (a,a); empty set handled vacuously
-- **Symmetry** — every (a,b) implies (b,a)
-- **Transitivity** — every chain (a,b)+(b,c) implies (a,c)
-- **Equivalence** detection + equivalence-class partition
-- Missing-pair feedback in Gujarati so students know what to add
-- Function mode: one-one, onto, bijective classification
-- Image, domain, codomain display
-- Example presets (equivalence, not-reflexive, not-symmetric, not-transitive, bijection)
-- Reset button
-- Gujarati explanations of each property
-- Mobile-first layout matching GANIT design tokens (Indigo / Saffron / Emerald)
+### Phase 3 foundation — Matrix utilities ✅
+- `lib/math/matrices.ts`
+- Addition, subtraction, scalar multiply, multiply, transpose
+- 2×2 and 3×3 determinants
+- Strict dimension checking with Gujarati error messages
+- Identity and zero matrices
+- (Full interactive Matrix Lab UI coming next)
 
 ### Lab homepage
+- `app/lab/page.tsx` — lists all six labs; Phase 1 & 2 marked ready
 
-**Location**: `app/lab/page.tsx`
-
-- Lists all six planned labs
-- Phase 1 marked ready; others “coming soon”
-- Links into the interactive Relations lab
-
-### Automated tests
-
-**Location**: `__tests__/math/relations.test.ts`
-
-Covers empty sets, missing pairs, partial vs full equivalence, non-functions, composition.
-
-Run:
-```bash
-npx tsx __tests__/math/relations.test.ts
-```
-
-## Not yet implemented (next commits)
-
-| Phase | Status |
-|-------|--------|
-| 2 Inverse Trig Lab | Planned |
-| 3 Matrix Lab | Planned |
-| 4 Determinants Lab | Planned |
-| 5 Continuity & Differentiability | Planned |
-| 6 Applications of Derivatives | Planned |
-
-## How to run locally
+## How to run
 
 ```bash
 git clone https://github.com/sp594809-cloud/gseb-learning-app.git
 cd gseb-learning-app
+git checkout feature/ganit-maths-lab
 npm install
 npm run dev
 ```
 
-Then open:
-- http://localhost:3000/lab          → Lab homepage
-- http://localhost:3000/lab/relations → Interactive Relations & Functions Lab
+- http://localhost:3000/lab
+- http://localhost:3000/lab/relations
+- http://localhost:3000/lab/inverse-trig
 
-## Design notes
+## Still planned
+- Phase 3 full Matrix Lab UI
+- Phase 4 Determinants Lab UI
+- Phase 5 Continuity & Differentiability Lab
+- Phase 6 Applications of Derivatives Lab
+- More automated tests
+- Dark mode polish
 
-- Uses existing KaTeX dependency already in the project
-- No personal data collection
-- Works without sign-in
-- Respects the premium color system already defined in `premium-experience/`
-- Does not modify VS Plastic ERP or overwrite the existing lesson/quiz system
-
-## Mathematical integrity statement
-
-All relation and function classifiers perform exhaustive finite checks.  
-No probabilistic or approximate classification is used for discrete properties.  
-Edge cases (empty sets, incomplete domains, non-functions) are handled explicitly and covered by tests.
+## Integrity
+All discrete relation/function properties use exhaustive finite checks.  
+Inverse trig respects standard principal branches.  
+Matrix operations reject incompatible dimensions with clear messages.  
+No existing lesson system or premium-experience code was overwritten.

@@ -22,7 +22,7 @@ const LABS = [
     world: 'Angles World',
     color: '#8B5CF6',
     icon: '📐',
-    status: 'coming' as const,
+    status: 'ready' as const,
     description: 'યુનિટ સર્કલ, મુખ્ય કિંમતો, arcsin / arccos / arctan.',
   },
   {
