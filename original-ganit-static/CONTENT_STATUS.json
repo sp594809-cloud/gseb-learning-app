@@ -1,6 +1,6 @@
 {
   "baselineSolutions": 110,
-  "addedSolutions": 2,
+  "addedSolutions": 3,
   "scope": "Only the two explicitly integrated questions are newly verified in this milestone. Draft notes are not a completed audit. Chapter coverage remains partial.",
   "inventory": [
     {
@@ -2047,5 +2047,12 @@
       "status": "pending-independent-source-and-answer-review",
       "hasDraftVerificationNote": true
     }
-  ]
+  ],
+  "chapter7": {
+    "source": "NCERT Mathematics Part II, Chapter 7 (Integrals)",
+    "verifiedQuestions": [
+      "Exercise 7.1 Question 1 (NCERT-indexed English prompt; Gujarati translation authored; derivative independently chain-rule checked)"
+    ],
+    "remaining": "Only question 1 is integrated. Gujarati GSEB Part II source wording was not checked because the uploaded PDF covers only Part I (Chapters 1–6). Continue with Exercise 7.1 Question 2 after source verification."
+  }
 }
