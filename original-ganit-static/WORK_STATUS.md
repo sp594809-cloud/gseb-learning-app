@@ -1,15 +1,12 @@
 # Work status
 
-- Completed: milestones 0–2 (recover, deploy, verify original); Chapter 3 batch 1; Chapter 7 batch 1 (NCERT Part II, Exercise 7.1, question 1).
-- Last successful application commit: a39366af2f5ba08e9e49914f9b12b6670b453ad9.
-- Last successful Render deployment: dep-dbinhdjncjis73cqk3mg (live, 31 October 2026).
-- Public preview URL: https://ganit-original-preview.onrender.com/#home
+- Last verified application commit: d2ebcd6c92a0ee4e1449b5d82b97ae09c14061c4.
+- Last successful Render deployment: dep-dbioa792tl4s73e13nj0.
+- Public preview URL: https://ganit-original-preview.onrender.com/#chapter/6
 - Branch: feature/ganit-original-static.
-- Service: srv-dbinduqjnfac73b40l4g (ganit-original-preview).
-- Verified: original milestone 204/204 matching asset hashes and 110/110 direct routes; all chapters, Gujarati notebook, controls, search, bookmarks/progress persistence, graphs, textbook, mobile layout. Chapter 7 batch is built locally with 113 total solutions; local build and 7 tests pass. Public deployment of this batch is pending.
-- Exact original baseline: commit 7233922cffa933617ecb19aabaed566f9bb96063, or npm run build:original. Original source/ files and 110 solution records remain unchanged.
-- Comparison limitation: ChatGPT sign-in gate prevents authenticated live original comparison; baseline is its deployment-linked recovered revision. Responsive check uses 390×844 iframe, not physical device.
-- Remaining: rest of Chapter 7, Chapter 3, Chapters 4–6; review other draft inventory before integration. Milestone 3 is partial; milestone 4 not started. Chapter 7 question 1 uses the NCERT English prompt, translated into Gujarati; uploaded Gujarati Part II PDF was not available to verify wording. See CONTENT_STATUS.json.
-- Exact next action: deploy this Chapter 7 batch, open #chapter/7 and #solution/nc7-71-1 publicly, verify the rendered notebook solution, then integrate NCERT Exercise 7.1 question 2 after checking its source prompt and answer.
-- Known original feature issue for milestone 4: homepage showed 1% practice accuracy after one correct answer; correct-answer feedback worked. Investigate percentage calculation without changing visual design.
-- Existing gseb-learning-app Render service and original ChatGPT site remain unchanged.
+- Completed milestone: 30 Chapter 6 textbook solutions integrated: Examples 1–6, Exercise 6.1 Q1–18 (complete exercise), Miscellaneous Exercise 6 Q1–6.
+- Verified: textbook source pp.121–124 and150 inspected; local production build and JS syntax pass; every new solution route opened publicly (30/30); full Reveal all solution and native MathML formulas visually checked on Misc Q1. Original source asset hashes remain unchanged.
+- Remaining: Chapter 6 is NOT complete. Examples 7 onward, later exercises, and remaining miscellaneous questions need full source and answer review and integration. Other chapters retain prior partial coverage. Additional mobile and formula edge-case checks remain.
+- Exact next action: inspect textbook pp.126–130, verify Examples 7–13 and all Exercise 6.2 draft answers, integrate the next batch, build, push, deploy and test publicly.
+- Original source files remain unchanged; use npm run build:original for the recovered baseline.
+- The existing production site and unrelated Render services were not modified.
