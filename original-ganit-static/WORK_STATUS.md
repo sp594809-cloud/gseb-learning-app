@@ -1,17 +1,15 @@
 # Work status
 
-- Completed milestones: 0 (original source recovery), 1 (public Render deployment), 2 (static preservation and public verification).
-- Last successful application commit: 7233922cffa933617ecb19aabaed566f9bb96063.
-- Branch: feature/ganit-original-static.
-- Last successful Render deployment: dep-dbing6jm8hqs73f1a200 (live, 31 October 2026).
+- Completed: milestones 0–2 (recover, deploy, verify original) and milestone 3 batch 1 (Chapter 3, Exercise 3.1, questions 2–3).
+- Last successful application commit: a39366af2f5ba08e9e49914f9b12b6670b453ad9.
+- Last successful Render deployment: dep-dbinhdjncjis73cqk3mg (live, 31 October 2026).
 - Public preview URL: https://ganit-original-preview.onrender.com/#home
+- Branch: feature/ganit-original-static.
 - Service: srv-dbinduqjnfac73b40l4g (ganit-original-preview).
-- Verified: 204/204 public assets match published source hashes; 110/110 solution routes; six chapters; Gujarati notebook, reveal, search/filter, bookmarks and understood state after reload, graphs, practice feedback, page 196; 390px mobile viewport without page overflow.
-- Comparison limitation: ChatGPT URL requires sign-in; visual baseline is its recovered published revision. Desktop/mobile screenshots are saved in verification/. No original application files were changed.
-- Remaining: milestone 3 additional content requires per-question source and answer verification; milestone 4 student feature improvements after content integration. Chapters 3–6 still have original textbook and practice access but no newly authored solutions in the published baseline.
-- Exact next action: inspect available Chapter 3 draft and inventory provenance, verify against textbook before integrating a small complete batch; do not overwrite existing verified solutions.
-- Existing gseb-learning-app Render service remains unchanged.
-
-## Content batch 1 prepared
-
-Chapter 3 / Exercise 3.1 / questions 2–3 checked against uploaded textbook page 51. Detailed Gujarati factor-pair explanations added separately from immutable original source. Six build/tests pass; existing 110 solutions unchanged. Default build totals 112. Public verification of this content commit is the next action before starting another batch. CONTENT_STATUS.json explicitly tracks remaining draft inventory; draft verification labels are not accepted without independent review.
+- Verified: original milestone 204/204 matching asset hashes and 110/110 direct routes; all chapters, Gujarati notebook, controls, search, bookmarks/progress persistence, graphs, textbook, mobile layout. Current deployment has 112 solutions; both new routes and nine-step solutions tested publicly, content.json exactly matches production build (SHA-256 b8a8796ad37ebe6c07a531046fd08c47294071a84c16230c0c67df630cbb6d17). Six build/tests pass.
+- Exact original baseline: commit 7233922cffa933617ecb19aabaed566f9bb96063, or npm run build:original. Original source/ files and 110 solution records remain unchanged.
+- Comparison limitation: ChatGPT sign-in gate prevents authenticated live original comparison; baseline is its deployment-linked recovered revision. Responsive check uses 390×844 iframe, not physical device.
+- Remaining: rest of Chapter 3 and Chapters 4–6; review all other draft inventory before integration. Milestone 3 is partial, milestone 4 not started. See CONTENT_STATUS.json.
+- Exact next action: verify Chapter 3 Exercise 3.1 question 1 against textbook PDF page 51, check matrix indexing independently, add it without changing original records, build/test/push/deploy and test its public route before the next batch.
+- Known original feature issue for milestone 4: homepage showed 1% practice accuracy after one correct answer; correct-answer feedback worked. Investigate percentage calculation without changing visual design.
+- Existing gseb-learning-app Render service and original ChatGPT site remain unchanged.

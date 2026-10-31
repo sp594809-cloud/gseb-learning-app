@@ -57,3 +57,10 @@ Deployed from branch `feature/ganit-original-static`. Public HTTP retrieval of e
 Public browser checks passed: homepage, all six chapter routes, notebook reveal-all, Gujarati formulas, bookmark/understood persistence after reload, Chapter 2 search (sin: 23, exercise 2.1 filter: 4), tangent slider (2.2x − 1.21), absolute-value graph, correct practice feedback, textbook page 196 (1196×1622), and mobile chapter navigation. A 390×844 iframe loading the actual public Render site has body width/scrollWidth 375/375. This is responsive viewport verification, not physical-device testing.
 
 `render-home.jpg`, `render-solution.jpg`, and `render-mobile.jpg` capture the deployed site. They retain the recovered original layout, notebook design, Gujarati text, controls and graphics. Dates and browser-local progress naturally differ between captures. No application visual differences requiring fixes were identified. The live ChatGPT sign-in gate still prevents an authenticated original-domain comparison; the baseline remains the deployment-linked source and original screenshots described above.
+
+
+## First content increment
+
+Commit `a39366af2f5ba08e9e49914f9b12b6670b453ad9` deployed live as `dep-dbinhdjncjis73cqk3mg`. Only Exercise 3.1 questions 2–3 were added, after visual comparison with uploaded textbook PDF page 51 and independent enumeration of all positive ordered factor pairs. Public homepage shows 112 entries. Both direct routes render all nine working steps and final answers in the unchanged notebook design. Public content.json is byte-identical to the new build: SHA-256 `b8a8796ad37ebe6c07a531046fd08c47294071a84c16230c0c67df630cbb6d17`. The original 110 records are deep-equal to the baseline, and all 203 other output files remain identical. Six tests pass. `render-chapter3-batch1.jpg` captures the deployed increment.
+
+This does not complete Chapter 3 or later chapters. Draft inventory review status is explicit in CONTENT_STATUS.json. The original homepage's practice percentage displayed 1% after one correct answer; this pre-existing issue is recorded for the later student-feature milestone, not silently changed during migration.
