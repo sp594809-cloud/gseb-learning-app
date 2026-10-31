@@ -1,0 +1,29 @@
+[
+  {
+    "id": "nc7-71-1",
+    "chapter": 7,
+    "section": "7.1",
+    "number": "1",
+    "kind": "Textbook",
+    "sourceId": "NCERT",
+    "prompt": "નિરીક્ષણ પદ્ધતિથી sin 2xનું એક પ્રતિઅવકલજ (અથવા અનિશ્ચિત સંકલ) શોધો.",
+    "promptEn": "Find an antiderivative of sin 2x by inspection.",
+    "steps": [
+      "આપેલ સંકલ્ય sin 2x છે. નિરીક્ષણ પદ્ધતિમાં એવી વિધેય શોધીએ કે તેનું વિકલિત sin 2x બને.",
+      "ચેઇન નિયમથી, d/dx[cos 2x] = −sin 2x · 2 = −2 sin 2x.",
+      "હવે બંને બાજુ −1/2 વડે ગુણતાં, d/dx[−(1/2)cos 2x] = sin 2x મળે છે.",
+      "અટલે F(x)=−(1/2)cos 2x એ sin 2xનું એક પ્રતિઅવકલજ છે. અનિશ્ચિત સંકલ લખતાં મનસ્વી અચળ C ઉમેરાય છે.",
+      "ચકાસણી: d/dx[−(1/2)cos 2x + C] = −(1/2)(−2 sin 2x) + 0 = sin 2x; તેથી પરિણામ સાચું છે."
+    ],
+    "answer": "∫ sin 2x dx = −(1/2) cos 2x + C",
+    "gu": "અંદરના 2નો અવકલિત બહારના ગુણક તરીકે આવે છે; તેથી સંકલન વખતે 1/2થી સરભર કરો.",
+    "verification": {
+      "status": "verified",
+      "date": "2026-10-31",
+      "reviewer": "ChatGPT symbolic chain-rule check",
+      "sourceUrl": "https://ncert.nic.in/textbook/pdf/lemh201.pdf",
+      "sourcePage": "Chapter 7 · Exercise 7.1 · Question 1",
+      "method": "Exercise question cross-checked in NCERT-indexed result; derivative of the proposed antiderivative independently evaluated by the chain rule. GSEB Gujarati Part II wording has not been independently checked."
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "chapter": {
+    "id": 7,
+    "name": "Integrals",
+    "gu": "સમાકલન",
+    "group": "Calculus",
+    "formula": "∫ sin 2x dx = −½ cos 2x + C"
+  },
+  "source": "https://ncert.nic.in/textbook.php?lemh2=1-7",
+  "sourceUrl": "https://ncert.nic.in/textbook/pdf/lemh201.pdf",
+  "sourceTitle": "NCERT Mathematics Part II · Chapter 7 · Integrals"
+}
