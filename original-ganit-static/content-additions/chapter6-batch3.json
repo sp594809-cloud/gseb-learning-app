@@ -1,0 +1,615 @@
+[
+  {
+    "id": "tb6-Example-7",
+    "chapter": 6,
+    "section": "Example",
+    "number": "7",
+    "page": 126,
+    "prompt": "$f(x)=7x-3$ એ R પર ચુસ્ત વધતું વિધેય છે તે સાબિત કરો.",
+    "steps": [
+      "$x_1<x_2$ લો. 7 ધન હોવાથી $7x_1<7x_2$.",
+      "બંને બાજુ 3 બાદ કરતાં $7x_1-3<7x_2-3$, એટલે $f(x_1)<f(x_2)$.",
+      "આ કોઈ પણ $x_1<x_2$ માટે સાચું છે; તેથી વ્યાખ્યા મુજબ f ચુસ્ત વધતું છે. વિકલનથી પણ $f\\prime(x)=7>0$."
+    ],
+    "answer": "R પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/140.webp",
+      "printedPage": 126,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-8",
+    "chapter": 6,
+    "section": "Example",
+    "number": "8",
+    "page": 126,
+    "prompt": "$f(x)=x^3-3x^2+4x$ R પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "$f\\prime(x)=3x^2-6x+4$.",
+      "પૂર્ણવર્ગ બનાવીએ: $3x^2-6x+4=3(x^2-2x+1)+1=3(x-1)^2+1$.",
+      "દરેક વાસ્તવિક x માટે $(x-1)^2\\geq0$, એટલે $f\\prime(x)\\geq1>0$. પ્રથમ વિકલિત કસોટીથી f R પર ચુસ્ત વધે છે."
+    ],
+    "answer": "R પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/140.webp",
+      "printedPage": 126,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-9",
+    "chapter": 6,
+    "section": "Example",
+    "number": "9",
+    "page": 127,
+    "prompt": "$f(x)=\\cos x$ માટે બતાવો: (a)(0,π)માં ઘટે (b)(π,2π)માં વધે (c)(0,2π)માં ન વધતું ન ઘટતું.",
+    "steps": [
+      "$f\\prime(x)=-\\sin x$.",
+      "(a) $0<x<\\pi$માં $\\sin x>0$, તેથી $f\\prime(x)<0$: f ઘટે છે.",
+      "(b) $\\pi<x<2\\pi$માં $\\sin x<0$, તેથી $f\\prime(x)>0$: f વધે છે.",
+      "(c) આખા અંતરાલમાં f પહેલાં ઘટે અને પછી વધે છે, તેથી આખા $(0,2\\pi)$ પર એકદિશ નથી. સાતત્યને લીધે છેડા ઉમેરીને $[0,\\pi]$ અને $[\\pi,2\\pi]$ પણ લઈ શકાય."
+    ],
+    "answer": "(a) ઘટે (b) વધે (c) બંનેમાંથી કોઈ નહીં.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/141.webp",
+      "printedPage": 127,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-10",
+    "chapter": 6,
+    "section": "Example",
+    "number": "10",
+    "page": 127,
+    "prompt": "$f(x)=x^2-4x+6$ કયા અંતરાલમાં વધે અને ઘટે?",
+    "steps": [
+      "$f\\prime(x)=2x-4=2(x-2)$.",
+      "$f\\prime(x)=0$ ⇒ $x=2$. આ બિંદુ વાસ્તવિક રેખાને બે ભાગમાં વહેંચે છે.",
+      "$x<2$ માટે $f\\prime(x)<0$ એટલે f ઘટે. $x>2$ માટે $f\\prime(x)>0$ એટલે f વધે.",
+      "f સતત હોવાથી 2ને બંને સંબંધિત અંતરાલના છેડા તરીકે સામેલ કરી શકાય."
+    ],
+    "answer": "ઘટે $(-\\infty,2]$; વધે $[2,\\infty)$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/141.webp",
+      "printedPage": 127,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-11",
+    "chapter": 6,
+    "section": "Example",
+    "number": "11",
+    "page": 127,
+    "prompt": "$f(x)=4x^3-6x^2-72x+30$ કયા અંતરાલમાં વધે અને ઘટે?",
+    "steps": [
+      "$f\\prime(x)=12x^2-12x-72=12(x-3)(x+2)$.",
+      "નિર્ણાયક મૂલ્યો $x=-2,3$.",
+      "$x<-2$: બંને અવયવ ઋણ, ગુણાકાર ધન. $-2<x<3$: એક અવયવ ઋણ અને બીજો ધન, ગુણાકાર ઋણ. $x>3$: બંને ધન.",
+      "આથી f બહારના બે અંતરાલોમાં વધે અને મધ્યના અંતરાલમાં ઘટે. સાતત્યથી છેડા સામેલ કરી શકાય."
+    ],
+    "answer": "વધે $(-\\infty,-2]$ અને $[3,\\infty)$; ઘટે $[-2,3]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/141.webp",
+      "printedPage": 127,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-12",
+    "chapter": 6,
+    "section": "Example",
+    "number": "12",
+    "page": 128,
+    "prompt": "$f(x)=\\sin3x$, $0\\leq x\\leq\\pi/2$ માટે વધવા-ઘટવાના અંતરાલ શોધો.",
+    "steps": [
+      "$f\\prime(x)=3\\cos3x$. અહીં $0\\leq3x\\leq3\\pi/2$.",
+      "$\\cos3x=0$ માટે $3x=\\pi/2,3\\pi/2$, એટલે $x=\\pi/6,\\pi/2$. અંદરનું વિભાજક બિંદુ π/6 છે.",
+      "$0<x<\\pi/6$માં $\\cos3x>0$, તેથી f વધે. $\\pi/6<x<\\pi/2$માં $\\cos3x<0$, તેથી f ઘટે.",
+      "છેડે f સતત છે, તેથી બંધ અંતરાલ આપી શકાય."
+    ],
+    "answer": "વધે $[0,\\pi/6]$; ઘટે $[\\pi/6,\\pi/2]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/142.webp",
+      "printedPage": 128,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-13",
+    "chapter": 6,
+    "section": "Example",
+    "number": "13",
+    "page": 129,
+    "prompt": "$f(x)=\\sin x+\\cos x$, $0\\leq x\\leq2\\pi$ માટે વધવા-ઘટવાના અંતરાલ શોધો.",
+    "steps": [
+      "$f\\prime(x)=\\cos x-\\sin x=\\sqrt2\\cos(x+\\pi/4)$.",
+      "$f\\prime(x)=0$ ⇒ $x=\\pi/4,5\\pi/4$ આપેલા પ્રાન્તમાં.",
+      "$0<x<\\pi/4$ માટે વિકલિત ધન; $\\pi/4<x<5\\pi/4$ માટે ઋણ; $5\\pi/4<x<2\\pi$ માટે ધન.",
+      "વિકલિત ધન હોય ત્યાં f વધે, ઋણ હોય ત્યાં ઘટે. સાતત્યથી છેડા સામેલ કરીએ."
+    ],
+    "answer": "વધે $[0,\\pi/4]$ અને $[5\\pi/4,2\\pi]$; ઘટે $[\\pi/4,5\\pi/4]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-1",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "1",
+    "page": 129,
+    "prompt": "$f(x)=3x+17$ R પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "f બહુપદી હોવાથી R પર વિકલનીય છે.",
+      "$f\\prime(x)=3>0$ દરેક વાસ્તવિક x માટે.",
+      "પ્રથમ વિકલિત કસોટીથી f આખા R પર ચુસ્ત વધતું છે."
+    ],
+    "answer": "R પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-2",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "2",
+    "page": 129,
+    "prompt": "$f(x)=e^{2x}$ R પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "સાંકળ નિયમ: $f\\prime(x)=e^{2x}\\cdot2=2e^{2x}$.",
+      "દરેક વાસ્તવિક x માટે $e^{2x}>0$, તેથી $f\\prime(x)>0$.",
+      "પ્રથમ વિકલિત કસોટીથી f R પર ચુસ્ત વધે છે."
+    ],
+    "answer": "R પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-3",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "3",
+    "page": 129,
+    "prompt": "$f(x)=\\sin x$ માટે બતાવો: (a)(0,π/2)માં વધે (b)(π/2,π)માં ઘટે (c)(0,π)માં બંનેમાંથી કોઈ નહીં.",
+    "steps": [
+      "$f\\prime(x)=\\cos x$.",
+      "(a) $0<x<\\pi/2$ માટે cos x>0, તેથી f વધે છે.",
+      "(b) $\\pi/2<x<\\pi$ માટે cos x<0, તેથી f ઘટે છે.",
+      "(c) $(0,\\pi)$માં પહેલા વધે અને પછી ઘટે છે, એટલે આખા અંતરાલમાં વધતું પણ નહીં અને ઘટતું પણ નહીં."
+    ],
+    "answer": "(a) વધે (b) ઘટે (c) એકદિશ નથી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-4",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "4",
+    "page": 129,
+    "prompt": "$f(x)=2x^2-3x$ માટે (a) વધવા (b) ઘટવાના અંતરાલ શોધો.",
+    "steps": [
+      "$f\\prime(x)=4x-3$. શૂન્ય મૂકતાં $x=3/4$.",
+      "$x<3/4$ માટે $4x-3<0$, તેથી ઘટે. $x>3/4$ માટે $4x-3>0$, તેથી વધે.",
+      "f સતત હોવાથી છેડો 3/4 સામેલ કરી શકાય."
+    ],
+    "answer": "(a) $[3/4,\\infty)$ (b) $(-\\infty,3/4]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-5",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "5",
+    "page": 129,
+    "prompt": "$f(x)=2x^3-3x^2-36x+7$ માટે વધવા-ઘટવાના અંતરાલ શોધો.",
+    "steps": [
+      "$f\\prime(x)=6x^2-6x-36=6(x-3)(x+2)$.",
+      "નિર્ણાયક મૂલ્યો −2 અને 3 છે. $x<-2$માં બે ઋણ અવયવોનો ગુણાકાર ધન; $-2<x<3$માં ગુણાકાર ઋણ; $x>3$માં ધન.",
+      "તેથી બહારના અંતરાલમાં વધે, મધ્યમાં ઘટે; f સતત હોવાથી છેડા ઉમેરીએ."
+    ],
+    "answer": "વધે $(-\\infty,-2]$ અને $[3,\\infty)$; ઘટે $[-2,3]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/143.webp",
+      "printedPage": 129,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-6",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "6",
+    "page": 130,
+    "prompt": "ચુસ્ત વધવા અને ઘટવાના અંતરાલ શોધો: (a)$x^2+2x-5$ (b)$10-6x-2x^2$ (c)$-2x^3-9x^2-12x+1$ (d)$6-9x-x^2$ (e)$(x+1)^3(x-3)^3$.",
+    "steps": [
+      "દરેક વિધેય બહુપદી છે, તેથી સમગ્ર વાસ્તવિક રેખા પર સતત અને વિકલનીય છે. વિકલિતને શૂન્ય આપતાં બિંદુઓ શોધી તેમની વચ્ચેના દરેક અંતરાલમાં તેની સંજ્ઞા તપાસીએ.",
+      "(a) $f\\prime=2x+2=2(x+1)$. −1ની ડાબે ઋણ અને જમણે ધન. તેથી ઘટે $(-\\infty,-1]$, વધે $[-1,\\infty)$.",
+      "(b) $f\\prime=-6-4x=-2(2x+3)$. $x<-3/2$માં ધન, $x>-3/2$માં ઋણ. તેથી વધે $(-\\infty,-3/2]$, ઘટે $[-3/2,\\infty)$.",
+      "(c) $f\\prime=-6x^2-18x-12=-6(x+1)(x+2)$. −2ની ડાબે ઋણ, (−2,−1)માં ધન, −1ની જમણે ઋણ. તેથી ઘટે $(-\\infty,-2]$ અને $[-1,\\infty)$; વધે $[-2,-1]$.",
+      "(d) $f\\prime=-9-2x=-2(x+9/2)$. −9/2ની ડાબે ધન, જમણે ઋણ. તેથી વધે $(-\\infty,-9/2]$, ઘટે $[-9/2,\\infty)$.",
+      "(e) ગુણાકાર નિયમથી $f\\prime=3(x+1)^2(x-3)^3+3(x+1)^3(x-3)^2=6(x-1)(x+1)^2(x-3)^2$.",
+      "(e) વર્ગ અવયવો અઋણ હોવાથી ચિહ્ન x−1 નક્કી કરે છે. x<1 પર ઋણ (x=−1 સિવાય), x>1 પર ધન (x=3 સિવાય). આ અલગ શૂન્યો એકદિશતાને બદલતા નથી. તેથી ચુસ્ત ઘટે $(-\\infty,1]$, ચુસ્ત વધે $[1,\\infty)$."
+    ],
+    "answer": "(a) વધે $[-1,\\infty)$; ઘટે $(-\\infty,-1]$. (b) વધે $(-\\infty,-3/2]$; ઘટે $[-3/2,\\infty)$. (c) વધે $[-2,-1]$; ઘટે $(-\\infty,-2]$ અને $[-1,\\infty)$. (d) વધે $(-\\infty,-9/2]$; ઘટે $[-9/2,\\infty)$. (e) વધે $[1,\\infty)$; ઘટે $(-\\infty,1]$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-7",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "7",
+    "page": 130,
+    "prompt": "$y=\\log(1+x)-\\frac{2x}{2+x}$, x>−1 તેના પ્રાન્ત પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "$y\\prime=\\frac1{1+x}-\\frac{2(x+2)-2x}{(x+2)^2}=\\frac1{1+x}-\\frac4{(x+2)^2}$.",
+      "સમાન છેદથી $y\\prime=\\frac{(x+2)^2-4(x+1)}{(1+x)(x+2)^2}=\\frac{x^2}{(1+x)(x+2)^2}$.",
+      "x>−1થી છેદ ધન, અંશ અઋણ. તેથી y′≥0 અને માત્ર x=0 પર શૂન્ય. દરેક બિનશૂન્ય અંતરાલમાં વિકલિત ધન છે, તેથી y ચુસ્ત વધે છે.",
+      "ચુસ્તતા માટે કોઈ પણ $a<b$ લો. $[a,b]$ માં માત્ર એક બિંદુ $0$ સિવાય વિકલિત ધન છે, તેથી $a$ અને $b$ વચ્ચેના ધન લંબાઈના કોઈ ઉપઅંતરાલમાં વિધેય ચુસ્ત વધે છે. બાકીના ભાગમાં તે અઘટતું હોવાથી $y(a)<y(b)$."
+    ],
+    "answer": "$(-1,\\infty)$ પર વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-8",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "8",
+    "page": 130,
+    "prompt": "$y=[x(x-2)]^2$ કયા x માટે વધે છે?",
+    "steps": [
+      "$y\\prime=2[x(x-2)](2x-2)=4x(x-1)(x-2)$.",
+      "શૂન્યો 0,1,2. ચિહ્નો ક્રમે: $(-\\infty,0)$માં −, (0,1)માં +, (1,2)માં −, $(2,\\infty)$માં +.",
+      "y′>0 એટલે (0,1) અને (2,∞)માં વધે. છેડા ઉમેરતાં પણ એકદિશતા રહે છે."
+    ],
+    "answer": "વધે $[0,1]$ અને $[2,\\infty)$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-9",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "9",
+    "page": 130,
+    "prompt": "$y=\\frac{4\\sin\\theta}{2+\\cos\\theta}-\\theta$ એ $[0,\\pi/2]$માં વધે છે તે સાબિત કરો.",
+    "steps": [
+      "ભાગાકાર નિયમથી $\\frac{dy}{d\\theta}=\\frac{4\\cos\\theta(2+\\cos\\theta)+4\\sin^2\\theta}{(2+\\cos\\theta)^2}-1$.",
+      "$=\\frac{8\\cos\\theta+4}{(2+\\cos\\theta)^2}-1=\\frac{4\\cos\\theta-\\cos^2\\theta}{(2+\\cos\\theta)^2}=\\frac{\\cos\\theta(4-\\cos\\theta)}{(2+\\cos\\theta)^2}$.",
+      "$0\\leq\\theta<\\pi/2$ માટે cosθ>0 અને 4−cosθ>0; તેથી વિકલિત ધન. θ=π/2 પર શૂન્ય. f છેડે સતત હોવાથી આખા બંધ અંતરાલ પર વધે છે."
+    ],
+    "answer": "$[0,\\pi/2]$માં વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-10",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "10",
+    "page": 130,
+    "prompt": "લઘુગણકીય વિધેય $f(x)=\\log x$ એ (0,∞)માં વધે છે તે સાબિત કરો.",
+    "steps": [
+      "અહીં log કુદરતી લઘુગણક છે. પ્રાન્ત x>0.",
+      "$f\\prime(x)=1/x>0$ દરેક x>0 માટે.",
+      "પ્રથમ વિકલિત કસોટીથી f (0,∞) પર ચુસ્ત વધે છે."
+    ],
+    "answer": "(0,∞)માં ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-11",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "11",
+    "page": 130,
+    "prompt": "$f(x)=x^2-x+1$ એ (−1,1) પર વધતું કે ઘટતું નથી તે સાબિત કરો.",
+    "steps": [
+      "$f\\prime(x)=2x-1$.",
+      "$-1<x<1/2$માં વિકલિત ઋણ હોવાથી f ઘટે. $1/2<x<1$માં વિકલિત ધન હોવાથી f વધે.",
+      "આખા (−1,1)માં એક જ દિશામાં ફેરફાર થતો નથી; તેથી તે વધતું પણ નહીં અને ઘટતું પણ નહીં."
+    ],
+    "answer": "(−1,1) પર એકદિશ નથી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-12",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "12",
+    "page": 130,
+    "prompt": "(0,π/2)માં કયું વિધેય ઘટે? (A)cos x (B)cos 2x (C)cos 3x (D)tan x.",
+    "steps": [
+      "(A) $(\\cos x)\\prime=-\\sin x<0$ આખા આપેલા અંતરાલમાં.",
+      "(B) $(\\cos2x)\\prime=-2\\sin2x<0$, કારણ કે 0<2x<π. તેથી B પણ ઘટે છે.",
+      "(C) −3sin3xનું ચિહ્ન x=π/3 પર બદલાય છે; આખા અંતરાલમાં ઘટતું નથી. (D) sec²x>0, એટલે વધે છે.",
+      "આ મુદ્રિત આવૃત્તિમાં (A) અને (B) બંને માટે સમગ્ર આપેલા અંતરાલમાં વિકલિત ઋણ છે. તેથી ગણિત મુજબ બંને વિકલ્પ સાચા છે. એક જ વિકલ્પ પસંદ કરાવતી સૂચના સાથે પ્રશ્ન અસંગત છે; આ નોંધ મૂળ પ્રશ્નના વિકલ્પો ચકાસીને ઉમેરેલી છે."
+    ],
+    "answer": "A અને B બંને.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-13",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "13",
+    "page": 130,
+    "prompt": "$f(x)=x^{100}+\\sin x-1$ કયા અંતરાલમાં ઘટે? (A)(0,1) (B)(π/2,π) (C)(0,π/2) (D)એક પણ નહીં.",
+    "steps": [
+      "$f\\prime(x)=100x^{99}+\\cos x$.",
+      "(A) અને (C)માં x>0 તથા cos x>0 હોવાથી વિકલિત ધન.",
+      "(B)માં x>π/2>1, તેથી $100x^{99}>100$ અને cos x≥−1. એટલે f′>99>0.",
+      "ત્રણેય અંતરાલોમાં f વધે છે, ઘટતું નથી."
+    ],
+    "answer": "વિકલ્પ D.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-14",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "14",
+    "page": 130,
+    "prompt": "$f(x)=x^2+ax+1$ એ [1,2]માં વધે તે માટે a શોધો.",
+    "steps": [
+      "$f\\prime(x)=2x+a$. આ રેખીય વિધેય x સાથે વધે છે.",
+      "[1,2]માં તેનું ન્યૂનતમ મૂલ્ય x=1 પર 2+a છે. આખા અંતરાલમાં f′≥0 માટે 2+a≥0, એટલે a≥−2.",
+      "a=−2 હોય ત્યારે f′=2(x−1)>0 અંદર અને ફક્ત ડાબા છેડે શૂન્ય; f હજી ચુસ્ત વધે છે. a<−2 હોય તો 1ની નજીક વિકલિત ઋણ મળે.",
+      "આથી જરૂરી અને પૂરતી શરત $a\\geq-2$ છે. ઉદાહરણ તરીકે સીમાકિસ્સા $a=-2$ પર $f(x)=(x-1)^2$, જે $[1,2]$ પર ચુસ્ત વધે છે."
+    ],
+    "answer": "$a\\geq-2$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-15",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "15",
+    "page": 130,
+    "prompt": "વિવૃત અંતરાલ I માટે $I\\cap[-1,1]=\\varnothing$. $f(x)=x+1/x$ એ I પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "Iના બધા x માટે |x|>1; ખાસ કરીને x≠0 અને f વ્યાખ્યાયિત છે.",
+      "અહીં $I$ એક અંતરાલ છે. તેથી તે સંપૂર્ણપણે $(-\\infty,-1)$ માં અથવા સંપૂર્ણપણે $(1,\\infty)$ માં આવેલું હશે; શૂન્યને પાર કરતો અસંયુક્ત સમૂહ નથી.",
+      "$f\\prime(x)=1-1/x^2=(x^2-1)/x^2$.",
+      "|x|>1થી x²−1>0 અને x²>0. તેથી f′>0 આખા Iમાં અને f વધે છે."
+    ],
+    "answer": "I પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-16",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "16",
+    "page": 130,
+    "prompt": "$f(x)=\\log(\\sin x)$ એ (0,π/2)માં વધે અને (π/2,π)માં ઘટે છે તે સાબિત કરો.",
+    "steps": [
+      "0<x<πમાં sin x>0 હોવાથી log વ્યાખ્યાયિત છે.",
+      "$f\\prime(x)=\\cos x/\\sin x=\\cot x$.",
+      "(0,π/2)માં cos x>0, એટલે f′>0. (π/2,π)માં cos x<0 અને sin x>0, એટલે f′<0."
+    ],
+    "answer": "(0,π/2)માં વધે; (π/2,π)માં ઘટે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-17",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "17",
+    "page": 130,
+    "prompt": "$f(x)=\\log|\\cos x|$ એ (0,π/2)માં ઘટે અને (3π/2,2π)માં વધે છે તે સાબિત કરો.",
+    "steps": [
+      "આ અંતરાલોમાં cos x≠0. સૂત્ર $d(\\log|u|)/dx=u\\prime/u$ વાપરીએ.",
+      "$f\\prime(x)=-\\sin x/\\cos x=-\\tan x$.",
+      "(0,π/2)માં tan x>0, તેથી f′<0. (3π/2,2π)માં tan x<0, તેથી f′>0."
+    ],
+    "answer": "માગેલા અંતરાલોમાં અનુક્રમે ઘટે અને વધે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-18",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "18",
+    "page": 130,
+    "prompt": "$f(x)=x^3-3x^2+3x-100$ R પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "$f\\prime(x)=3x^2-6x+3=3(x-1)^2\\geq0$.",
+      "ફક્ત x=1 પર વિકલિત શૂન્ય છે; અન્યત્ર ધન. તેથી f વધતું છે.",
+      "ચુસ્તતા સીધી પણ જોઈ શકાય: $f(x)=(x-1)^3-99$. ઘન વિધેય ચુસ્ત વધતું હોવાથી x₁<x₂ ⇒ f(x₁)<f(x₂)."
+    ],
+    "answer": "R પર ચુસ્ત વધતું.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-62-19",
+    "chapter": 6,
+    "section": "6.2",
+    "number": "19",
+    "page": 130,
+    "prompt": "$y=x^2e^{-x}$ કયા અંતરાલમાં વધે? (A)(−∞,∞) (B)(−2,0) (C)(2,∞) (D)(0,2).",
+    "steps": [
+      "ગુણાકાર નિયમથી $y\\prime=2xe^{-x}-x^2e^{-x}=xe^{-x}(2-x)$.",
+      "e^(−x)>0 હોવાથી ચિહ્ન x(2−x) પર આધારિત છે. તે ધન ત્યારે જ 0<x<2.",
+      "x<0 અને x>2 માટે વિકલિત ઋણ છે."
+    ],
+    "answer": "વિકલ્પ D: (0,2).",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/144.webp",
+      "printedPage": 130,
+      "checkedOn": "2026-10-31",
+      "method": "Visually compared all prompts and subparts with uploaded Gujarati textbook pp.126–130. Derivatives, factorization, signs and domain restrictions independently reviewed. Exercise 6.2 Q12 has two mathematically correct options in this printed edition."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને દરેક ઉપપ્રશ્ન ચકાસેલ છે."
+  }
+]
