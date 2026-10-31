@@ -54,3 +54,11 @@ if(!process.argv.includes('--original')) {
  await writeFile(appPath,app);
  console.log('Published '+content.solutions.length+' solutions; original 110 entries unchanged.');
 }
+
+if(!process.argv.includes('--original')) {
+ const appPath=path.join(root,'dist/app.js');
+ let app=await readFile(appPath,'utf8');
+ const renderer=await readFile(path.join(root,'scripts/math-renderer.js'),'utf8');
+ for(const from of ['esc(q.prompt)','esc(q.answer)','esc(s)'])app=app.replaceAll(from,from.replace('esc(','mathText('));
+ await writeFile(appPath,renderer+'\n'+app);
+}
