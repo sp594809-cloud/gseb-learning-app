@@ -1,0 +1,44 @@
+{
+  "home": {
+    "dimensions": [
+      1348,
+      926
+    ],
+    "identical_pixels": false,
+    "difference_bbox": [
+      880,
+      416,
+      961,
+      504
+    ]
+  },
+  "solution": {
+    "dimensions": [
+      1348,
+      926
+    ],
+    "identical_pixels": true,
+    "difference_bbox": null
+  },
+  "graph": {
+    "dimensions": [
+      1348,
+      926
+    ],
+    "identical_pixels": false,
+    "difference_bbox": [
+      288,
+      256,
+      1288,
+      752
+    ]
+  },
+  "mobile": {
+    "dimensions": [
+      1363,
+      936
+    ],
+    "identical_pixels": true,
+    "difference_bbox": null
+  }
+}
