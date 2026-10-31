@@ -45,4 +45,15 @@ The notebook solution and mobile-home images are pixel-identical. Home and graph
 
 The actual chatgpt.site URL presents its private ChatGPT sign-in gate to this browser. Therefore authenticated live-page screenshots were not taken. The comparison baseline is the recovered source revision tied to the successful published deployment by the Sites API, not a claimed live authenticated browser comparison.
 
-No live website was deployed, replaced or reconfigured during this migration. No existing repository project was changed. ChatGPT hosting authentication is outside the static application and cannot be copied as static source. Progress is origin-local; it is not transferred between domains by this export.
+At the initial local verification stage, no live website had been deployed, replaced or reconfigured. No existing repository project was changed. ChatGPT hosting authentication is outside the static application and cannot be copied as static source. Progress is origin-local; it is not transferred between domains by this export.
+
+
+## Public Render verification — 31 October 2026
+
+Dedicated preview: https://ganit-original-preview.onrender.com/#home
+
+Deployed from branch `feature/ganit-original-static`. Public HTTP retrieval of every original asset returned 200 and the expected SHA-256: **204/204 matched**. See `render-asset-verification.json`. All 110 direct solution routes display a question heading and nonempty worked steps; see `render-routes.json`.
+
+Public browser checks passed: homepage, all six chapter routes, notebook reveal-all, Gujarati formulas, bookmark/understood persistence after reload, Chapter 2 search (sin: 23, exercise 2.1 filter: 4), tangent slider (2.2x − 1.21), absolute-value graph, correct practice feedback, textbook page 196 (1196×1622), and mobile chapter navigation. A 390×844 iframe loading the actual public Render site has body width/scrollWidth 375/375. This is responsive viewport verification, not physical-device testing.
+
+`render-home.jpg`, `render-solution.jpg`, and `render-mobile.jpg` capture the deployed site. They retain the recovered original layout, notebook design, Gujarati text, controls and graphics. Dates and browser-local progress naturally differ between captures. No application visual differences requiring fixes were identified. The live ChatGPT sign-in gate still prevents an authenticated original-domain comparison; the baseline remains the deployment-linked source and original screenshots described above.
