@@ -1,0 +1,584 @@
+[
+  {
+    "id": "tb6-Example-1",
+    "chapter": 6,
+    "section": "Example",
+    "number": "1",
+    "page": 121,
+    "prompt": "વર્તુળની ત્રિજ્યા 5 સેમી હોય ત્યારે ક્ષેત્રફળમાં ત્રિજ્યાની સાપેક્ષ ફેરફારનો દર શોધો.",
+    "steps": [
+      "ત્રિજ્યા $r$ માટે ક્ષેત્રફળ $A=\\pi r^2$. અહીં સમયની નહીં, ત્રિજ્યાની સાપેક્ષ દર જોઈએ.",
+      "$\\frac{dA}{dr}=\\frac{d}{dr}(\\pi r^2)=2\\pi r$.",
+      "$r=5$ મૂકતાં $\\frac{dA}{dr}=2\\pi(5)=10\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $10\\pi$ સેમી² પ્રતિ સેમી."
+    ],
+    "answer": "$10\\pi$ સેમી² પ્રતિ સેમી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/135.webp",
+      "printedPage": 121,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-2",
+    "chapter": 6,
+    "section": "Example",
+    "number": "2",
+    "page": 121,
+    "prompt": "સમઘનનું કદ 9 સેમી³/સેના દરથી વધે છે. ધાર 10 સેમી હોય ત્યારે પૃષ્ઠફળ વધવાનો દર શોધો.",
+    "steps": [
+      "ધાર $x$, કદ $V=x^3$, પૃષ્ઠફળ $S=6x^2$. આપેલ $dV/dt=9$.",
+      "સાંકળ નિયમથી $\\frac{dV}{dt}=3x^2\\frac{dx}{dt}$, એટલે $\\frac{dx}{dt}=\\frac9{3x^2}=\\frac3{x^2}$.",
+      "$\\frac{dS}{dt}=12x\\frac{dx}{dt}=12x\\frac3{x^2}=\\frac{36}{x}$.",
+      "$x=10$ માટે $dS/dt=36/10=3.6$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: 3.6 સેમી²/સેના દરથી વધે છે."
+    ],
+    "answer": "3.6 સેમી²/સેના દરથી વધે છે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/135.webp",
+      "printedPage": 121,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-3",
+    "chapter": 6,
+    "section": "Example",
+    "number": "3",
+    "page": 121,
+    "prompt": "વર્તુળાકાર વમળની ત્રિજ્યા 4 સેમી/સે વધે છે. ત્રિજ્યા 10 સેમી હોય ત્યારે ક્ષેત્રફળ વધવાનો દર શોધો.",
+    "steps": [
+      "$A=\\pi r^2$ અને $dr/dt=4$ સેમી/સે.",
+      "$\\frac{dA}{dt}=\\frac{dA}{dr}\\frac{dr}{dt}=2\\pi r\\frac{dr}{dt}$.",
+      "$r=10$ માટે $dA/dt=2\\pi(10)(4)=80\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $80\\pi$ સેમી²/સે."
+    ],
+    "answer": "$80\\pi$ સેમી²/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/135.webp",
+      "printedPage": 121,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-4",
+    "chapter": 6,
+    "section": "Example",
+    "number": "4",
+    "page": 122,
+    "prompt": "લંબચોરસની લંબાઈ x 3 સેમી/મિનિટ ઘટે અને પહોળાઈ y 2 સેમી/મિનિટ વધે છે. x=10,y=6 હોય ત્યારે (a) પરિમિતિ (b) ક્ષેત્રફળના ફેરફારનો દર શોધો.",
+    "steps": [
+      "ઘટતા માપનો દર ઋણ: $dx/dt=-3$, જ્યારે $dy/dt=2$.",
+      "(a) $P=2(x+y)$, તેથી $dP/dt=2(dx/dt+dy/dt)=2(-3+2)=-2$. એટલે પરિમિતિ ઘટે છે.",
+      "(b) $A=xy$. ગુણાકાર નિયમથી $dA/dt=x\\,dy/dt+y\\,dx/dt$.",
+      "$dA/dt=10(2)+6(-3)=20-18=2$. એટલે ક્ષેત્રફળ વધે છે.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: (a) −2 સેમી/મિનિટ; (b) +2 સેમી²/મિનિટ."
+    ],
+    "answer": "(a) −2 સેમી/મિનિટ; (b) +2 સેમી²/મિનિટ.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/136.webp",
+      "printedPage": 122,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-5",
+    "chapter": 6,
+    "section": "Example",
+    "number": "5",
+    "page": 122,
+    "prompt": "$C(x)=0.005x^3-0.02x^2+30x+5000$ રૂપિયા હોય તો 3 એકમના ઉત્પાદન સમયે સીમાન્ત ખર્ચ શોધો.",
+    "steps": [
+      "સીમાન્ત ખર્ચ $MC=C\\prime(x)$, એટલે ખર્ચમાં ઉત્પાદિત એકમની સાપેક્ષ તાત્કાલિક ફેરફારનો દર.",
+      "$C\\prime(x)=0.005(3x^2)-0.02(2x)+30=0.015x^2-0.04x+30$.",
+      "$C\\prime(3)=0.015(9)-0.04(3)+30=0.135-0.12+30=30.015$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: ₹30.015 પ્રતિ એકમ (આશરે ₹30.02)."
+    ],
+    "answer": "₹30.015 પ્રતિ એકમ (આશરે ₹30.02).",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/136.webp",
+      "printedPage": 122,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-Example-6",
+    "chapter": 6,
+    "section": "Example",
+    "number": "6",
+    "page": 122,
+    "prompt": "કુલ આવક $R(x)=3x^2+36x+5$ રૂપિયા છે. x=5 પર સીમાન્ત આવક શોધો.",
+    "steps": [
+      "સીમાન્ત આવક $MR=R\\prime(x)$.",
+      "$R\\prime(x)=6x+36$.",
+      "$R\\prime(5)=6(5)+36=66$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: ₹66 પ્રતિ એકમ."
+    ],
+    "answer": "₹66 પ્રતિ એકમ.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/136.webp",
+      "printedPage": 122,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-1",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "1",
+    "page": 123,
+    "prompt": "વર્તુળના ક્ષેત્રફળમાં ત્રિજ્યાની સાપેક્ષ ફેરફારનો દર શોધો: (a) r=3 સેમી (b) r=4 સેમી.",
+    "steps": [
+      "$A=\\pi r^2$ હોવાથી $dA/dr=2\\pi r$. અહીં $dr/dt$ આપેલ નથી અને જોઈએ પણ નહીં.",
+      "(a) $r=3$: $dA/dr=2\\pi(3)=6\\pi$.",
+      "(b) $r=4$: $dA/dr=2\\pi(4)=8\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: (a) $6\\pi$ (b) $8\\pi$ સેમી² પ્રતિ સેમી."
+    ],
+    "answer": "(a) $6\\pi$ (b) $8\\pi$ સેમી² પ્રતિ સેમી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-2",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "2",
+    "page": 123,
+    "prompt": "સમઘનનું કદ 8 સેમી³/સે વધે છે. ધાર 12 સેમી હોય ત્યારે પૃષ્ઠફળ વધવાનો દર શોધો.",
+    "steps": [
+      "$V=x^3$, $S=6x^2$ અને $dV/dt=8$.",
+      "$8=3x^2(dx/dt)$, એટલે $dx/dt=8/(3x^2)$.",
+      "$dS/dt=12x(dx/dt)=12x\\cdot8/(3x^2)=32/x$.",
+      "$x=12$ મૂકતાં $dS/dt=32/12=8/3$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $8/3$ સેમી²/સે."
+    ],
+    "answer": "$8/3$ સેમી²/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-3",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "3",
+    "page": 123,
+    "prompt": "વર્તુળની ત્રિજ્યા 3 સેમી/સે વધે છે. r=10 સેમી સમયે ક્ષેત્રફળ વધવાનો દર શોધો.",
+    "steps": [
+      "$A=\\pi r^2$, $dr/dt=3$.",
+      "$dA/dt=2\\pi r(dr/dt)$.",
+      "$r=10$ માટે $dA/dt=2\\pi(10)(3)=60\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $60\\pi$ સેમી²/સે."
+    ],
+    "answer": "$60\\pi$ સેમી²/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-4",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "4",
+    "page": 123,
+    "prompt": "સમઘનની ધાર 3 સેમી/સે વધે છે. ધાર 10 સેમી હોય ત્યારે ઘનફળ વધવાનો દર શોધો.",
+    "steps": [
+      "ધાર $x$ માટે $V=x^3$ અને $dx/dt=3$.",
+      "$dV/dt=3x^2(dx/dt)$.",
+      "$x=10$ માટે $dV/dt=3(10)^2(3)=900$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: 900 સેમી³/સે."
+    ],
+    "answer": "900 સેમી³/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-5",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "5",
+    "page": 123,
+    "prompt": "શાંત સરોવરના વર્તુળાકાર વમળની ત્રિજ્યા 5 સેમી/સે વધે છે. r=8 સેમી સમયે ક્ષેત્રફળ વધવાનો દર શોધો.",
+    "steps": [
+      "$A=\\pi r^2$ અને $dr/dt=5$.",
+      "$dA/dt=2\\pi r(dr/dt)$.",
+      "$r=8$ માટે $dA/dt=2\\pi(8)(5)=80\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $80\\pi$ સેમી²/સે."
+    ],
+    "answer": "$80\\pi$ સેમી²/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-6",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "6",
+    "page": 123,
+    "prompt": "વર્તુળની ત્રિજ્યા 0.7 સેમી/સે વધે તો પરિઘ વધવાનો દર કેટલો?",
+    "steps": [
+      "પરિઘ $C=2\\pi r$.",
+      "$dC/dt=2\\pi(dr/dt)=2\\pi(0.7)=1.4\\pi$.",
+      "આ દર ત્રિજ્યા પર આધારિત નથી. $\\pi=22/7$ લેવાથી $1.4\\pi=4.4$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $1.4\\pi$ સેમી/સે (આશરે 4.4)."
+    ],
+    "answer": "$1.4\\pi$ સેમી/સે (આશરે 4.4).",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-7",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "7",
+    "page": 123,
+    "prompt": "લંબચોરસની લંબાઈ x 5 સેમી/મિનિટ ઘટે અને પહોળાઈ y 4 સેમી/મિનિટ વધે. x=8,y=6 હોય ત્યારે (a) પરિમિતિ (b) ક્ષેત્રફળના ફેરફારનો દર શોધો.",
+    "steps": [
+      "$dx/dt=-5$, $dy/dt=4$.",
+      "(a) $P=2(x+y)$, એટલે $dP/dt=2(-5+4)=-2$ સેમી/મિનિટ.",
+      "(b) $A=xy$, એટલે $dA/dt=x(dy/dt)+y(dx/dt)$.",
+      "$dA/dt=8(4)+6(-5)=32-30=2$ સેમી²/મિનિટ.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: પરિમિતિ 2 સેમી/મિનિટ ઘટે; ક્ષેત્રફળ 2 સેમી²/મિનિટ વધે."
+    ],
+    "answer": "પરિમિતિ 2 સેમી/મિનિટ ઘટે; ક્ષેત્રફળ 2 સેમી²/મિનિટ વધે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-8",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "8",
+    "page": 123,
+    "prompt": "ગોળાકાર ફુગ્ગાનું કદ 900 સેમી³/સે વધે છે. ત્રિજ્યા 15 સેમી હોય ત્યારે ત્રિજ્યાનો વધવાનો દર શોધો.",
+    "steps": [
+      "ફુગ્ગો ગોળાકાર જ રહે છે. સમય $t$ સાથે તેનું ઘનફળ $V$ અને ત્રિજ્યા $r$ બદલાય છે. આપેલ ઘનફળનો દર છે અને શોધવાનો ત્રિજ્યાનો દર છે; બંને જુદા છે.",
+      "$V=\\frac43\\pi r^3$, $dV/dt=900$.",
+      "$dV/dt=4\\pi r^2(dr/dt)$, એટલે $dr/dt=900/(4\\pi r^2)$.",
+      "$r=15$: $dr/dt=900/(4\\pi\\cdot225)=1/\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $1/\\pi$ સેમી/સે."
+    ],
+    "answer": "$1/\\pi$ સેમી/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-9",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "9",
+    "page": 123,
+    "prompt": "ગોળાકાર ફુગ્ગાની ત્રિજ્યા 10 સેમી હોય ત્યારે ઘનફળમાં ત્રિજ્યાની સાપેક્ષ વધવાનો દર શોધો.",
+    "steps": [
+      "$V=\\frac43\\pi r^3$.",
+      "ત્રિજ્યાની સાપેક્ષ વિકલન: $dV/dr=4\\pi r^2$.",
+      "$r=10$ માટે $dV/dr=4\\pi(10)^2=400\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $400\\pi$ સેમી³ પ્રતિ સેમી."
+    ],
+    "answer": "$400\\pi$ સેમી³ પ્રતિ સેમી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-10",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "10",
+    "page": 123,
+    "prompt": "5 મીટર લાંબી નિસરણી દીવાલને ટેકવેલી છે. નીચેનો છેડો દીવાલથી 2 સેમી/સે દૂર ખસે છે. તે દીવાલથી 4 મીટર દૂર હોય ત્યારે ઉપરનો છેડો કેટલી ઝડપે નીચે આવે?",
+    "steps": [
+      "એકમ સમાન કરીએ: $dx/dt=2$ સેમી/સે $=0.02$ મીટર/સે. નીચેનું અંતર $x$, ઊંચાઈ $y$ લો.",
+      "પાયથાગોરસથી $x^2+y^2=25$. સમય પ્રમાણે વિકલન: $2x(dx/dt)+2y(dy/dt)=0$.",
+      "$dy/dt=-(x/y)(dx/dt)$. $x=4$ માટે $y=\\sqrt{25-16}=3$ મીટર.",
+      "$dy/dt=-(4/3)(0.02)=-2/75$ મીટર/સે $=-8/3$ સેમી/સે. ઋણ ચિહ્ન ઊંચાઈ ઘટવાનું સૂચવે છે.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $8/3$ સેમી/સે નીચે આવે છે."
+    ],
+    "answer": "$8/3$ સેમી/સે નીચે આવે છે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-11",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "11",
+    "page": 123,
+    "prompt": "પદાર્થ $6y=x^3+2$ પર ગતિ કરે છે. કયા બિંદુઓ પર y-યામનો ફેરફાર x-યામના ફેરફાર કરતાં 8 ગણો છે?",
+    "steps": [
+      "આપેલી શરત $dy/dt=8\\,dx/dt$ છે; ગતિના સંબંધિત દર માટે $dx/dt\\ne0$ લઈએ.",
+      "$6(dy/dt)=3x^2(dx/dt)$, એટલે $dy/dt=(x^2/2)(dx/dt)$.",
+      "$x^2/2=8$ ⇒ $x^2=16$ ⇒ $x=\\pm4$.",
+      "$x=4$ માટે $y=(64+2)/6=11$. $x=-4$ માટે $y=(-64+2)/6=-31/3$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $(4,11)$ અને $(-4,-31/3)$."
+    ],
+    "answer": "$(4,11)$ અને $(-4,-31/3)$.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-12",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "12",
+    "page": 123,
+    "prompt": "હવાના ગોળાકાર પરપોટાની ત્રિજ્યા 1/2 સેમી/સે વધે છે. r=1 સેમી સમયે કદ વધવાનો દર શોધો.",
+    "steps": [
+      "$V=\\frac43\\pi r^3$, $dr/dt=1/2$.",
+      "$dV/dt=4\\pi r^2(dr/dt)$.",
+      "$r=1$ મૂકતાં $dV/dt=4\\pi(1)^2(1/2)=2\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $2\\pi$ સેમી³/સે."
+    ],
+    "answer": "$2\\pi$ સેમી³/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-13",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "13",
+    "page": 123,
+    "prompt": "ગોળાકાર ફુગ્ગાનો વ્યાસ $\\frac32(2x+1)$ છે. ઘનફળમાં xની સાપેક્ષ ફેરફારનો દર શોધો.",
+    "steps": [
+      "ત્રિજ્યા વ્યાસની અડધી: $r=\\frac34(2x+1)$, એટલે $dr/dx=3/2$.",
+      "$V=\\frac43\\pi r^3$. સાંકળ નિયમથી $dV/dx=4\\pi r^2(dr/dx)$.",
+      "$dV/dx=4\\pi\\left[\\frac34(2x+1)\\right]^2\\frac32=\\frac{27\\pi}{8}(2x+1)^2$. ભૌતિક રીતે $x>-1/2$.",
+      "આથી અંતિમ જવાબ $\\frac{27\\pi}{8}(2x+1)^2$ ઘન એકમ પ્રતિ $x$ ના એકમ."
+    ],
+    "answer": "$\\frac{27\\pi}{8}(2x+1)^2$ ઘન એકમ પ્રતિ $x$ ના એકમ.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/137.webp",
+      "printedPage": 123,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-14",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "14",
+    "page": 124,
+    "prompt": "12 સેમી³/સેના દરે રેતી પડવાથી શંકુ બને છે. ઊંચાઈ હંમેશાં ત્રિજ્યાની 1/6 છે. h=4 સેમી સમયે ઊંચાઈ વધવાનો દર શોધો.",
+    "steps": [
+      "સમય $t$ આગળ ત્રિજ્યા $r$ અને ઊંચાઈ $h$ સેમી ધારો. સંબંધ $r=6h$ દરેક ક્ષણે સાચો છે; તેથી ઘનફળને માત્ર $h$ ના વિધેય તરીકે લખીએ.",
+      "$h=r/6$ ⇒ $r=6h$. શંકુનું કદ $V=\\frac13\\pi r^2h=\\frac13\\pi(6h)^2h=12\\pi h^3$.",
+      "$dV/dt=36\\pi h^2(dh/dt)$. આપેલ $dV/dt=12$.",
+      "$dh/dt=12/(36\\pi h^2)=1/(3\\pi h^2)$. $h=4$ મૂકતાં $dh/dt=1/(48\\pi)$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: $1/(48\\pi)$ સેમી/સે."
+    ],
+    "answer": "$1/(48\\pi)$ સેમી/સે.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/138.webp",
+      "printedPage": 124,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-15",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "15",
+    "page": 124,
+    "prompt": "$C(x)=0.007x^3-0.003x^2+15x+4000$ હોય તો 17 એકમ સમયે સીમાન્ત ખર્ચ શોધો.",
+    "steps": [
+      "$MC=C\\prime(x)=0.021x^2-0.006x+15$.",
+      "$C\\prime(17)=0.021(289)-0.006(17)+15$.",
+      "$=6.069-0.102+15=20.967$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: ₹20.967 પ્રતિ એકમ (આશરે ₹20.97)."
+    ],
+    "answer": "₹20.967 પ્રતિ એકમ (આશરે ₹20.97).",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/138.webp",
+      "printedPage": 124,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-16",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "16",
+    "page": 124,
+    "prompt": "$R(x)=13x^2+26x+15$ હોય તો x=7 પર સીમાન્ત આવક શોધો.",
+    "steps": [
+      "સીમાન્ત આવક એટલે વેચાયેલા એકમોની સંખ્યાની સાપેક્ષ કુલ આવકનો તાત્કાલિક ફેરફારનો દર. તેથી પહેલાં કુલ આવકનું $x$ ની સાપેક્ષ વિકલન કરીએ.",
+      "$MR=R\\prime(x)=26x+26$.",
+      "$R\\prime(7)=26(7)+26=182+26=208$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: ₹208 પ્રતિ એકમ."
+    ],
+    "answer": "₹208 પ્રતિ એકમ.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/138.webp",
+      "printedPage": 124,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-17",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "17",
+    "page": 124,
+    "prompt": "r=6 સેમી હોય ત્યારે ક્ષેત્રફળમાં ત્રિજ્યાની સાપેક્ષ દર કયો? (A)10π (B)12π (C)8π (D)11π.",
+    "steps": [
+      "$A=\\pi r^2$ ⇒ $dA/dr=2\\pi r$.",
+      "$r=6$ ⇒ $dA/dr=2\\pi(6)=12\\pi$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: વિકલ્પ B: $12\\pi$ સેમી² પ્રતિ સેમી."
+    ],
+    "answer": "વિકલ્પ B: $12\\pi$ સેમી² પ્રતિ સેમી.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/138.webp",
+      "printedPage": 124,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  },
+  {
+    "id": "tb6-61-18",
+    "chapter": 6,
+    "section": "6.1",
+    "number": "18",
+    "page": 124,
+    "prompt": "$R(x)=3x^2+36x+5$ હોય તો x=15 પર સીમાન્ત આવક કઈ? (A)116 (B)96 (C)90 (D)126.",
+    "steps": [
+      "$MR=R\\prime(x)=6x+36$.",
+      "$R\\prime(15)=6(15)+36=90+36=126$.",
+      "આમ ઉપરના સૂત્રમાં આપેલી ક્ષણનાં માપ મૂકતાં માંગેલો દર મળે છે. અંતિમ જવાબ: વિકલ્પ D: ₹126 પ્રતિ એકમ."
+    ],
+    "answer": "વિકલ્પ D: ₹126 પ્રતિ એકમ.",
+    "kind": "Textbook",
+    "verification": {
+      "source": "book/138.webp",
+      "printedPage": 124,
+      "checkedOn": "2026-10-31",
+      "method": "Prompt and all subparts visually checked against Gujarati textbook pp.121–124; formulas, signs, units and arithmetic independently reviewed."
+    },
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન અને ઉત્તર ચકાસેલ છે."
+  }
+]
