@@ -1,0 +1,164 @@
+[
+  {
+    "id": "tb6-Misc-1",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "1",
+    "page": 150,
+    "prompt": "સાબિત કરો કે વિધેય $f(x)=\\frac{\\log x}{x}$ ને $x=e$ આગળ મહત્તમ મૂલ્ય છે.",
+    "steps": [
+      "આપેલ વિધેય $f(x)=\\frac{\\log x}{x}$ છે. અહીં $\\log x$ એ પ્રાકૃતિક લઘુગણક છે અને વિધેયનો પ્રાન્ત $x>0$ છે.",
+      "ભાગાકારના વિકલનના નિયમથી $f\\prime(x)=\\frac{x(1/x)-(\\log x)(1)}{x^2}=\\frac{1-\\log x}{x^2}$.",
+      "સ્થિર બિંદુ માટે $f\\prime(x)=0$. $x^2>0$ હોવાથી $1-\\log x=0\\Rightarrow\\log x=1\\Rightarrow x=e$.",
+      "જો $0<x<e$ હોય તો $\\log x<1$, તેથી $f\\prime(x)>0$. આથી $(0,e)$ પર વિધેય વધે છે.",
+      "જો $x>e$ હોય તો $\\log x>1$, તેથી $f\\prime(x)<0$. આથી $(e,\\infty)$ પર વિધેય ઘટે છે.",
+      "આમ વિકલિતની સંજ્ઞા $x=e$ આગળ ધનમાંથી ઋણ થાય છે. સમગ્ર પ્રાન્તમાં વિધેય પહેલાં વધે છે અને પછી ઘટે છે; તેથી $x=e$ આગળ નિરપેક્ષ મહત્તમ મળે છે.",
+      "મહત્તમ મૂલ્ય $f(e)=\\frac{\\log e}{e}=\\frac1e$. ચકાસણી: $f\\prime\\prime(x)=\\frac{2\\log x-3}{x^3}$, તેથી $f\\prime\\prime(e)=-\\frac1{e^3}<0$."
+    ],
+    "answer": "$x=e$ આગળ મહત્તમ મૂલ્ય $\\frac1e$ છે. સાબિત થયું.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-2",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "2",
+    "page": 150,
+    "prompt": "એક સમદ્વિબાજુ ત્રિકોણના અચળ આધારનું માપ $b$ છે તથા તેની બે સમાન લંબાઈની બાજુઓનાં માપ 3 સેમી/સેના દરે ઘટી રહ્યાં છે. જ્યારે બે સમાન બાજુઓનાં માપ આધારના માપ જેટલાં થાય ત્યારે ત્રિકોણનું ક્ષેત્રફળ કેટલી ઝડપથી ઘટે?",
+    "steps": [
+      "સમય $t$ આગળ દરેક સમાન બાજુનું માપ $a$ સેમી અને ઊંચાઈ $h$ સેમી ધારો. આધાર $b$ અચળ છે; આપેલ દર $\\frac{da}{dt}=-3$ સેમી/સે છે.",
+      "શિરોલંબ આધારને બે સમાન ભાગમાં વહેંચે છે. પાયથાગોરસના પ્રમેયથી $h^2=a^2-\\frac{b^2}{4}$, એટલે $h=\\frac12\\sqrt{4a^2-b^2}$.",
+      "ક્ષેત્રફળ $A=\\frac12bh=\\frac b4\\sqrt{4a^2-b^2}$.",
+      "સમયની સાપેક્ષ વિકલન કરતાં $\\frac{dA}{dt}=\\frac b4\\cdot\\frac{8a}{2\\sqrt{4a^2-b^2}}\\cdot\\frac{da}{dt}=\\frac{ba}{\\sqrt{4a^2-b^2}}\\frac{da}{dt}$.",
+      "માગેલી ક્ષણે $a=b$ છે. તેથી $\\frac{dA}{dt}=\\frac{b^2}{\\sqrt{4b^2-b^2}}(-3)=\\frac{-3b^2}{\\sqrt3\\,b}=-\\sqrt3\\,b$. અહીં $b>0$.",
+      "ઋણ સંજ્ઞા ક્ષેત્રફળ ઘટતું હોવાનું સૂચવે છે. એટલે ક્ષેત્રફળ ઘટવાનો દર $\\sqrt3\\,b$ સેમી²/સે છે, જ્યાં $b$ સેમીમાં માપેલું છે."
+    ],
+    "answer": "ક્ષેત્રફળ $\\sqrt3\\,b$ સેમી²/સેના દરથી ઘટે છે.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-3",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "3",
+    "page": 150,
+    "prompt": "કયા અંતરાલમાં $f(x)=\\frac{4\\sin x-2x-x\\cos x}{2+\\cos x}$ (a) વધે અને (b) ઘટે છે તે નક્કી કરો.",
+    "steps": [
+      "$-1\\leq\\cos x\\leq1$ હોવાથી $2+\\cos x\\geq1>0$. તેથી વિધેયનો પ્રાન્ત $\\mathbb R$ છે.",
+      "અંશને $u=4\\sin x-2x-x\\cos x$ અને છેદને $v=2+\\cos x$ ધારો. ગુણાકારના નિયમથી $u\\prime=4\\cos x-2-(\\cos x-x\\sin x)=3\\cos x-2+x\\sin x$ અને $v\\prime=-\\sin x$.",
+      "ભાગાકારના નિયમથી $f\\prime(x)=\\frac{(3\\cos x-2+x\\sin x)(2+\\cos x)+(4\\sin x-2x-x\\cos x)\\sin x}{(2+\\cos x)^2}$.",
+      "અંશ વિસ્તારીને સમાન પદો ભેગાં કરતાં $6\\cos x+3\\cos^2x-4-2\\cos x+2x\\sin x+x\\sin x\\cos x+4\\sin^2x-2x\\sin x-x\\sin x\\cos x$.",
+      "$\\sin^2x=1-\\cos^2x$ વાપરતાં અંશ $4\\cos x+3\\cos^2x-4+4(1-\\cos^2x)=4\\cos x-\\cos^2x$. તેથી $f\\prime(x)=\\frac{\\cos x(4-\\cos x)}{(2+\\cos x)^2}$.",
+      "$4-\\cos x\\geq3>0$ અને છેદ ધન હોવાથી વિકલિતની સંજ્ઞા $\\cos x$ ની સંજ્ઞા પર આધારિત છે.",
+      "(a) દરેક પૂર્ણાંક $k$ માટે $-\\frac\\pi2+2k\\pi<x<\\frac\\pi2+2k\\pi$ પર $\\cos x>0$. તેથી આ અંતરાલોમાં $f$ વધે છે.",
+      "(b) દરેક પૂર્ણાંક $k$ માટે $\\frac\\pi2+2k\\pi<x<\\frac{3\\pi}2+2k\\pi$ પર $\\cos x<0$. તેથી આ અંતરાલોમાં $f$ ઘટે છે. અંતબિંદુઓ પર વિકલિત શૂન્ય છે; સતતતા વડે બંધ અંતરાલોમાં પણ અનુરૂપ એકવિધતા મળે છે."
+    ],
+    "answer": "વધે: $(-\\pi/2+2k\\pi,\\pi/2+2k\\pi)$; ઘટે: $(\\pi/2+2k\\pi,3\\pi/2+2k\\pi)$, $k\\in\\mathbb Z$.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-4",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "4",
+    "page": 150,
+    "prompt": "કયા અંતરાલમાં $f(x)=x^3+\\frac1{x^3}$, $x\\ne0$, (a) વધતું વિધેય અને (b) ઘટતું વિધેય છે તે નક્કી કરો.",
+    "steps": [
+      "પ્રાન્ત $\\mathbb R\\setminus\\{0\\}$ છે. $f(x)=x^3+x^{-3}$ લખીએ.",
+      "$f\\prime(x)=3x^2-3x^{-4}=\\frac{3(x^6-1)}{x^4}$. $x\\ne0$ માટે $x^4>0$ છે.",
+      "$f\\prime(x)=0\\Rightarrow x^6=1$. વાસ્તવિક ઉકેલો $x=-1,1$ છે. $x=0$ પ્રાન્તમાં નથી; તેથી સંજ્ઞા તપાસવા અંતરાલો $(-\\infty,-1),(-1,0),(0,1),(1,\\infty)$ લેવા જરૂરી છે.",
+      "જો $x<-1$ અથવા $x>1$ હોય તો $|x|>1$, એટલે $x^6-1>0$ અને $f\\prime(x)>0$. તેથી $f$ દરેક અંતરાલ $(-\\infty,-1)$ અને $(1,\\infty)$ પર વધે છે.",
+      "જો $-1<x<0$ અથવા $0<x<1$ હોય તો $0<|x|<1$, એટલે $x^6-1<0$ અને $f\\prime(x)<0$. તેથી $f$ દરેક અંતરાલ $(-1,0)$ અને $(0,1)$ પર ઘટે છે.",
+      "$x=0$ પર વિધેય અવ્યાખ્યાયિત હોવાથી $(-1,1)$ ને એક જ ઘટતો અંતરાલ કહી શકાતો નથી. $x=\\pm1$ પર વિકલિત શૂન્ય છે."
+    ],
+    "answer": "વધે: $(-\\infty,-1)$ અને $(1,\\infty)$; ઘટે: $(-1,0)$ અને $(0,1)$.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-5",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "5",
+    "page": 150,
+    "prompt": "જેનું શીર્ષ મુખ્ય અક્ષનું એક અંત્યબિંદુ હોય તેવા ઉપવલય $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$ માં અંતર્ગત સમદ્વિબાજુ ત્રિકોણનું મહત્તમ ક્ષેત્રફળ શોધો.",
+    "steps": [
+      "મુખ્ય અક્ષ $x$-અક્ષ પર અને શીર્ષ $A=(a,0)$ લઈએ, જ્યાં $a,b>0$. સમમિતિથી આધારનાં અંત્યબિંદુઓ $B=(x,y)$ અને $C=(x,-y)$ લઈ શકાય છે; $-a\\leq x\\leq a$, $y\\geq0$.",
+      "ઉપવલય પરથી $y=b\\sqrt{1-x^2/a^2}$. આધાર $BC=2y$ અને શીર્ષથી આધારની ઊંચાઈ $a-x$ છે.",
+      "ક્ષેત્રફળ $S=\\frac12(2y)(a-x)=b(a-x)\\sqrt{1-x^2/a^2}$. $S\\geq0$ હોવાથી $S$ ને મહત્તમ કરવા $S^2$ ને મહત્તમ કરી શકીએ.",
+      "$F(x)=S^2=\\frac{b^2}{a^2}(a-x)^2(a^2-x^2)=\\frac{b^2}{a^2}(a-x)^3(a+x)$.",
+      "વિકલનથી $F\\prime(x)=\\frac{b^2}{a^2}[-3(a-x)^2(a+x)+(a-x)^3]= -\\frac{2b^2}{a^2}(a-x)^2(a+2x)$.",
+      "અંતરાલના અંદરના નિર્ણાયક બિંદુ માટે $a+2x=0$, એટલે $x=-a/2$. $-a<x<-a/2$ પર $F\\prime>0$ અને $-a/2<x<a$ પર $F\\prime<0$.",
+      "છેડાઓ $x=\\pm a$ પર ક્ષેત્રફળ શૂન્ય છે. તેથી $x=-a/2$ પર નિરપેક્ષ મહત્તમ મળે છે. ત્યારે $y=b\\sqrt{1-1/4}=\\sqrt3 b/2$.",
+      "આથી $S_{\\max}=y(a-x)=\\frac{\\sqrt3 b}{2}\\left(a+\\frac a2\\right)=\\frac{3\\sqrt3}{4}ab$. બીજા મુખ્ય અંત્યબિંદુને શીર્ષ લેતાં સમમિતિથી એ જ ઉત્તર મળે છે."
+    ],
+    "answer": "મહત્તમ ક્ષેત્રફળ $\\frac{3\\sqrt3}{4}ab$ ચોરસ એકમ.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-6",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "6",
+    "page": 150,
+    "prompt": "લંબચોરસ આધાર તથા પડખાં ધરાવતી ખુલ્લી ટાંકીની ઊંડાઈ 2 મીટર તથા ઘનફળ 8 ઘનમીટર છે. આધારનો બાંધકામ ખર્ચ ₹70 પ્રતિ ચો.મી. અને પડખાંનો ખર્ચ ₹45 પ્રતિ ચો.મી. હોય તો ન્યૂનતમ કુલ ખર્ચ શોધો.",
+    "steps": [
+      "આધારની લંબાઈ $x$ મીટર અને પહોળાઈ $y$ મીટર ધારો, જ્યાં $x,y>0$. ઊંડાઈ 2 મીટર હોવાથી ઘનફળ $2xy=8$, એટલે $xy=4$ અને $y=4/x$.",
+      "આધારનું ક્ષેત્રફળ $xy=4$ ચો.મી. છે. તેનો ખર્ચ $70(4)=₹280$. ટાંકી ખુલ્લી છે, તેથી ઢાંકણનો ખર્ચ લેવાનો નથી.",
+      "ચાર પડખાંનું ક્ષેત્રફળ $2(2x)+2(2y)=4(x+y)$ ચો.મી. છે. પડખાંનો ખર્ચ $45\\cdot4(x+y)=180(x+y)$.",
+      "કુલ ખર્ચ $C(x)=280+180\\left(x+\\frac4x\\right)$, $x>0$.",
+      "$C\\prime(x)=180\\left(1-\\frac4{x^2}\\right)$. $C\\prime(x)=0\\Rightarrow x^2=4$. ધન માપ હોવાથી $x=2$ મીટર અને $y=4/2=2$ મીટર.",
+      "$C\\prime\\prime(x)=1440/x^3>0$ દરેક $x>0$ માટે. તેથી આ બિંદુ ન્યૂનતમ આપે છે. ઉપરાંત $x\\to0^+$ અને $x\\to\\infty$ થતાં ખર્ચ અનંત તરફ જાય છે; આ નિરપેક્ષ ન્યૂનતમ છે.",
+      "$C_{\\min}=280+180(2+2)=280+720=₹1000$. ચકાસણી: આધાર 4 ચો.મી., પડખાં 16 ચો.મી.; $4(70)+16(45)=1000$ અને ઘનફળ $2\\cdot2\\cdot2=8$ ઘનમીટર."
+    ],
+    "answer": "ન્યૂનતમ કુલ ખર્ચ ₹1000; આધાર $2\\text{ મી.}\\times2\\text{ મી.}$ અને ઊંડાઈ 2 મી.",
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "પ્રકીર્ણ સ્વાધ્યાય 6 · મૂળ ગુજરાતી પાઠ્યપુસ્તક પૃષ્ઠ 150.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-10-31",
+      "method": "Question visually checked against uploaded Gujarati textbook page 150. Derivatives, domains, sign intervals and final substitutions independently reviewed."
+    }
+  }
+]
