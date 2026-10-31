@@ -6,7 +6,10 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test tests/static.test.mjs",
-    "verify": "npm run build && npm test"
+    "verify": "npm run build && npm test",
+    "build:original": "node scripts/build.mjs --original"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

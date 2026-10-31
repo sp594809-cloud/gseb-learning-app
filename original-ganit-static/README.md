@@ -17,7 +17,7 @@ npm run build
 npm test
 ```
 
-The build checks source hashes, copies the exact original files into `dist/`, and verifies output hashes. No package installation is necessary. There is no production Node server, framework build, database, environment secret, or API dependency. The original site is authored in browser JavaScript; these readable files are its complete static source, not a screenshot/mockup or minified framework reconstruction.
+The build checks source hashes and copies the original files into `dist/`. It then appends explicitly verified content from `content-additions/` to the generated content JSON. All original records and every other asset remain unchanged. `npm run build:original` produces the byte-for-byte original without additions. No package installation is necessary. There is no production Node server, framework build, database, environment secret, or API dependency. The original site is authored in browser JavaScript; these readable files are its complete static source, not a screenshot/mockup or minified framework reconstruction.
 
 ## Render Static Site settings
 
@@ -43,3 +43,8 @@ Bookmarks, progress and practice are already stored in localStorage. They remain
 ChatGPT's owner-only hosting sign-in gate is infrastructure outside the source files. It cannot be reproduced by a backend-free static export. A new Render site normally exposes its static files to visitors; configure access separately if required. This project does not change the original site's access or deployment.
 
 No files outside this project directory are changed. The existing Next.js app and `premium-experience` are retained untouched.
+
+
+## Content milestones after exact migration
+
+The exact-copy milestone is commit `7233922cffa933617ecb19aabaed566f9bb96063`. The current default build adds only Chapter 3, Exercise 3.1, questions 2 and 3: **112 total solutions**. The uploaded page (printed p.37, PDF p.51) was visually checked, and automated tests independently enumerate all valid matrix orders. No original solution is replaced. The original interface renders the additions without CSS, JavaScript or font changes. Remaining content is listed in `CONTENT_STATUS.json`; a draft verification label alone is not treated as completed review.

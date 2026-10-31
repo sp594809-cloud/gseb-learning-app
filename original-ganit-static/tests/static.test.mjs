@@ -7,8 +7,8 @@ const root=new URL('../',import.meta.url);
 const text=p=>readFile(new URL(p,root),'utf8');
 const manifest=JSON.parse(await text('verification/source-manifest.json'));
 const content=JSON.parse(await text('source/content.json'));
-test('every source and built asset matches recovered published SHA-256',async()=>{
- for(const [p,hash]of Object.entries(manifest.files))for(const folder of ['source','dist'])assert.equal(createHash('sha256').update(await readFile(new URL(folder+'/'+p,root))).digest('hex'),hash,p);
+test('all original source and all non-content output match published SHA-256',async()=>{
+ for(const [p,hash]of Object.entries(manifest.files))for(const folder of (p==='content.json'?['source']:['source','dist']))assert.equal(createHash('sha256').update(await readFile(new URL(folder+'/'+p,root))).digest('hex'),hash,p);
 });
 test('all original chapters and all 110 numbered solutions preserved',()=>{
  assert.equal(content.chapters.length,6);assert.equal(content.solutions.length,110);assert.equal(new Set(content.solutions.map(q=>q.id)).size,110);
@@ -30,4 +30,22 @@ test('HTML and manifest assets resolve locally; no external font dependency intr
  const html=await text('source/index.html');for(const m of html.matchAll(/(?:src|href)="(\/[^"#]+)"/g))assert.ok(manifest.files[m[1].slice(1)],m[1]);
  const pwa=JSON.parse(await text('source/manifest.json'));for(const icon of pwa.icons)assert.ok(manifest.files[icon.src.slice(1)]);
  assert.ok(!html.includes('fonts.googleapis.com'));assert.ok(!html.includes('premium-experience'));
+});
+
+test('additions preserve every original record and enumerate all valid matrix orders',async()=>{
+ const built=JSON.parse(await text('dist/content.json'));
+ const additions=JSON.parse(await text('content-additions/chapter3-batch1.json'));
+ assert.deepEqual({...built,solutions:built.solutions.slice(0,110)},content);
+ assert.deepEqual(built.solutions.slice(110),additions);
+ assert.equal(new Set(built.solutions.map(q=>q.id)).size,built.solutions.length);
+ assert.equal(additions.length,2);
+ for(const q of additions) {
+  assert.equal(q.page,37);assert.equal(q.verification.source,'book/51.webp');
+  for(const c of q.verification.cases) {
+   const expected=[];
+   for(let m=1;m<=c.elements;m++) for(let n=1;n<=c.elements;n++) if(m*n===c.elements)expected.push([m,n]);
+   assert.deepEqual(c.orders,expected);
+   for(const [m,n] of expected)assert.ok(q.answer.includes(`${m}×${n}`));
+  }
+ }
 });

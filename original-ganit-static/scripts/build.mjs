@@ -1,4 +1,4 @@
-import {cp,mkdir,rm,readdir,readFile} from 'node:fs/promises';
+import {cp,mkdir,rm,readdir,readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
@@ -19,3 +19,19 @@ await mkdir(path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'source'),path.join(root,'dist'),{recursive:true});
 if(JSON.stringify(await inventory(path.join(root,'dist')))!==JSON.stringify(expected))throw Error('Build output differs from original');
 console.log(`Built ${Object.keys(expected).length} unchanged original files into dist/ (published source ${manifest.sourceCommit}).`);
+
+// Keep the recovered source immutable; append only explicitly reviewed additions.
+if(!process.argv.includes('--original')) {
+ const contentPath=path.join(root,'dist/content.json');
+ const content=JSON.parse(await readFile(contentPath,'utf8'));
+ const ids=new Set(content.solutions.map(q=>q.id));
+ for(const filename of (await readdir(path.join(root,'content-additions'))).filter(n=>n.endsWith('.json')).sort()) {
+  for(const q of JSON.parse(await readFile(path.join(root,'content-additions',filename),'utf8'))) {
+   if(ids.has(q.id))throw Error('Refusing to overwrite existing solution '+q.id);
+   if(!q.verification||!q.steps?.length||!q.answer||!expected[q.verification.source])throw Error('Unverified addition '+q.id);
+   ids.add(q.id); content.solutions.push(q);
+  }
+ }
+ await writeFile(contentPath,JSON.stringify(content));
+ console.log('Published '+content.solutions.length+' solutions; original 110 entries unchanged.');
+}
