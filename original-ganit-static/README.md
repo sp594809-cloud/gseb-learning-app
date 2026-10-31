@@ -23,12 +23,12 @@ The build checks source hashes, copies the exact original files into `dist/`, an
 
 - Repository: `sp594809-cloud/gseb-learning-app`
 - Branch: `feature/ganit-original-static`
-- Root directory: `original-ganit-static`
-- Build command: `npm run build`
-- Publish directory: `dist`
+- Root directory: repository root (blank in Render)
+- Build command: `npm --prefix original-ganit-static run build`
+- Publish directory: `original-ganit-static/dist`
 - Service type: **Static Site**, not Web Service
 - Start command: **none**
-- Environment variables: **none required**
+- Preview build environment: `SKIP_INSTALL_DEPS=true`, `NODE_VERSION=22`
 
 Create a separate Static Site; do not change an existing live service. Hash navigation (`/#home`, `/#solution/tb1-Example-1`) needs no catch-all server rewrite because fragments are handled entirely by the browser. Host this project at the origin root, not under a URL subdirectory: original asset paths are root-relative.
 
