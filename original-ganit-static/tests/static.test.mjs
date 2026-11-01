@@ -36,7 +36,7 @@ test('additions preserve every original record and enumerate all valid matrix or
  const built=JSON.parse(await text('dist/content.json'));
  const additions=JSON.parse(await text('content-additions/chapter3-batch1.json'));
  assert.deepEqual({...built,chapters:built.chapters.slice(0,6),solutions:built.solutions.slice(0,110),sources:undefined},{...content,sources:undefined});
- assert.deepEqual(built.solutions.slice(110,112),additions);
+ for(const original of additions) { const actual=built.solutions.find(q=>q.id===original.id); const {steps,explanation,...metadata}=actual; const {steps:originalSteps,...originalMetadata}=original; assert.deepEqual(metadata,originalMetadata); assert.deepEqual(explanation,originalSteps); assert.ok(steps.length); }
  const chapter7=JSON.parse(await text('content-additions/chapter7-batch1.json'));
  assert.deepEqual(built.solutions.filter(q=>chapter7.some(item=>item.id===q.id)),chapter7);
  assert.deepEqual(built.chapters.slice(0,6),content.chapters);
