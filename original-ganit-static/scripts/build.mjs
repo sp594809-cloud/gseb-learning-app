@@ -88,3 +88,12 @@ if(!process.argv.includes('--original')) {
  await mkdir(path.join(root,'dist/verification'),{recursive:true});
  await cp(path.join(root,'verification/mobile.html'),path.join(root,'dist/verification/mobile.html'));
 }
+
+if(!process.argv.includes('--original')) {
+ const contentPath=path.join(root,'dist/content.json');
+ const content=JSON.parse(await readFile(contentPath,'utf8'));
+ const groups={'Example':0,'3.1':1,'3.2':2,'3.3':3,'3.4':4,'Misc':5};
+ const sorted=content.solutions.filter(q=>q.chapter===3).sort((a,b)=>(groups[a.section]-groups[b.section])||(+a.number-+b.number));
+ let next=0;content.solutions=content.solutions.map(q=>q.chapter===3?sorted[next++]:q);
+ await writeFile(contentPath,JSON.stringify(content));
+}
