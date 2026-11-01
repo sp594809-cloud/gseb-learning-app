@@ -1,6 +1,6 @@
 // Native MathML: no external scripts, fonts or runtime server.
 function mathText(value){
- const symbols={pi:'π',infty:'∞',ne:'≠',neq:'≠',leq:'≤',geq:'≥',Rightarrow:'⇒',to:'→',cdot:'·',times:'×',pm:'±',setminus:'∖',in:'∈',prime:'′',theta:'θ',varnothing:'∅',cap:'∩',ge:'≥',le:'≤'};
+ const symbols={pi:'π',infty:'∞',ne:'≠',neq:'≠',leq:'≤',geq:'≥',Rightarrow:'⇒',to:'→',cdot:'·',times:'×',pm:'±',setminus:'∖',in:'∈',prime:'′',theta:'θ',varnothing:'∅',cap:'∩',ge:'≥',le:'≤',alpha:'α',Leftrightarrow:'⇔'};
  function formula(tex){let i=0;
   function atom(){while(/\s/.test(tex[i]||'')&&i<tex.length)i++;let c=tex[i++];if(!c)return '<mrow/>';
    if(c==='{'){let r=sequence('}');return '<mrow>'+r+'</mrow>';}
