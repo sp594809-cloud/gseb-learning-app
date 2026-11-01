@@ -74,3 +74,17 @@ if(!process.argv.includes('--original')) {
  app=app.replace('let revealed=1;','let revealed=q.explanation?q.steps.length:1;').replace("$('#answer').hidden=q.steps.length>1","$('#answer').hidden=!q.explanation&&q.steps.length>1").replace("$('#next-step').hidden=q.steps.length<=1","$('#next-step').hidden=Boolean(q.explanation)||q.steps.length<=1");
  await writeFile(appPath,app);
 }
+
+if(!process.argv.includes('--original')) {
+ const contentPath=path.join(root,'dist/content.json');
+ const content=JSON.parse(await readFile(contentPath,'utf8'));
+ const groups={'Example':0,'6.1':1,'6.2':2,'6.3':3,'Misc 6':4};
+ const sorted=content.solutions.filter(q=>q.chapter===6).sort((a,b)=>(groups[a.section]-groups[b.section])||(+a.number-+b.number));
+ let next=0;content.solutions=content.solutions.map(q=>q.chapter===6?sorted[next++]:q);
+ await writeFile(contentPath,JSON.stringify(content));
+ const appPath=path.join(root,'dist/app.js');let app=await readFile(appPath,'utf8');
+ app=app.replace('class="step" ${i?', 'class="step" style="min-width:0" ${i?').replace('<p>${mathText(s)}</p></div>', '<p style="min-width:0;flex:1">${mathText(s)}</p></div>');
+ await writeFile(appPath,app);
+ await mkdir(path.join(root,'dist/verification'),{recursive:true});
+ await cp(path.join(root,'verification/mobile.html'),path.join(root,'dist/verification/mobile.html'));
+}
