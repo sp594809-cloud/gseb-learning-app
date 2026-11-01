@@ -1,0 +1,306 @@
+[
+  {
+    "id": "tb6-Misc-7",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "7",
+    "page": 151,
+    "prompt": "ચોરસની પરિમિતિ અને વર્તુળના પરિઘનો સરવાળો અચળ $k$ છે. ચોરસની બાજુ વર્તુળની ત્રિજ્યાની બમણી હોય ત્યારે કુલ ક્ષેત્રફળ ન્યૂનતમ છે તે સાબિત કરો.",
+    "steps": [
+      "ચોરસની બાજુ $a$, વર્તુળની ત્રિજ્યા $r$: $4a+2\\pi r=k$.",
+      "$r=(k-4a)/(2\\pi),\\;0<a<k/4$.",
+      "$A=a^2+\\pi r^2=a^2+(k-4a)^2/(4\\pi)$.",
+      "$A\\prime=2a-2(k-4a)/\\pi=0\\Rightarrow(\\pi+4)a=k$.",
+      "$A\\prime\\prime=2+8/\\pi>0$.",
+      "$a=k/(\\pi+4),\\;r=k/[2(\\pi+4)]\\Rightarrow a=2r$. સાબિત."
+    ],
+    "answer": "ન્યૂનતમ માટે ચોરસની બાજુ $a=2r$.",
+    "explanation": [
+      "અચળ માપ બંને આકૃતિની પરિમિતિનો સરવાળો છે. ચોરસ અને વર્તુળનાં ક્ષેત્રફળ અલગ સૂત્રથી મેળવ્યાં છે.",
+      "કુલ ક્ષેત્રફળ એક ચુસ્ત ઉત્તલ દ્વિઘાત છે, તેથી મળેલું આંતરિક ન્યૂનતમ સમગ્ર પ્રાન્તનું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-8",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "8",
+    "page": 151,
+    "prompt": "લંબચોરસ પર અર્ધવર્તુળ ગોઠવેલ આકારની બારીની કુલ પરિમિતિ 10 મીટર છે. મહત્તમ પ્રકાશ પ્રવેશ માટે બારીનાં પરિમાણ શોધો.",
+    "steps": [
+      "અર્ધવર્તુળની ત્રિજ્યા $r$, લંબચોરસની ઊંચાઈ $h$; પહોળાઈ $2r$.",
+      "$2h+2r+\\pi r=10\\Rightarrow h=[10-(2+\\pi)r]/2$.",
+      "$A=2rh+\\frac12\\pi r^2=10r-(2+\\pi/2)r^2$.",
+      "$A\\prime=10-(4+\\pi)r=0\\Rightarrow r=10/(4+\\pi)$.",
+      "$A\\prime\\prime=-(4+\\pi)<0$; $h=10/(4+\\pi)=r$.",
+      "પહોળાઈ $20/(4+\\pi)\\text{ m}$; લંબચોરસ ઊંચાઈ $10/(4+\\pi)\\text{ m}$; કુલ ઊંચાઈ $20/(4+\\pi)\\text{ m}$."
+    ],
+    "answer": "પહોળાઈ અને કુલ ઊંચાઈ બંને $20/(4+\\pi)$ મી.; લંબચોરસની ઊંચાઈ $10/(4+\\pi)$ મી.",
+    "explanation": [
+      "બારીનો બહારનો પરિઘ લેવાનો છે; લંબચોરસની ઉપરની અંદરની વહેંચણી રેખા પરિમિતિમાં ઉમેરાતી નથી.",
+      "પ્રકાશનો પ્રવેશ ક્ષેત્રફળને અનુરૂપ માન્યો છે. બંને ભાગનાં ક્ષેત્રફળ ઉમેરી પરિમિતિની શરતથી એક ચલ દૂર કર્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-9",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "9",
+    "page": 151,
+    "prompt": "કાટકોણ ત્રિકોણના કર્ણ પરના એક બિંદુનાં બંને કાટખૂણો બનાવતી બાજુઓથી લંબઅંતરો અચળ $a,b$ છે. કર્ણની ન્યૂનતમ લંબાઈ $(a^{2/3}+b^{2/3})^{3/2}$ છે તે સાબિત કરો.",
+    "steps": [
+      "કર્ણનો આધાર સાથેનો ખૂણો $\\theta$, $0<\\theta<\\pi/2$.",
+      "બિંદુ કર્ણને બે ભાગમાં વહેંચે છે; તેમની લંબાઈ $a/\\sin\\theta$ અને $b/\\cos\\theta$ લઈએ.",
+      "$L(\\theta)=a\\csc\\theta+b\\sec\\theta$.",
+      "$L\\prime=-a\\cos\\theta/\\sin^2\\theta+b\\sin\\theta/\\cos^2\\theta=0$.",
+      "$b\\sin^3\\theta=a\\cos^3\\theta\\Rightarrow\\tan\\theta=(a/b)^{1/3}$.",
+      "$A=a^{1/3},B=b^{1/3}\\Rightarrow\\sin\\theta=A/\\sqrt{A^2+B^2},\\;\\cos\\theta=B/\\sqrt{A^2+B^2}$.",
+      "$L=(A^2+B^2)\\sqrt{A^2+B^2}=(a^{2/3}+b^{2/3})^{3/2}$.",
+      "વિકલિતની સંજ્ઞા $b\\tan^3\\theta-a$ ની છે: મૂળની ડાબે ઋણ, જમણે ધન. તેથી આ નિરપેક્ષ ન્યૂનતમ છે."
+    ],
+    "answer": "$L_{min}=(a^{2/3}+b^{2/3})^{3/2}$.",
+    "explanation": [
+      "કર્ણ પરનું બિંદુ બે નાના કાટકોણ ત્રિકોણ બનાવે છે. તેમના કર્ણનો સરવાળો મૂળ કર્ણ છે.",
+      "ખૂણો શૂન્ય કે સમકોણ તરફ જાય ત્યારે કુલ લંબાઈ અનંત તરફ જાય છે. એક જ આંતરિક નિર્ણાયક ખૂણો ઋણથી ધન વિકલિત આપે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-10",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "10",
+    "page": 151,
+    "prompt": "$f(x)=(x-2)^4(x+1)^3$ નાં (a) સ્થાનિક મહત્તમ (b) સ્થાનિક ન્યૂનતમ (c) નતિબિંદુ આપતાં x શોધો.",
+    "steps": [
+      "$f\\prime=4(x-2)^3(x+1)^3+3(x-2)^4(x+1)^2$.",
+      "$=(x-2)^3(x+1)^2(7x-2)$.",
+      "નિર્ણાયક બિંદુઓ: $x=-1,2/7,2$.",
+      "$x<2/7: f\\prime\\geq0$ (માત્ર $-1$ પર શૂન્ય); $2/7<x<2: f\\prime<0$; $x>2: f\\prime>0$.",
+      "(a) $x=2/7$: સ્થાનિક મહત્તમ $f(2/7)=(12/7)^4(9/7)^3$.",
+      "(b) $x=2$: સ્થાનિક ન્યૂનતમ $f(2)=0$.",
+      "(c) $f\\prime\\prime=6(x-2)^2(x+1)(7x^2-4x-2)$.",
+      "$f\\prime\\prime=0\\Rightarrow x=-1,2,(2-3\\sqrt2)/7,(2+3\\sqrt2)/7$.",
+      "બીજી વિકલિતની સંજ્ઞા $-1,(2-3\\sqrt2)/7,(2+3\\sqrt2)/7$ પર બદલાય છે; $2$ પર બદલાતી નથી.",
+      "નતિબિંદુ આપતાં x: $-1,(2-3\\sqrt2)/7,(2+3\\sqrt2)/7$. આમાંથી સ્થિર નતિબિંદુ માત્ર $x=-1$ છે."
+    ],
+    "answer": "(a) $x=2/7$; (b) $x=2$; (c) $x=-1,(2-3\\sqrt2)/7,(2+3\\sqrt2)/7$; સ્થિર નતિબિંદુ $x=-1$.",
+    "explanation": [
+      "પ્રથમ વિકલિતની સંજ્ઞાથી સ્થાનિક મહત્તમ અને ન્યૂનતમ મળે છે. x=−1 પર વિકલિત શૂન્ય છે, પરંતુ સંજ્ઞા બદલાતી નથી.",
+      "સંપૂર્ણ નતિબિંદુ શોધવા બીજી વિકલિતની સંજ્ઞા તપાસવી પડે છે. માત્ર પ્રથમ વિકલિતના શૂન્યો તપાસીએ તો બાકીના બે બિનસ્થિર નતિબિંદુ છૂટી જાય.",
+      "અહીં બધા વક્રતા બદલાવનાં બિંદુ આપ્યાં છે અને તેમાં કયો સ્થિર નતિબિંદુ છે તે પણ સ્પષ્ટ કર્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-11",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "11",
+    "page": 151,
+    "prompt": "$f(x)=\\cos^2x+\\sin x,\\;x\\in[0,\\pi]$ નાં વૈશ્વિક મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$u=\\sin x,\\;0\\leq u\\leq1$.",
+      "$f=1-u^2+u=5/4-(u-1/2)^2$.",
+      "$0\\leq(u-1/2)^2\\leq1/4\\Rightarrow1\\leq f\\leq5/4$.",
+      "$f=5/4\\Leftrightarrow\\sin x=1/2\\Rightarrow x=\\pi/6,5\\pi/6$.",
+      "$f=1\\Leftrightarrow\\sin x=0\\text{ or }1\\Rightarrow x=0,\\pi/2,\\pi$."
+    ],
+    "answer": "વૈશ્વિક મહત્તમ $5/4$ ($x=\\pi/6,5\\pi/6$); ન્યૂનતમ $1$ ($x=0,\\pi/2,\\pi$).",
+    "explanation": [
+      "સાઇનના ચલમાં ફેરવવાથી એક સરળ દ્વિઘાત મળે છે. આપેલા અંતરાલમાં સાઇન અઋણ છે તે ખાસ શરત ઉપયોગી છે.",
+      "પૂર્ણવર્ગ શૂન્ય થાય ત્યારે મહત્તમ અને તેના સૌથી મોટા મૂલ્ય આગળ ન્યૂનતમ મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-12",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "12",
+    "page": 151,
+    "prompt": "$r$ ત્રિજ્યાના ગોળકમાં અંતર્ગત મહત્તમ ઘનફળવાળા લંબવૃત્તીય શંકુની ઊંચાઈ $4r/3$ છે તે સાબિત કરો.",
+    "steps": [
+      "શંકુની ઊંચાઈ $h$, આધાર ત્રિજ્યા $a$: $a^2+(r-h)^2=r^2$.",
+      "$a^2=2rh-h^2,\\;0<h<2r$.",
+      "$V=\\frac\\pi3h^2(2r-h)$.",
+      "$V\\prime=\\frac\\pi3h(4r-3h)=0\\Rightarrow h=4r/3$.",
+      "$V\\prime\\prime(4r/3)=-4\\pi r/3<0$; છેડાઓએ $V=0$.",
+      "અતઃ મહત્તમ માટે $h=4r/3$. સાબિત."
+    ],
+    "answer": "શંકુની ઊંચાઈ $4r/3$.",
+    "explanation": [
+      "ગોળકનું કેન્દ્ર અને આધારવર્તુળનો છેદ જોઈ પાયથાગોરસથી આધારની ત્રિજ્યા દૂર કરી છે.",
+      "શંકુની ઊંચાઈ શૂન્ય અને વ્યાસ વચ્ચે રહેવી જોઈએ. આ પ્રાન્તમાં ચાર તૃતીયાંશ r જ ઉપયોગી નિર્ણાયક ઊંચાઈ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-13",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "13",
+    "page": 151,
+    "prompt": "$f$ એ $[a,b]$ પર વ્યાખ્યાયિત છે અને દરેક $x\\in(a,b)$ માટે $f\\prime(x)>0$ હોય તો $(a,b)$ પર $f$ વધે છે તે સાબિત કરો.",
+    "steps": [
+      "કોઈ પણ $a<x_1<x_2<b$ લો.",
+      "$f$ એ $[x_1,x_2]$ પર સતત અને $(x_1,x_2)$ પર વિકલનીય છે, કારણ કે $(a,b)$ પર વિકલિત અસ્તિત્વમાં છે.",
+      "મધ્યમાન પ્રમેયથી કોઈ $c\\in(x_1,x_2)$ માટે $f(x_2)-f(x_1)=f\\prime(c)(x_2-x_1)$.",
+      "$f\\prime(c)>0,\\;x_2-x_1>0\\Rightarrow f(x_2)-f(x_1)>0$.",
+      "અતઃ $x_1<x_2\\Rightarrow f(x_1)<f(x_2)$: $(a,b)$ પર ચુસ્ત વધે. સાબિત."
+    ],
+    "answer": "$f$ એ $(a,b)$ પર ચુસ્ત વધતું વિધેય છે.",
+    "explanation": [
+      "અંદરના કોઈ પણ બે બિંદુ પસંદ કરીને તેમની વચ્ચે મધ્યમાન પ્રમેય લાગુ પડે છે.",
+      "મૂળ છેડાઓ a,b પર સતતતાની અલગ શરત નથી, પણ દાવો ખુલ્લા અંતરાલ માટે છે. તેથી અંદરના બંધ ઉપઅંતરાલ પર સતતતા પૂરતી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-14",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "14",
+    "page": 151,
+    "prompt": "$R$ ત્રિજ્યાના ગોળકમાં અંતર્ગત મહત્તમ ઘનફળવાળા નળાકારની ઊંચાઈ $2R/\\sqrt3$ છે તે સાબિત કરી મહત્તમ ઘનફળ શોધો.",
+    "steps": [
+      "અર્ધઊંચાઈ $z$, નળાકારની ત્રિજ્યા $r$: $r^2+z^2=R^2$.",
+      "$V=2\\pi z(R^2-z^2),\\;0<z<R$.",
+      "$V\\prime=2\\pi(R^2-3z^2)=0\\Rightarrow z=R/\\sqrt3$.",
+      "$V\\prime\\prime=-12\\pi z<0$; છેડાઓએ ઘનફળ $0$.",
+      "$h=2z=2R/\\sqrt3,\\;r^2=2R^2/3$.",
+      "$V_{max}=\\pi\\frac{2R^2}{3}\\frac{2R}{\\sqrt3}=\\frac{4\\pi R^3}{3\\sqrt3}$."
+    ],
+    "answer": "ઊંચાઈ $2R/\\sqrt3$; મહત્તમ ઘનફળ $4\\pi R^3/(3\\sqrt3)$.",
+    "explanation": [
+      "નળાકારના અક્ષવાળા છેદમાં ગોળકનું વર્તુળ અને અંદરનો લંબચોરસ દેખાય છે. અર્ધઊંચાઈ લેવાથી પાયથાગોરસનો સંબંધ સરળ બને છે.",
+      "વિકલન અર્ધઊંચાઈ પ્રમાણે કર્યું હોવાથી અંતે તેને બમણી કરીને સાચી ઊંચાઈ આપેલી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-15",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "15",
+    "page": 151,
+    "prompt": "$h$ ઊંચાઈ અને અર્ધશિરઃકોણ $\\alpha$ વાળા શંકુમાં અંતર્ગત મહત્તમ ઘનફળવાળા નળાકારની ઊંચાઈ $h/3$ અને ઘનફળ $4\\pi h^3\\tan^2\\alpha/27$ છે તે સાબિત કરો.",
+    "steps": [
+      "નળાકારની ઊંચાઈ $z$, ત્રિજ્યા $r$; શંકુના ઉપરના નાના ભાગથી $r=(h-z)\\tan\\alpha$.",
+      "$V=\\pi r^2z=\\pi\\tan^2\\alpha\\;z(h-z)^2,\\;0<z<h$.",
+      "$V\\prime=\\pi\\tan^2\\alpha(h-z)(h-3z)$.",
+      "આંતરિક નિર્ણાયક બિંદુ $z=h/3$.",
+      "$0<z<h/3: V\\prime>0$; $h/3<z<h: V\\prime<0$.",
+      "$V_{max}=\\pi\\tan^2\\alpha\\frac h3\\left(\\frac{2h}3\\right)^2=\\frac{4\\pi}{27}h^3\\tan^2\\alpha$. સાબિત."
+    ],
+    "answer": "નળાકારની ઊંચાઈ $h/3$; મહત્તમ ઘનફળ $4\\pi h^3\\tan^2\\alpha/27$.",
+    "explanation": [
+      "નળાકારની ઉપરથી શંકુના શીર્ષ સુધીની ઊંચાઈ h માઇનસ z છે. તેથી ત્રિજ્યા માટે શંકુનો મૂળ અર્ધશિરઃકોણ જ વપરાય છે.",
+      "અહીં મહત્તમ ઘનફળ છે; મહત્તમ વક્રસપાટી માટે મળતો અડધી ઊંચાઈનો જવાબ લાગુ પડતો નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Misc-16",
+    "chapter": 6,
+    "section": "Misc 6",
+    "number": "16",
+    "page": 151,
+    "prompt": "10 મીટર ત્રિજ્યાના નળાકાર પીપમાં $314\\text{ m}^3/\\text{h}$ ના દરે ઘઉં ભરાય છે. ઊંડાઈ વધવાનો દર પસંદ કરો: (A) $1$ (B) $0.1$ (C) $1.1$ (D) $0.5$ મી./કલાક.",
+    "steps": [
+      "$V=\\pi r^2h=100\\pi h$.",
+      "$\\frac{dV}{dt}=100\\pi\\frac{dh}{dt}$.",
+      "$314=100\\pi\\frac{dh}{dt}\\Rightarrow\\frac{dh}{dt}=\\frac{3.14}{\\pi}\\text{ m/h}$.",
+      "$\\pi=3.14$ લેતાં $\\frac{dh}{dt}=1\\text{ m/h}$.",
+      "અતઃ વિકલ્પ (A)."
+    ],
+    "answer": "વિકલ્પ (A): આશરે $1$ મીટર/કલાક.",
+    "explanation": [
+      "નળાકારની ત્રિજ્યા અચળ છે, તેથી ઘનફળ ઊંડાઈ સાથે સીધા પ્રમાણમાં બદલાય છે.",
+      "આપેલો દર ઘનમીટર પ્રતિ કલાક છે; ક્ષેત્રફળથી ભાગતાં મીટર પ્રતિ કલાક મળે છે. વિકલ્પ માટે પાઇનું 3.14 મૂલ્ય વાપર્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/165.webp",
+      "printedPage": 151,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  }
+]
