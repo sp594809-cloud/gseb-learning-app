@@ -1,0 +1,859 @@
+[
+  {
+    "id": "tb6-63-1",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "1",
+    "page": 143,
+    "prompt": "નીચેનાં વિધેયોનાં મહત્તમ અને ન્યૂનતમ મૂલ્યો હોય તો શોધો: (i) $(2x-1)^2+3$ (ii) $9x^2+12x+2$ (iii) $-(x-1)^2+10$ (iv) $x^3+1$.",
+    "steps": [
+      "(i) $(2x-1)^2\\geq0\\Rightarrow f(x)\\geq3$; સમાનતા $x=1/2$ પર. મહત્તમ નથી.",
+      "(ii) $9x^2+12x+2=9(x+2/3)^2-2\\geq-2$; સમાનતા $x=-2/3$ પર. મહત્તમ નથી.",
+      "(iii) $-(x-1)^2+10\\leq10$; સમાનતા $x=1$ પર. ન્યૂનતમ નથી.",
+      "(iv) $x\\to\\infty: x^3+1\\to\\infty$; $x\\to-\\infty: x^3+1\\to-\\infty$. મહત્તમ કે ન્યૂનતમ નથી."
+    ],
+    "answer": "(i) ન્યૂનતમ $3$ ($x=1/2$). (ii) ન્યૂનતમ $-2$ ($x=-2/3$). (iii) મહત્તમ $10$ ($x=1$). (iv) બંને નથી.",
+    "explanation": [
+      "પ્રથમ ત્રણ ભાગમાં પૂર્ણવર્ગનો ઉપયોગ કરવાથી સમગ્ર વાસ્તવિક પ્રાન્તની મર્યાદા સીધી મળે છે. વર્ગ અઋણ હોવાથી સમાનતા ક્યારે થાય તે શોધ્યું છે.",
+      "ચોથો ભાગ બંને દિશામાં અબંધ છે; માત્ર વિકલિત શૂન્ય થતો બિંદુ હોય તો પણ વૈશ્વિક મૂલ્ય મળતું નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/157.webp",
+      "printedPage": 143,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-2",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "2",
+    "page": 143,
+    "prompt": "મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો: (i) $|x+2|-1$ (ii) $-|x+1|+3$ (iii) $\\sin2x+5$ (iv) $|\\sin4x+3|$ (v) $x+1,\\;x\\in(-1,1)$.",
+    "steps": [
+      "(i) $|x+2|\\geq0\\Rightarrow f\\geq-1$; $x=-2$ પર ન્યૂનતમ $-1$. ઉપરથી અબંધ.",
+      "(ii) $-|x+1|\\leq0\\Rightarrow g\\leq3$; $x=-1$ પર મહત્તમ $3$. નીચેથી અબંધ.",
+      "(iii) $-1\\leq\\sin2x\\leq1\\Rightarrow4\\leq h\\leq6$.",
+      "મહત્તમ $6$: $x=\\pi/4+k\\pi$; ન્યૂનતમ $4$: $x=3\\pi/4+k\\pi$, $k\\in\\mathbb Z$.",
+      "(iv) $2\\leq\\sin4x+3\\leq4\\Rightarrow|\\sin4x+3|=\\sin4x+3$.",
+      "મહત્તમ $4$: $x=\\pi/8+k\\pi/2$; ન્યૂનતમ $2$: $x=3\\pi/8+k\\pi/2$.",
+      "(v) $-1<x<1\\Rightarrow0<x+1<2$; છેડાઓ મળતા નથી. મહત્તમ કે ન્યૂનતમ નથી."
+    ],
+    "answer": "(i) ન્યૂનતમ $-1$; (ii) મહત્તમ $3$; (iii) મહત્તમ $6$, ન્યૂનતમ $4$; (iv) મહત્તમ $4$, ન્યૂનતમ $2$; (v) બંને નથી.",
+    "explanation": [
+      "નિરપેક્ષ મૂલ્ય અઋણ હોય છે અને સાઇનનું મૂલ્ય માઇનસ એકથી એક વચ્ચે રહે છે. આ બે મૂળભૂત ગુણધર્મોથી પ્રથમ ચાર ભાગ ઉકેલાય છે.",
+      "પાંચમા ભાગમાં પ્રાન્ત ખુલ્લો છે. શ્રેણીની નીચલી કે ઉપરની મર્યાદા હોવી અને તે મૂલ્ય પ્રાપ્ત થવું જુદી બાબતો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/157.webp",
+      "printedPage": 143,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-3",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "3",
+    "page": 144,
+    "prompt": "સ્થાનિક મહત્તમ અને ન્યૂનતમ શોધો: (i) $x^2$ (ii) $x^3-3x$ (iii) $\\sin x+\\cos x,0<x<\\pi/2$ (iv) $\\sin x-\\cos x,0<x<2\\pi$ (v) $x^3-6x^2+9x+15$ (vi) $x/2+2/x,x>0$ (vii) $1/(x^2+2)$ (viii) $x\\sqrt{1-x},0<x<1$.",
+    "steps": [
+      "(i) $f\\prime=2x=0\\Rightarrow x=0$; $f\\prime\\prime=2>0$. સ્થાનિક ન્યૂનતમ $f(0)=0$; મહત્તમ નથી.",
+      "(ii) $g\\prime=3(x-1)(x+1)$; $g\\prime\\prime=6x$. $x=-1$: સ્થાનિક મહત્તમ $g(-1)=2$; $x=1$: સ્થાનિક ન્યૂનતમ $g(1)=-2$.",
+      "(iii) $h\\prime=\\cos x-\\sin x=0\\Rightarrow x=\\pi/4$; $h\\prime\\prime=-\\sin x-\\cos x<0$. સ્થાનિક મહત્તમ $\\sqrt2$; સ્થાનિક ન્યૂનતમ નથી.",
+      "(iv) $f\\prime=\\cos x+\\sin x=0\\Rightarrow x=3\\pi/4,7\\pi/4$.",
+      "$f\\prime\\prime=-\\sin x+\\cos x$: $x=3\\pi/4$ પર ઋણ, $x=7\\pi/4$ પર ધન. સ્થાનિક મહત્તમ $\\sqrt2$; ન્યૂનતમ $-\\sqrt2$.",
+      "(v) $f\\prime=3(x-1)(x-3)$; $f\\prime\\prime=6x-12$.",
+      "$x=1$: સ્થાનિક મહત્તમ $f(1)=19$; $x=3$: સ્થાનિક ન્યૂનતમ $f(3)=15$.",
+      "(vi) $g\\prime=1/2-2/x^2=0\\Rightarrow x=2$ ($x>0$); $g\\prime\\prime=4/x^3>0$. સ્થાનિક ન્યૂનતમ $g(2)=2$; મહત્તમ નથી.",
+      "(vii) $g\\prime=-2x/(x^2+2)^2$: $x<0: (+)$, $x>0: (-)$. સ્થાનિક મહત્તમ $g(0)=1/2$; ન્યૂનતમ નથી.",
+      "(viii) $f\\prime=\\sqrt{1-x}-x/(2\\sqrt{1-x})=\\frac{2-3x}{2\\sqrt{1-x}}$.",
+      "$x=2/3$: $(+)\\to(-)$. સ્થાનિક મહત્તમ $f(2/3)=2/(3\\sqrt3)$; સ્થાનિક ન્યૂનતમ નથી."
+    ],
+    "answer": "(i) ન્યૂનતમ $0$; (ii) મહત્તમ $2$, ન્યૂનતમ $-2$; (iii) મહત્તમ $\\sqrt2$; (iv) મહત્તમ $\\sqrt2$, ન્યૂનતમ $-\\sqrt2$; (v) મહત્તમ $19$, ન્યૂનતમ $15$; (vi) ન્યૂનતમ $2$; (vii) મહત્તમ $1/2$; (viii) મહત્તમ $2/(3\\sqrt3)$.",
+    "explanation": [
+      "દરેક ભાગમાં પહેલા આપેલો પ્રાન્ત રાખી વિકલિતના શૂન્યો શોધ્યા છે. ત્યારબાદ બીજી વિકલિત અથવા પ્રથમ વિકલિતની સંજ્ઞાથી સ્થાનિક પ્રકાર નક્કી કર્યો છે.",
+      "ખુલ્લા અંતરાલના છેડા પ્રાન્તમાં નથી. છેડા તરફ મર્યાદા આવતી હોય તોપણ તેને સ્થાનિક ન્યૂનતમ કહેવાય નહીં.",
+      "વિકલિતની કસોટી પછી જવાબ માટે મૂળ વિધેયમાં ઉમેદવાર મૂલ્ય મૂક્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-4",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "4",
+    "page": 144,
+    "prompt": "સાબિત કરો કે (i) $e^x$ (ii) $\\log x$ (iii) $x^3+x^2+x+1$ ને મહત્તમ કે ન્યૂનતમ નથી.",
+    "steps": [
+      "(i) $f\\prime=e^x>0$; $x\\to-\\infty: f\\to0$ પણ $f>0$; $x\\to\\infty: f\\to\\infty$. બંને મૂલ્યો નથી.",
+      "(ii) $x>0,\\;g\\prime=1/x>0$; $x\\to0^+: g\\to-\\infty$, $x\\to\\infty: g\\to\\infty$. બંને નથી.",
+      "(iii) $h\\prime=3x^2+2x+1=3(x+1/3)^2+2/3>0$.",
+      "$x\\to\\pm\\infty\\Rightarrow h\\to\\pm\\infty$. બંને નથી."
+    ],
+    "answer": "આપેલાં ત્રણેય વિધેયોને મહત્તમ કે ન્યૂનતમ નથી.",
+    "explanation": [
+      "ત્રણેય વિધેય પોતાના સમગ્ર પ્રાન્ત પર ચુસ્ત વધે છે અને કોઈ છેડું મહત્તમ કે ન્યૂનતમ આપતું નથી.",
+      "ઘાતાંકીય વિધેયની નીચેની મર્યાદા શૂન્ય છે, પરંતુ કોઈ સીમિત x પર તે શૂન્ય થતું નથી. તેથી તેનું ન્યૂનતમ શૂન્ય કહી શકાય નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-5",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "5",
+    "page": 144,
+    "prompt": "વૈશ્વિક મહત્તમ અને ન્યૂનતમ શોધો: (i) $x^3,[-2,2]$ (ii) $\\sin x+\\cos x,[0,\\pi]$ (iii) $4x-x^2/2,[-2,9/2]$ (iv) $(x-1)^2+3,[-3,1]$.",
+    "steps": [
+      "(i) $f\\prime=3x^2=0\\Rightarrow x=0$. $f(-2)=-8,f(0)=0,f(2)=8$. મહત્તમ $8$ ($x=2$); ન્યૂનતમ $-8$ ($x=-2$).",
+      "(ii) $f\\prime=\\cos x-\\sin x=0\\Rightarrow x=\\pi/4$.",
+      "$f(0)=1,f(\\pi/4)=\\sqrt2,f(\\pi)=-1$. મહત્તમ $\\sqrt2$; ન્યૂનતમ $-1$.",
+      "(iii) $f\\prime=4-x=0\\Rightarrow x=4$.",
+      "$f(-2)=-10,f(4)=8,f(9/2)=63/8$. મહત્તમ $8$ ($x=4$); ન્યૂનતમ $-10$ ($x=-2$).",
+      "(iv) $f\\prime=2(x-1)=0\\Rightarrow x=1$ (છેડો).",
+      "$f(-3)=19,f(1)=3$. મહત્તમ $19$ ($x=-3$); ન્યૂનતમ $3$ ($x=1$)."
+    ],
+    "answer": "(i) મહત્તમ $8$, ન્યૂનતમ $-8$; (ii) મહત્તમ $\\sqrt2$, ન્યૂનતમ $-1$; (iii) મહત્તમ $8$, ન્યૂનતમ $-10$; (iv) મહત્તમ $19$, ન્યૂનતમ $3$.",
+    "explanation": [
+      "દરેક બંધ અંતરાલમાં આંતરિક નિર્ણાયક બિંદુઓ અને બંને છેડાઓની કિંમત સરખાવી છે.",
+      "માત્ર બીજી વિકલિતથી સ્થાનિક પ્રકાર શોધવાથી વૈશ્વિક જવાબ મળતો નથી; છેડાઓનો સમાવેશ જરૂરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-6",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "6",
+    "page": 144,
+    "prompt": "કંપનીના નફાનું વિધેય $P(x)=41-72x-18x^2$ હોય તો મહત્તમ નફો શોધો.",
+    "steps": [
+      "$P\\prime(x)=-72-36x=0\\Rightarrow x=-2$.",
+      "$P\\prime\\prime(x)=-36<0$.",
+      "$P(x)=113-18(x+2)^2\\leq113$.",
+      "અતઃ આપેલા અમર્યાદિત વાસ્તવિક પ્રાન્તમાં મહત્તમ નફો $P(-2)=113$.",
+      "જો $x$ માટે અલગથી $x\\geq0$ જેવી શરત લગાડાય તો આ ઉત્તર લાગુ નહીં પડે; મુદ્રિત પ્રશ્નમાં આવી શરત આપેલી નથી."
+    ],
+    "answer": "આપેલા વિધેયનો મહત્તમ નફો $113$ ($x=-2$).",
+    "explanation": [
+      "દ્વિઘાતના અગ્રપદનો ગુણાંક ઋણ છે, તેથી પૂર્ણવર્ગના સ્વરૂપથી વૈશ્વિક મહત્તમ મળે છે.",
+      "અહીં x શું દર્શાવે છે તેનો પ્રાન્ત પ્રશ્નમાં આપ્યો નથી. જો તેને ઉત્પાદનની અઋણ સંખ્યા માનીએ તો અલગ પ્રાન્ત પર મહત્તમ 41 આગળ x=0 મળે. આ બે અનુમાનો ભેળવવા નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-7",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "7",
+    "page": 144,
+    "prompt": "$f(x)=3x^4-8x^3+12x^2-48x+25,\\;x\\in[0,3]$ નાં મહત્તમ અને ન્યૂનતમ શોધો.",
+    "steps": [
+      "$f\\prime=12x^3-24x^2+24x-48=12(x-2)(x^2+2)$.",
+      "$f\\prime=0\\Rightarrow x=2$; $x^2+2>0$.",
+      "$f(0)=25$.",
+      "$f(2)=48-64+48-96+25=-39$.",
+      "$f(3)=243-216+108-144+25=16$.",
+      "અતઃ મહત્તમ $25$ આગળ $x=0$; ન્યૂનતમ $-39$ આગળ $x=2$."
+    ],
+    "answer": "મહત્તમ $25$ ($x=0$); ન્યૂનતમ $-39$ ($x=2$).",
+    "explanation": [
+      "વિકલિતમાં દ્વિઘાત અવયવ હંમેશાં ધન છે, તેથી માત્ર x=2 નિર્ણાયક બિંદુ છે.",
+      "બંધ અંતરાલના બંને છેડાઓ સાથે ત્રણ મૂલ્યો સરખાવ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-8",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "8",
+    "page": 144,
+    "prompt": "$f(x)=\\sin2x,\\;x\\in[0,2\\pi]$ કયા x આગળ મહત્તમ થાય?",
+    "steps": [
+      "$\\sin2x\\leq1$; સમાનતા $2x=\\pi/2+2k\\pi$ પર.",
+      "$x=\\pi/4+k\\pi$.",
+      "$0\\leq x\\leq2\\pi\\Rightarrow x=\\pi/4,5\\pi/4$.",
+      "બંને આગળ $f(x)=1$."
+    ],
+    "answer": "$x=\\pi/4,5\\pi/4$; મહત્તમ મૂલ્ય $1$.",
+    "explanation": [
+      "સાઇનની મહત્તમ કિંમત એક છે. તેની બધી સામાન્ય સ્થિતિઓમાંથી આપેલા બંધ અંતરાલમાં આવતી બે સ્થિતિઓ પસંદ કરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-9",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "9",
+    "page": 144,
+    "prompt": "$f(x)=\\sin x+\\cos x$ ની મહત્તમ કિંમત શોધો.",
+    "steps": [
+      "$f(x)=\\sqrt2\\sin(x+\\pi/4)$.",
+      "$\\sin(x+\\pi/4)\\leq1\\Rightarrow f(x)\\leq\\sqrt2$.",
+      "સમાનતા $x+\\pi/4=\\pi/2+2k\\pi\\Rightarrow x=\\pi/4+2k\\pi$."
+    ],
+    "answer": "મહત્તમ મૂલ્ય $\\sqrt2$.",
+    "explanation": [
+      "સાઇન અને કોસાઇનનો સરવાળો એક સાઇનના વિધેયમાં ફેરવ્યો છે. ગુણક √2 હોવાથી મહત્તમ પણ √2 છે, બે નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-10",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "10",
+    "page": 144,
+    "prompt": "$f(x)=2x^3-24x+107$ નું મહત્તમ (a) $[1,3]$ અને (b) $[-3,-1]$ પર શોધો.",
+    "steps": [
+      "$f\\prime=6x^2-24=6(x-2)(x+2)=0\\Rightarrow x=\\pm2$.",
+      "(a) ઉમેદવારો $1,2,3$: $f(1)=85,f(2)=75,f(3)=89$.",
+      "(a) મહત્તમ $89$ આગળ $x=3$.",
+      "(b) ઉમેદવારો $-3,-2,-1$: $f(-3)=125,f(-2)=139,f(-1)=129$.",
+      "(b) મહત્તમ $139$ આગળ $x=-2$."
+    ],
+    "answer": "(a) $89$ ($x=3$); (b) $139$ ($x=-2$).",
+    "explanation": [
+      "બંને પ્રાન્ત જુદા છે, તેથી દરેકમાં આવતો નિર્ણાયક બિંદુ જ લઈ શકાય.",
+      "દરેક પ્રાન્તમાં છેડાઓ તથા અંદરના નિર્ણાયક બિંદુની મૂળ વિધેયની કિંમતો સરખાવી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-11",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "11",
+    "page": 144,
+    "prompt": "$f(x)=x^4-6x^2+ax+9,\\;x\\in[0,2]$ ને $x=1$ પર મહત્તમ મળે છે એવું આપ્યું છે. $a$ શોધો.",
+    "steps": [
+      "$f\\prime(x)=4x^3-12x+a$.",
+      "આંતરિક મહત્તમ માટે જરૂરી: $f\\prime(1)=0\\Rightarrow4-12+a=0\\Rightarrow a=8$.",
+      "પણ $a=8$ માટે $f\\prime(x)=4(x-1)^2(x+2)\\geq0$ પર $[0,2]$.",
+      "$1<x\\leq2\\Rightarrow f\\prime(x)>0\\Rightarrow f(x)>f(1)$.",
+      "ચકાસણી: $f(1)=12$ પરંતુ $f(2)=17>12$.",
+      "અતઃ $a=8$ માત્ર સ્થિર બિંદુની શરત પૂરી કરે છે; મહત્તમની શરત માટે કોઈ $a$ શક્ય નથી. મુદ્રિત પ્રશ્ન અસંગત છે."
+    ],
+    "answer": "મહત્તમની આપેલી શરત મુજબ કોઈ $a$ શક્ય નથી. માત્ર $f\\prime(1)=0$ થી મળતું $a=8$ મહત્તમ આપતું નથી.",
+    "explanation": [
+      "આંતરિક મહત્તમ માટે વિકલિત શૂન્ય હોવું જરૂરી છે, પણ પૂરતું નથી. તે શરતથી આઠ મળે છે.",
+      "આઠ મૂકીને ચકાસતાં વિધેય એક પછી પણ વધતું રહે છે. તેથી પ્રશ્ન જેમ છપાયો છે તે પ્રમાણે ઉકેલ નથી. અચકાસેલું આઠ જ અંતિમ ઉત્તર આપવાથી મહત્તમ વિશે ખોટું તારણ આવશે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-12",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "12",
+    "page": 144,
+    "prompt": "$f(x)=x+\\sin2x,\\;x\\in[0,2\\pi]$ ની મહત્તમ અને ન્યૂનતમ કિંમતો શોધો.",
+    "steps": [
+      "$f\\prime=1+2\\cos2x=0\\Rightarrow\\cos2x=-1/2$.",
+      "ઉમેદવાર આંતરિક બિંદુઓ: $\\pi/3,2\\pi/3,4\\pi/3,5\\pi/3$.",
+      "$f(0)=0,\\;f(2\\pi)=2\\pi$.",
+      "$f(\\pi/3)=\\pi/3+\\sqrt3/2\\approx1.913$.",
+      "$f(2\\pi/3)=2\\pi/3-\\sqrt3/2\\approx1.228$.",
+      "$f(4\\pi/3)=4\\pi/3+\\sqrt3/2\\approx5.055$.",
+      "$f(5\\pi/3)=5\\pi/3-\\sqrt3/2\\approx4.370$.",
+      "સરખામણીથી વૈશ્વિક મહત્તમ $2\\pi$ આગળ $x=2\\pi$; ન્યૂનતમ $0$ આગળ $x=0$."
+    ],
+    "answer": "વૈશ્વિક મહત્તમ $2\\pi$ ($x=2\\pi$); વૈશ્વિક ન્યૂનતમ $0$ ($x=0$).",
+    "explanation": [
+      "પ્રશ્ન આખા બંધ અંતરાલની મહત્તમ અને ન્યૂનતમ કિંમત પૂછે છે. તેથી સ્થાનિક ટોચો જ જવાબ નથી.",
+      "ચાર આંતરિક નિર્ણાયક બિંદુ અને બંને છેડાઓના છ મૂલ્યો સરખાવ્યા છે. અંદરની સ્થાનિક ટોચો કરતાં જમણા છેડાનું મૂલ્ય મોટું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-13",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "13",
+    "page": 144,
+    "prompt": "સરવાળો 24 હોય અને ગુણાકાર મહત્તમ હોય એવી બે ધન સંખ્યાઓ શોધો.",
+    "steps": [
+      "$y=24-x,\\;0<x<24$.",
+      "$P=x(24-x)=24x-x^2$.",
+      "$P\\prime=24-2x=0\\Rightarrow x=12$.",
+      "$P\\prime\\prime=-2<0$; છેડાઓ તરફ ગુણાકાર $0$.",
+      "$y=12,\\;P_{max}=144$."
+    ],
+    "answer": "બંને સંખ્યાઓ 12; મહત્તમ ગુણાકાર 144.",
+    "explanation": [
+      "સરવાળાથી એક ચલ દૂર કર્યો છે. ગુણાકાર નીચે ખુલતું દ્વિઘાત છે અને મળેલો બિંદુ મંજૂર પ્રાન્તની અંદર છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-14",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "14",
+    "page": 144,
+    "prompt": "$x+y=60$ અને $xy^3$ મહત્તમ થાય એવી બે ધન સંખ્યાઓ શોધો.",
+    "steps": [
+      "$y=60-x,\\;0<x<60$.",
+      "$P=x(60-x)^3$.",
+      "$P\\prime=(60-x)^3-3x(60-x)^2=4(60-x)^2(15-x)$.",
+      "$P\\prime=0\\Rightarrow x=15$ (આંતરિક બિંદુ).",
+      "$x<15: (+)$; $x>15: (-)$.",
+      "અતઃ $x=15,\\;y=45$."
+    ],
+    "answer": "$x=15,\\;y=45$.",
+    "explanation": [
+      "પ્રશ્નમાં x અને y ના ઘાત જુદા હોવાથી બંને સમાન હોવાનો નિયમ લાગતો નથી.",
+      "વિકલિતની સંજ્ઞા પંદર પર ધનથી ઋણ થાય છે. બંને છેડાઓ તરફ ગુણાકાર શૂન્ય થાય છે, એટલે આ નિરપેક્ષ મહત્તમ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-15",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "15",
+    "page": 144,
+    "prompt": "$x+y=35$ અને $x^2y^5$ મહત્તમ થાય એવી ધન સંખ્યાઓ શોધો.",
+    "steps": [
+      "$y=35-x,\\;P=x^2(35-x)^5,\\;0<x<35$.",
+      "$P\\prime=2x(35-x)^5-5x^2(35-x)^4$.",
+      "$=x(35-x)^4(70-7x)=7x(35-x)^4(10-x)$.",
+      "$x<10: P\\prime>0$; $x>10: P\\prime<0$.",
+      "અતઃ $x=10,\\;y=25$."
+    ],
+    "answer": "$x=10,\\;y=25$.",
+    "explanation": [
+      "અવયવીકરણ પછી પ્રાન્તની અંદર પ્રથમ બે અવયવો ધન છે. તેથી વિકલિતની સંજ્ઞા દસ માઇનસ x નક્કી કરે છે.",
+      "x અને y ની ભૂમિકા આપેલા ઘાત પ્રમાણે રાખવી જરૂરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-16",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "16",
+    "page": 144,
+    "prompt": "સરવાળો 16 હોય અને ઘનનો સરવાળો ન્યૂનતમ હોય એવી બે ધન સંખ્યાઓ શોધો.",
+    "steps": [
+      "$y=16-x,\\;S=x^3+(16-x)^3,\\;0<x<16$.",
+      "$S\\prime=3x^2-3(16-x)^2=96x-768$.",
+      "$S\\prime=0\\Rightarrow x=8$; $S\\prime\\prime=96>0$.",
+      "$y=8,\\;S_{min}=8^3+8^3=1024$."
+    ],
+    "answer": "બંને સંખ્યાઓ 8.",
+    "explanation": [
+      "એક સંખ્યા x લઈ બીજી સોળ માઇનસ x લખી છે. ઘનોના સરવાળાનું વિકલન સરળ રેખીય સમીકરણ આપે છે.",
+      "બીજી વિકલિત સમગ્ર પ્રાન્તમાં ધન હોવાથી મળેલું ન્યૂનતમ વૈશ્વિક છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-17",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "17",
+    "page": 144,
+    "prompt": "18 સેમી બાજુના ચોરસ પતરાના ખૂણેથી સમાન ચોરસ કાપી ખુલ્લી પેટી બનાવાય છે. મહત્તમ ઘનફળ માટે કાપની બાજુ શોધો.",
+    "steps": [
+      "$V=x(18-2x)^2,\\;0<x<9$.",
+      "$V\\prime=(18-2x)^2-4x(18-2x)=(18-2x)(18-6x)$.",
+      "$V\\prime=0\\Rightarrow x=3$ (આંતરિક); $x=9$ ક્ષીણ પેટી.",
+      "$0<x<3: (+)$; $3<x<9: (-)$.",
+      "અતઃ કાપની બાજુ $3\\text{ cm}$; $V_{max}=3(12)^2=432\\text{ cm}^3$."
+    ],
+    "answer": "કાપવાની ચોરસ બાજુ 3 સેમી.",
+    "explanation": [
+      "કાપની બાજુ પેટીની ઊંચાઈ બને છે. બંને આધારનાં માપમાંથી બે કાપ ઘટે છે.",
+      "નવ સેમી કાપવાથી આધાર શૂન્ય થાય, એટલે તેને ઉપયોગી પેટી માનવી નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/158.webp",
+      "printedPage": 144,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-18",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "18",
+    "page": 145,
+    "prompt": "45 સેમી × 24 સેમી પતરાના દરેક ખૂણેથી સમાન ચોરસ કાપી ખુલ્લી પેટી બનાવાય છે. મહત્તમ ઘનફળ માટે કાપની બાજુ શોધો.",
+    "steps": [
+      "$V=x(45-2x)(24-2x)=1080x-138x^2+4x^3,\\;0<x<12$.",
+      "$V\\prime=1080-276x+12x^2=12(x-5)(x-18)$.",
+      "$V\\prime=0\\Rightarrow x=5,18$; $18$ પ્રાન્તની બહાર.",
+      "$V\\prime\\prime(5)=24(5)-276=-156<0$.",
+      "છેડાઓએ ઘનફળ $0$; $V(5)=5(35)(14)=2450\\text{ cm}^3$."
+    ],
+    "answer": "કાપની બાજુ 5 સેમી; મહત્તમ ઘનફળ 2450 ઘનસેમી.",
+    "explanation": [
+      "ટૂંકી બાજુ ચોવીસ હોવાથી કાપ બારથી નાનો હોવો જોઈએ. તેથી અઢારવાળો શૂન્ય કાઢી નાખ્યો છે.",
+      "ઉપયોગી નિર્ણાયક બિંદુ અને છેડાઓની સરખામણીથી મહત્તમ મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-19",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "19",
+    "page": 145,
+    "prompt": "નિયત વર્તુળમાં અંતર્ગત બધા લંબચોરસોમાં ચોરસનું ક્ષેત્રફળ મહત્તમ છે તે સાબિત કરો.",
+    "steps": [
+      "વર્તુળની ત્રિજ્યા $R$, લંબચોરસની બાજુઓ $x,y>0$.",
+      "કર્ણ $2R\\Rightarrow x^2+y^2=4R^2$.",
+      "$(x-y)^2\\geq0\\Rightarrow2xy\\leq x^2+y^2=4R^2$.",
+      "$A=xy\\leq2R^2$; સમાનતા $x=y=R\\sqrt2$ પર.",
+      "અતઃ મહત્તમ ક્ષેત્રફળ ધરાવતો લંબચોરસ ચોરસ છે."
+    ],
+    "answer": "ચોરસ માટે મહત્તમ ક્ષેત્રફળ $2R^2$.",
+    "explanation": [
+      "વર્તુળમાં અંતર્ગત લંબચોરસનો કર્ણ વર્તુળનો વ્યાસ હોય છે. તેથી બાજુઓના વર્ગનો સરવાળો અચળ છે.",
+      "અઋણ વર્ગની અસમાનતા અને તેની સમાનતાની શરતથી દાવો સીધો સાબિત થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-20",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "20",
+    "page": 145,
+    "prompt": "લંબવૃત્તીય નળાકારનું પૃષ્ઠફળ અચળ હોય તો વ્યાસ અને ઊંચાઈ સમાન હોય ત્યારે ઘનફળ મહત્તમ છે તે સાબિત કરો.",
+    "steps": [
+      "$S=2\\pi r^2+2\\pi rh\\Rightarrow h=\\frac{S}{2\\pi r}-r$.",
+      "$V=\\pi r^2h=\\frac S2r-\\pi r^3,\\;0<r<\\sqrt{S/(2\\pi)}$.",
+      "$V\\prime=S/2-3\\pi r^2=0\\Rightarrow r^2=S/(6\\pi)$.",
+      "$V\\prime\\prime=-6\\pi r<0$; પ્રાન્તના છેડાઓએ ઘનફળ $0$.",
+      "$h=\\frac{6\\pi r^2}{2\\pi r}-r=2r$. સાબિત."
+    ],
+    "answer": "મહત્તમ ઘનફળ માટે ઊંચાઈ $h=2r$, એટલે વ્યાસ જેટલી.",
+    "explanation": [
+      "અહીં પૃષ્ઠફળમાં બંને ગોળ પાયા અને વક્રસપાટીનો સમાવેશ છે.",
+      "પૃષ્ઠફળની શરતથી ઊંચાઈ દૂર કરીને ઘનફળને ત્રિજ્યાનું વિધેય બનાવ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-21",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "21",
+    "page": 145,
+    "prompt": "દરેક બંધ નળાકાર કેનનું કદ $100\\text{ cm}^3$ હોય તો ન્યૂનતમ પૃષ્ઠફળ માટે પરિમાણ શોધો.",
+    "steps": [
+      "$\\pi r^2h=100\\Rightarrow h=100/(\\pi r^2)$.",
+      "$S=2\\pi r^2+2\\pi rh=2\\pi r^2+200/r,\\;r>0$.",
+      "$S\\prime=4\\pi r-200/r^2=0\\Rightarrow r^3=50/\\pi$.",
+      "$S\\prime\\prime=4\\pi+400/r^3>0$; $r\\to0^+,\\infty$ પર $S\\to\\infty$.",
+      "$r=(50/\\pi)^{1/3}\\text{ cm},\\;h=2(50/\\pi)^{1/3}\\text{ cm}$."
+    ],
+    "answer": "ત્રિજ્યા $(50/\\pi)^{1/3}$ સેમી; ઊંચાઈ તેના બમણા.",
+    "explanation": [
+      "બંધ કેનમાં બંને પાયાનું ક્ષેત્રફળ ગણવું જરૂરી છે.",
+      "ઘનફળ અચળ રાખીને પૃષ્ઠફળ ન્યૂનતમ કર્યું છે. સમગ્ર ધન પ્રાન્તમાં બીજી વિકલિત ધન છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-22",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "22",
+    "page": 145,
+    "prompt": "28 મીટર વાયરના બે ટુકડામાંથી એક ચોરસ અને એક વર્તુળ બનાવાય છે. કુલ ક્ષેત્રફળ ન્યૂનતમ થાય ત્યારે બંને ટુકડાની લંબાઈ શોધો.",
+    "steps": [
+      "ચોરસનો તાર $x$, વર્તુળનો તાર $28-x$, $0<x<28$.",
+      "$a=x/4,\\;r=(28-x)/(2\\pi)$.",
+      "$A=x^2/16+(28-x)^2/(4\\pi)$.",
+      "$A\\prime=x/8-(28-x)/(2\\pi)=0$.",
+      "$\\pi x=4(28-x)\\Rightarrow x=112/(\\pi+4)$.",
+      "$A\\prime\\prime=1/8+1/(2\\pi)>0$.",
+      "વર્તુળનો ટુકડો $28-x=28\\pi/(\\pi+4)\\text{ m}$."
+    ],
+    "answer": "ચોરસ: $112/(\\pi+4)$ મી.; વર્તુળ: $28\\pi/(\\pi+4)$ મી.",
+    "explanation": [
+      "તારની લંબાઈ આકૃતિની પરિમિતિ છે, ક્ષેત્રફળ નહીં. તેથી પહેલા ચોરસની બાજુ અને વર્તુળની ત્રિજ્યા મેળવી છે.",
+      "મળેલા બંને ટુકડા ધન છે અને તેમનો સરવાળો અઠ્ઠાવીસ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-23",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "23",
+    "page": 145,
+    "prompt": "$R$ ત્રિજ્યાના ગોળકમાં અંતર્ગત મહત્તમ ઘનફળના શંકુનું કદ ગોળકના કદનું $8/27$ છે તે સાબિત કરો.",
+    "steps": [
+      "શંકુની ઊંચાઈ $h$, આધાર ત્રિજ્યા $r$: $r^2+(R-h)^2=R^2$.",
+      "$r^2=2Rh-h^2,\\;0<h<2R$.",
+      "$V=\\frac\\pi3h^2(2R-h)$.",
+      "$V\\prime=\\frac\\pi3h(4R-3h)=0\\Rightarrow h=4R/3$.",
+      "$V\\prime\\prime(4R/3)=-4\\pi R/3<0$; છેડાઓએ $V=0$.",
+      "$V_{max}=\\frac\\pi3\\frac{16R^2}{9}\\frac{2R}{3}=32\\pi R^3/81$.",
+      "$\\frac{V_{max}}{(4/3)\\pi R^3}=8/27$. સાબિત."
+    ],
+    "answer": "શંકુનું મહત્તમ કદ ગોળકના કદનું $8/27$ છે.",
+    "explanation": [
+      "ગોળકના કેન્દ્રથી આધારના તલ સુધીનું અંતર R માઇનસ h છે. કાટકોણ ત્રિકોણથી આધારની ત્રિજ્યાનો સંબંધ મળે છે.",
+      "ઘનફળની મહત્તમ કિંમત મેળવ્યા પછી તેને ગોળકના ઘનફળથી ભાગ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-24",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "24",
+    "page": 145,
+    "prompt": "નિયત ઘનફળવાળા લંબવૃત્તીય શંકુની વક્રસપાટી ન્યૂનતમ હોય ત્યારે ઊંચાઈ આધારની ત્રિજ્યાની $\\sqrt2$ ગણી છે તે સાબિત કરો.",
+    "steps": [
+      "નિયત કદ $V=\\pi r^2h/3\\Rightarrow h=3V/(\\pi r^2)$.",
+      "વક્રસપાટી $S=\\pi r\\sqrt{r^2+h^2}$.",
+      "$F=S^2=\\pi^2r^4+9V^2/r^2,\\;r>0$.",
+      "$F\\prime=4\\pi^2r^3-18V^2/r^3=0\\Rightarrow r^6=9V^2/(2\\pi^2)$.",
+      "$F\\prime\\prime=12\\pi^2r^2+54V^2/r^4>0$; બંને છેડાઓ તરફ $F\\to\\infty$.",
+      "$h^2/r^2=9V^2/(\\pi^2r^6)=2\\Rightarrow h=\\sqrt2r$. સાબિત."
+    ],
+    "answer": "ન્યૂનતમ વક્રસપાટી માટે $h=\\sqrt2r$.",
+    "explanation": [
+      "વક્રસપાટીનું ક્ષેત્રફળ ધન છે, તેથી તેના વર્ગને ન્યૂનતમ કરવાથી તે જ પરિમાણ મળે છે.",
+      "કદ અચળ હોવાથી ઊંચાઈને ત્રિજ્યામાં લખી છે. આખા ધન પ્રાન્તમાં બીજી વિકલિત ધન છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-25",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "25",
+    "page": 145,
+    "prompt": "નિયત તિર્યક ઊંચાઈ $l$ માટે મહત્તમ ઘનફળવાળા શંકુનો અર્ધશિરઃકોણ $\\tan^{-1}\\sqrt2$ છે તે સાબિત કરો.",
+    "steps": [
+      "$r^2+h^2=l^2\\Rightarrow r^2=l^2-h^2,\\;0<h<l$.",
+      "$V=\\frac\\pi3(l^2h-h^3)$.",
+      "$V\\prime=\\frac\\pi3(l^2-3h^2)=0\\Rightarrow h=l/\\sqrt3$.",
+      "$V\\prime\\prime=-2\\pi h<0$; છેડાઓએ ઘનફળ $0$.",
+      "$r=l\\sqrt{2/3}\\Rightarrow\\tan\\alpha=r/h=\\sqrt2$.",
+      "અતઃ $\\alpha=\\tan^{-1}\\sqrt2$, સાબિત."
+    ],
+    "answer": "અર્ધશિરઃકોણ $\\tan^{-1}\\sqrt2$.",
+    "explanation": [
+      "તિર્યક ઊંચાઈ, ઊંચાઈ અને ત્રિજ્યા કાટકોણ ત્રિકોણ બનાવે છે.",
+      "અર્ધશિરઃકોણ માટે ત્રિજ્યા ભાગ્યા ઊંચાઈનો સ્પર્શક લેવાનો છે; ત્રિજ્યા ભાગ્યા તિર્યક ઊંચાઈનો નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-26",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "26",
+    "page": 145,
+    "prompt": "નિયત પૃષ્ઠફળ $S$ ધરાવતા મહત્તમ ઘનફળના શંકુનો અર્ધશિરઃકોણ $\\sin^{-1}(1/3)$ છે તે સાબિત કરો.",
+    "steps": [
+      "$S=\\pi r(l+r)$, $u=\\sin\\alpha=r/l$, $0<u<1$.",
+      "$S=\\pi r^2(1+u)/u\\Rightarrow r^2=Su/[\\pi(1+u)]$.",
+      "$h^2=r^2(1-u^2)/u^2$.",
+      "$V^2=\\frac{\\pi^2}{9}r^4h^2=\\frac{S^3}{9\\pi}\\frac{u(1-u)}{(1+u)^2}$.",
+      "$g(u)=u(1-u)/(1+u)^2\\Rightarrow g\\prime(u)=(1-3u)/(1+u)^3$.",
+      "$u<1/3: (+)$; $u>1/3: (-)$; છેડાઓએ $V=0$.",
+      "મહત્તમ માટે $u=1/3\\Rightarrow\\alpha=\\sin^{-1}(1/3)$."
+    ],
+    "answer": "અર્ધશિરઃકોણ $\\sin^{-1}(1/3)$.",
+    "explanation": [
+      "અહીં કુલ પૃષ્ઠફળ છે, એટલે વક્રસપાટી સાથે પાયાનું ક્ષેત્રફળ ઉમેર્યું છે.",
+      "સાઇનને u લઈ બંને પરિમાણ દૂર કરવાથી એક સરળ ગુણોત્તર મળે છે. ઘનફળ અઋણ હોવાથી તેના વર્ગની મહત્તમ સ્થિતિ પણ એ જ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-27",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "27",
+    "page": 145,
+    "prompt": "$x^2=2y$ પર $(0,5)$ ને સૌથી નજીકનું બિંદુ પસંદ કરો: (A) $(2\\sqrt2,4)$ (B) $(2\\sqrt2,0)$ (C) $(0,0)$ (D) $(2,2)$.",
+    "steps": [
+      "$P=(x,x^2/2)$.",
+      "$D^2=x^2+(x^2/2-5)^2=x^4/4-4x^2+25$.",
+      "$\\frac{d(D^2)}{dx}=x^3-8x=x(x^2-8)=0\\Rightarrow x=0,\\pm2\\sqrt2$.",
+      "$x=0: D^2=25$; $x=\\pm2\\sqrt2: D^2=9,\\;y=4$.",
+      "$D^2=(x^2-8)^2/4+9\\geq9$.",
+      "બંને નજીકનાં બિંદુ $ (\\pm2\\sqrt2,4)$; આપેલા વિકલ્પોમાં (A)."
+    ],
+    "answer": "વિકલ્પ (A): $(2\\sqrt2,4)$; સમમિતિથી $(-2\\sqrt2,4)$ પણ સમાન નજીક છે.",
+    "explanation": [
+      "સૌથી નજીકના બિંદુ માટે અંતરના વર્ગને ન્યૂનતમ કર્યો છે.",
+      "પરવલય y-અક્ષ વિશે સમમિત છે, તેથી બે નજીકનાં બિંદુઓ છે. આપેલા વિકલ્પોમાં માત્ર ધન x વાળું બિંદુ સામેલ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-28",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "28",
+    "page": 145,
+    "prompt": "$f(x)=\\frac{1-x+x^2}{1+x+x^2}$ ની ન્યૂનતમ કિંમત પસંદ કરો: (A) $0$ (B) $1$ (C) $3$ (D) $1/3$.",
+    "steps": [
+      "$x^2+x+1=(x+1/2)^2+3/4>0$.",
+      "$f(x)-\\frac13=\\frac{3(x^2-x+1)-(x^2+x+1)}{3(x^2+x+1)}$.",
+      "$=\\frac{2(x-1)^2}{3(x^2+x+1)}\\geq0$.",
+      "સમાનતા $x=1$ પર: $f(1)=1/3$.",
+      "અતઃ વિકલ્પ (D)."
+    ],
+    "answer": "ન્યૂનતમ $1/3$ આગળ $x=1$; વિકલ્પ (D).",
+    "explanation": [
+      "પસંદ કરેલી સંભવિત ન્યૂનતમ કિંમત બાદ કરતાં અઋણ વર્ગ મળે છે.",
+      "છેદ હંમેશાં ધન છે તે પહેલેથી ચકાસ્યું છે, એટલે અસમાનતાની દિશા બદલાતી નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-63-29",
+    "chapter": 6,
+    "section": "6.3",
+    "number": "29",
+    "page": 145,
+    "prompt": "$f(x)=[x(x-1)+1]^{1/3},\\;x\\in[0,1]$ ની મહત્તમ કિંમત પસંદ કરો: (A) $(4/3)^{1/3}$ (B) $1/2$ (C) $1$ (D) $0$.",
+    "steps": [
+      "$0\\leq x\\leq1\\Rightarrow x(x-1)\\leq0$.",
+      "$x(x-1)+1\\leq1$; ઘનમૂળ વધતું વિધેય છે.",
+      "$f(x)\\leq1$; $f(0)=f(1)=1$.",
+      "અતઃ મહત્તમ $1$, વિકલ્પ (C)."
+    ],
+    "answer": "મહત્તમ $1$ આગળ $x=0,1$; વિકલ્પ (C).",
+    "explanation": [
+      "ઘનમૂળ વધતું હોવાથી અંદરના વિધેયને મહત્તમ કરવું પૂરતું છે.",
+      "આપેલા અંતરાલમાં x ધન અને x−1 ઋણ હોવાથી તેમનો ગુણાકાર અઋણ નહીં, અઘન છે; છેડાઓએ તે શૂન્ય થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  }
+]
