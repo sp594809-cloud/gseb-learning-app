@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-01",
+  "applicationCommit": "ebb332e02c4c4ca799ebc293db169b3434001b04",
+  "renderDeployment": "dep-dbjd7j7avr4c73but8dg",
+  "publicUrl": "https://ganit-original-preview.onrender.com/#chapter/6",
+  "chapter6": {
+    "examples": 37,
+    "exercise61": 18,
+    "exercise62": 19,
+    "exercise63": 29,
+    "miscellaneous": 16,
+    "total": 119
+  },
+  "checks": {
+    "allQuestionNumbersPresent": true,
+    "allSubpartsAuthored": true,
+    "publicRoutesCorrect": 119,
+    "finalAnswersVisibleByDefault": 119,
+    "optionalGujaratiPanelsWorking": 119,
+    "noRawMathDelimiters": 119,
+    "regressionTestsPassed": 7,
+    "numericalDerivativeChecksPassed": 80,
+    "independentExtremaAndBoundarySampling": true,
+    "search": true,
+    "exerciseFilter": true,
+    "bookmarksToggleAndRestore": true,
+    "progressToggleAndRestore": true
+  },
+  "mobile": {
+    "method": "390 × 844 same-origin iframe in Chrome; not physical-device testing",
+    "samples": [
+      "tb6-63-3",
+      "tb6-62-9",
+      "tb6-Misc-9",
+      "tb6-Example-23",
+      "tb6-Example-36"
+    ],
+    "allPagesWithinViewport": true,
+    "longEquationsScrollWithinSolution": true
+  },
+  "notes": [
+    "Textbook discrepancies are explained in Ex6.2 Q12, Example23 and Ex6.3 Q11.",
+    "Original source files and original 110 solution records retained.",
+    "No independent teacher audit or physical-phone test claimed."
+  ]
+}
