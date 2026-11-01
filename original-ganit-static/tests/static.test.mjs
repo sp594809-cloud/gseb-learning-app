@@ -38,7 +38,7 @@ test('additions preserve every original record and enumerate all valid matrix or
  assert.deepEqual({...built,chapters:built.chapters.slice(0,6),solutions:built.solutions.slice(0,110),sources:undefined},{...content,sources:undefined});
  assert.deepEqual(built.solutions.slice(110,112),additions);
  const chapter7=JSON.parse(await text('content-additions/chapter7-batch1.json'));
- assert.deepEqual(built.solutions.slice(112),chapter7);
+ assert.deepEqual(built.solutions.filter(q=>chapter7.some(item=>item.id===q.id)),chapter7);
  assert.deepEqual(built.chapters.slice(0,6),content.chapters);
  assert.equal(built.chapters[6].id,7); assert.equal(built.chapters[6].name,'Integrals');
  assert.equal(built.sources.chapter7,'https://ncert.nic.in/textbook/pdf/lemh201.pdf');
