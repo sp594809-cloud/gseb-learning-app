@@ -1,0 +1,261 @@
+[
+  {
+    "id": "tb3-31-1",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "1",
+    "page": 37,
+    "prompt": "શ્રેણિક $A=\\begin{bmatrix}2&5&19&-7\\\\35&-2&\\frac52&12\\\\\\sqrt3&1&-5&17\\end{bmatrix}$ માટે (i) કક્ષા (ii) ઘટકોની સંખ્યા (iii) $a_{13},a_{21},a_{33},a_{24},a_{23}$ લખો.",
+    "steps": [
+      "(i) હારની સંખ્યા $m=3$; સ્તંભની સંખ્યા $n=4$.",
+      "અતઃ $A$ ની કક્ષા $m\\times n=3\\times4$.",
+      "(ii) ઘટકોની સંખ્યા $mn=3\\cdot4=12$.",
+      "(iii) $a_{13}=19,\\;a_{21}=35$.",
+      "$a_{33}=-5,\\;a_{24}=12,\\;a_{23}=\\frac52$."
+    ],
+    "answer": "(i) $3\\times4$; (ii) $12$; (iii) $19,35,-5,12,\\frac52$.",
+    "explanation": [
+      "આડી ગોઠવણીને હાર અને ઊભી ગોઠવણીને સ્તંભ કહીએ છીએ. કક્ષા લખતી વખતે પહેલા હાર અને પછી સ્તંભ લખાય છે.",
+      "$a_{ij}$ માં પહેલો સૂચક હાર અને બીજો સ્તંભ દર્શાવે છે. ઉદાહરણ તરીકે $a_{23}$ બીજી હારનો ત્રીજો ઘટક છે.",
+      "શ્રેણિક ચોરસ ન હોય તોપણ હાર અને સ્તંભના ગુણાકારથી કુલ ઘટકો મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-4",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "4",
+    "page": 37,
+    "prompt": "જો $2\\times2$ શ્રેણિક $A=[a_{ij}]$ ના ઘટકો (i) $a_{ij}=\\frac{(i+j)^2}{2}$ (ii) $a_{ij}=\\frac ij$ (iii) $a_{ij}=\\frac{(i+2j)^2}{2}$ થી મળે, તો $A$ ની રચના કરો.",
+    "steps": [
+      "$A=\\begin{bmatrix}a_{11}&a_{12}\\\\a_{21}&a_{22}\\end{bmatrix}$; $i,j\\in\\{1,2\\}$.",
+      "(i) $a_{11}=\\frac{(1+1)^2}{2}=2,\\;a_{12}=\\frac{(1+2)^2}{2}=\\frac92$.",
+      "$a_{21}=\\frac{(2+1)^2}{2}=\\frac92,\\;a_{22}=\\frac{(2+2)^2}{2}=8$.",
+      "અતઃ $A=\\begin{bmatrix}2&\\frac92\\\\\\frac92&8\\end{bmatrix}$.",
+      "(ii) $a_{11}=\\frac11=1,\\;a_{12}=\\frac12$.",
+      "$a_{21}=\\frac21=2,\\;a_{22}=\\frac22=1$.",
+      "અતઃ $A=\\begin{bmatrix}1&\\frac12\\\\2&1\\end{bmatrix}$.",
+      "(iii) $a_{11}=\\frac{(1+2\\cdot1)^2}{2}=\\frac92,\\;a_{12}=\\frac{(1+2\\cdot2)^2}{2}=\\frac{25}2$.",
+      "$a_{21}=\\frac{(2+2\\cdot1)^2}{2}=8,\\;a_{22}=\\frac{(2+2\\cdot2)^2}{2}=18$.",
+      "અતઃ $A=\\begin{bmatrix}\\frac92&\\frac{25}2\\\\8&18\\end{bmatrix}$."
+    ],
+    "answer": "(i) $\\begin{bmatrix}2&\\frac92\\\\\\frac92&8\\end{bmatrix}$; (ii) $\\begin{bmatrix}1&\\frac12\\\\2&1\\end{bmatrix}$; (iii) $\\begin{bmatrix}\\frac92&\\frac{25}2\\\\8&18\\end{bmatrix}$.",
+    "explanation": [
+      "ત્રણે ઉપપ્રશ્નો માટે અલગ શ્રેણિક બનાવવાનો છે. કક્ષા બે બાય બે હોવાથી ચાર જ ઘટકો ગણવાના છે.",
+      "પહેલી હારમાં i ને એક રાખી j ને એક અને બે મૂકીએ છીએ. બીજી હારમાં i ને બે રાખીએ છીએ.",
+      "ત્રીજા ભાગમાં બેનો ગુણાકાર માત્ર j સાથે છે. કૌંસની અંદરનો સરવાળો કર્યા પછી તેનો વર્ગ કરીને બેથી ભાગ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-5",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "5",
+    "page": 37,
+    "prompt": "$3\\times4$ શ્રેણિકના ઘટકો (i) $a_{ij}=\\frac12|-3i+j|$ અને (ii) $a_{ij}=2i-j$ થી મળે તો બંને શ્રેણિક રચો.",
+    "steps": [
+      "$i=1,2,3;\\;j=1,2,3,4$.",
+      "(i) $a_{11}=\\frac12|-3+1|=1,\\;a_{12}=\\frac12|-3+2|=\\frac12$.",
+      "$a_{13}=\\frac12|-3+3|=0,\\;a_{14}=\\frac12|-3+4|=\\frac12$.",
+      "$a_{21}=\\frac12|-6+1|=\\frac52,\\;a_{22}=\\frac12|-6+2|=2$.",
+      "$a_{23}=\\frac12|-6+3|=\\frac32,\\;a_{24}=\\frac12|-6+4|=1$.",
+      "$a_{31}=\\frac12|-9+1|=4,\\;a_{32}=\\frac12|-9+2|=\\frac72$.",
+      "$a_{33}=\\frac12|-9+3|=3,\\;a_{34}=\\frac12|-9+4|=\\frac52$.",
+      "અતઃ $A=\\begin{bmatrix}1&\\frac12&0&\\frac12\\\\\\frac52&2&\\frac32&1\\\\4&\\frac72&3&\\frac52\\end{bmatrix}$.",
+      "(ii) $a_{11}=2(1)-1=1,\\;a_{12}=2(1)-2=0$.",
+      "$a_{13}=2(1)-3=-1,\\;a_{14}=2(1)-4=-2$.",
+      "$a_{21}=2(2)-1=3,\\;a_{22}=2(2)-2=2$.",
+      "$a_{23}=2(2)-3=1,\\;a_{24}=2(2)-4=0$.",
+      "$a_{31}=2(3)-1=5,\\;a_{32}=2(3)-2=4$.",
+      "$a_{33}=2(3)-3=3,\\;a_{34}=2(3)-4=2$.",
+      "અતઃ $A=\\begin{bmatrix}1&0&-1&-2\\\\3&2&1&0\\\\5&4&3&2\\end{bmatrix}$."
+    ],
+    "answer": "(i) $\\begin{bmatrix}1&\\frac12&0&\\frac12\\\\\\frac52&2&\\frac32&1\\\\4&\\frac72&3&\\frac52\\end{bmatrix}$; (ii) $\\begin{bmatrix}1&0&-1&-2\\\\3&2&1&0\\\\5&4&3&2\\end{bmatrix}$.",
+    "explanation": [
+      "કક્ષા ત્રણ બાય ચાર હોવાથી બાર ઘટકો ગણવા પડે છે. બંને ઉપપ્રશ્નમાં હાર અને સ્તંભની સંખ્યા એકસરખી છે, પણ સૂત્ર જુદું છે.",
+      "પ્રથમ ભાગમાં અંદરનો સરવાળો ઋણ હોય તો નિરપેક્ષ મૂલ્ય લીધા પછી અઋણ બને છે; પછી બેથી ભાગીએ છીએ.",
+      "બીજા ભાગમાં નિરપેક્ષ મૂલ્ય નથી. તેથી પહેલી હારના કેટલાક ઘટકો ઋણ આવે તે સાચું છે.",
+      "દરેક ગણેલો ઘટક તેની હાર અને સ્તંભની યોગ્ય જગ્યાએ મૂક્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-6",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "6",
+    "page": 37,
+    "prompt": "$x,y,z$ શોધો: (i) $\\begin{bmatrix}4&3\\\\x&5\\end{bmatrix}=\\begin{bmatrix}y&z\\\\1&5\\end{bmatrix}$; (ii) $\\begin{bmatrix}x+y&2\\\\5+z&xy\\end{bmatrix}=\\begin{bmatrix}6&2\\\\5&8\\end{bmatrix}$; (iii) $\\begin{bmatrix}x+y+z\\\\x+z\\\\y+z\\end{bmatrix}=\\begin{bmatrix}9\\\\5\\\\7\\end{bmatrix}$.",
+    "steps": [
+      "સમાન શ્રેણિકોના અનુરૂપ ઘટકો સમાન હોય છે.",
+      "(i) $4=y,\\;3=z,\\;x=1$.",
+      "અતઃ $(x,y,z)=(1,4,3)$.",
+      "(ii) $x+y=6,\\;5+z=5,\\;xy=8$.",
+      "$z=0,\\;y=6-x\\Rightarrow x(6-x)=8$.",
+      "$x^2-6x+8=0\\Rightarrow(x-2)(x-4)=0\\Rightarrow x=2\\text{ or }4$.",
+      "$x=2\\Rightarrow y=4$; $x=4\\Rightarrow y=2$.",
+      "અતઃ $(x,y,z)=(2,4,0)$ અથવા $(4,2,0)$.",
+      "(iii) $x+y+z=9,\\;x+z=5,\\;y+z=7$.",
+      "$(x+y+z)-(x+z)=9-5\\Rightarrow y=4$.",
+      "$4+z=7\\Rightarrow z=3$; $x+3=5\\Rightarrow x=2$.",
+      "અતઃ $(x,y,z)=(2,4,3)$."
+    ],
+    "answer": "(i) $(1,4,3)$; (ii) $(2,4,0)$ અથવા $(4,2,0)$; (iii) $(2,4,3)$.",
+    "explanation": [
+      "શ્રેણિકો સમાન હોય તો માત્ર તેમની કક્ષા સમાન હોવી પૂરતી નથી; દરેક અનુરૂપ ઘટક પણ સમાન હોવો જોઈએ.",
+      "બીજા ભાગમાં સરવાળો છ અને ગુણાકાર આઠ હોવાને કારણે x અને y માટે બે ગોઠવણી મળે છે. બંને ઉકેલ લખવા જરૂરી છે.",
+      "ત્રીજા ભાગમાં પહેલા અને બીજા સમીકરણનો તફાવત y સીધું આપે છે. પછી બાકીનાં બે મૂલ્ય મેળવ્યાં છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-7",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "7",
+    "page": 37,
+    "prompt": "$\\begin{bmatrix}a-b&2a+c\\\\2a-b&3c+d\\end{bmatrix}=\\begin{bmatrix}-1&5\\\\0&13\\end{bmatrix}$ માંથી $a,b,c,d$ શોધો.",
+    "steps": [
+      "$a-b=-1\\;(1),\\;2a+c=5\\;(2)$.",
+      "$2a-b=0\\;(3),\\;3c+d=13\\;(4)$.",
+      "$(3)-(1):\\;a=1$.",
+      "$(3):\\;2(1)-b=0\\Rightarrow b=2$.",
+      "$(2):\\;2(1)+c=5\\Rightarrow c=3$.",
+      "$(4):\\;3(3)+d=13\\Rightarrow d=4$.",
+      "ચકાસણી: $\\begin{bmatrix}1-2&2(1)+3\\\\2(1)-2&3(3)+4\\end{bmatrix}=\\begin{bmatrix}-1&5\\\\0&13\\end{bmatrix}$."
+    ],
+    "answer": "$a=1,\\;b=2,\\;c=3,\\;d=4$.",
+    "explanation": [
+      "અનુરૂપ ચાર ઘટકોથી ચાર સમીકરણ મળે છે. પહેલા અને ત્રીજા સમીકરણમાં b નો ગુણાંક સમાન હોવાથી તેમને બાદ કરવાથી a સરળતાથી મળે છે.",
+      "મળેલા મૂલ્યો પાછા મૂકીને બાકીનાં ચલ ગણ્યાં છે. અંતે આખો શ્રેણિક સમાન આવે છે તે ચકાસ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-8",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "8",
+    "page": 37,
+    "prompt": "$A=[a_{ij}]_{m\\times n}$ ચોરસ શ્રેણિક હોય તો કયો સંબંધ સાચો? (A) $m<n$ (B) $m>n$ (C) $m=n$ (D) આપેલ પૈકી એક પણ નહીં.",
+    "steps": [
+      "ચોરસ શ્રેણિક: હારની સંખ્યા $=$ સ્તંભની સંખ્યા.",
+      "$A$ ની કક્ષા $m\\times n\\Rightarrow m=n$.",
+      "અતઃ વિકલ્પ (C)."
+    ],
+    "answer": "વિકલ્પ (C): $m=n$.",
+    "explanation": [
+      "ચોરસ શ્રેણિકની વ્યાખ્યા પ્રમાણે હાર અને સ્તંભની સંખ્યા સમાન હોય છે.",
+      "અહીં m અને n ઘટકોનાં મૂલ્ય નહીં, પરંતુ હાર અને સ્તંભની સંખ્યા દર્શાવે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-9",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "9",
+    "page": 37,
+    "prompt": "$\\begin{bmatrix}3x+7&5\\\\y+1&2-3x\\end{bmatrix}$ અને $\\begin{bmatrix}0&y-2\\\\8&4\\end{bmatrix}$ સમાન થાય તેવા $x,y$ પસંદ કરો: (A) $x=-1/3,y=7$ (B) શોધવું શક્ય નથી (C) $y=7,x=-2/3$ (D) $x=-1/3,y=-2/3$.",
+    "steps": [
+      "અનુરૂપ ઘટકોથી $3x+7=0,\\;5=y-2,\\;y+1=8,\\;2-3x=4$.",
+      "$3x+7=0\\Rightarrow x=-7/3$.",
+      "$2-3x=4\\Rightarrow x=-2/3$.",
+      "$-7/3\\ne-2/3$: એક જ $x$ બંને શરત પૂરી કરતું નથી.",
+      "$5=y-2\\Rightarrow y=7$ અને $y+1=8\\Rightarrow y=7$, છતાં $x$ ની વિસંગતિ રહે છે.",
+      "અતઃ કોઈ ઉકેલ નથી; વિકલ્પ (B)."
+    ],
+    "answer": "વિકલ્પ (B): આવા $x,y$ શોધવા શક્ય નથી.",
+    "explanation": [
+      "શ્રેણિકની સમાનતા માટે ચારેય અનુરૂપ ઘટક એકસાથે સમાન થવા જોઈએ.",
+      "માત્ર y ના સમીકરણો મળતાં આવે છે તે જોઈને વિકલ્પ પસંદ કરી શકાય નહીં. x માટે બે જુદાં મૂલ્ય જરૂરી પડે છે, તેથી કોઈ જોડું બંને શ્રેણિકોને સમાન બનાવી શકતું નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  },
+  {
+    "id": "tb3-31-10",
+    "chapter": 3,
+    "section": "3.1",
+    "number": "10",
+    "page": 37,
+    "prompt": "પ્રત્યેક ઘટક $0$ અથવા $1$ હોય તેવા $3\\times3$ શ્રેણિકોની સંખ્યા કેટલી? (A) $27$ (B) $18$ (C) $81$ (D) $512$.",
+    "steps": [
+      "ઘટકોનાં સ્થાનો $=3\\cdot3=9$.",
+      "દરેક સ્થાને પસંદગીઓ $=2$ ($0$ અથવા $1$).",
+      "કુલ શ્રેણિકો $=2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2=2^9=512$.",
+      "અતઃ વિકલ્પ (D)."
+    ],
+    "answer": "વિકલ્પ (D): $512$.",
+    "explanation": [
+      "નવ જુદા સ્થાનોમાંથી દરેક પર શૂન્ય અથવા એક સ્વતંત્ર રીતે પસંદ થઈ શકે છે.",
+      "ગુણાકારના નિયમથી નવ વાર બેનો ગુણાકાર કરીએ છીએ. માત્ર અઢાર કરવાથી દરેક સ્થાનની સંયુક્ત ગોઠવણી ગણાતી નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક, સ્વાધ્યાય 3.1, મુદ્રિત પૃષ્ઠ 37 સાથે પ્રશ્ન ચકાસેલ છે.",
+    "verification": {
+      "source": "book/51.webp",
+      "printedPage": 37,
+      "checkedOn": "2026-11-01",
+      "method": "Question and every subpart visually checked against uploaded Gujarati textbook p.37. Matrix entries, substitutions, equality constraints and counting independently verified."
+    }
+  }
+]
