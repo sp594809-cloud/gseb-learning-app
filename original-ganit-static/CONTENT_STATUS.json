@@ -1,7 +1,7 @@
 {
   "baselineSolutions": 110,
-  "addedSolutions": 122,
-  "scope": "Original 110 records preserved; 119 Chapter 6 entries cover every numbered example and question in the uploaded Gujarati edition. Chapter 3 has 2 additional verified entries; Chapter 7 has 1.",
+  "addedSolutions": 130,
+  "scope": "Original 110 records preserved; Chapter 6 contains 119 entries. Chapter 3 Exercise 3.1 contains all 10 verified questions and subparts; remaining Chapter 3 sections are not yet integrated. Chapter 7 has 1 entry.",
   "inventory": [
     {
       "id": "tb1-Example-1",
@@ -392,70 +392,70 @@
       "id": "tb3-31-1",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-2",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "integrated-verified",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-3",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "integrated-verified",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-4",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-5",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-6",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-7",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-8",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-9",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
       "id": "tb3-31-10",
       "chapter": 3,
       "draftFile": "chapter3-researched.json",
-      "status": "pending-independent-source-and-answer-review",
+      "status": "verified-integrated",
       "hasDraftVerificationNote": true
     },
     {
@@ -2186,5 +2186,13 @@
     ],
     "remaining": "No missing numbered Chapter 6 entries in uploaded edition. Other chapters' incomplete content and conversion remain separate work.",
     "limitations": "Mobile checks used a 390px iframe; no physical-phone test or independent teacher review was performed."
+  },
+  "exercise31Milestone": {
+    "status": "complete",
+    "questions": 10,
+    "source": "Gujarati Maths Part 1, printed page 37 / book/51.webp",
+    "verifiedApplicationCommit": "57b480a9cfcf1fb9208130ff97f01d426960e08e",
+    "publicRoutesTested": 10,
+    "remaining": "All other Chapter 3 exercises and examples"
   }
 }
