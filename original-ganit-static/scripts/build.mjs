@@ -71,5 +71,6 @@ if(!process.argv.includes('--original')) {
  await writeFile(contentPath,JSON.stringify(content));
  const appPath=path.join(root,'dist/app.js');let app=await readFile(appPath,'utf8');
  app=app.replace("<div class=\"question-actions\"><button class=\"primary\" id=\"complete\">","${q.explanation?`<details class=\"panel understanding\" style=\"margin-top:20px\"><summary style=\"cursor:pointer;font-weight:700\">ઉકેલ સમજો / Understand the solution</summary><ol>${q.explanation.map(text=>`<li style=\"margin:14px 0;line-height:1.9\">${mathText(text)}</li>`).join('')}</ol></details>`:''}<div class=\"question-actions\"><button class=\"primary\" id=\"complete\">");
+ app=app.replace('let revealed=1;','let revealed=q.explanation?q.steps.length:1;').replace("$('#answer').hidden=q.steps.length>1","$('#answer').hidden=!q.explanation&&q.steps.length>1").replace("$('#next-step').hidden=q.steps.length<=1","$('#next-step').hidden=Boolean(q.explanation)||q.steps.length<=1");
  await writeFile(appPath,app);
 }
