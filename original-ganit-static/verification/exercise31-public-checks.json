@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "applicationCommit": "57b480a9cfcf1fb9208130ff97f01d426960e08e",
+  "renderDeployment": "dep-dbjdgslh3lcs738bmjmg",
+  "url": "https://ganit-original-preview.onrender.com/#chapter/3",
+  "scope": "Exercise 3.1 only; Q1–10 including all subparts",
+  "source": "Uploaded Gujarati Maths Part 1, printed page 37 (book/51.webp)",
+  "localChecks": [
+    "Production build: 240 total solutions",
+    "Seven regression tests passed",
+    "Independent Exercise 3.1 matrix-entry, equation-substitution, factor-pair and binary-count checks passed",
+    "Chapter 6 checks retained: 119 entries and 80 numerical derivative checks"
+  ],
+  "publicChecks": {
+    "routes": 10,
+    "visibleFinalAnswers": 10,
+    "gujaratiExplanationToggles": 10,
+    "rawMatrixTex": false,
+    "chapterOrder": "1 through 10",
+    "mobile": {
+      "method": "390px same-origin iframe; visual and DOM inspection",
+      "question": 5,
+      "documentWidth": 375,
+      "viewport": 390,
+      "matrices": "Four 3-row, 12-cell matrices; formulas scroll within notebook"
+    }
+  },
+  "limitations": [
+    "Physical-device testing and independent teacher review not claimed",
+    "Other Chapter 3 sections are not part of this milestone"
+  ]
+}
