@@ -17,7 +17,7 @@ function mathText(value){
    return (/[A-Za-z]/.test(c)?'<mi>':'<mo>')+esc(c)+(/[A-Za-z]/.test(c)?'</mi>':'</mo>');
   }
   function sequence(end){let out='';while(i<tex.length&&tex[i]!==end){if(/\s/.test(tex[i])){i++;continue;}let a=atom();while(tex[i]==='^'||tex[i]==='_'){let op=tex[i++];a=(op==='^'?'<msup>':'<msub>')+a+atom()+(op==='^'?'</msup>':'</msub>');}out+=a;}if(end)i++;return out;}
-  return '<span style="display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle"><math xmlns="http://www.w3.org/1998/Math/MathML" displaystyle="true" style="font-size:1.1em"><mrow>'+sequence()+'</mrow></math></span>';
+  return '<span style="display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:2px 0"><math xmlns="http://www.w3.org/1998/Math/MathML" displaystyle="true" style="font-size:1.1em"><mrow>'+sequence()+'</mrow></math></span>';
  }
  return String(value??'').split(/(\$[^$]+\$)/g).map(s=>s.startsWith('$')&&s.endsWith('$')?formula(s.slice(1,-1)):esc(s)).join('');
 }
