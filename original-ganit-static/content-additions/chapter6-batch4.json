@@ -1,0 +1,700 @@
+[
+  {
+    "id": "tb6-Example-14",
+    "chapter": 6,
+    "section": "Example",
+    "number": "14",
+    "page": 132,
+    "prompt": "$f(x)=x^2,\\;x\\in\\mathbb R$ નાં મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$f(x)=x^2\\geq0,\\;f(0)=0$.",
+      "$|x|\\to\\infty\\Rightarrow x^2\\to\\infty$.",
+      "અતઃ ન્યૂનતમ $0$ આગળ $x=0$; મહત્તમ અસ્તિત્વમાં નથી."
+    ],
+    "answer": "ન્યૂનતમ મૂલ્ય $0$ ($x=0$); મહત્તમ નથી.",
+    "explanation": [
+      "વાસ્તવિક સંખ્યાનો વર્ગ હંમેશાં અઋણ છે. શૂન્ય પર આ નીચલી મર્યાદા મળે છે.",
+      "કોઈ પણ મોટી સંખ્યા કરતાં મોટો વર્ગ મેળવી શકાય, તેથી સમગ્ર વાસ્તવિક રેખા પર મહત્તમ મળતું નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/146.webp",
+      "printedPage": 132,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-15",
+    "chapter": 6,
+    "section": "Example",
+    "number": "15",
+    "page": 132,
+    "prompt": "$f(x)=|x|,\\;x\\in\\mathbb R$ નાં મહત્તમ તથા ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$|x|\\geq0,\\;f(0)=0$.",
+      "$|x|\\to\\infty\\Rightarrow f(x)\\to\\infty$.",
+      "ન્યૂનતમ $0$ આગળ $x=0$; મહત્તમ નથી."
+    ],
+    "answer": "ન્યૂનતમ $0$ આગળ $x=0$; મહત્તમ નથી.",
+    "explanation": [
+      "નિરપેક્ષ મૂલ્ય ઋણ થઈ શકતું નથી. શૂન્ય પર જ મૂલ્ય શૂન્ય છે.",
+      "શૂન્ય પર વિકલિત ન હોવા છતાં ન્યૂનતમ મળી શકે છે; અહીં વ્યાખ્યા પરથી ઉત્તર આપ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/146.webp",
+      "printedPage": 132,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-16",
+    "chapter": 6,
+    "section": "Example",
+    "number": "16",
+    "page": 132,
+    "prompt": "$f(x)=x,\\;x\\in(0,1)$ નાં મહત્તમ તથા ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$0<x<1\\Rightarrow0<\\frac x2<x<\\frac{x+1}{2}<1$.",
+      "$f(x/2)<f(x)<f((x+1)/2)$.",
+      "અતઃ $(0,1)$ પર મહત્તમ કે ન્યૂનતમ મૂલ્ય નથી."
+    ],
+    "answer": "મહત્તમ કે ન્યૂનતમ મૂલ્ય નથી.",
+    "explanation": [
+      "કોઈ પણ પસંદ કરેલા બિંદુ કરતાં નાનું અને મોટું મૂલ્ય આપતા બિંદુઓ એ જ ખુલ્લા અંતરાલમાં મળે છે.",
+      "છેડાઓ શૂન્ય અને એક પ્રાન્તમાં સામેલ નથી; તેથી તેમને ઉત્તરમાં લેવાના નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/146.webp",
+      "printedPage": 132,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-17",
+    "chapter": 6,
+    "section": "Example",
+    "number": "17",
+    "page": 135,
+    "prompt": "$f(x)=x^3-3x+3$ નાં સ્થાનિક મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$f\\prime(x)=3x^2-3=3(x-1)(x+1)=0\\Rightarrow x=\\pm1$.",
+      "$x<-1: f\\prime>0$; $-1<x<1: f\\prime<0$; $x>1: f\\prime>0$.",
+      "$x=-1: (+)\\to(-)\\Rightarrow$ સ્થાનિક મહત્તમ $f(-1)=-1+3+3=5$.",
+      "$x=1: (-)\\to(+)\\Rightarrow$ સ્થાનિક ન્યૂનતમ $f(1)=1-3+3=1$."
+    ],
+    "answer": "સ્થાનિક મહત્તમ $5$ આગળ $x=-1$; સ્થાનિક ન્યૂનતમ $1$ આગળ $x=1$.",
+    "explanation": [
+      "વિકલિતના શૂન્યો ઉમેદવાર બિંદુઓ છે. દરેક બિંદુની બંને બાજુ વિકલિતની સંજ્ઞા તપાસી છે.",
+      "ધનથી ઋણ ફેરફાર મહત્તમ અને ઋણથી ધન ફેરફાર ન્યૂનતમ આપે છે. પછી મૂળ વિધેયમાં મૂલ્ય મૂકવું જરૂરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/149.webp",
+      "printedPage": 135,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-18",
+    "chapter": 6,
+    "section": "Example",
+    "number": "18",
+    "page": 136,
+    "prompt": "$f(x)=2x^3-6x^2+6x+5$ ને જે સંખ્યાઓ આગળ સ્થાનિક મહત્તમ અથવા ન્યૂનતમ મળે તે શોધો.",
+    "steps": [
+      "$f\\prime(x)=6x^2-12x+6=6(x-1)^2$.",
+      "$f\\prime(x)=0\\Rightarrow x=1$; $f\\prime\\prime(x)=12(x-1)$, $f\\prime\\prime(1)=0$.",
+      "$x<1: f\\prime>0$; $x>1: f\\prime>0$.",
+      "સંજ્ઞા બદલાતી નથી; તેથી સ્થાનિક મહત્તમ કે ન્યૂનતમ નથી.",
+      "$f\\prime\\prime$ ની સંજ્ઞા $x=1$ પર બદલાય છે: નતિબિંદુ $(1,7)$."
+    ],
+    "answer": "સ્થાનિક મહત્તમ કે ન્યૂનતમ નથી; $x=1$ નતિબિંદુ છે.",
+    "explanation": [
+      "વિકલિત શૂન્ય થવાથી જ મહત્તમ કે ન્યૂનતમ નક્કી થતું નથી.",
+      "બીજી વિકલિતની કસોટી અહીં નિર્ણય આપતી નથી. પ્રથમ વિકલિત બંને બાજુ ધન છે, એટલે વિધેય વધતું જ રહે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/150.webp",
+      "printedPage": 136,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-21",
+    "chapter": 6,
+    "section": "Example",
+    "number": "21",
+    "page": 137,
+    "prompt": "$f(x)=2x^3-6x^2+6x+5$ ને જે સંખ્યાઓ આગળ સ્થાનિક મહત્તમ અથવા ન્યૂનતમ મળે તે શોધો.",
+    "steps": [
+      "$f\\prime(x)=6x^2-12x+6=6(x-1)^2$.",
+      "$f\\prime(x)=0\\Rightarrow x=1$; $f\\prime\\prime(x)=12(x-1)$, $f\\prime\\prime(1)=0$.",
+      "$x<1: f\\prime>0$; $x>1: f\\prime>0$.",
+      "સંજ્ઞા બદલાતી નથી; તેથી સ્થાનિક મહત્તમ કે ન્યૂનતમ નથી.",
+      "$f\\prime\\prime$ ની સંજ્ઞા $x=1$ પર બદલાય છે: નતિબિંદુ $(1,7)$."
+    ],
+    "answer": "સ્થાનિક મહત્તમ કે ન્યૂનતમ નથી; $x=1$ નતિબિંદુ છે.",
+    "explanation": [
+      "વિકલિત શૂન્ય થવાથી જ મહત્તમ કે ન્યૂનતમ નક્કી થતું નથી.",
+      "બીજી વિકલિતની કસોટી અહીં નિર્ણય આપતી નથી. પ્રથમ વિકલિત બંને બાજુ ધન છે, એટલે વિધેય વધતું જ રહે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/151.webp",
+      "printedPage": 137,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-19",
+    "chapter": 6,
+    "section": "Example",
+    "number": "19",
+    "page": 136,
+    "prompt": "$f(x)=3+|x|,\\;x\\in\\mathbb R$ નું સ્થાનિક ન્યૂનતમ મૂલ્ય શોધો.",
+    "steps": [
+      "$x<0:\\;f(x)=3-x\\Rightarrow f\\prime(x)=-1<0$.",
+      "$x>0:\\;f(x)=3+x\\Rightarrow f\\prime(x)=1>0$.",
+      "$x=0:\\;(-)\\to(+)\\Rightarrow f(0)=3$.",
+      "$3+|x|\\geq3$: આ નિરપેક્ષ ન્યૂનતમ પણ છે."
+    ],
+    "answer": "સ્થાનિક તથા નિરપેક્ષ ન્યૂનતમ $3$ આગળ $x=0$.",
+    "explanation": [
+      "શૂન્ય પર ખૂણો હોવાથી વિકલિત અસ્તિત્વમાં નથી. તેમ છતાં વિધેય ત્યાં સતત છે.",
+      "ડાબે ઘટે અને જમણે વધે છે, તેથી પ્રથમ વિકલિતની સંજ્ઞા કસોટી ન્યૂનતમ આપે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/150.webp",
+      "printedPage": 136,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-20",
+    "chapter": 6,
+    "section": "Example",
+    "number": "20",
+    "page": 137,
+    "prompt": "$f(x)=3x^4+4x^3-12x^2+12$ નાં સ્થાનિક મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$f\\prime(x)=12x^3+12x^2-24x=12x(x+2)(x-1)$.",
+      "$f\\prime(x)=0\\Rightarrow x=-2,0,1$.",
+      "$f\\prime\\prime(x)=36x^2+24x-24$.",
+      "$f\\prime\\prime(-2)=72>0\\Rightarrow f(-2)=48-32-48+12=-20$: ન્યૂનતમ.",
+      "$f\\prime\\prime(0)=-24<0\\Rightarrow f(0)=12$: મહત્તમ.",
+      "$f\\prime\\prime(1)=36>0\\Rightarrow f(1)=3+4-12+12=7$: ન્યૂનતમ."
+    ],
+    "answer": "સ્થાનિક મહત્તમ $12$ ($x=0$); સ્થાનિક ન્યૂનતમ $-20$ ($x=-2$), $7$ ($x=1$).",
+    "explanation": [
+      "ત્રણ નિર્ણાયક બિંદુઓ મળે છે. દરેક આગળ બીજી વિકલિત શૂન્ય નથી, તેથી બીજી વિકલિતની કસોટી સીધી લાગુ પડે છે.",
+      "આ સ્થાનિક મૂલ્યો છે; ચતુર્ઘાતી વિધેય ઉપરથી અબંધ હોવાથી નિરપેક્ષ મહત્તમ નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/151.webp",
+      "printedPage": 137,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-22",
+    "chapter": 6,
+    "section": "Example",
+    "number": "22",
+    "page": 138,
+    "prompt": "સરવાળો 15 હોય અને વર્ગોનો સરવાળો ન્યૂનતમ હોય એવી બે ધન સંખ્યાઓ શોધો.",
+    "steps": [
+      "$x+y=15\\Rightarrow y=15-x,\\;0<x<15$.",
+      "$S=x^2+(15-x)^2=2x^2-30x+225$.",
+      "$S\\prime=4x-30=0\\Rightarrow x=15/2$.",
+      "$S\\prime\\prime=4>0,\\;y=15-15/2=15/2$.",
+      "$S=2(x-15/2)^2+225/2\\geq225/2$."
+    ],
+    "answer": "બંને સંખ્યાઓ $15/2=7.5$.",
+    "explanation": [
+      "સરવાળાની શરત વડે બીજા ચલને પહેલા ચલમાં લખ્યો છે. હવે માત્ર એક ચલનો વર્ગસરવાળો ન્યૂનતમ કરવાનો છે.",
+      "પૂર્ણવર્ગનું સ્વરૂપ બતાવે છે કે મળેલું ન્યૂનતમ સમગ્ર મંજૂર પ્રાન્તનું ન્યૂનતમ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/152.webp",
+      "printedPage": 138,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-23",
+    "chapter": 6,
+    "section": "Example",
+    "number": "23",
+    "page": 138,
+    "prompt": "$0\\leq c\\leq5$ હોય તો પરવલય $y=x^2$ થી બિંદુ $(0,c)$ નું ન્યૂનતમ અંતર શોધો.",
+    "steps": [
+      "$P=(x,x^2),\\;D^2=x^2+(x^2-c)^2$.",
+      "$u=x^2\\geq0\\Rightarrow F(u)=u+(u-c)^2$.",
+      "$F\\prime(u)=1+2(u-c),\\;F\\prime\\prime(u)=2>0$.",
+      "$F\\prime(u)=0\\Rightarrow u=c-1/2$.",
+      "$0\\leq c\\leq1/2:\\;u=c-1/2\\leq0\\Rightarrow u_{min}=0,\\;D_{min}=c$.",
+      "$1/2<c\\leq5:\\;u_{min}=c-1/2>0$.",
+      "$D_{min}=\\sqrt{(c-1/2)+1/4}=\\frac{\\sqrt{4c-1}}2$.",
+      "આવૃત્તિ નોંધ: મુદ્રિત ઉકેલમાં $u\\geq0$ ના છેડાનો કિસ્સો રહી ગયો છે; બંને કિસ્સા ઉપર સમાવ્યાં છે."
+    ],
+    "answer": "$0\\leq c\\leq1/2$: $D_{min}=c$; $1/2<c\\leq5$: $D_{min}=\\sqrt{4c-1}/2$.",
+    "explanation": [
+      "અંતરને બદલે અંતરના વર્ગને ન્યૂનતમ કરવાથી મૂળ અને છેદની મુશ્કેલી ટળે છે.",
+      "પરવલય પર ઊંચાઈ અઋણ છે. તેથી નિર્ણાયક ઊંચાઈ ઋણ મળે તો તે સ્વીકારી શકાતી નથી; શૂન્ય ઊંચાઈનો છેડો તપાસવો પડે છે.",
+      "મુદ્રિત પુસ્તકમાં નાની c માટેનો આ કિસ્સો છૂટી ગયો છે. અહીં આપેલા સંપૂર્ણ પ્રાન્ત મુજબ સુધારેલો ઉત્તર છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/152.webp",
+      "printedPage": 138,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-24",
+    "chapter": 6,
+    "section": "Example",
+    "number": "24",
+    "page": 139,
+    "prompt": "$AP=16$ મી., $BQ=22$ મી. ના શિરોલંબ સ્તંભો માટે $AB=20$ મી. છે. $AB$ પર $R$ એવું શોધો કે $RP^2+RQ^2$ ન્યૂનતમ થાય; $AR$ શોધો.",
+    "steps": [
+      "$AR=x,\\;RB=20-x,\\;0\\leq x\\leq20$.",
+      "$RP^2=x^2+16^2,\\;RQ^2=(20-x)^2+22^2$.",
+      "$S=2x^2-40x+1140$.",
+      "$S\\prime=4x-40=0\\Rightarrow x=10$.",
+      "$S\\prime\\prime=4>0$; $S=2(x-10)^2+940$.",
+      "અતઃ $AR=10\\text{ m}$."
+    ],
+    "answer": "$AR=10$ મીટર.",
+    "explanation": [
+      "દરેક સ્તંભ સાથે કાટકોણ ત્રિકોણ બને છે, તેથી પાયથાગોરસના પ્રમેયથી બંને અંતરના વર્ગ લખ્યાં છે.",
+      "બંને સ્તંભોની ઊંચાઈ અચળ હોવાથી અંતિમ સ્થાન આધારના મધ્યમાં મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/153.webp",
+      "printedPage": 139,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-25",
+    "chapter": 6,
+    "section": "Example",
+    "number": "25",
+    "page": 139,
+    "prompt": "આધાર સિવાયની ત્રણેય બાજુઓની લંબાઈ 10 સેમી હોય એવા સમલંબ ચતુષ્કોણનું મહત્તમ ક્ષેત્રફળ શોધો.",
+    "steps": [
+      "$AP=QB=x,\\;DC=PQ=10,\\;0\\leq x\\leq10$.",
+      "$h=\\sqrt{100-x^2},\\;AB=10+2x$.",
+      "$A=\\frac12(10+10+2x)h=(x+10)\\sqrt{100-x^2}$.",
+      "$A\\prime=\\frac{100-2x^2-10x}{\\sqrt{100-x^2}}=\\frac{-2(x-5)(x+10)}{\\sqrt{100-x^2}}$.",
+      "$A\\prime=0\\Rightarrow x=5$; $0<x<5: (+)$; $5<x<10: (-)$.",
+      "$A(0)=100,\\;A(10)=0,\\;A(5)=15\\sqrt{75}=75\\sqrt3\\text{ cm}^2$."
+    ],
+    "answer": "મહત્તમ ક્ષેત્રફળ $75\\sqrt3$ ચો.સેમી.",
+    "explanation": [
+      "સમાન તિર્યક બાજુઓને લીધે આધારની બંને તરફ વધારાના ભાગો સમાન છે. આ ભાગને x લઈ ઊંચાઈ પાયથાગોરસથી મેળવી છે.",
+      "ધનથી ઋણ વિકલિત અને બંને છેડાનાં મૂલ્યો તપાસવાથી નિરપેક્ષ મહત્તમ નક્કી થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/153.webp",
+      "printedPage": 139,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-26",
+    "chapter": 6,
+    "section": "Example",
+    "number": "26",
+    "page": 140,
+    "prompt": "આપેલા શંકુમાં અંતર્ગત મહત્તમ વક્રસપાટી ક્ષેત્રફળવાળા નળાકારની ત્રિજ્યા શંકુની ત્રિજ્યાની અડધી છે તે સાબિત કરો.",
+    "steps": [
+      "શંકુ: ત્રિજ્યા $R$, ઊંચાઈ $H$; નળાકાર: ત્રિજ્યા $r$, ઊંચાઈ $h$.",
+      "સમાન ત્રિકોણોથી $h/H=(R-r)/R\\Rightarrow h=H(R-r)/R$.",
+      "$S=2\\pi rh=\\frac{2\\pi H}{R}(Rr-r^2),\\;0\\leq r\\leq R$.",
+      "$S\\prime=\\frac{2\\pi H}{R}(R-2r)=0\\Rightarrow r=R/2$.",
+      "$S\\prime\\prime=-4\\pi H/R<0$; $S(0)=S(R)=0$.",
+      "અતઃ મહત્તમ વક્રસપાટી માટે $r=R/2$, સાબિત."
+    ],
+    "answer": "નળાકારની ત્રિજ્યા $R/2$ અને ઊંચાઈ $H/2$.",
+    "explanation": [
+      "અહીં વક્રસપાટીનું ક્ષેત્રફળ માંગ્યું છે, ઘનફળ નહીં. તેથી નળાકાર માટે બે પાયા ઉમેરવાના નથી.",
+      "સમાન ત્રિકોણોના સંબંધ વડે ઊંચાઈ દૂર કરી ત્રિજ્યાનું દ્વિઘાત વિધેય મેળવ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/154.webp",
+      "printedPage": 140,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-27",
+    "chapter": 6,
+    "section": "Example",
+    "number": "27",
+    "page": 142,
+    "prompt": "$f(x)=2x^3-15x^2+36x+1,\\;x\\in[1,5]$ નાં વૈશ્વિક મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$f\\prime(x)=6x^2-30x+36=6(x-2)(x-3)$.",
+      "$f\\prime(x)=0\\Rightarrow x=2,3$.",
+      "$f(1)=2-15+36+1=24$.",
+      "$f(2)=16-60+72+1=29$.",
+      "$f(3)=54-135+108+1=28$.",
+      "$f(5)=250-375+180+1=56$.",
+      "અતઃ વૈશ્વિક મહત્તમ $56$ આગળ $x=5$; ન્યૂનતમ $24$ આગળ $x=1$."
+    ],
+    "answer": "મહત્તમ $56$ ($x=5$); ન્યૂનતમ $24$ ($x=1$).",
+    "explanation": [
+      "બંધ અંતરાલમાં માત્ર સ્થાનિક મહત્તમ અને ન્યૂનતમ તપાસવા પૂરતું નથી. બંને છેડાઓ પણ ઉમેદવાર છે.",
+      "ચારેય મૂલ્યો સરખાવી આખા અંતરાલનો જવાબ મેળવ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/156.webp",
+      "printedPage": 142,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-28",
+    "chapter": 6,
+    "section": "Example",
+    "number": "28",
+    "page": 142,
+    "prompt": "$f(x)=12x^{4/3}-6x^{1/3},\\;x\\in[-1,1]$ નાં વૈશ્વિક મહત્તમ અને ન્યૂનતમ મૂલ્યો શોધો.",
+    "steps": [
+      "$f\\prime(x)=16x^{1/3}-2x^{-2/3}=\\frac{2(8x-1)}{x^{2/3}},\\;x\\ne0$.",
+      "$f\\prime(x)=0\\Rightarrow x=1/8$; $x=0$ પર વિકલિત નથી, પણ $f$ સતત છે.",
+      "ઉમેદવારો: $x=-1,0,1/8,1$.",
+      "$f(-1)=12+6=18,\\;f(0)=0$.",
+      "$f(1/8)=12(1/16)-6(1/2)=-9/4,\\;f(1)=6$.",
+      "અતઃ મહત્તમ $18$ આગળ $x=-1$; ન્યૂનતમ $-9/4$ આગળ $x=1/8$."
+    ],
+    "answer": "મહત્તમ $18$ ($x=-1$); ન્યૂનતમ $-9/4$ ($x=1/8$).",
+    "explanation": [
+      "ઘનમૂળ વાસ્તવિક ઋણ સંખ્યાઓ માટે પણ વ્યાખ્યાયિત છે. શૂન્ય પર મૂળ વિધેય સતત છે, પણ વિકલિત વ્યાખ્યાયિત નથી.",
+      "આથી શૂન્યને પણ ઉમેદવાર ગણી છેડાઓ અને સ્થિર બિંદુ સાથે સરખાવ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/156.webp",
+      "printedPage": 142,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-29",
+    "chapter": 6,
+    "section": "Example",
+    "number": "29",
+    "page": 143,
+    "prompt": "$x\\geq0$ માટે હેલિકોપ્ટર $y=x^2+7$ પર ઊડે છે. સૈનિક $(3,7)$ આગળ હોય તો બંને વચ્ચેનું ન્યૂનતમ અંતર શોધો.",
+    "steps": [
+      "$P=(x,x^2+7),\\;Q=(3,7),\\;x\\geq0$.",
+      "$D^2=(x-3)^2+x^4=F(x)$.",
+      "$F\\prime(x)=2(x-3)+4x^3=2(x-1)(2x^2+2x+3)$.",
+      "$2x^2+2x+3=2(x+1/2)^2+5/2>0$.",
+      "$0\\leq x<1: F\\prime<0$; $x>1: F\\prime>0$.",
+      "$F(1)=4+1=5\\Rightarrow D_{min}=\\sqrt5$."
+    ],
+    "answer": "ન્યૂનતમ અંતર $\\sqrt5$ એકમ.",
+    "explanation": [
+      "અંતરના વર્ગને ન્યૂનતમ કરવાથી એ જ બિંદુ મળે છે. પ્રાન્ત x અઋણ છે એ શરત રાખી છે.",
+      "બીજો દ્વિઘાત અવયવ હંમેશાં ધન હોવાથી વિકલિતની સંજ્ઞા માત્ર x−1 નક્કી કરે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/157.webp",
+      "printedPage": 143,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-30",
+    "chapter": 6,
+    "section": "Example",
+    "number": "30",
+    "page": 145,
+    "prompt": "ગાડી $t=0$ પર $P$ થી શરૂ થઈ $Q$ પર અટકે છે. અંતર $x=t^2(2-t/3)$ મીટર હોય તો $Q$ સુધીનો સમય તથા $PQ$ શોધો.",
+    "steps": [
+      "$x=2t^2-t^3/3$.",
+      "$v=\\frac{dx}{dt}=4t-t^2=t(4-t)$.",
+      "$v=0\\Rightarrow t=0,4$; શરૂ થયા પછી અટકવાનો સમય $t=4\\text{ s}$.",
+      "$0<t<4\\Rightarrow v>0$; તેથી દિશા બદલાતી નથી.",
+      "$PQ=x(4)-x(0)=16(2-4/3)=32/3\\text{ m}$."
+    ],
+    "answer": "સમય $4$ સેકન્ડ; $PQ=32/3$ મીટર.",
+    "explanation": [
+      "અટકતી વખતે તાત્કાલિક વેગ શૂન્ય હોય છે. મળેલા બે સમય પૈકી શૂન્ય શરૂઆતનો છે, તેથી આગળનો સમય ચાર સેકન્ડ છે.",
+      "આ સમય દરમ્યાન વેગ ધન હોવાથી સ્થાનફેર અને કાપેલું અંતર સમાન છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/159.webp",
+      "printedPage": 145,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-31",
+    "chapter": 6,
+    "section": "Example",
+    "number": "31",
+    "page": 146,
+    "prompt": "ઊંધા શંકુ આકારની ટાંકીનો અર્ધશિરઃકોણ $\\tan^{-1}(0.5)$ છે. પાણી $5\\text{ m}^3/\\text{h}$ ના દરે ભરાય છે. ઊંડાઈ $4$ મી. હોય ત્યારે સપાટી ઊંચી જવાનો દર શોધો.",
+    "steps": [
+      "$\\tan\\alpha=r/h=0.5\\Rightarrow r=h/2$.",
+      "$V=\\frac13\\pi r^2h=\\frac{\\pi h^3}{12}$.",
+      "$\\frac{dV}{dt}=\\frac\\pi4h^2\\frac{dh}{dt}$.",
+      "$5=\\frac\\pi4(4)^2\\frac{dh}{dt}\\Rightarrow\\frac{dh}{dt}=\\frac5{4\\pi}\\text{ m/h}$.",
+      "$\\pi=22/7\\Rightarrow\\frac{dh}{dt}=35/88\\text{ m/h}$."
+    ],
+    "answer": "$5/(4\\pi)$ મી./કલાક; $\\pi=22/7$ લેતાં $35/88$ મી./કલાક.",
+    "explanation": [
+      "શંકુનો અર્ધશિરઃકોણ ઊંચાઈ અને ત્રિજ્યાનો સંબંધ આપે છે. બંનેને સ્વતંત્ર ચલ ગણવાના નથી.",
+      "ઘનફળનું સમયની સાપેક્ષ વિકલન કર્યા પછી આપેલી ઊંડાઈ મૂકેલી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/160.webp",
+      "printedPage": 146,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-32",
+    "chapter": 6,
+    "section": "Example",
+    "number": "32",
+    "page": 146,
+    "prompt": "2 મીટર ઊંચો માણસ 5 કિમી/કલાકના દરે 6 મીટર ઊંચા પ્રકાશસ્રોતથી દૂર જાય છે. તેના પડછાયાની લંબાઈ વધવાનો દર શોધો.",
+    "steps": [
+      "સ્રોતથી માણસનું અંતર $l$, પડછાયાની લંબાઈ $s$.",
+      "સમાન ત્રિકોણોથી $\\frac{s}{l+s}=\\frac26=\\frac13$.",
+      "$3s=l+s\\Rightarrow l=2s$.",
+      "$\\frac{dl}{dt}=2\\frac{ds}{dt}$.",
+      "$5=2\\frac{ds}{dt}\\Rightarrow\\frac{ds}{dt}=5/2\\text{ km/h}$."
+    ],
+    "answer": "પડછાયાની લંબાઈ $5/2$ કિમી/કલાકના દરે વધે છે.",
+    "explanation": [
+      "પ્રકાશસ્રોતથી પડછાયાના છેડા સુધીનું અંતર માણસના અંતર અને પડછાયાની લંબાઈનો સરવાળો છે.",
+      "સમાન ત્રિકોણોથી મળેલા સંબંધનું વિકલન કરીએ છીએ. પ્રશ્ન પડછાયાની લંબાઈનો દર પૂછે છે, છેડાના સ્થાનનો દર નહીં."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/160.webp",
+      "printedPage": 146,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-33",
+    "chapter": 6,
+    "section": "Example",
+    "number": "33",
+    "page": 147,
+    "prompt": "$f(x)=\\frac3{10}x^4-\\frac45x^3-3x^2+\\frac{36}5x+11$ કયા અંતરાલમાં વધે અને ઘટે?",
+    "steps": [
+      "$f\\prime(x)=\\frac65x^3-\\frac{12}5x^2-6x+\\frac{36}5=\\frac65(x-1)(x+2)(x-3)$.",
+      "$f\\prime=0\\Rightarrow x=-2,1,3$.",
+      "$x<-2: (-)$; $-2<x<1: (+)$; $1<x<3: (-)$; $x>3: (+)$.",
+      "વધે: $[-2,1]$, $[3,\\infty)$.",
+      "ઘટે: $(-\\infty,-2]$, $[1,3]$."
+    ],
+    "answer": "વધે $[-2,1]$, $[3,\\infty)$; ઘટે $(-\\infty,-2]$, $[1,3]$.",
+    "explanation": [
+      "વિકલિતનું અવયવીકરણ ત્રણ નિર્ણાયક બિંદુ આપે છે. આથી ચાર અંતરાલોમાં અવયવોની સંજ્ઞા અલગ તપાસવી પડે છે.",
+      "બહુપદી સતત હોવાથી યોગ્ય છેડાઓ અંતરાલોમાં સામેલ કરી શકાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/161.webp",
+      "printedPage": 147,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-34",
+    "chapter": 6,
+    "section": "Example",
+    "number": "34",
+    "page": 148,
+    "prompt": "$f(x)=\\tan^{-1}(\\sin x+\\cos x),\\;x>0$ એ $(0,\\pi/4)$ પર વધે છે તે સાબિત કરો.",
+    "steps": [
+      "$f\\prime(x)=\\frac{\\cos x-\\sin x}{1+(\\sin x+\\cos x)^2}=\\frac{\\cos x-\\sin x}{2+\\sin2x}$.",
+      "$0<x<\\pi/4\\Rightarrow\\cos x>\\sin x,\\;2+\\sin2x>0$.",
+      "અતઃ $f\\prime(x)>0$; તેથી $(0,\\pi/4)$ પર ચુસ્ત વધે."
+    ],
+    "answer": "$(0,\\pi/4)$ પર ચુસ્ત વધતું છે.",
+    "explanation": [
+      "પ્રતિત્રિકોણમિતીય વિધેયમાં સાંકળ નિયમ લાગુ પડે છે. છેદ મૂળ સ્વરૂપમાં એક સાથે વર્ગનો સરવાળો હોવાથી હંમેશાં ધન છે.",
+      "આપેલા પહેલા ચતુર્થાંશના ભાગમાં કોસાઇન સાઇન કરતાં મોટો છે, એટલે અંશ પણ ધન છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/162.webp",
+      "printedPage": 148,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-35",
+    "chapter": 6,
+    "section": "Example",
+    "number": "35",
+    "page": 148,
+    "prompt": "3 સેમી ત્રિજ્યાની વર્તુળાકાર તકતી ગરમ કરતાં ત્રિજ્યા 0.05 સેમી/સેના દરે વધે છે. ત્રિજ્યા 3.2 સેમી હોય ત્યારે ક્ષેત્રફળ વધવાનો દર શોધો.",
+    "steps": [
+      "$A=\\pi r^2,\\;\\frac{dr}{dt}=0.05\\text{ cm/s}$.",
+      "$\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}$.",
+      "$r=3.2\\Rightarrow\\frac{dA}{dt}=2\\pi(3.2)(0.05)=0.32\\pi\\text{ cm}^2\\text{/s}$."
+    ],
+    "answer": "$0.32\\pi$ ચો.સેમી/સે.",
+    "explanation": [
+      "આ માંગેલી ક્ષણે ત્રિજ્યા 3.2 સેમી છે; શરૂઆતની ત્રિજ્યા 3 સેમી મૂકવાની નથી.",
+      "ક્ષેત્રફળ ત્રિજ્યાનું વિધેય છે અને ત્રિજ્યા સમયનું, તેથી સાંકળ નિયમથી બંને દર જોડાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/162.webp",
+      "printedPage": 148,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-36",
+    "chapter": 6,
+    "section": "Example",
+    "number": "36",
+    "page": 149,
+    "prompt": "3 મી. × 8 મી. ના એલ્યુમિનિયમ પતરાના દરેક ખૂણેથી સમાન ચોરસ કાપી ખુલ્લી પેટી બનાવાય છે. તેનું મહત્તમ ઘનફળ શોધો.",
+    "steps": [
+      "કાપની બાજુ $x$: $0<x<3/2$.",
+      "$V=x(3-2x)(8-2x)=4x^3-22x^2+24x$.",
+      "$V\\prime=12x^2-44x+24=4(x-3)(3x-2)$.",
+      "$V\\prime=0\\Rightarrow x=3,2/3$; પ્રાન્ત મુજબ $x=2/3$.",
+      "$V\\prime\\prime(2/3)=24(2/3)-44=-28<0$; છેડાઓએ ઘનફળ $0$.",
+      "$V_{max}=\\frac23\\frac53\\frac{20}3=\\frac{200}{27}\\text{ m}^3$."
+    ],
+    "answer": "મહત્તમ ઘનફળ $200/27$ ઘનમીટર; કાપની બાજુ $2/3$ મીટર.",
+    "explanation": [
+      "ચોરસ કાપવાથી બંને આધારનાં માપમાંથી બે x ઘટે છે અને ઊંચાઈ x બને છે.",
+      "ટૂંકી બાજુ ધન રહે તે માટે x દોઢ મીટરથી નાનું હોવું જરૂરી છે. તેથી વિકલિતનો બીજો શૂન્ય ત્રણ સ્વીકાર્ય નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/163.webp",
+      "printedPage": 149,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  },
+  {
+    "id": "tb6-Example-37",
+    "chapter": 6,
+    "section": "Example",
+    "number": "37",
+    "page": 150,
+    "prompt": "ઉત્પાદક એકમદીઠ ₹$(5-x/100)$ ના દરે $x$ વસ્તુ વેચે છે. પડતર કિંમત ₹$(x/5+500)$ હોય તો મહત્તમ નફા માટે કેટલી વસ્તુ વેચવી?",
+    "steps": [
+      "$R(x)=x(5-x/100)=5x-x^2/100$.",
+      "$C(x)=x/5+500$.",
+      "$P(x)=R-C=\\frac{24}5x-\\frac{x^2}{100}-500$.",
+      "$P\\prime(x)=24/5-x/50=0\\Rightarrow x=240$.",
+      "$P\\prime\\prime(x)=-1/50<0$.",
+      "અતઃ મહત્તમ નફા માટે $240$ વસ્તુ વેચવી; $P(240)=76$."
+    ],
+    "answer": "$240$ વસ્તુઓ.",
+    "explanation": [
+      "વેચાણનો દર એકમદીઠ છે; કુલ આવક માટે તેને વસ્તુની સંખ્યા સાથે ગુણવો પડે છે.",
+      "આવકમાંથી કુલ પડતર ખર્ચ બાદ કરવાથી નફો મળે છે. નફાનું દ્વિઘાત વિધેય નીચે ખુલતું હોવાથી મળેલો પૂર્ણાંક સમગ્ર મંજૂર સંખ્યાઓમાં મહત્તમ આપે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તક સાથે પ્રશ્ન ચકાસેલો છે.",
+    "verification": {
+      "source": "book/164.webp",
+      "printedPage": 150,
+      "checkedOn": "2026-11-01",
+      "method": "Prompt visually checked against uploaded Gujarati textbook. Domain, derivatives, all subparts, endpoint values and conclusions independently reviewed."
+    }
+  }
+]
