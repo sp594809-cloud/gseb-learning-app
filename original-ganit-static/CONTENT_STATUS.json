@@ -1,7 +1,7 @@
 {
   "baselineSolutions": 110,
-  "addedSolutions": 3,
-  "scope": "Only the two explicitly integrated questions are newly verified in this milestone. Draft notes are not a completed audit. Chapter coverage remains partial.",
+  "addedSolutions": 122,
+  "scope": "Original 110 records preserved; 119 Chapter 6 entries cover every numbered example and question in the uploaded Gujarati edition. Chapter 3 has 2 additional verified entries; Chapter 7 has 1.",
   "inventory": [
     {
       "id": "tb1-Example-1",
@@ -1703,7 +1703,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-2",
@@ -1711,7 +1712,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-3",
@@ -1719,7 +1721,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-4",
@@ -1727,7 +1730,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-5",
@@ -1735,7 +1739,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-6",
@@ -1743,7 +1748,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-1",
@@ -1751,7 +1757,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-2",
@@ -1759,7 +1766,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-3",
@@ -1767,7 +1775,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-4",
@@ -1775,7 +1784,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-5",
@@ -1783,7 +1793,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-6",
@@ -1791,7 +1802,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-7",
@@ -1799,7 +1811,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-8",
@@ -1807,7 +1820,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-9",
@@ -1815,7 +1829,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-10",
@@ -1823,7 +1838,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-11",
@@ -1831,7 +1847,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-12",
@@ -1839,7 +1856,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-13",
@@ -1847,7 +1865,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-14",
@@ -1855,7 +1874,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-15",
@@ -1863,7 +1883,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-16",
@@ -1871,7 +1892,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-17",
@@ -1879,7 +1901,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-61-18",
@@ -1887,7 +1910,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch2.json"
+      "integratedFile": "content-additions/chapter6-batch2.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-7",
@@ -1895,7 +1919,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-8",
@@ -1903,7 +1928,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-9",
@@ -1911,7 +1937,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-10",
@@ -1919,7 +1946,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-11",
@@ -1927,7 +1955,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-12",
@@ -1935,7 +1964,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-Example-13",
@@ -1943,7 +1973,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-1",
@@ -1951,7 +1982,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-2",
@@ -1959,7 +1991,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-3",
@@ -1967,7 +2000,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-4",
@@ -1975,7 +2009,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-5",
@@ -1983,7 +2018,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-6",
@@ -1991,7 +2027,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-7",
@@ -1999,7 +2036,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-8",
@@ -2007,7 +2045,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-9",
@@ -2015,7 +2054,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-10",
@@ -2023,7 +2063,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-11",
@@ -2031,7 +2072,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-12",
@@ -2039,7 +2081,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-13",
@@ -2047,7 +2090,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-14",
@@ -2055,7 +2099,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-15",
@@ -2063,7 +2108,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-16",
@@ -2071,7 +2117,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-17",
@@ -2079,7 +2126,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-18",
@@ -2087,7 +2135,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     },
     {
       "id": "tb6-62-19",
@@ -2095,7 +2144,8 @@
       "draftFile": "chapter6-researched.json",
       "status": "verified-integrated",
       "hasDraftVerificationNote": true,
-      "integratedFile": "content-additions/chapter6-batch3.json"
+      "integratedFile": "content-additions/chapter6-batch3.json",
+      "presentation": "mathematical-working-plus-optional-Gujarati-explanation"
     }
   ],
   "chapter7": {
@@ -2106,13 +2156,35 @@
     "remaining": "Only question 1 is integrated. Gujarati GSEB Part II source wording was not checked because the uploaded PDF covers only Part I (Chapters 1–6). Continue with Exercise 7.1 Question 2 after source verification."
   },
   "chapter6Milestone": {
-    "date": "2026-10-31",
-    "verifiedIntegrated": 56,
-    "coverage": "Examples 1–13; Exercise 6.1 Q1–18; Exercise 6.2 Q1–19 with all subparts; Miscellaneous Q1–6",
-    "remaining": "Examples 14 onward; later exercises and remaining miscellaneous questions.",
-    "latestCommit": "8c2d2687055946a23a1bd28ab41694f012c65eb5",
-    "deployment": "dep-dbiqhvud4qjc73af7mk0",
-    "checks": "26/26 new routes and revealed answers verified publicly; 63 numerical derivative checks; production build and JS syntax pass.",
-    "sourceIssue": "Exercise 6.2 Q12: both A and B decrease on the printed interval; explained explicitly."
+    "date": "2026-11-01",
+    "status": "complete-for-uploaded-textbook",
+    "verifiedIntegrated": 119,
+    "sections": {
+      "Example": 37,
+      "6.1": 18,
+      "6.2": 19,
+      "6.3": 29,
+      "Misc 6": 16
+    },
+    "presentation": "All 119 show full mathematical workings by default, with original or authored Gujarati explanation behind Understand the solution.",
+    "latestCommit": "ebb332e02c4c4ca799ebc293db169b3434001b04",
+    "deployment": "dep-dbjd7j7avr4c73but8dg",
+    "publicUrl": "https://ganit-original-preview.onrender.com/#chapter/6",
+    "checks": {
+      "publicRoutes": 119,
+      "explanationControls": 119,
+      "regressionTests": 7,
+      "numericalDerivativeChecks": 80,
+      "phoneWidthSamples": 5,
+      "viewportWidth": 390,
+      "searchBookmarksProgress": "passed"
+    },
+    "sourceIssues": [
+      "Exercise 6.2 Q12: A and B both decrease on the printed interval.",
+      "Example 23: include c ≤ 1/2 boundary case omitted by printed working.",
+      "Exercise 6.3 Q11: stationarity gives a=8 but no a produces the claimed maximum; contradiction shown."
+    ],
+    "remaining": "No missing numbered Chapter 6 entries in uploaded edition. Other chapters' incomplete content and conversion remain separate work.",
+    "limitations": "Mobile checks used a 390px iframe; no physical-phone test or independent teacher review was performed."
   }
 }
