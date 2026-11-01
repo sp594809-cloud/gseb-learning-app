@@ -62,3 +62,14 @@ if(!process.argv.includes('--original')) {
  for(const from of ['esc(q.prompt)','esc(q.answer)','esc(s)'])app=app.replaceAll(from,from.replace('esc(','mathText('));
  await writeFile(appPath,renderer+'\n'+app);
 }
+
+if(!process.argv.includes('--original')) {
+ const contentPath=path.join(root,'dist/content.json');
+ const content=JSON.parse(await readFile(contentPath,'utf8'));
+ const presentations=JSON.parse(await readFile(path.join(root,'solution-presentation.json'),'utf8'));
+ for(const item of presentations){const q=content.solutions.find(q=>q.id===item.id);if(!q)throw Error('Missing solution '+item.id);q.explanation=item.explanation;q.steps=item.steps;}
+ await writeFile(contentPath,JSON.stringify(content));
+ const appPath=path.join(root,'dist/app.js');let app=await readFile(appPath,'utf8');
+ app=app.replace("<div class=\"question-actions\"><button class=\"primary\" id=\"complete\">","${q.explanation?`<details class=\"panel understanding\" style=\"margin-top:20px\"><summary style=\"cursor:pointer;font-weight:700\">ઉકેલ સમજો / Understand the solution</summary><ol>${q.explanation.map(text=>`<li style=\"margin:14px 0;line-height:1.9\">${mathText(text)}</li>`).join('')}</ol></details>`:''}<div class=\"question-actions\"><button class=\"primary\" id=\"complete\">");
+ await writeFile(appPath,app);
+}
