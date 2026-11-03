@@ -83,7 +83,7 @@ if(!process.argv.includes('--original')) {
  let next=0;content.solutions=content.solutions.map(q=>q.chapter===6?sorted[next++]:q);
  await writeFile(contentPath,JSON.stringify(content));
  const appPath=path.join(root,'dist/app.js');let app=await readFile(appPath,'utf8');
- app=app.replace('class="step" ${i?', 'class="step" style="min-width:0" ${i?').replace('<p>${mathText(s)}</p></div>', '<p style="min-width:0;flex:1">${mathText(s)}</p></div>');
+ app=app.replace('<div class="solution-layout"><section>', '<div class="solution-layout"><section style="min-width:0">').replace('class="step" ${i?', 'class="step" style="min-width:0" ${i?').replace('<p>${mathText(s)}</p></div>', '<p style="min-width:0;flex:1">${mathText(s)}</p></div>');
  await writeFile(appPath,app);
  await mkdir(path.join(root,'dist/verification'),{recursive:true});
  await cp(path.join(root,'verification/mobile.html'),path.join(root,'dist/verification/mobile.html'));
