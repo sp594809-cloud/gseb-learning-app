@@ -1,0 +1,849 @@
+[
+  {
+    "id": "tb3-32-1",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "1",
+    "page": 48,
+    "prompt": "જો $A=\\begin{bmatrix}2&4\\\\3&2\\end{bmatrix}$, $B=\\begin{bmatrix}1&3\\\\-2&5\\end{bmatrix}$, $C=\\begin{bmatrix}-2&5\\\\3&4\\end{bmatrix}$ હોય તો (i) A+B (ii) A−B (iii) 3A−C (iv) AB (v) BA શોધો.",
+    "steps": [
+      "$A+B=\\begin{bmatrix}3&7\\\\1&7\\end{bmatrix}$",
+      "$A-B=\\begin{bmatrix}1&1\\\\5&-3\\end{bmatrix}$",
+      "$3A=\\begin{bmatrix}6&12\\\\9&6\\end{bmatrix}$",
+      "$3A-C=\\begin{bmatrix}6&12\\\\9&6\\end{bmatrix}-\\begin{bmatrix}-2&5\\\\3&4\\end{bmatrix}=\\begin{bmatrix}8&7\\\\6&2\\end{bmatrix}$",
+      "$AB=\\begin{bmatrix}2&4\\\\3&2\\end{bmatrix}\\begin{bmatrix}1&3\\\\-2&5\\end{bmatrix}$",
+      "$(AB)_{11}=(2)(1)+(4)(-2)=-6$",
+      "$(AB)_{12}=(2)(3)+(4)(5)=26$",
+      "$(AB)_{21}=(3)(1)+(2)(-2)=-1$",
+      "$(AB)_{22}=(3)(3)+(2)(5)=19$",
+      "$AB=\\begin{bmatrix}-6&26\\\\-1&19\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}1&3\\\\-2&5\\end{bmatrix}\\begin{bmatrix}2&4\\\\3&2\\end{bmatrix}$",
+      "$(BA)_{11}=(1)(2)+(3)(3)=11$",
+      "$(BA)_{12}=(1)(4)+(3)(2)=10$",
+      "$(BA)_{21}=(-2)(2)+(5)(3)=11$",
+      "$(BA)_{22}=(-2)(4)+(5)(2)=2$",
+      "$BA=\\begin{bmatrix}11&10\\\\11&2\\end{bmatrix}$"
+    ],
+    "answer": "$A+B=\\begin{bmatrix}3&7\\\\1&7\\end{bmatrix}$; $A-B=\\begin{bmatrix}1&1\\\\5&-3\\end{bmatrix}$; $3A-C=\\begin{bmatrix}8&7\\\\6&2\\end{bmatrix}$; $AB=\\begin{bmatrix}-6&26\\\\-1&19\\end{bmatrix}$; $BA=\\begin{bmatrix}11&10\\\\11&2\\end{bmatrix}$",
+    "explanation": [
+      "સરવાળા અને બાદબાકીમાં સમાન સ્થાનના ઘટકો પર ક્રિયા કરીએ. અદિશ ગુણાકારમાં દરેક ઘટકને તે સંખ્યાથી ગુણીએ.",
+      "ABના (i,j) સ્થાને Aની iમી હાર અને Bના jમા સ્તંભનાં અનુરૂપ ઘટકોના ગુણનફળો ઉમેરીએ. BA અલગથી ગણવો પડે; સામાન્ય રીતે AB અને BA સમાન નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/62.webp",
+      "printedPage": 48,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-2",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "2",
+    "page": 48,
+    "prompt": "ગણતરી કરો: (1) $\\begin{bmatrix}a&b\\\\- b&a\\end{bmatrix}+\\begin{bmatrix}a&b\\\\b&a\\end{bmatrix}$; (2) $\\begin{bmatrix}a^{2} + b^{2}&b^{2} + c^{2}\\\\a^{2} + c^{2}&a^{2} + b^{2}\\end{bmatrix}+\\begin{bmatrix}2 a b&2 b c\\\\- 2 a c&- 2 a b\\end{bmatrix}$; (3) $\\begin{bmatrix}-1&4&-6\\\\8&5&16\\\\2&8&5\\end{bmatrix}+\\begin{bmatrix}12&7&6\\\\8&0&5\\\\3&2&4\\end{bmatrix}$; (4) $\\begin{bmatrix}\\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)}\\\\\\sin^{2}{\\left(x \\right)}&\\cos^{2}{\\left(x \\right)}\\end{bmatrix}+\\begin{bmatrix}\\sin^{2}{\\left(x \\right)}&\\cos^{2}{\\left(x \\right)}\\\\\\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)}\\end{bmatrix}$",
+    "steps": [
+      "(1) $\\begin{bmatrix}a&b\\\\- b&a\\end{bmatrix}+\\begin{bmatrix}a&b\\\\b&a\\end{bmatrix}$",
+      "$=\\begin{bmatrix}2 a&2 b\\\\0&2 a\\end{bmatrix}$",
+      "$=\\begin{bmatrix}2 a&2 b\\\\0&2 a\\end{bmatrix}$",
+      "(2) $\\begin{bmatrix}a^{2} + b^{2}&b^{2} + c^{2}\\\\a^{2} + c^{2}&a^{2} + b^{2}\\end{bmatrix}+\\begin{bmatrix}2 a b&2 b c\\\\- 2 a c&- 2 a b\\end{bmatrix}$",
+      "$=\\begin{bmatrix}a^{2} + 2 a b + b^{2}&b^{2} + 2 b c + c^{2}\\\\a^{2} - 2 a c + c^{2}&a^{2} - 2 a b + b^{2}\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\left(a + b\\right)^{2}&\\left(b + c\\right)^{2}\\\\\\left(a - c\\right)^{2}&\\left(a - b\\right)^{2}\\end{bmatrix}$",
+      "(3) $\\begin{bmatrix}-1&4&-6\\\\8&5&16\\\\2&8&5\\end{bmatrix}+\\begin{bmatrix}12&7&6\\\\8&0&5\\\\3&2&4\\end{bmatrix}$",
+      "$=\\begin{bmatrix}11&11&0\\\\16&5&21\\\\5&10&9\\end{bmatrix}$",
+      "$=\\begin{bmatrix}11&11&0\\\\16&5&21\\\\5&10&9\\end{bmatrix}$",
+      "(4) $\\begin{bmatrix}\\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)}\\\\\\sin^{2}{\\left(x \\right)}&\\cos^{2}{\\left(x \\right)}\\end{bmatrix}+\\begin{bmatrix}\\sin^{2}{\\left(x \\right)}&\\cos^{2}{\\left(x \\right)}\\\\\\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)}\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\\\\\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}&\\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\end{bmatrix}$",
+      "$=\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$"
+    ],
+    "answer": "(1) $\\begin{bmatrix}2 a&2 b\\\\0&2 a\\end{bmatrix}$; (2) $\\begin{bmatrix}\\left(a + b\\right)^{2}&\\left(b + c\\right)^{2}\\\\\\left(a - c\\right)^{2}&\\left(a - b\\right)^{2}\\end{bmatrix}$; (3) $\\begin{bmatrix}11&11&0\\\\16&5&21\\\\5&10&9\\end{bmatrix}$; (4) $\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}$",
+    "explanation": [
+      "અનુરૂપ ઘટકો ઉમેરવાના છે. બીજા ભાગમાં પૂર્ણવર્ગનાં સૂત્રો વાપરીએ: $u^2+2uv+v^2=(u+v)^2$ અને $u^2-2uv+v^2=(u-v)^2$.",
+      "ચોથા ભાગમાં દરેક સ્થાને $\\sin^2x+\\cos^2x=1$ મળે છે; પરિણામ સર્વ ઘટક 1 ધરાવતો શ્રેણિક છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/62.webp",
+      "printedPage": 48,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-3",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "3",
+    "page": 49,
+    "prompt": "ગુણાકાર કરો: (1) $\\begin{bmatrix}a&b\\\\- b&a\\end{bmatrix}\\begin{bmatrix}a&- b\\\\b&a\\end{bmatrix}$; (2) $\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}\\begin{bmatrix}2&3&4\\end{bmatrix}$; (3) $\\begin{bmatrix}1&-2\\\\2&3\\end{bmatrix}\\begin{bmatrix}1&2&3\\\\2&3&1\\end{bmatrix}$; (4) $\\begin{bmatrix}2&3&4\\\\3&4&5\\\\4&5&6\\end{bmatrix}\\begin{bmatrix}1&-3&5\\\\0&2&4\\\\3&0&5\\end{bmatrix}$; (5) $\\begin{bmatrix}2&1\\\\3&2\\\\-1&1\\end{bmatrix}\\begin{bmatrix}1&0&1\\\\-1&2&1\\end{bmatrix}$; (6) $\\begin{bmatrix}3&-1&3\\\\-1&0&2\\end{bmatrix}\\begin{bmatrix}2&-3\\\\1&0\\\\3&1\\end{bmatrix}$",
+    "steps": [
+      "(1) $2\\times2\\;\\cdot\\;2\\times2\\Rightarrow2\\times2$",
+      "$P=\\begin{bmatrix}a&b\\\\- b&a\\end{bmatrix}\\begin{bmatrix}a&- b\\\\b&a\\end{bmatrix}$",
+      "$(P)_{11}=(a)(a)+(b)(b)=a^{2} + b^{2}$",
+      "$(P)_{12}=(a)(- b)+(b)(a)=0$",
+      "$(P)_{21}=(- b)(a)+(a)(b)=0$",
+      "$(P)_{22}=(- b)(- b)+(a)(a)=a^{2} + b^{2}$",
+      "$P=\\begin{bmatrix}a^{2} + b^{2}&0\\\\0&a^{2} + b^{2}\\end{bmatrix}$",
+      "(2) $3\\times1\\;\\cdot\\;1\\times3\\Rightarrow3\\times3$",
+      "$P=\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}\\begin{bmatrix}2&3&4\\end{bmatrix}$",
+      "$(P)_{11}=(1)(2)=2$",
+      "$(P)_{12}=(1)(3)=3$",
+      "$(P)_{13}=(1)(4)=4$",
+      "$(P)_{21}=(2)(2)=4$",
+      "$(P)_{22}=(2)(3)=6$",
+      "$(P)_{23}=(2)(4)=8$",
+      "$(P)_{31}=(3)(2)=6$",
+      "$(P)_{32}=(3)(3)=9$",
+      "$(P)_{33}=(3)(4)=12$",
+      "$P=\\begin{bmatrix}2&3&4\\\\4&6&8\\\\6&9&12\\end{bmatrix}$",
+      "(3) $2\\times2\\;\\cdot\\;2\\times3\\Rightarrow2\\times3$",
+      "$P=\\begin{bmatrix}1&-2\\\\2&3\\end{bmatrix}\\begin{bmatrix}1&2&3\\\\2&3&1\\end{bmatrix}$",
+      "$(P)_{11}=(1)(1)+(-2)(2)=-3$",
+      "$(P)_{12}=(1)(2)+(-2)(3)=-4$",
+      "$(P)_{13}=(1)(3)+(-2)(1)=1$",
+      "$(P)_{21}=(2)(1)+(3)(2)=8$",
+      "$(P)_{22}=(2)(2)+(3)(3)=13$",
+      "$(P)_{23}=(2)(3)+(3)(1)=9$",
+      "$P=\\begin{bmatrix}-3&-4&1\\\\8&13&9\\end{bmatrix}$",
+      "(4) $3\\times3\\;\\cdot\\;3\\times3\\Rightarrow3\\times3$",
+      "$P=\\begin{bmatrix}2&3&4\\\\3&4&5\\\\4&5&6\\end{bmatrix}\\begin{bmatrix}1&-3&5\\\\0&2&4\\\\3&0&5\\end{bmatrix}$",
+      "$(P)_{11}=(2)(1)+(3)(0)+(4)(3)=14$",
+      "$(P)_{12}=(2)(-3)+(3)(2)+(4)(0)=0$",
+      "$(P)_{13}=(2)(5)+(3)(4)+(4)(5)=42$",
+      "$(P)_{21}=(3)(1)+(4)(0)+(5)(3)=18$",
+      "$(P)_{22}=(3)(-3)+(4)(2)+(5)(0)=-1$",
+      "$(P)_{23}=(3)(5)+(4)(4)+(5)(5)=56$",
+      "$(P)_{31}=(4)(1)+(5)(0)+(6)(3)=22$",
+      "$(P)_{32}=(4)(-3)+(5)(2)+(6)(0)=-2$",
+      "$(P)_{33}=(4)(5)+(5)(4)+(6)(5)=70$",
+      "$P=\\begin{bmatrix}14&0&42\\\\18&-1&56\\\\22&-2&70\\end{bmatrix}$",
+      "(5) $3\\times2\\;\\cdot\\;2\\times3\\Rightarrow3\\times3$",
+      "$P=\\begin{bmatrix}2&1\\\\3&2\\\\-1&1\\end{bmatrix}\\begin{bmatrix}1&0&1\\\\-1&2&1\\end{bmatrix}$",
+      "$(P)_{11}=(2)(1)+(1)(-1)=1$",
+      "$(P)_{12}=(2)(0)+(1)(2)=2$",
+      "$(P)_{13}=(2)(1)+(1)(1)=3$",
+      "$(P)_{21}=(3)(1)+(2)(-1)=1$",
+      "$(P)_{22}=(3)(0)+(2)(2)=4$",
+      "$(P)_{23}=(3)(1)+(2)(1)=5$",
+      "$(P)_{31}=(-1)(1)+(1)(-1)=-2$",
+      "$(P)_{32}=(-1)(0)+(1)(2)=2$",
+      "$(P)_{33}=(-1)(1)+(1)(1)=0$",
+      "$P=\\begin{bmatrix}1&2&3\\\\1&4&5\\\\-2&2&0\\end{bmatrix}$",
+      "(6) $2\\times3\\;\\cdot\\;3\\times2\\Rightarrow2\\times2$",
+      "$P=\\begin{bmatrix}3&-1&3\\\\-1&0&2\\end{bmatrix}\\begin{bmatrix}2&-3\\\\1&0\\\\3&1\\end{bmatrix}$",
+      "$(P)_{11}=(3)(2)+(-1)(1)+(3)(3)=14$",
+      "$(P)_{12}=(3)(-3)+(-1)(0)+(3)(1)=-6$",
+      "$(P)_{21}=(-1)(2)+(0)(1)+(2)(3)=4$",
+      "$(P)_{22}=(-1)(-3)+(0)(0)+(2)(1)=5$",
+      "$P=\\begin{bmatrix}14&-6\\\\4&5\\end{bmatrix}$"
+    ],
+    "answer": "(1) $\\begin{bmatrix}a^{2} + b^{2}&0\\\\0&a^{2} + b^{2}\\end{bmatrix}$; (2) $\\begin{bmatrix}2&3&4\\\\4&6&8\\\\6&9&12\\end{bmatrix}$; (3) $\\begin{bmatrix}-3&-4&1\\\\8&13&9\\end{bmatrix}$; (4) $\\begin{bmatrix}14&0&42\\\\18&-1&56\\\\22&-2&70\\end{bmatrix}$; (5) $\\begin{bmatrix}1&2&3\\\\1&4&5\\\\-2&2&0\\end{bmatrix}$; (6) $\\begin{bmatrix}14&-6\\\\4&5\\end{bmatrix}$",
+    "explanation": [
+      "ગુણાકાર માટે પ્રથમ શ્રેણિકના સ્તંભોની સંખ્યા બીજા શ્રેણિકની હારોની સંખ્યાના બરાબર હોવી જોઈએ.",
+      "દરેક ભાગમાં P ગુણાકાર દર્શાવે છે. દરેક $p_{ij}=\\sum_{k=1}^{r}a_{ik}b_{kj}$ માટે હાર અને સ્તંભની સંપૂર્ણ ગણતરી મુખ્ય ઉકેલમાં આપી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-4",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "4",
+    "page": 49,
+    "prompt": "જો $A=\\begin{bmatrix}1&2&-3\\\\5&0&2\\\\1&-1&1\\end{bmatrix}$, $B=\\begin{bmatrix}3&-1&2\\\\4&2&5\\\\2&0&3\\end{bmatrix}$, $C=\\begin{bmatrix}4&1&2\\\\0&3&2\\\\1&-2&3\\end{bmatrix}$ હોય તો A+B, B−C શોધો અને $A+(B-C)=(A+B)-C$ ચકાસો.",
+    "steps": [
+      "$A+B=\\begin{bmatrix}1&2&-3\\\\5&0&2\\\\1&-1&1\\end{bmatrix}+\\begin{bmatrix}3&-1&2\\\\4&2&5\\\\2&0&3\\end{bmatrix}=\\begin{bmatrix}4&1&-1\\\\9&2&7\\\\3&-1&4\\end{bmatrix}$",
+      "$B-C=\\begin{bmatrix}3&-1&2\\\\4&2&5\\\\2&0&3\\end{bmatrix}-\\begin{bmatrix}4&1&2\\\\0&3&2\\\\1&-2&3\\end{bmatrix}=\\begin{bmatrix}-1&-2&0\\\\4&-1&3\\\\1&2&0\\end{bmatrix}$",
+      "$A+(B-C)=\\begin{bmatrix}1&2&-3\\\\5&0&2\\\\1&-1&1\\end{bmatrix}+\\begin{bmatrix}-1&-2&0\\\\4&-1&3\\\\1&2&0\\end{bmatrix}=\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$",
+      "$(A+B)-C=\\begin{bmatrix}4&1&-1\\\\9&2&7\\\\3&-1&4\\end{bmatrix}-\\begin{bmatrix}4&1&2\\\\0&3&2\\\\1&-2&3\\end{bmatrix}=\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$",
+      "$A+(B-C)=(A+B)-C$"
+    ],
+    "answer": "$A+B=\\begin{bmatrix}4&1&-1\\\\9&2&7\\\\3&-1&4\\end{bmatrix}$; $B-C=\\begin{bmatrix}-1&-2&0\\\\4&-1&3\\\\1&2&0\\end{bmatrix}$; $A+(B-C)=(A+B)-C=\\begin{bmatrix}0&0&-3\\\\9&-1&5\\\\2&1&1\\end{bmatrix}$",
+    "explanation": [
+      "દરેક ક્રિયામાં સમાન સ્થાનના ઘટકો જ ઉમેરવા કે બાદ કરવાના છે. બંને બાજુ અલગથી ગણતાં સમાન શ્રેણિક મળે છે, તેથી સમાનતા ચકાસાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-5",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "5",
+    "page": 49,
+    "prompt": "જો $A=\\begin{bmatrix}\\frac{2}{3}&1&\\frac{5}{3}\\\\\\frac{1}{3}&\\frac{2}{3}&\\frac{4}{3}\\\\\\frac{7}{3}&2&\\frac{2}{3}\\end{bmatrix}$, $B=\\begin{bmatrix}\\frac{2}{5}&\\frac{3}{5}&1\\\\\\frac{1}{5}&\\frac{2}{5}&\\frac{4}{5}\\\\\\frac{7}{5}&\\frac{6}{5}&\\frac{2}{5}\\end{bmatrix}$ હોય તો $3A-5B$ શોધો.",
+    "steps": [
+      "$3A=3\\begin{bmatrix}\\frac{2}{3}&1&\\frac{5}{3}\\\\\\frac{1}{3}&\\frac{2}{3}&\\frac{4}{3}\\\\\\frac{7}{3}&2&\\frac{2}{3}\\end{bmatrix}=\\begin{bmatrix}2&3&5\\\\1&2&4\\\\7&6&2\\end{bmatrix}$",
+      "$5B=5\\begin{bmatrix}\\frac{2}{5}&\\frac{3}{5}&1\\\\\\frac{1}{5}&\\frac{2}{5}&\\frac{4}{5}\\\\\\frac{7}{5}&\\frac{6}{5}&\\frac{2}{5}\\end{bmatrix}=\\begin{bmatrix}2&3&5\\\\1&2&4\\\\7&6&2\\end{bmatrix}$",
+      "$3A-5B=\\begin{bmatrix}2&3&5\\\\1&2&4\\\\7&6&2\\end{bmatrix}-\\begin{bmatrix}2&3&5\\\\1&2&4\\\\7&6&2\\end{bmatrix}=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=O$"
+    ],
+    "answer": "$3A-5B=O$",
+    "explanation": [
+      "પહેલા અદિશ ગુણાકાર કરીને અપૂર્ણાંકો દૂર કરીએ. 3A અને 5Bના દરેક અનુરૂપ ઘટક સમાન હોવાથી તફાવત શૂન્ય શ્રેણિક છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-6",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "6",
+    "page": 49,
+    "prompt": "સાદું રૂપ આપો: $\\cos\\theta\\begin{bmatrix}\\cos{\\left(\\theta \\right)}&\\sin{\\left(\\theta \\right)}\\\\- \\sin{\\left(\\theta \\right)}&\\cos{\\left(\\theta \\right)}\\end{bmatrix}+\\sin\\theta\\begin{bmatrix}\\sin{\\left(\\theta \\right)}&- \\cos{\\left(\\theta \\right)}\\\\\\cos{\\left(\\theta \\right)}&\\sin{\\left(\\theta \\right)}\\end{bmatrix}$",
+    "steps": [
+      "$= \\begin{bmatrix}\\cos^{2}{\\left(\\theta \\right)}&\\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}\\\\- \\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}&\\cos^{2}{\\left(\\theta \\right)}\\end{bmatrix}+\\begin{bmatrix}\\sin^{2}{\\left(\\theta \\right)}&- \\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}\\\\\\sin{\\left(\\theta \\right)} \\cos{\\left(\\theta \\right)}&\\sin^{2}{\\left(\\theta \\right)}\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\cos^2\\theta+\\sin^2\\theta&\\cos\\theta\\sin\\theta-\\sin\\theta\\cos\\theta\\\\-\\cos\\theta\\sin\\theta+\\sin\\theta\\cos\\theta&\\cos^2\\theta+\\sin^2\\theta\\end{bmatrix}$",
+      "$=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}=I$"
+    ],
+    "answer": "$I$",
+    "explanation": [
+      "વિકર્ણ પર $\\cos^2\\theta+\\sin^2\\theta=1$ વાપરવું. બાકીનાં બે ઘટકો સમાન ગુણાકારોના તફાવત હોવાથી શૂન્ય થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-7",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "7",
+    "page": 49,
+    "prompt": "X,Y શોધો: (i) $X+Y=\\begin{bmatrix}7&0\\\\2&5\\end{bmatrix}$, $X-Y=\\begin{bmatrix}3&0\\\\0&3\\end{bmatrix}$; (ii) $2X+3Y=\\begin{bmatrix}2&3\\\\4&0\\end{bmatrix}$, $3X+2Y=\\begin{bmatrix}2&-2\\\\-1&5\\end{bmatrix}$",
+    "steps": [
+      "(i) $2X=\\begin{bmatrix}7&0\\\\2&5\\end{bmatrix}+\\begin{bmatrix}3&0\\\\0&3\\end{bmatrix}=\\begin{bmatrix}10&0\\\\2&8\\end{bmatrix}$",
+      "$X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix}$",
+      "$2Y=\\begin{bmatrix}7&0\\\\2&5\\end{bmatrix}-\\begin{bmatrix}3&0\\\\0&3\\end{bmatrix}=\\begin{bmatrix}4&0\\\\2&2\\end{bmatrix}$",
+      "$Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$",
+      "(ii) $4X+6Y=\\begin{bmatrix}4&6\\\\8&0\\end{bmatrix}$, $9X+6Y=\\begin{bmatrix}6&-6\\\\-3&15\\end{bmatrix}$",
+      "$5X=\\begin{bmatrix}6&-6\\\\-3&15\\end{bmatrix}-\\begin{bmatrix}4&6\\\\8&0\\end{bmatrix}=\\begin{bmatrix}2&-12\\\\-11&15\\end{bmatrix}$",
+      "$X=\\begin{bmatrix}\\frac{2}{5}&- \\frac{12}{5}\\\\- \\frac{11}{5}&3\\end{bmatrix}$",
+      "$6X+9Y=\\begin{bmatrix}6&9\\\\12&0\\end{bmatrix}$, $6X+4Y=\\begin{bmatrix}4&-4\\\\-2&10\\end{bmatrix}$",
+      "$5Y=\\begin{bmatrix}6&9\\\\12&0\\end{bmatrix}-\\begin{bmatrix}4&-4\\\\-2&10\\end{bmatrix}=\\begin{bmatrix}2&13\\\\14&-10\\end{bmatrix}$",
+      "$Y=\\begin{bmatrix}\\frac{2}{5}&\\frac{13}{5}\\\\\\frac{14}{5}&-2\\end{bmatrix}$"
+    ],
+    "answer": "(i) $X=\\begin{bmatrix}5&0\\\\1&4\\end{bmatrix}$, $Y=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$; (ii) $X=\\begin{bmatrix}\\frac{2}{5}&- \\frac{12}{5}\\\\- \\frac{11}{5}&3\\end{bmatrix}$, $Y=\\begin{bmatrix}\\frac{2}{5}&\\frac{13}{5}\\\\\\frac{14}{5}&-2\\end{bmatrix}$",
+    "explanation": [
+      "પહેલા ભાગમાં સરવાળા–તફાવતથી X અને Y અલગ પડે છે. બીજા ભાગમાં Yના ગુણાંક સમાન કરીને બાદ કરીએ તો X મળે છે; પછી Xના ગુણાંક સમાન કરીને Y મેળવીએ.",
+      "બંને ભાગમાં મેળવેલા X,Y મૂળ બંને સમીકરણોમાં મૂકીને ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-8",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "8",
+    "page": 49,
+    "prompt": "જો $Y=\\begin{bmatrix}3&2\\\\1&4\\end{bmatrix}$ અને $2X+Y=\\begin{bmatrix}1&0\\\\-3&2\\end{bmatrix}$ હોય તો X શોધો.",
+    "steps": [
+      "$2X=\\begin{bmatrix}1&0\\\\-3&2\\end{bmatrix}-\\begin{bmatrix}3&2\\\\1&4\\end{bmatrix}$",
+      "$2X=\\begin{bmatrix}-2&-2\\\\-4&-2\\end{bmatrix}$",
+      "$X=\\frac{1}{2}\\begin{bmatrix}-2&-2\\\\-4&-2\\end{bmatrix}=\\begin{bmatrix}-1&-1\\\\-2&-1\\end{bmatrix}$",
+      "$2\\begin{bmatrix}-1&-1\\\\-2&-1\\end{bmatrix}+\\begin{bmatrix}3&2\\\\1&4\\end{bmatrix}=\\begin{bmatrix}1&0\\\\-3&2\\end{bmatrix}$"
+    ],
+    "answer": "$X=\\begin{bmatrix}-1&-1\\\\-2&-1\\end{bmatrix}$",
+    "explanation": [
+      "બંને બાજુથી Y બાદ કરીને 2X મેળવો અને દરેક ઘટકને 2થી ભાગો. છેલ્લે મૂળ સમીકરણમાં મૂકીને ચકાસ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-9",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "9",
+    "page": 49,
+    "prompt": "$2\\begin{bmatrix}1&3\\\\0&x\\end{bmatrix}+\\begin{bmatrix}y&0\\\\1&2\\end{bmatrix}=\\begin{bmatrix}5&6\\\\1&8\\end{bmatrix}$ હોય તો x,y શોધો.",
+    "steps": [
+      "$\\begin{bmatrix}2+y&6\\\\1&2x+2\\end{bmatrix}=\\begin{bmatrix}5&6\\\\1&8\\end{bmatrix}$",
+      "$2+y=5\\Rightarrow y=3$",
+      "$2x+2=8\\Rightarrow2x=6\\Rightarrow x=3$",
+      "$2\\begin{bmatrix}1&3\\\\0&3\\end{bmatrix}+\\begin{bmatrix}3&0\\\\1&2\\end{bmatrix}=\\begin{bmatrix}5&6\\\\1&8\\end{bmatrix}$"
+    ],
+    "answer": "$x=3,\\ y=3$",
+    "explanation": [
+      "બે સમાન શ્રેણિકના દરેક અનુરૂપ ઘટક સમાન હોય છે. (1,1) અને (2,2) ઘટકથી અજ્ઞાતો મળે છે; બાકીના બે ઘટક પણ સંતોષાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-10",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "10",
+    "page": 49,
+    "prompt": "$2\\begin{bmatrix}x&z\\\\y&t\\end{bmatrix}+3\\begin{bmatrix}1&-1\\\\0&2\\end{bmatrix}=3\\begin{bmatrix}3&5\\\\4&6\\end{bmatrix}$ માંથી x,y,z,t શોધો.",
+    "steps": [
+      "$\\begin{bmatrix}2x+3&2z-3\\\\2y&2t+6\\end{bmatrix}=\\begin{bmatrix}9&15\\\\12&18\\end{bmatrix}$",
+      "$2x+3=9\\Rightarrow x=3$",
+      "$2z-3=15\\Rightarrow z=9$",
+      "$2y=12\\Rightarrow y=6$",
+      "$2t+6=18\\Rightarrow t=6$",
+      "$2\\begin{bmatrix}3&9\\\\6&6\\end{bmatrix}+\\begin{bmatrix}3&-3\\\\0&6\\end{bmatrix}=\\begin{bmatrix}9&15\\\\12&18\\end{bmatrix}$"
+    ],
+    "answer": "$x=3,\\ y=6,\\ z=9,\\ t=6$",
+    "explanation": [
+      "અદિશ ગુણાકાર કર્યા પછી ચાર અનુરૂપ ઘટકો સરખાવવાથી ચાર સ્વતંત્ર સમીકરણ મળે છે. દરેક અજ્ઞાતનું સ્થાન ધ્યાનમાં રાખવું: z ઉપર જમણે છે અને y નીચે ડાબે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-11",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "11",
+    "page": 49,
+    "prompt": "$x\\begin{bmatrix}2\\\\3\\end{bmatrix}+y\\begin{bmatrix}-1\\\\1\\end{bmatrix}=\\begin{bmatrix}10\\\\5\\end{bmatrix}$ માંથી x,y શોધો.",
+    "steps": [
+      "$2x-y=10,\\quad3x+y=5$",
+      "$(2x-y)+(3x+y)=10+5\\Rightarrow5x=15$",
+      "$x=3$",
+      "$3(3)+y=5\\Rightarrow y=-4$",
+      "$2(3)-(-4)=10,\\quad3(3)+(-4)=5$"
+    ],
+    "answer": "$x=3,\\ y=-4$",
+    "explanation": [
+      "બંને સમીકરણ ઉમેરવાથી y રદ થાય છે. x મેળવીને બીજા સમીકરણમાં મૂકવાથી y મળે છે; બંને મૂળ સમીકરણ સંતોષાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-12",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "12",
+    "page": 49,
+    "prompt": "$3\\begin{bmatrix}x&y\\\\z&w\\end{bmatrix}=\\begin{bmatrix}x&6\\\\-1&2w\\end{bmatrix}+\\begin{bmatrix}4&x+y\\\\z+w&3\\end{bmatrix}$ માંથી x,y,z,w શોધો.",
+    "steps": [
+      "$\\begin{bmatrix}3x&3y\\\\3z&3w\\end{bmatrix}=\\begin{bmatrix}x+4&6+x+y\\\\-1+z+w&2w+3\\end{bmatrix}$",
+      "$3x=x+4\\Rightarrow2x=4\\Rightarrow x=2$",
+      "$3w=2w+3\\Rightarrow w=3$",
+      "$3y=6+2+y\\Rightarrow2y=8\\Rightarrow y=4$",
+      "$3z=-1+z+3\\Rightarrow2z=2\\Rightarrow z=1$",
+      "$3\\begin{bmatrix}2&4\\\\1&3\\end{bmatrix}=\\begin{bmatrix}6&12\\\\3&9\\end{bmatrix}$"
+    ],
+    "answer": "$x=2,\\ y=4,\\ z=1,\\ w=3$",
+    "explanation": [
+      "પહેલા અને છેલ્લા ઘટકથી x અને w સીધા મળે છે. પછી તે મૂલ્યો બાકીનાં બે સમીકરણમાં મૂકીને y અને z શોધીએ. ચારેય ઘટકો મૂળ સમીકરણમાં ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-13",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "13",
+    "page": 49,
+    "prompt": "જો $F(x)=\\begin{bmatrix}\\cos{\\left(x \\right)}&- \\sin{\\left(x \\right)}&0\\\\\\sin{\\left(x \\right)}&\\cos{\\left(x \\right)}&0\\\\0&0&1\\end{bmatrix}$ હોય તો $F(x)F(y)=F(x+y)$ દર્શાવો.",
+    "steps": [
+      "$F(y)=\\begin{bmatrix}\\cos{\\left(y \\right)}&- \\sin{\\left(y \\right)}&0\\\\\\sin{\\left(y \\right)}&\\cos{\\left(y \\right)}&0\\\\0&0&1\\end{bmatrix}$",
+      "$F(x)F(y)=\\begin{bmatrix}\\cos{\\left(x \\right)}&- \\sin{\\left(x \\right)}&0\\\\\\sin{\\left(x \\right)}&\\cos{\\left(x \\right)}&0\\\\0&0&1\\end{bmatrix}\\begin{bmatrix}\\cos{\\left(y \\right)}&- \\sin{\\left(y \\right)}&0\\\\\\sin{\\left(y \\right)}&\\cos{\\left(y \\right)}&0\\\\0&0&1\\end{bmatrix}$",
+      "$=\\begin{bmatrix}- \\sin{\\left(x \\right)} \\sin{\\left(y \\right)} + \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}&- \\sin{\\left(x \\right)} \\cos{\\left(y \\right)} - \\sin{\\left(y \\right)} \\cos{\\left(x \\right)}&0\\\\\\sin{\\left(x \\right)} \\cos{\\left(y \\right)} + \\sin{\\left(y \\right)} \\cos{\\left(x \\right)}&- \\sin{\\left(x \\right)} \\sin{\\left(y \\right)} + \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}&0\\\\0&0&1\\end{bmatrix}$",
+      "$\\cos x\\cos y-\\sin x\\sin y=\\cos(x+y)$",
+      "$\\sin x\\cos y+\\cos x\\sin y=\\sin(x+y)$",
+      "$-\\cos x\\sin y-\\sin x\\cos y=-\\sin(x+y)$",
+      "$F(x)F(y)=\\begin{bmatrix}\\cos{\\left(x + y \\right)}&- \\sin{\\left(x + y \\right)}&0\\\\\\sin{\\left(x + y \\right)}&\\cos{\\left(x + y \\right)}&0\\\\0&0&1\\end{bmatrix}=F(x+y)$"
+    ],
+    "answer": "$F(x)F(y)=F(x+y)$",
+    "explanation": [
+      "હાર–સ્તંભના ગુણાકાર પછી પ્રથમ ચાર ઘટકોને ત્રિકોણમિતિનાં યોગનાં સૂત્રોથી સાદા કરીએ. છેલ્લી હાર અને સ્તંભના વિકર્ણ સિવાયના ઘટકો 0 અને (3,3) ઘટક 1 રહે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/63.webp",
+      "printedPage": 49,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-14",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "14",
+    "page": 50,
+    "prompt": "સાબિત કરો કે AB ≠ BA: (1) $A=\\begin{bmatrix}5&-1\\\\6&7\\end{bmatrix}$, $B=\\begin{bmatrix}2&1\\\\3&4\\end{bmatrix}$; (2) $A=\\begin{bmatrix}1&2&3\\\\0&1&0\\\\1&1&0\\end{bmatrix}$, $B=\\begin{bmatrix}-1&1&0\\\\0&-1&1\\\\2&3&4\\end{bmatrix}$",
+    "steps": [
+      "(1)",
+      "$AB=\\begin{bmatrix}5&-1\\\\6&7\\end{bmatrix}\\begin{bmatrix}2&1\\\\3&4\\end{bmatrix}$",
+      "$(AB)_{11}=(5)(2)+(-1)(3)=7$",
+      "$(AB)_{12}=(5)(1)+(-1)(4)=1$",
+      "$(AB)_{21}=(6)(2)+(7)(3)=33$",
+      "$(AB)_{22}=(6)(1)+(7)(4)=34$",
+      "$AB=\\begin{bmatrix}7&1\\\\33&34\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}2&1\\\\3&4\\end{bmatrix}\\begin{bmatrix}5&-1\\\\6&7\\end{bmatrix}$",
+      "$(BA)_{11}=(2)(5)+(1)(6)=16$",
+      "$(BA)_{12}=(2)(-1)+(1)(7)=5$",
+      "$(BA)_{21}=(3)(5)+(4)(6)=39$",
+      "$(BA)_{22}=(3)(-1)+(4)(7)=25$",
+      "$BA=\\begin{bmatrix}16&5\\\\39&25\\end{bmatrix}$",
+      "$(AB)_{11}=7\\ne16=(BA)_{11}$",
+      "$AB\\ne BA$",
+      "(2)",
+      "$AB=\\begin{bmatrix}1&2&3\\\\0&1&0\\\\1&1&0\\end{bmatrix}\\begin{bmatrix}-1&1&0\\\\0&-1&1\\\\2&3&4\\end{bmatrix}$",
+      "$(AB)_{11}=(1)(-1)+(2)(0)+(3)(2)=5$",
+      "$(AB)_{12}=(1)(1)+(2)(-1)+(3)(3)=8$",
+      "$(AB)_{13}=(1)(0)+(2)(1)+(3)(4)=14$",
+      "$(AB)_{21}=(0)(-1)+(1)(0)+(0)(2)=0$",
+      "$(AB)_{22}=(0)(1)+(1)(-1)+(0)(3)=-1$",
+      "$(AB)_{23}=(0)(0)+(1)(1)+(0)(4)=1$",
+      "$(AB)_{31}=(1)(-1)+(1)(0)+(0)(2)=-1$",
+      "$(AB)_{32}=(1)(1)+(1)(-1)+(0)(3)=0$",
+      "$(AB)_{33}=(1)(0)+(1)(1)+(0)(4)=1$",
+      "$AB=\\begin{bmatrix}5&8&14\\\\0&-1&1\\\\-1&0&1\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}-1&1&0\\\\0&-1&1\\\\2&3&4\\end{bmatrix}\\begin{bmatrix}1&2&3\\\\0&1&0\\\\1&1&0\\end{bmatrix}$",
+      "$(BA)_{11}=(-1)(1)+(1)(0)+(0)(1)=-1$",
+      "$(BA)_{12}=(-1)(2)+(1)(1)+(0)(1)=-1$",
+      "$(BA)_{13}=(-1)(3)+(1)(0)+(0)(0)=-3$",
+      "$(BA)_{21}=(0)(1)+(-1)(0)+(1)(1)=1$",
+      "$(BA)_{22}=(0)(2)+(-1)(1)+(1)(1)=0$",
+      "$(BA)_{23}=(0)(3)+(-1)(0)+(1)(0)=0$",
+      "$(BA)_{31}=(2)(1)+(3)(0)+(4)(1)=6$",
+      "$(BA)_{32}=(2)(2)+(3)(1)+(4)(1)=11$",
+      "$(BA)_{33}=(2)(3)+(3)(0)+(4)(0)=6$",
+      "$BA=\\begin{bmatrix}-1&-1&-3\\\\1&0&0\\\\6&11&6\\end{bmatrix}$",
+      "$(AB)_{11}=5\\ne-1=(BA)_{11}$",
+      "$AB\\ne BA$"
+    ],
+    "answer": "(1) $AB=\\begin{bmatrix}7&1\\\\33&34\\end{bmatrix}$, $BA=\\begin{bmatrix}16&5\\\\39&25\\end{bmatrix}$; (2) $AB=\\begin{bmatrix}5&8&14\\\\0&-1&1\\\\-1&0&1\\end{bmatrix}$, $BA=\\begin{bmatrix}-1&-1&-3\\\\1&0&0\\\\6&11&6\\end{bmatrix}$",
+    "explanation": [
+      "બંને ક્રમના ગુણાકાર અલગથી કરવા જરૂરી છે. એક અનુરૂપ ઘટક પણ જુદો મળે તો આખા શ્રેણિકો અસમાન છે; અહીં દરેક ગુણાકારનો દરેક ઘટક દર્શાવ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-15",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "15",
+    "page": 50,
+    "prompt": "જો $A=\\begin{bmatrix}2&0&1\\\\2&1&3\\\\1&-1&0\\end{bmatrix}$ હોય તો $A^2-5A+6I$ શોધો.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}2&0&1\\\\2&1&3\\\\1&-1&0\\end{bmatrix}\\begin{bmatrix}2&0&1\\\\2&1&3\\\\1&-1&0\\end{bmatrix}$",
+      "$(A^2)_{11}=(2)(2)+(0)(2)+(1)(1)=5$",
+      "$(A^2)_{12}=(2)(0)+(0)(1)+(1)(-1)=-1$",
+      "$(A^2)_{13}=(2)(1)+(0)(3)+(1)(0)=2$",
+      "$(A^2)_{21}=(2)(2)+(1)(2)+(3)(1)=9$",
+      "$(A^2)_{22}=(2)(0)+(1)(1)+(3)(-1)=-2$",
+      "$(A^2)_{23}=(2)(1)+(1)(3)+(3)(0)=5$",
+      "$(A^2)_{31}=(1)(2)+(-1)(2)+(0)(1)=0$",
+      "$(A^2)_{32}=(1)(0)+(-1)(1)+(0)(-1)=-1$",
+      "$(A^2)_{33}=(1)(1)+(-1)(3)+(0)(0)=-2$",
+      "$A^2=\\begin{bmatrix}5&-1&2\\\\9&-2&5\\\\0&-1&-2\\end{bmatrix}$",
+      "$5A=\\begin{bmatrix}10&0&5\\\\10&5&15\\\\5&-5&0\\end{bmatrix}$",
+      "$6I=\\begin{bmatrix}6&0&0\\\\0&6&0\\\\0&0&6\\end{bmatrix}$",
+      "$A^2-5A+6I=\\begin{bmatrix}5&-1&2\\\\9&-2&5\\\\0&-1&-2\\end{bmatrix}-\\begin{bmatrix}10&0&5\\\\10&5&15\\\\5&-5&0\\end{bmatrix}+\\begin{bmatrix}6&0&0\\\\0&6&0\\\\0&0&6\\end{bmatrix}$",
+      "$=\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$"
+    ],
+    "answer": "$\\begin{bmatrix}1&-1&-3\\\\-1&-1&-10\\\\-5&4&4\\end{bmatrix}$",
+    "explanation": [
+      "A² એ Aનો પોતે સાથેનો શ્રેણિક ગુણાકાર છે; દરેક ઘટકનો વર્ગ નથી. Iમાં માત્ર વિકર્ણ પર 1 હોય છે, તેથી 6I ફક્ત વિકર્ણમાં 6 ઉમેરે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-16",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "16",
+    "page": 50,
+    "prompt": "જો $A=\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}$ હોય તો $A^3-6A^2+7A+2I=O$ સાબિત કરો.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}$",
+      "$(A^2)_{11}=(1)(1)+(0)(0)+(2)(2)=5$",
+      "$(A^2)_{12}=(1)(0)+(0)(2)+(2)(0)=0$",
+      "$(A^2)_{13}=(1)(2)+(0)(1)+(2)(3)=8$",
+      "$(A^2)_{21}=(0)(1)+(2)(0)+(1)(2)=2$",
+      "$(A^2)_{22}=(0)(0)+(2)(2)+(1)(0)=4$",
+      "$(A^2)_{23}=(0)(2)+(2)(1)+(1)(3)=5$",
+      "$(A^2)_{31}=(2)(1)+(0)(0)+(3)(2)=8$",
+      "$(A^2)_{32}=(2)(0)+(0)(2)+(3)(0)=0$",
+      "$(A^2)_{33}=(2)(2)+(0)(1)+(3)(3)=13$",
+      "$A^2=\\begin{bmatrix}5&0&8\\\\2&4&5\\\\8&0&13\\end{bmatrix}$",
+      "$A^3=\\begin{bmatrix}5&0&8\\\\2&4&5\\\\8&0&13\\end{bmatrix}\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}$",
+      "$(A^3)_{11}=(5)(1)+(0)(0)+(8)(2)=21$",
+      "$(A^3)_{12}=(5)(0)+(0)(2)+(8)(0)=0$",
+      "$(A^3)_{13}=(5)(2)+(0)(1)+(8)(3)=34$",
+      "$(A^3)_{21}=(2)(1)+(4)(0)+(5)(2)=12$",
+      "$(A^3)_{22}=(2)(0)+(4)(2)+(5)(0)=8$",
+      "$(A^3)_{23}=(2)(2)+(4)(1)+(5)(3)=23$",
+      "$(A^3)_{31}=(8)(1)+(0)(0)+(13)(2)=34$",
+      "$(A^3)_{32}=(8)(0)+(0)(2)+(13)(0)=0$",
+      "$(A^3)_{33}=(8)(2)+(0)(1)+(13)(3)=55$",
+      "$A^3=\\begin{bmatrix}21&0&34\\\\12&8&23\\\\34&0&55\\end{bmatrix}$",
+      "$6A^2=\\begin{bmatrix}30&0&48\\\\12&24&30\\\\48&0&78\\end{bmatrix}$",
+      "$7A=\\begin{bmatrix}7&0&14\\\\0&14&7\\\\14&0&21\\end{bmatrix}$",
+      "$2I=\\begin{bmatrix}2&0&0\\\\0&2&0\\\\0&0&2\\end{bmatrix}$",
+      "$A^3-6A^2+7A+2I=\\begin{bmatrix}21&0&34\\\\12&8&23\\\\34&0&55\\end{bmatrix}-\\begin{bmatrix}30&0&48\\\\12&24&30\\\\48&0&78\\end{bmatrix}+\\begin{bmatrix}7&0&14\\\\0&14&7\\\\14&0&21\\end{bmatrix}+\\begin{bmatrix}2&0&0\\\\0&2&0\\\\0&0&2\\end{bmatrix}$",
+      "$21-(30)+7+2=0$",
+      "$0-(0)+0+0=0$",
+      "$34-(48)+14+0=0$",
+      "$12-(12)+0+0=0$",
+      "$8-(24)+14+2=0$",
+      "$23-(30)+7+0=0$",
+      "$34-(48)+14+0=0$",
+      "$0-(0)+0+0=0$",
+      "$55-(78)+21+2=0$",
+      "$A^3-6A^2+7A+2I=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=O$"
+    ],
+    "answer": "$A^3-6A^2+7A+2I=O$",
+    "explanation": [
+      "પહેલા A² અને પછી A²Aથી A³ ગણીએ. ત્રણ અદિશ ગુણાકાર મેળવ્યા પછી દરેક અનુરૂપ ઘટકનો સરવાળો કરીએ. નવેય ઘટક શૂન્ય થતાં આપેલ ઓળખ સાબિત થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-17",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "17",
+    "page": 50,
+    "prompt": "જો $A=\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}$ અને $I=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}$ હોય તો $A^2=kA-2I$ થાય એવો k શોધો.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}$",
+      "$(A^2)_{11}=(3)(3)+(-2)(4)=1$",
+      "$(A^2)_{12}=(3)(-2)+(-2)(-2)=-2$",
+      "$(A^2)_{21}=(4)(3)+(-2)(4)=4$",
+      "$(A^2)_{22}=(4)(-2)+(-2)(-2)=-4$",
+      "$A^2=\\begin{bmatrix}1&-2\\\\4&-4\\end{bmatrix}$",
+      "$kA-2I=\\begin{bmatrix}3k-2&-2k\\\\4k&-2k-2\\end{bmatrix}$",
+      "$-2k=-2\\Rightarrow k=1$",
+      "$1A-2I=\\begin{bmatrix}3&-2\\\\4&-2\\end{bmatrix}-\\begin{bmatrix}2&0\\\\0&2\\end{bmatrix}=\\begin{bmatrix}1&-2\\\\4&-4\\end{bmatrix}=A^2$"
+    ],
+    "answer": "$k=1$",
+    "explanation": [
+      "(1,2) ઘટક સરખાવવાથી k મળે છે. મળેલા k માટે ચારેય ઘટક ફરી તપાસવાથી એક જ મૂલ્ય આખી સમાનતા સંતોષે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-18",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "18",
+    "page": 50,
+    "prompt": "જો $A=\\begin{bmatrix}0&-\\tan\\frac{\\alpha}{2}\\\\\\tan\\frac{\\alpha}{2}&0\\end{bmatrix}$ અને I એ 2 કક્ષાનો એકમ શ્રેણિક હોય તો $I+A=(I-A)\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$ સાબિત કરો.",
+    "steps": [
+      "$t=\\tan\\frac{\\alpha}{2}$ (વ્યાખ્યાયિત હોય ત્યારે)",
+      "$I-A=\\begin{bmatrix}1&t\\\\-t&1\\end{bmatrix}$",
+      "$(I-A)\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}=\\begin{bmatrix}\\cos\\alpha+t\\sin\\alpha&-\\sin\\alpha+t\\cos\\alpha\\\\\\sin\\alpha-t\\cos\\alpha&t\\sin\\alpha+\\cos\\alpha\\end{bmatrix}$",
+      "$\\sin\\alpha=\\frac{2t}{1+t^2},\\quad\\cos\\alpha=\\frac{1-t^2}{1+t^2}$",
+      "$\\cos\\alpha+t\\sin\\alpha=\\frac{1-t^2+2t^2}{1+t^2}=1$",
+      "$-\\sin\\alpha+t\\cos\\alpha=\\frac{-2t+t-t^3}{1+t^2}=-t$",
+      "$\\sin\\alpha-t\\cos\\alpha=\\frac{2t-t+t^3}{1+t^2}=t$",
+      "$\\text{RHS}=\\begin{bmatrix}1&-t\\\\t&1\\end{bmatrix}=I+A=\\text{LHS}$"
+    ],
+    "answer": "$\\text{LHS}=\\text{RHS}$",
+    "explanation": [
+      "અર્ધકોણના tથી sinα અને cosα વ્યક્ત કરવાથી બધા ઘટકો પરિમેય સ્વરૂપે આવે છે. બે વિકર્ણ ઘટક સમાન છે અને બંને 1 થાય છે. ઓળખ જ્યાં મૂળ tan(α/2) વ્યાખ્યાયિત છે ત્યાં લાગુ પડે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-19",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "19",
+    "page": 50,
+    "prompt": "એક ટ્રસ્ટ પાસે ₹30000 છે. પ્રથમ બૉન્ડનું વાર્ષિક વ્યાજ 5% અને બીજાનું 7% છે. વાર્ષિક વ્યાજ (a) ₹1800 (b) ₹2000 મળે તે માટે બંનેમાં કેટલી મૂડી રોકવી તે શ્રેણિક ગુણાકારથી શોધો.",
+    "steps": [
+      "$x+y=30000$",
+      "$\\begin{bmatrix}\\frac{5}{100}&\\frac{7}{100}\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=r$",
+      "$0.05x+0.07y=r,\\quad y=30000-x$",
+      "$0.05x+0.07(30000-x)=r\\Rightarrow2100-0.02x=r$",
+      "(a) $r=1800\\Rightarrow0.02x=300\\Rightarrow x=15000$",
+      "$y=30000-15000=15000$",
+      "$0.05(15000)+0.07(15000)=750+1050=1800$",
+      "(b) $r=2000\\Rightarrow0.02x=100\\Rightarrow x=5000$",
+      "$y=30000-5000=25000$",
+      "$0.05(5000)+0.07(25000)=250+1750=2000$"
+    ],
+    "answer": "(a) પ્રથમ ₹15000, બીજો ₹15000; (b) પ્રથમ ₹5000, બીજો ₹25000.",
+    "explanation": [
+      "x અને y અનુક્રમે 5% અને 7%વાળા બૉન્ડની મૂડી છે. મૂડીનો સરવાળો ₹30000 રાખીને વ્યાજના હાર શ્રેણિક અને મૂડીના સ્તંભનો ગુણાકાર કરીએ. બંને જવાબ માટે મૂડી અને વ્યાજ બંને શરતો ચકાસી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-20",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "20",
+    "page": 50,
+    "prompt": "પુસ્તકભંડારમાં 10 ડઝન રસાયણવિજ્ઞાનનાં, 8 ડઝન ભૌતિકવિજ્ઞાનનાં અને 10 ડઝન અર્થશાસ્ત્રનાં પુસ્તકો છે. નંગદીઠ ભાવ અનુક્રમે ₹80, ₹60, ₹40 છે. બધાં વેચાય તો શ્રેણિક બીજગણિતથી કુલ આવક શોધો.",
+    "steps": [
+      "$Q=\\begin{bmatrix}10\\cdot12&8\\cdot12&10\\cdot12\\end{bmatrix}=\\begin{bmatrix}120&96&120\\end{bmatrix}$",
+      "$P=\\begin{bmatrix}80\\\\60\\\\40\\end{bmatrix}$",
+      "$QP=\\begin{bmatrix}120&96&120\\end{bmatrix}\\begin{bmatrix}80\\\\60\\\\40\\end{bmatrix}$",
+      "$=120(80)+96(60)+120(40)$",
+      "$=9600+5760+4800=20160$"
+    ],
+    "answer": "કુલ આવક ₹20160.",
+    "explanation": [
+      "એક ડઝન એટલે 12 નંગ. ભાવ નંગદીઠ આપ્યો છે એટલે ડઝનને પહેલાં નંગમાં ફેરવવું જરૂરી છે. દરેક વિષયની સંખ્યા અને ભાવ સમાન ક્રમમાં રાખીને હાર–સ્તંભનો ગુણાકાર કરીએ."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-21",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "21",
+    "page": 50,
+    "prompt": "X,Y,Z,W,P અનુક્રમે $2\\times n,3\\times k,2\\times p,n\\times3,p\\times k$ કક્ષાના છે. $PY+WY$ વ્યાખ્યાયિત થવા કયો પ્રતિબંધ જરૂરી? (A) $k=3,p=n$ (B) k સ્વૈર, p=2 (C) p સ્વૈર, k=3 (D) k=2,p=3.",
+    "steps": [
+      "$PY:(p\\times k)(3\\times k)\\Rightarrow k=3$",
+      "$\\text{order}(PY)=p\\times k=p\\times3$",
+      "$WY:(n\\times3)(3\\times k)\\Rightarrow\\text{order}(WY)=n\\times k=n\\times3$",
+      "$PY+WY\\Rightarrow p\\times3=n\\times3\\Rightarrow p=n$",
+      "$k=3,\\quad p=n$"
+    ],
+    "answer": "વિકલ્પ A: $k=3,p=n$",
+    "explanation": [
+      "PY માટે અંદરની કક્ષાઓ k અને 3 સમાન હોવી જોઈએ. WY માટે તે પહેલેથી 3 છે. બંને ગુણાકાર ઉમેરવા તેમની બહારની કક્ષાઓ પણ સમાન જોઈએ, તેથી p=n."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-32-22",
+    "chapter": 3,
+    "section": "3.2",
+    "number": "22",
+    "page": 50,
+    "prompt": "X અને Zની કક્ષા અનુક્રમે $2\\times n$ અને $2\\times p$ છે. n=p હોય તો $7X-5Z$ની કક્ષા પસંદ કરો: (A) $p\\times2$ (B) $2\\times n$ (C) $n\\times3$ (D) $p\\times n$.",
+    "steps": [
+      "$n=p\\Rightarrow\\text{order}(X)=\\text{order}(Z)=2\\times n$",
+      "$\\text{order}(7X)=\\text{order}(5Z)=2\\times n$",
+      "$\\text{order}(7X-5Z)=2\\times n$"
+    ],
+    "answer": "વિકલ્પ B: $2\\times n$",
+    "explanation": [
+      "અદિશ સંખ્યાથી ગુણવાથી શ્રેણિકની કક્ષા બદલાતી નથી. સમાન કક્ષાના બે શ્રેણિકનો તફાવત પણ તે જ કક્ષાનો હોય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ પાઠ્યપુસ્તકના પ્રશ્ન સાથે ચકાસેલો ઉકેલ.",
+    "verification": {
+      "source": "book/64.webp",
+      "printedPage": 50,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Question and all subparts visually matched to uploaded Gujarati textbook pages 48–50.",
+        "Independently recomputed exact matrix entries, substituted solutions, or checked algebraic proof; verification/content-generators/exercise32.py."
+      ]
+    }
+  }
+]
