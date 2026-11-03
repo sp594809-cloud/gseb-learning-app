@@ -1,0 +1,58 @@
+{
+  "checkedOn": "2026-11-03",
+  "chapter": 3,
+  "applicationCommit": "416fa53a721de1020193f781cecf69d4e1380f3d",
+  "renderDeployment": "dep-dbktkbqtnucc73fmkbt0",
+  "publicUrl": "https://ganit-original-preview.onrender.com/#chapter/3",
+  "inventory": {
+    "Example": 25,
+    "3.1": 10,
+    "3.2": 22,
+    "3.3": 12,
+    "3.4": 1,
+    "Misc": 11,
+    "total": 81
+  },
+  "checksBeforeUpload": [
+    "Visual source comparison against the uploaded Gujarati Maths Part 1, printed pages 34–59, every matrix and subpart.",
+    "Independent exact computation: entrywise products vs SymPy multiplication, original-equation substitutions, transpose/sum identities, trigonometric simplification, eight sign combinations, factor-pair enumeration and full induction/two-direction proofs."
+  ],
+  "publicChecks": {
+    "solutionRoutesMatched": 81,
+    "finalAnswersVisible": 81,
+    "mainStepsVisible": 81,
+    "gujaratiExplanationToggles": 81,
+    "chapterListCount": 81,
+    "exercise32FilterCount": 22,
+    "gujaratiSearch": "ટ્રસ્ટ returned Exercise 3.2 Q19",
+    "bookmarks": "Save, reload persistence and restore passed on Misc Q9",
+    "progress": "Understood, reload persistence and restore passed on Misc Q9",
+    "greek": "α β γ rendered in Misc Q9",
+    "mobile": {
+      "type": "390px same-origin iframe, DOM geometry and screenshot inspection",
+      "samples": [
+        "tb3-32-3",
+        "tb3-33-10",
+        "tb3-Misc-3",
+        "tb3-Example-16",
+        "tb3-Example-23"
+      ],
+      "documentWidth": 375,
+      "viewport": 390,
+      "fixed": "Example 16 grid minimum width overflow; all five samples passed after fix"
+    }
+  },
+  "build": {
+    "solutions": 311,
+    "originalRecordsPreserved": 110,
+    "regressionTestsPassed": 7,
+    "chapter3MathExpressions": 1246,
+    "chapter3Matrices": 726,
+    "previousExercise31Checks": "passed",
+    "previousChapter6": "119 entries, 80 derivative checks passed"
+  },
+  "limitations": [
+    "Independent teacher review and physical-device testing not performed",
+    "No guarantee of any examination score"
+  ]
+}
