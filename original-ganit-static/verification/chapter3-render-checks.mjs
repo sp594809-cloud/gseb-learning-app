@@ -15,5 +15,8 @@ for(const q of content.solutions.filter(q=>q.chapter===3)){
   assert.equal((html.match(/<mtable /g)||[]).length,n,q.id);tables+=n;expressions+=(text.match(/\$/g)||[]).length/2;
  }
 }
-const qs=content.solutions.filter(q=>q.chapter===3&&q.section==='3.2');assert.equal(qs.length,22);assert.deepEqual(qs.map(q=>+q.number),Array.from({length:22},(_,i)=>i+1));
-console.log(`Chapter 3 rendering: ${expressions} math expressions and ${tables} matrices; Exercise 3.2 all 22 numbered questions in order.`);
+for(const [section,count] of Object.entries({Example:25,'3.1':10,'3.2':22,'3.3':12,'3.4':1,Misc:11})){const qs=content.solutions.filter(q=>q.chapter===3&&q.section===section);assert.equal(qs.length,count,section);assert.deepEqual(qs.map(q=>+q.number),Array.from({length:count},(_,i)=>i+1),section);}
+assert.equal(content.solutions.filter(q=>q.chapter===3).length,81);
+console.log(`Chapter 3 rendering: ${expressions} math expressions and ${tables} matrices; all 81 entries, every example, exercise and subpart group in textbook order.`);
+
+assert.ok(ctx.mathText('$\\alpha+\\beta+\\gamma$').includes('β'));assert.ok(!ctx.mathText('$x\\quad y$').includes('>quad<'));
