@@ -1,12 +1,13 @@
 // Native MathML: no external scripts, fonts or runtime server.
 function mathText(value){
- const symbols={pi:'π',infty:'∞',ne:'≠',neq:'≠',leq:'≤',geq:'≥',Rightarrow:'⇒',Leftrightarrow:'⇔',to:'→',cdot:'·',times:'×',pm:'±',setminus:'∖',in:'∈',prime:'′',theta:'θ',alpha:'α',varnothing:'∅',cap:'∩',ge:'≥',le:'≤'};
+ const symbols={pi:'π',infty:'∞',ne:'≠',neq:'≠',leq:'≤',geq:'≥',Rightarrow:'⇒',Leftrightarrow:'⇔',to:'→',cdot:'·',times:'×',pm:'±',setminus:'∖',in:'∈',prime:'′',theta:'θ',alpha:'α',beta:'β',gamma:'γ',delta:'δ',sum:'∑',varnothing:'∅',cap:'∩',ge:'≥',le:'≤'};
  function parseTex(tex){let i=0;
   function atom(){while(/\s/.test(tex[i]||'')&&i<tex.length)i++;let c=tex[i++];if(!c)return '<mrow/>';
    if(c==='{')return '<mrow>'+sequence('}')+'</mrow>';
    if(c==='\\'){
     const match=/^[A-Za-z]+/.exec(tex.slice(i));if(!match){i++;return '<mspace width="0.15em"/>';}
     const cmd=match[0];i+=cmd.length;
+    if(cmd==='quad'||cmd==='qquad')return '<mspace width="'+(cmd==='quad'?'1em':'2em')+'"/>';
     if(cmd==='frac')return '<mfrac>'+atom()+atom()+'</mfrac>';
     if(cmd==='sqrt')return '<msqrt>'+atom()+'</msqrt>';
     if(cmd==='left'||cmd==='right')return atom();
