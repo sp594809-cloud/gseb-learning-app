@@ -1,0 +1,386 @@
+[
+  {
+    "id": "tb3-Misc-1",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "1",
+    "page": 58,
+    "prompt": "જો A અને B સંમિત શ્રેણિકો હોય તો AB−BA વિસંમિત છે તે સાબિત કરો.",
+    "steps": [
+      "$A^T=A,\\quad B^T=B$",
+      "$C=AB-BA$",
+      "$C^T=(AB)^T-(BA)^T$",
+      "$=B^TA^T-A^TB^T$",
+      "$=BA-AB=-(AB-BA)=-C$"
+    ],
+    "answer": "$(AB-BA)^T=-(AB-BA)$ ⇒ વિસંમિત.",
+    "explanation": [
+      "A અને B સમાન કક્ષાના ચોરસ શ્રેણિક હોય છે જેથી ગુણાકાર અને તફાવત વ્યાખ્યાયિત છે. પરિવર્ત લેતાં ગુણાકારનો ક્રમ ઊલટો કરવો જરૂરી છે. અંતે Cᵀ=−C વિસંમિતતાની વ્યાખ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/72.webp",
+      "printedPage": 58,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-2",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "2",
+    "page": 58,
+    "prompt": "જો A સંમિત અથવા વિસંમિત શ્રેણિક હોય તો અનુક્રમે $B^TAB$ સંમિત અથવા વિસંમિત છે તે સાબિત કરો (ગુણાકાર વ્યાખ્યાયિત છે).",
+    "steps": [
+      "$C=B^TAB$",
+      "$C^T=(B^TAB)^T=B^TA^T(B^T)^T=B^TA^TB$",
+      "(i) $A^T=A\\Rightarrow C^T=B^TAB=C$ ⇒ સંમિત.",
+      "(ii) $A^T=-A\\Rightarrow C^T=B^T(-A)B=-B^TAB=-C$ ⇒ વિસંમિત."
+    ],
+    "answer": "$A^T=A\\Rightarrow C^T=C$; $A^T=-A\\Rightarrow C^T=-C$",
+    "explanation": [
+      "Aની કક્ષા n×n અને Bની n×m હોય તો BᵀABની કક્ષા m×m છે. ત્રણ શ્રેણિકોના ગુણાકારનો પરિવર્ત લેતાં ત્રણેયનો ક્રમ ઊલટે છે અને (Bᵀ)ᵀ=B વાપરીએ. બંને કિસ્સા અલગથી દર્શાવ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/72.webp",
+      "printedPage": 58,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-3",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "3",
+    "page": 58,
+    "prompt": "જો $A=\\begin{bmatrix}0&2 y&z\\\\x&y&- z\\\\x&- y&z\\end{bmatrix}$ અને $A^TA=I$ હોય તો x,y,z શોધો.",
+    "steps": [
+      "$A^T=\\begin{bmatrix}0&x&x\\\\2 y&y&- y\\\\z&- z&z\\end{bmatrix}$",
+      "$A^TA=\\begin{bmatrix}0&x&x\\\\2 y&y&- y\\\\z&- z&z\\end{bmatrix}\\begin{bmatrix}0&2 y&z\\\\x&y&- z\\\\x&- y&z\\end{bmatrix}$",
+      "$(A^TA)_{11}=(0)(0)+(x)(x)+(x)(x)=2 x^{2}$",
+      "$(A^TA)_{12}=(0)(2 y)+(x)(y)+(x)(- y)=0$",
+      "$(A^TA)_{13}=(0)(z)+(x)(- z)+(x)(z)=0$",
+      "$(A^TA)_{21}=(2 y)(0)+(y)(x)+(- y)(x)=0$",
+      "$(A^TA)_{22}=(2 y)(2 y)+(y)(y)+(- y)(- y)=6 y^{2}$",
+      "$(A^TA)_{23}=(2 y)(z)+(y)(- z)+(- y)(z)=0$",
+      "$(A^TA)_{31}=(z)(0)+(- z)(x)+(z)(x)=0$",
+      "$(A^TA)_{32}=(z)(2 y)+(- z)(y)+(z)(- y)=0$",
+      "$(A^TA)_{33}=(z)(z)+(- z)(- z)+(z)(z)=3 z^{2}$",
+      "$A^TA=\\begin{bmatrix}2 x^{2}&0&0\\\\0&6 y^{2}&0\\\\0&0&3 z^{2}\\end{bmatrix}$",
+      "$A^TA=I\\Rightarrow2x^2=1,\\quad6y^2=1,\\quad3z^2=1$",
+      "$x=\\pm\\frac1{\\sqrt2},\\quad y=\\pm\\frac1{\\sqrt6},\\quad z=\\pm\\frac1{\\sqrt3}$",
+      "$2\\cdot2\\cdot2=8$ સ્વતંત્ર ચિહ્ન સંયોજનો."
+    ],
+    "answer": "$x=\\pm\\frac1{\\sqrt2},\\ y=\\pm\\frac1{\\sqrt6},\\ z=\\pm\\frac1{\\sqrt3}$",
+    "explanation": [
+      "AᵀAના વિકર્ણના ઘટકો અનુક્રમે ત્રણ સ્તંભના ઘટકોના વર્ગોના સરવાળા છે. જુદા સ્તંભોના ગુણાકારો રદ થાય છે. I સાથે સરખાવતાં ત્રણ વર્ગસમીકરણ મળે છે.",
+      "દરેક અજ્ઞાત માટે ધન અને ઋણ બંને મૂલ્ય માન્ય છે. આઠેય ચિહ્ન સંયોજન મૂળ સમીકરણમાં મૂકીને ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/72.webp",
+      "printedPage": 58,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-4",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "4",
+    "page": 59,
+    "prompt": "કયા x માટે $\\begin{bmatrix}1&2&1\\end{bmatrix}\\begin{bmatrix}1&2&0\\\\2&0&1\\\\1&0&2\\end{bmatrix}\\begin{bmatrix}0\\\\2\\\\x\\end{bmatrix}=O$?",
+    "steps": [
+      "$R=\\begin{bmatrix}1&2&1\\end{bmatrix}\\begin{bmatrix}1&2&0\\\\2&0&1\\\\1&0&2\\end{bmatrix}$",
+      "$(R)_{11}=(1)(1)+(2)(2)+(1)(1)=6$",
+      "$(R)_{12}=(1)(2)+(2)(0)+(1)(0)=2$",
+      "$(R)_{13}=(1)(0)+(2)(1)+(1)(2)=4$",
+      "$R=\\begin{bmatrix}6&2&4\\end{bmatrix}$",
+      "$P=\\begin{bmatrix}6&2&4\\end{bmatrix}\\begin{bmatrix}0\\\\2\\\\x\\end{bmatrix}$",
+      "$(P)_{11}=(6)(0)+(2)(2)+(4)(x)=4 x + 4$",
+      "$P=\\begin{bmatrix}4 x + 4\\end{bmatrix}$",
+      "$P=4+4x=0\\Rightarrow4x=-4\\Rightarrow x=-1$",
+      "$4+4(-1)=0$"
+    ],
+    "answer": "$x=-1$",
+    "explanation": [
+      "પહેલા હાર અને મધ્યના શ્રેણિકનો ગુણાકાર કરીએ. મળેલી હારને છેલ્લે સ્તંભ સાથે ગુણતાં 1×1 શ્રેણિક મળે છે; તેનો એકમાત્ર ઘટક શૂન્ય રાખીને x શોધીએ."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-5",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "5",
+    "page": 59,
+    "prompt": "જો $A=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$ હોય તો $A^2-5A+7I=O$ સાબિત કરો.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}$",
+      "$(A^2)_{11}=(3)(3)+(1)(-1)=8$",
+      "$(A^2)_{12}=(3)(1)+(1)(2)=5$",
+      "$(A^2)_{21}=(-1)(3)+(2)(-1)=-5$",
+      "$(A^2)_{22}=(-1)(1)+(2)(2)=3$",
+      "$A^2=\\begin{bmatrix}8&5\\\\-5&3\\end{bmatrix}$",
+      "$5A=\\begin{bmatrix}15&5\\\\-5&10\\end{bmatrix}$, $7I=\\begin{bmatrix}7&0\\\\0&7\\end{bmatrix}$",
+      "$A^2-5A+7I=\\begin{bmatrix}8&5\\\\-5&3\\end{bmatrix}-\\begin{bmatrix}15&5\\\\-5&10\\end{bmatrix}+\\begin{bmatrix}7&0\\\\0&7\\end{bmatrix}$",
+      "$=\\begin{bmatrix}8-15+7&5-5+0\\\\-5+5+0&3-10+7\\end{bmatrix}=\\begin{bmatrix}0&0\\\\0&0\\end{bmatrix}=O$"
+    ],
+    "answer": "$A^2-5A+7I=O$",
+    "explanation": [
+      "પહેલા A² શ્રેણિક ગુણાકારથી મેળવીએ. પછી 5A અને 7I સાથે ઘટકવાર ગણતરી કરતાં ચારેય ઘટક શૂન્ય થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-6",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "6",
+    "page": 59,
+    "prompt": "જો $\\begin{bmatrix}x&-5&-1\\end{bmatrix}\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}\\begin{bmatrix}x\\\\4\\\\1\\end{bmatrix}=O$ હોય તો x શોધો.",
+    "steps": [
+      "$R=\\begin{bmatrix}1&0&2\\\\0&2&1\\\\2&0&3\\end{bmatrix}\\begin{bmatrix}x\\\\4\\\\1\\end{bmatrix}$",
+      "$(R)_{11}=(1)(x)+(0)(4)+(2)(1)=x + 2$",
+      "$(R)_{21}=(0)(x)+(2)(4)+(1)(1)=9$",
+      "$(R)_{31}=(2)(x)+(0)(4)+(3)(1)=2 x + 3$",
+      "$R=\\begin{bmatrix}x + 2\\\\9\\\\2 x + 3\\end{bmatrix}$",
+      "$P=\\begin{bmatrix}x&-5&-1\\end{bmatrix}\\begin{bmatrix}x + 2\\\\9\\\\2 x + 3\\end{bmatrix}$",
+      "$(P)_{11}=(x)(x + 2)+(-5)(9)+(-1)(2 x + 3)=x^{2} - 48$",
+      "$P=\\begin{bmatrix}x \\left(x + 2\\right) - 2 x - 48\\end{bmatrix}$",
+      "$x(x+2)-5(9)-(2x+3)=0$",
+      "$x^2+2x-45-2x-3=0\\Rightarrow x^2=48$",
+      "$x=\\pm\\sqrt{48}=\\pm4\\sqrt3$",
+      "$(\\pm4\\sqrt3)^2-48=48-48=0$"
+    ],
+    "answer": "$x=\\pm4\\sqrt3$",
+    "explanation": [
+      "આ વખતે પહેલાં મધ્યના શ્રેણિક અને છેલ્લાં સ્તંભનો ગુણાકાર લઈએ તો કામ ટૂંકું થાય છે. મળેલા સ્તંભને પહેલી હાર સાથે ગુણવાથી x²−48=0 મળે છે; બંને વર્ગમૂળ લેવાનાં છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-7",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "7",
+    "page": 59,
+    "prompt": "એક ઉત્પાદક x,y,z વસ્તુઓનું બે બજારમાં વાર્ષિક વેચાણ કરે છે: બજાર Iમાં (10000,2000,18000) અને બજાર IIમાં (6000,20000,8000) નંગ. (a) નંગદીઠ વેચાણભાવ અનુક્રમે ₹2.50, ₹1.50, ₹1.00 હોય તો શ્રેણિકથી દરેક બજારની આવક શોધો. (b) નંગદીઠ ઉત્પાદન ખર્ચ ₹2.00, ₹1.00, ₹0.50 હોય તો કુલ નફો શોધો.",
+    "steps": [
+      "$Q=\\begin{bmatrix}10000&2000&18000\\\\6000&20000&8000\\end{bmatrix}$",
+      "$P=\\begin{bmatrix}\\frac{5}{2}\\\\\\frac{3}{2}\\\\1\\end{bmatrix}$, $C=\\begin{bmatrix}2\\\\1\\\\\\frac{1}{2}\\end{bmatrix}$",
+      "(a)",
+      "$QP=\\begin{bmatrix}10000&2000&18000\\\\6000&20000&8000\\end{bmatrix}\\begin{bmatrix}\\frac{5}{2}\\\\\\frac{3}{2}\\\\1\\end{bmatrix}$",
+      "$(QP)_{11}=(10000)(\\frac{5}{2})+(2000)(\\frac{3}{2})+(18000)(1)=46000$",
+      "$(QP)_{21}=(6000)(\\frac{5}{2})+(20000)(\\frac{3}{2})+(8000)(1)=53000$",
+      "$QP=\\begin{bmatrix}46000\\\\53000\\end{bmatrix}$",
+      "(b) $P-C=\\begin{bmatrix}\\frac{1}{2}\\\\\\frac{1}{2}\\\\\\frac{1}{2}\\end{bmatrix}$",
+      "$Q(P-C)=\\begin{bmatrix}10000&2000&18000\\\\6000&20000&8000\\end{bmatrix}\\begin{bmatrix}\\frac{1}{2}\\\\\\frac{1}{2}\\\\\\frac{1}{2}\\end{bmatrix}$",
+      "$(Q(P-C))_{11}=(10000)(\\frac{1}{2})+(2000)(\\frac{1}{2})+(18000)(\\frac{1}{2})=15000$",
+      "$(Q(P-C))_{21}=(6000)(\\frac{1}{2})+(20000)(\\frac{1}{2})+(8000)(\\frac{1}{2})=17000$",
+      "$Q(P-C)=\\begin{bmatrix}15000\\\\17000\\end{bmatrix}$",
+      "$15000+17000=32000$"
+    ],
+    "answer": "(a) આવક: બજાર I ₹46000, બજાર II ₹53000. (b) નફો: બજાર I ₹15000, બજાર II ₹17000; સંયુક્ત કુલ ₹32000.",
+    "explanation": [
+      "Qની હાર બજાર અને સ્તંભ વસ્તુ દર્શાવે છે. QPથી આવક અને Q(P−C)થી નફો મળે છે.",
+      "આવક અને નફો જુદી રાશિઓ છે. દરેક બજારનો નફો બતાવીને બંનેનો સંયુક્ત નફો પણ દર્શાવ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-8",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "8",
+    "page": 59,
+    "prompt": "જો $X\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}=\\begin{bmatrix}-7&-8&-9\\\\2&4&6\\end{bmatrix}$ હોય તો X શોધો.",
+    "steps": [
+      "$X=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$",
+      "$XA=\\begin{bmatrix}a+4b&2a+5b&3a+6b\\\\c+4d&2c+5d&3c+6d\\end{bmatrix}=\\begin{bmatrix}-7&-8&-9\\\\2&4&6\\end{bmatrix}$",
+      "$a+4b=-7,\\quad2a+5b=-8$",
+      "$(2a+5b)-2(a+4b)=-8+14\\Rightarrow-3b=6\\Rightarrow b=-2$",
+      "$a+4(-2)=-7\\Rightarrow a=1$",
+      "$c+4d=2,\\quad2c+5d=4$",
+      "$(2c+5d)-2(c+4d)=4-4\\Rightarrow-3d=0\\Rightarrow d=0$",
+      "$c=2$",
+      "$3a+6b=3-12=-9,\\quad3c+6d=6$",
+      "$X=\\begin{bmatrix}1&-2\\\\2&0\\end{bmatrix}$",
+      "$XA=\\begin{bmatrix}1&-2\\\\2&0\\end{bmatrix}\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}=\\begin{bmatrix}-7&-8&-9\\\\2&4&6\\end{bmatrix}$"
+    ],
+    "answer": "$X=\\begin{bmatrix}1&-2\\\\2&0\\end{bmatrix}$",
+    "explanation": [
+      "જમણી બાજુની હાર 2 અને ગુણાતો શ્રેણિક 2×3 હોવાથી Xની કક્ષા 2×2 છે. પહેલી બે સ્તંભ-શરતોથી ચાર અજ્ઞાત શોધીને બાકીની ત્રીજી સ્તંભ-શરત પણ ચકાસવી જરૂરી છે; છએ ઘટક સંતોષાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-9",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "9",
+    "page": 59,
+    "prompt": "$A=\\begin{bmatrix}\\alpha&\\beta\\\\\\gamma&-\\alpha\\end{bmatrix}$ માટે $A^2=I$ થાય તો: (A) $1+\\alpha^2+\\beta\\gamma=0$ (B) $1-\\alpha^2+\\beta\\gamma=0$ (C) $1-\\alpha^2-\\beta\\gamma=0$ (D) $1+\\alpha^2-\\beta\\gamma=0$.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}\\alpha&\\beta\\\\\\gamma&- \\alpha\\end{bmatrix}\\begin{bmatrix}\\alpha&\\beta\\\\\\gamma&- \\alpha\\end{bmatrix}$",
+      "$(A^2)_{11}=(\\alpha)(\\alpha)+(\\beta)(\\gamma)=\\alpha^{2} + \\beta \\gamma$",
+      "$(A^2)_{12}=(\\alpha)(\\beta)+(\\beta)(- \\alpha)=0$",
+      "$(A^2)_{21}=(\\gamma)(\\alpha)+(- \\alpha)(\\gamma)=0$",
+      "$(A^2)_{22}=(\\gamma)(\\beta)+(- \\alpha)(- \\alpha)=\\alpha^{2} + \\beta \\gamma$",
+      "$A^2=\\begin{bmatrix}\\alpha^{2} + \\beta \\gamma&0\\\\0&\\alpha^{2} + \\beta \\gamma\\end{bmatrix}$",
+      "$A^2=(\\alpha^2+\\beta\\gamma)I$",
+      "$A^2=I\\Rightarrow\\alpha^2+\\beta\\gamma=1$",
+      "$1-\\alpha^2-\\beta\\gamma=0$"
+    ],
+    "answer": "વિકલ્પ C: $1-\\alpha^2-\\beta\\gamma=0$",
+    "explanation": [
+      "α,β,γ અદિશ છે, એટલે αβ−βα અને γα−αγ શૂન્ય થાય છે. બંને વિકર્ણ પર સમાન રાશિ આવે છે અને તેને 1 રાખવાથી શરત મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-10",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "10",
+    "page": 59,
+    "prompt": "A સંમિત અને વિસંમિત બંને હોય તો યોગ્ય વિકલ્પ: (A) વિકર્ણ શ્રેણિક (B) શૂન્ય શ્રેણિક (C) ચોરસ શ્રેણિક (D) એક પણ નહીં.",
+    "steps": [
+      "$A^T=A,\\quad A^T=-A$",
+      "$A=-A\\Rightarrow2A=O$",
+      "$a_{ij}=-a_{ij}\\Rightarrow2a_{ij}=0\\Rightarrow a_{ij}=0$",
+      "$A=O$"
+    ],
+    "answer": "વિકલ્પ B: $A=O$",
+    "explanation": [
+      "વાસ્તવિક સંખ્યાઓમાં 2થી ભાગીને દરેક ઘટક શૂન્ય મળે છે. શૂન્ય શ્રેણિક ચોરસ અને વિકર્ણ પણ છે, છતાં અહીં બંને ગુણધર્મોથી મળતી ચોક્કસ ઓળખ શૂન્ય શ્રેણિક છે; પાઠ્યપુસ્તકનો અપેક્ષિત વિકલ્પ B છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Misc-11",
+    "chapter": 3,
+    "section": "Misc",
+    "number": "11",
+    "page": 59,
+    "prompt": "જો ચોરસ શ્રેણિક A માટે $A^2=A$ હોય તો $(I+A)^3-7A$ શોધો: (A) A (B) I−A (C) I (D) 3A.",
+    "steps": [
+      "$A^2=A\\Rightarrow A^3=A^2A=AA=A^2=A$",
+      "$(I+A)^3=I+3A+3A^2+A^3$",
+      "$=I+3A+3A+A=I+7A$",
+      "$(I+A)^3-7A=I+7A-7A=I$"
+    ],
+    "answer": "વિકલ્પ C: $I$",
+    "explanation": [
+      "I અને A ક્રમવિનિમય કરે છે, એટલે આ દ્વિપદી વિસ્તરણ અહીં માન્ય છે. A²=Aથી બધી ઊંચી ઘાત A જેટલી થાય છે. અલગથી t²−tના અવશેષ દ્વારા પણ ઓળખ ચકાસી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/73.webp",
+      "printedPage": 59,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched all source matrices, conditions and subparts on uploaded pp58–59.",
+        "Exact entrywise and symbolic computation, all solution substitutions, sign enumeration and general transpose/polynomial proofs; misc3.py."
+      ]
+    }
+  }
+]
