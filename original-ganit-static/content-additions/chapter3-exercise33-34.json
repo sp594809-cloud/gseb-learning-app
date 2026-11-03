@@ -1,0 +1,497 @@
+[
+  {
+    "id": "tb3-33-1",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "1",
+    "page": 54,
+    "prompt": "દરેક શ્રેણિકનો પરિવર્ત મેળવો: (1) $\\begin{bmatrix}5\\\\\\frac{1}{2}\\\\-1\\end{bmatrix}$; (2) $\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$; (3) $\\begin{bmatrix}-1&5&6\\\\\\sqrt{3}&5&6\\\\2&3&-1\\end{bmatrix}$",
+    "steps": [
+      "(1) $A=\\begin{bmatrix}5\\\\\\frac{1}{2}\\\\-1\\end{bmatrix}$",
+      "$(A^T)_{ij}=a_{ji}$",
+      "$A^T=\\begin{bmatrix}5&\\frac{1}{2}&-1\\end{bmatrix}$",
+      "(2) $A=\\begin{bmatrix}1&-1\\\\2&3\\end{bmatrix}$",
+      "$(A^T)_{ij}=a_{ji}$",
+      "$A^T=\\begin{bmatrix}1&2\\\\-1&3\\end{bmatrix}$",
+      "(3) $A=\\begin{bmatrix}-1&5&6\\\\\\sqrt{3}&5&6\\\\2&3&-1\\end{bmatrix}$",
+      "$(A^T)_{ij}=a_{ji}$",
+      "$A^T=\\begin{bmatrix}-1&\\sqrt{3}&2\\\\5&5&3\\\\6&6&-1\\end{bmatrix}$"
+    ],
+    "answer": "(1) $\\begin{bmatrix}5&\\frac{1}{2}&-1\\end{bmatrix}$; (2) $\\begin{bmatrix}1&2\\\\-1&3\\end{bmatrix}$; (3) $\\begin{bmatrix}-1&\\sqrt{3}&2\\\\5&5&3\\\\6&6&-1\\end{bmatrix}$",
+    "explanation": [
+      "મૂળ શ્રેણિકની પહેલી હાર પરિવર્તનો પહેલો સ્તંભ બને છે. આમ દરેક હારને તે જ ક્રમના સ્તંભમાં ફેરવો. m×n શ્રેણિકનો પરિવર્ત n×m થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/68.webp",
+      "printedPage": 54,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-2",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "2",
+    "page": 54,
+    "prompt": "જો $A=\\begin{bmatrix}-1&2&3\\\\5&7&9\\\\-2&1&1\\end{bmatrix}$, $B=\\begin{bmatrix}-4&1&-5\\\\1&2&0\\\\1&3&1\\end{bmatrix}$ હોય તો (i) $(A+B)^T=A^T+B^T$ (ii) $(A-B)^T=A^T-B^T$ ચકાસો.",
+    "steps": [
+      "$A=\\begin{bmatrix}-1&2&3\\\\5&7&9\\\\-2&1&1\\end{bmatrix}$",
+      "$A^T=\\begin{bmatrix}-1&5&-2\\\\2&7&1\\\\3&9&1\\end{bmatrix}$, $B^T=\\begin{bmatrix}-4&1&1\\\\1&2&3\\\\-5&0&1\\end{bmatrix}$",
+      "(1) $A+B=\\begin{bmatrix}-1&2&3\\\\5&7&9\\\\-2&1&1\\end{bmatrix}+\\begin{bmatrix}-4&1&-5\\\\1&2&0\\\\1&3&1\\end{bmatrix}=\\begin{bmatrix}-5&3&-2\\\\6&9&9\\\\-1&4&2\\end{bmatrix}$",
+      "$(A+B)^T=\\begin{bmatrix}-5&6&-1\\\\3&9&4\\\\-2&9&2\\end{bmatrix}$",
+      "$A^T+B^T=\\begin{bmatrix}-1&5&-2\\\\2&7&1\\\\3&9&1\\end{bmatrix}+\\begin{bmatrix}-4&1&1\\\\1&2&3\\\\-5&0&1\\end{bmatrix}=\\begin{bmatrix}-5&6&-1\\\\3&9&4\\\\-2&9&2\\end{bmatrix}$",
+      "$(A+B)^T=A^T+B^T$",
+      "(2) $A-B=\\begin{bmatrix}-1&2&3\\\\5&7&9\\\\-2&1&1\\end{bmatrix}-\\begin{bmatrix}-4&1&-5\\\\1&2&0\\\\1&3&1\\end{bmatrix}=\\begin{bmatrix}3&1&8\\\\4&5&9\\\\-3&-2&0\\end{bmatrix}$",
+      "$(A-B)^T=\\begin{bmatrix}3&4&-3\\\\1&5&-2\\\\8&9&0\\end{bmatrix}$",
+      "$A^T-B^T=\\begin{bmatrix}-1&5&-2\\\\2&7&1\\\\3&9&1\\end{bmatrix}-\\begin{bmatrix}-4&1&1\\\\1&2&3\\\\-5&0&1\\end{bmatrix}=\\begin{bmatrix}3&4&-3\\\\1&5&-2\\\\8&9&0\\end{bmatrix}$",
+      "$(A-B)^T=A^T-B^T$"
+    ],
+    "answer": "$(A+B)^T=A^T+B^T$; $(A-B)^T=A^T-B^T$",
+    "explanation": [
+      "પહેલા સરવાળો કે તફાવત કરીને તેનો પરિવર્ત મેળવીએ. પછી બંનેના પરિવર્તનો સરવાળો કે તફાવત અલગથી ગણીએ. સમાન પરિણામથી ગુણધર્મ ચકાસાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/68.webp",
+      "printedPage": 54,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-3",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "3",
+    "page": 54,
+    "prompt": "જો $A^T=\\begin{bmatrix}3&4\\\\-1&2\\\\0&1\\end{bmatrix}$, $B=\\begin{bmatrix}-1&2&1\\\\1&2&3\\end{bmatrix}$ હોય તો (i) $(A+B)^T=A^T+B^T$ (ii) $(A-B)^T=A^T-B^T$ ચકાસો.",
+    "steps": [
+      "$A=\\begin{bmatrix}3&-1&0\\\\4&2&1\\end{bmatrix}$",
+      "$A^T=\\begin{bmatrix}3&4\\\\-1&2\\\\0&1\\end{bmatrix}$, $B^T=\\begin{bmatrix}-1&1\\\\2&2\\\\1&3\\end{bmatrix}$",
+      "(1) $A+B=\\begin{bmatrix}3&-1&0\\\\4&2&1\\end{bmatrix}+\\begin{bmatrix}-1&2&1\\\\1&2&3\\end{bmatrix}=\\begin{bmatrix}2&1&1\\\\5&4&4\\end{bmatrix}$",
+      "$(A+B)^T=\\begin{bmatrix}2&5\\\\1&4\\\\1&4\\end{bmatrix}$",
+      "$A^T+B^T=\\begin{bmatrix}3&4\\\\-1&2\\\\0&1\\end{bmatrix}+\\begin{bmatrix}-1&1\\\\2&2\\\\1&3\\end{bmatrix}=\\begin{bmatrix}2&5\\\\1&4\\\\1&4\\end{bmatrix}$",
+      "$(A+B)^T=A^T+B^T$",
+      "(2) $A-B=\\begin{bmatrix}3&-1&0\\\\4&2&1\\end{bmatrix}-\\begin{bmatrix}-1&2&1\\\\1&2&3\\end{bmatrix}=\\begin{bmatrix}4&-3&-1\\\\3&0&-2\\end{bmatrix}$",
+      "$(A-B)^T=\\begin{bmatrix}4&3\\\\-3&0\\\\-1&-2\\end{bmatrix}$",
+      "$A^T-B^T=\\begin{bmatrix}3&4\\\\-1&2\\\\0&1\\end{bmatrix}-\\begin{bmatrix}-1&1\\\\2&2\\\\1&3\\end{bmatrix}=\\begin{bmatrix}4&3\\\\-3&0\\\\-1&-2\\end{bmatrix}$",
+      "$(A-B)^T=A^T-B^T$"
+    ],
+    "answer": "$(A+B)^T=A^T+B^T$; $(A-B)^T=A^T-B^T$",
+    "explanation": [
+      "પહેલા સરવાળો કે તફાવત કરીને તેનો પરિવર્ત મેળવીએ. પછી બંનેના પરિવર્તનો સરવાળો કે તફાવત અલગથી ગણીએ. સમાન પરિણામથી ગુણધર્મ ચકાસાય છે.",
+      "આ પ્રશ્નમાં A નહીં, તેનો પરિવર્ત આપ્યો છે. તેથી પહેલું પગલું આપેલા Aᵀનો ફરી પરિવર્ત લઈને મૂળ A મેળવવાનું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/68.webp",
+      "printedPage": 54,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-4",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "4",
+    "page": 54,
+    "prompt": "જો $A^T=\\begin{bmatrix}-2&3\\\\1&2\\end{bmatrix}$, $B=\\begin{bmatrix}-1&0\\\\1&2\\end{bmatrix}$ હોય તો $(A+2B)^T$ શોધો.",
+    "steps": [
+      "$(A+2B)^T=A^T+2B^T$",
+      "$B^T=\\begin{bmatrix}-1&1\\\\0&2\\end{bmatrix}$",
+      "$2B^T=\\begin{bmatrix}-2&2\\\\0&4\\end{bmatrix}$",
+      "$(A+2B)^T=\\begin{bmatrix}-2&3\\\\1&2\\end{bmatrix}+\\begin{bmatrix}-2&2\\\\0&4\\end{bmatrix}=\\begin{bmatrix}-4&5\\\\1&6\\end{bmatrix}$"
+    ],
+    "answer": "$\\begin{bmatrix}-4&5\\\\1&6\\end{bmatrix}$",
+    "explanation": [
+      "પરિવર્ત સરવાળા અને અદિશ ગુણાકાર પર વહેંચી શકાય છે. અહીં Aᵀ આપેલો હોવાથી ફક્ત Bᵀ શોધીને બમણો કરવાનો છે. મૂળ Aથી સીધી ગણતરી કરીને પણ જવાબ ચકાસ્યો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/68.webp",
+      "printedPage": 54,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-5",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "5",
+    "page": 54,
+    "prompt": "દરેક માટે $(AB)^T=B^TA^T$ ચકાસો: (1) $A=\\begin{bmatrix}1\\\\-4\\\\3\\end{bmatrix}$, $B=\\begin{bmatrix}-1&2&1\\end{bmatrix}$; (2) $A=\\begin{bmatrix}0\\\\1\\\\2\\end{bmatrix}$, $B=\\begin{bmatrix}1&5&7\\end{bmatrix}$",
+    "steps": [
+      "(1)",
+      "$AB=\\begin{bmatrix}1\\\\-4\\\\3\\end{bmatrix}\\begin{bmatrix}-1&2&1\\end{bmatrix}$",
+      "$(AB)_{11}=(1)(-1)=-1$",
+      "$(AB)_{12}=(1)(2)=2$",
+      "$(AB)_{13}=(1)(1)=1$",
+      "$(AB)_{21}=(-4)(-1)=4$",
+      "$(AB)_{22}=(-4)(2)=-8$",
+      "$(AB)_{23}=(-4)(1)=-4$",
+      "$(AB)_{31}=(3)(-1)=-3$",
+      "$(AB)_{32}=(3)(2)=6$",
+      "$(AB)_{33}=(3)(1)=3$",
+      "$AB=\\begin{bmatrix}-1&2&1\\\\4&-8&-4\\\\-3&6&3\\end{bmatrix}$",
+      "$(AB)^T=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$",
+      "$B^T=\\begin{bmatrix}-1\\\\2\\\\1\\end{bmatrix}$, $A^T=\\begin{bmatrix}1&-4&3\\end{bmatrix}$",
+      "$B^TA^T=\\begin{bmatrix}-1\\\\2\\\\1\\end{bmatrix}\\begin{bmatrix}1&-4&3\\end{bmatrix}$",
+      "$(B^TA^T)_{11}=(-1)(1)=-1$",
+      "$(B^TA^T)_{12}=(-1)(-4)=4$",
+      "$(B^TA^T)_{13}=(-1)(3)=-3$",
+      "$(B^TA^T)_{21}=(2)(1)=2$",
+      "$(B^TA^T)_{22}=(2)(-4)=-8$",
+      "$(B^TA^T)_{23}=(2)(3)=6$",
+      "$(B^TA^T)_{31}=(1)(1)=1$",
+      "$(B^TA^T)_{32}=(1)(-4)=-4$",
+      "$(B^TA^T)_{33}=(1)(3)=3$",
+      "$B^TA^T=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$",
+      "$(AB)^T=B^TA^T$",
+      "(2)",
+      "$AB=\\begin{bmatrix}0\\\\1\\\\2\\end{bmatrix}\\begin{bmatrix}1&5&7\\end{bmatrix}$",
+      "$(AB)_{11}=(0)(1)=0$",
+      "$(AB)_{12}=(0)(5)=0$",
+      "$(AB)_{13}=(0)(7)=0$",
+      "$(AB)_{21}=(1)(1)=1$",
+      "$(AB)_{22}=(1)(5)=5$",
+      "$(AB)_{23}=(1)(7)=7$",
+      "$(AB)_{31}=(2)(1)=2$",
+      "$(AB)_{32}=(2)(5)=10$",
+      "$(AB)_{33}=(2)(7)=14$",
+      "$AB=\\begin{bmatrix}0&0&0\\\\1&5&7\\\\2&10&14\\end{bmatrix}$",
+      "$(AB)^T=\\begin{bmatrix}0&1&2\\\\0&5&10\\\\0&7&14\\end{bmatrix}$",
+      "$B^T=\\begin{bmatrix}1\\\\5\\\\7\\end{bmatrix}$, $A^T=\\begin{bmatrix}0&1&2\\end{bmatrix}$",
+      "$B^TA^T=\\begin{bmatrix}1\\\\5\\\\7\\end{bmatrix}\\begin{bmatrix}0&1&2\\end{bmatrix}$",
+      "$(B^TA^T)_{11}=(1)(0)=0$",
+      "$(B^TA^T)_{12}=(1)(1)=1$",
+      "$(B^TA^T)_{13}=(1)(2)=2$",
+      "$(B^TA^T)_{21}=(5)(0)=0$",
+      "$(B^TA^T)_{22}=(5)(1)=5$",
+      "$(B^TA^T)_{23}=(5)(2)=10$",
+      "$(B^TA^T)_{31}=(7)(0)=0$",
+      "$(B^TA^T)_{32}=(7)(1)=7$",
+      "$(B^TA^T)_{33}=(7)(2)=14$",
+      "$B^TA^T=\\begin{bmatrix}0&1&2\\\\0&5&10\\\\0&7&14\\end{bmatrix}$",
+      "$(AB)^T=B^TA^T$"
+    ],
+    "answer": "(1) $(AB)^T=B^TA^T=\\begin{bmatrix}-1&4&-3\\\\2&-8&6\\\\1&-4&3\\end{bmatrix}$; (2) $(AB)^T=B^TA^T=\\begin{bmatrix}0&1&2\\\\0&5&10\\\\0&7&14\\end{bmatrix}$",
+    "explanation": [
+      "ગુણાકારના પરિવર્તમાં ક્રમ ઊલટાય છે. પહેલા AB કરીને તેનો પરિવર્ત લઈએ, અને અલગથી BᵀAᵀ ગણીએ. બંને ભાગના નવેય ઘટક દરેક બાજુ દર્શાવ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/68.webp",
+      "printedPage": 54,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-6",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "6",
+    "page": 55,
+    "prompt": "દરેક માટે $A^TA=I$ ચકાસો: (1) $A=\\begin{bmatrix}\\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\\\- \\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\end{bmatrix}$; (2) $A=\\begin{bmatrix}\\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\\\- \\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\end{bmatrix}$",
+    "steps": [
+      "(1) $A^T=\\begin{bmatrix}\\cos{\\left(\\alpha \\right)}&- \\sin{\\left(\\alpha \\right)}\\\\\\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$A^TA=\\begin{bmatrix}\\cos{\\left(\\alpha \\right)}&- \\sin{\\left(\\alpha \\right)}\\\\\\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\end{bmatrix}\\begin{bmatrix}\\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\\\- \\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$(A^TA)_{11}=(\\cos{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})+(- \\sin{\\left(\\alpha \\right)})(- \\sin{\\left(\\alpha \\right)})=1$",
+      "$(A^TA)_{12}=(\\cos{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})+(- \\sin{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})=0$",
+      "$(A^TA)_{21}=(\\sin{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})+(\\cos{\\left(\\alpha \\right)})(- \\sin{\\left(\\alpha \\right)})=0$",
+      "$(A^TA)_{22}=(\\sin{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})+(\\cos{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})=1$",
+      "$A^TA=\\begin{bmatrix}\\sin^{2}{\\left(\\alpha \\right)} + \\cos^{2}{\\left(\\alpha \\right)}&0\\\\0&\\sin^{2}{\\left(\\alpha \\right)} + \\cos^{2}{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$\\sin^2\\alpha+\\cos^2\\alpha=1$",
+      "$A^TA=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}=I$",
+      "(2) $A^T=\\begin{bmatrix}\\sin{\\left(\\alpha \\right)}&- \\cos{\\left(\\alpha \\right)}\\\\\\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$A^TA=\\begin{bmatrix}\\sin{\\left(\\alpha \\right)}&- \\cos{\\left(\\alpha \\right)}\\\\\\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\end{bmatrix}\\begin{bmatrix}\\sin{\\left(\\alpha \\right)}&\\cos{\\left(\\alpha \\right)}\\\\- \\cos{\\left(\\alpha \\right)}&\\sin{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$(A^TA)_{11}=(\\sin{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})+(- \\cos{\\left(\\alpha \\right)})(- \\cos{\\left(\\alpha \\right)})=1$",
+      "$(A^TA)_{12}=(\\sin{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})+(- \\cos{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})=0$",
+      "$(A^TA)_{21}=(\\cos{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})+(\\sin{\\left(\\alpha \\right)})(- \\cos{\\left(\\alpha \\right)})=0$",
+      "$(A^TA)_{22}=(\\cos{\\left(\\alpha \\right)})(\\cos{\\left(\\alpha \\right)})+(\\sin{\\left(\\alpha \\right)})(\\sin{\\left(\\alpha \\right)})=1$",
+      "$A^TA=\\begin{bmatrix}\\sin^{2}{\\left(\\alpha \\right)} + \\cos^{2}{\\left(\\alpha \\right)}&0\\\\0&\\sin^{2}{\\left(\\alpha \\right)} + \\cos^{2}{\\left(\\alpha \\right)}\\end{bmatrix}$",
+      "$\\sin^2\\alpha+\\cos^2\\alpha=1$",
+      "$A^TA=\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}=I$"
+    ],
+    "answer": "$A^TA=I$ (બંને ભાગ)",
+    "explanation": [
+      "હાર–સ્તંભથી AᵀA ગણીએ. વિકર્ણ પર sin²α+cos²α અને બાકીના સ્થાને રદ થતા ગુણાકાર મળે છે. તેથી બંને શ્રેણિક માટે એકમ શ્રેણિક મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-7",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "7",
+    "page": 55,
+    "prompt": "સાબિત કરો: (i) $A=\\begin{bmatrix}1&-1&5\\\\-1&2&1\\\\5&1&3\\end{bmatrix}$ સંમિત છે; (ii) $B=\\begin{bmatrix}0&1&-1\\\\-1&0&1\\\\1&-1&0\\end{bmatrix}$ વિસંમિત છે.",
+    "steps": [
+      "(i) $A^T=\\begin{bmatrix}1&-1&5\\\\-1&2&1\\\\5&1&3\\end{bmatrix}$",
+      "$A^T=A\\Rightarrow A$ સંમિત.",
+      "(ii) $B^T=\\begin{bmatrix}0&-1&1\\\\1&0&-1\\\\-1&1&0\\end{bmatrix}$",
+      "$-B=\\begin{bmatrix}0&-1&1\\\\1&0&-1\\\\-1&1&0\\end{bmatrix}$",
+      "$B^T=-B\\Rightarrow B$ વિસંમિત."
+    ],
+    "answer": "(i) સંમિત; (ii) વિસંમિત.",
+    "explanation": [
+      "સંમિત માટે પરિવર્ત મૂળ શ્રેણિક જેટલો અને વિસંમિત માટે તેના ઋણ જેટલો હોવો જોઈએ. વિસંમિતના વિકર્ણના ઘટકો શૂન્ય હોવાની શરત પણ અહીં સંતોષાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-8",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "8",
+    "page": 55,
+    "prompt": "$A=\\begin{bmatrix}1&5\\\\6&7\\end{bmatrix}$ માટે (i) $A+A^T$ સંમિત (ii) $A-A^T$ વિસંમિત છે તે ચકાસો.",
+    "steps": [
+      "$A^T=\\begin{bmatrix}1&6\\\\5&7\\end{bmatrix}$",
+      "(i) $S=A+A^T=\\begin{bmatrix}1&5\\\\6&7\\end{bmatrix}+\\begin{bmatrix}1&6\\\\5&7\\end{bmatrix}=\\begin{bmatrix}2&11\\\\11&14\\end{bmatrix}$",
+      "$S^T=\\begin{bmatrix}2&11\\\\11&14\\end{bmatrix}=S$ ⇒ સંમિત.",
+      "(ii) $K=A-A^T=\\begin{bmatrix}1&5\\\\6&7\\end{bmatrix}-\\begin{bmatrix}1&6\\\\5&7\\end{bmatrix}=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$",
+      "$K^T=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}=-K$ ⇒ વિસંમિત."
+    ],
+    "answer": "$A+A^T=\\begin{bmatrix}2&11\\\\11&14\\end{bmatrix}$ સંમિત; $A-A^T=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$ વિસંમિત.",
+    "explanation": [
+      "સરવાળા અને તફાવતનાં પરિણામને નવા શ્રેણિક S,K તરીકે લઈએ. તેમના પરિવર્તથી વ્યાખ્યા ચકાસવી જરૂરી છે; માત્ર આકાર પરથી પ્રકાર નક્કી ન કરવો."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-9",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "9",
+    "page": 55,
+    "prompt": "$A=\\begin{bmatrix}0&a&b\\\\- a&0&c\\\\- b&- c&0\\end{bmatrix}$ માટે $\\frac12(A+A^T)$ અને $\\frac12(A-A^T)$ શોધો.",
+    "steps": [
+      "$A^T=\\begin{bmatrix}0&- a&- b\\\\a&0&- c\\\\b&c&0\\end{bmatrix}=-A$",
+      "$\\frac12(A+A^T)=\\frac12(A-A)=\\frac12O=O$",
+      "$\\frac12(A-A^T)=\\frac12(A+A)=\\frac12(2A)=A$",
+      "$\\frac12(A+A^T)=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}$",
+      "$\\frac12(A-A^T)=\\begin{bmatrix}0&a&b\\\\- a&0&c\\\\- b&- c&0\\end{bmatrix}$"
+    ],
+    "answer": "$\\frac12(A+A^T)=O$; $\\frac12(A-A^T)=A$",
+    "explanation": [
+      "આપેલ A પહેલેથી વિસંમિત છે. તેથી સંમિત ભાગ શૂન્ય અને વિસંમિત ભાગ મૂળ A જ મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-10",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "10",
+    "page": 55,
+    "prompt": "દરેકને સંમિત અને વિસંમિત શ્રેણિકના સરવાળા તરીકે દર્શાવો: (1) $\\begin{bmatrix}3&5\\\\1&-1\\end{bmatrix}$; (2) $\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}$; (3) $\\begin{bmatrix}3&3&-1\\\\-2&-2&1\\\\-4&-5&2\\end{bmatrix}$; (4) $\\begin{bmatrix}1&5\\\\-1&2\\end{bmatrix}$",
+    "steps": [
+      "$S=\\frac12(A+A^T),\\quad K=\\frac12(A-A^T),\\quad A=S+K$",
+      "(1) $A^T=\\begin{bmatrix}3&1\\\\5&-1\\end{bmatrix}$",
+      "$S=\\frac12\\begin{bmatrix}6&6\\\\6&-2\\end{bmatrix}=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}$",
+      "$K=\\frac12\\begin{bmatrix}0&4\\\\-4&0\\end{bmatrix}=\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$",
+      "$S^T=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}=S$",
+      "$K^T=\\begin{bmatrix}0&-2\\\\2&0\\end{bmatrix}=-K$",
+      "$S+K=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}+\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}=\\begin{bmatrix}3&5\\\\1&-1\\end{bmatrix}=A$",
+      "(2) $A^T=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}$",
+      "$S=\\frac12\\begin{bmatrix}12&-4&4\\\\-4&6&-2\\\\4&-2&6\\end{bmatrix}=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}$",
+      "$K=\\frac12\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}$",
+      "$S^T=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}=S$",
+      "$K^T=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=-K$",
+      "$S+K=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}+\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}=A$",
+      "(3) $A^T=\\begin{bmatrix}3&-2&-4\\\\3&-2&-5\\\\-1&1&2\\end{bmatrix}$",
+      "$S=\\frac12\\begin{bmatrix}6&1&-5\\\\1&-4&-4\\\\-5&-4&4\\end{bmatrix}=\\begin{bmatrix}3&\\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&-2&-2\\\\- \\frac{5}{2}&-2&2\\end{bmatrix}$",
+      "$K=\\frac12\\begin{bmatrix}0&5&3\\\\-5&0&6\\\\-3&-6&0\\end{bmatrix}=\\begin{bmatrix}0&\\frac{5}{2}&\\frac{3}{2}\\\\- \\frac{5}{2}&0&3\\\\- \\frac{3}{2}&-3&0\\end{bmatrix}$",
+      "$S^T=\\begin{bmatrix}3&\\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&-2&-2\\\\- \\frac{5}{2}&-2&2\\end{bmatrix}=S$",
+      "$K^T=\\begin{bmatrix}0&- \\frac{5}{2}&- \\frac{3}{2}\\\\\\frac{5}{2}&0&-3\\\\\\frac{3}{2}&3&0\\end{bmatrix}=-K$",
+      "$S+K=\\begin{bmatrix}3&\\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&-2&-2\\\\- \\frac{5}{2}&-2&2\\end{bmatrix}+\\begin{bmatrix}0&\\frac{5}{2}&\\frac{3}{2}\\\\- \\frac{5}{2}&0&3\\\\- \\frac{3}{2}&-3&0\\end{bmatrix}=\\begin{bmatrix}3&3&-1\\\\-2&-2&1\\\\-4&-5&2\\end{bmatrix}=A$",
+      "(4) $A^T=\\begin{bmatrix}1&-1\\\\5&2\\end{bmatrix}$",
+      "$S=\\frac12\\begin{bmatrix}2&4\\\\4&4\\end{bmatrix}=\\begin{bmatrix}1&2\\\\2&2\\end{bmatrix}$",
+      "$K=\\frac12\\begin{bmatrix}0&6\\\\-6&0\\end{bmatrix}=\\begin{bmatrix}0&3\\\\-3&0\\end{bmatrix}$",
+      "$S^T=\\begin{bmatrix}1&2\\\\2&2\\end{bmatrix}=S$",
+      "$K^T=\\begin{bmatrix}0&-3\\\\3&0\\end{bmatrix}=-K$",
+      "$S+K=\\begin{bmatrix}1&2\\\\2&2\\end{bmatrix}+\\begin{bmatrix}0&3\\\\-3&0\\end{bmatrix}=\\begin{bmatrix}1&5\\\\-1&2\\end{bmatrix}=A$"
+    ],
+    "answer": "(1) $A=\\begin{bmatrix}3&3\\\\3&-1\\end{bmatrix}+\\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}$; (2) $A=\\begin{bmatrix}6&-2&2\\\\-2&3&-1\\\\2&-1&3\\end{bmatrix}+\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}$; (3) $A=\\begin{bmatrix}3&\\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&-2&-2\\\\- \\frac{5}{2}&-2&2\\end{bmatrix}+\\begin{bmatrix}0&\\frac{5}{2}&\\frac{3}{2}\\\\- \\frac{5}{2}&0&3\\\\- \\frac{3}{2}&-3&0\\end{bmatrix}$; (4) $A=\\begin{bmatrix}1&2\\\\2&2\\end{bmatrix}+\\begin{bmatrix}0&3\\\\-3&0\\end{bmatrix}$",
+    "explanation": [
+      "દરેક ચોરસ શ્રેણિક માટે અડધો સરવાળો સંમિત અને અડધો તફાવત વિસંમિત હોય છે. ચારેય ભાગમાં આ બંને પ્રકાર અને તેમનો સરવાળો મૂળ A થાય છે તે અલગથી ચકાસ્યું છે.",
+      "ભાગ (ii)માં A પોતે સંમિત છે, એટલે તેનો વિસંમિત ભાગ શૂન્ય શ્રેણિક મળે છે; શૂન્ય શ્રેણિક વિસંમિત પણ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-11",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "11",
+    "page": 55,
+    "prompt": "A,B સમાન કક્ષાના સંમિત શ્રેણિક હોય તો AB−BA: (A) વિસંમિત (B) સંમિત (C) શૂન્ય (D) એકમ.",
+    "steps": [
+      "$A^T=A,\\quad B^T=B$",
+      "$C=AB-BA$",
+      "$C^T=(AB-BA)^T=B^TA^T-A^TB^T$",
+      "$=BA-AB=-(AB-BA)=-C$",
+      "$C^T=-C$ ⇒ વિસંમિત."
+    ],
+    "answer": "વિકલ્પ A: વિસંમિત.",
+    "explanation": [
+      "પરિવર્ત લેતાં ગુણાકારનો ક્રમ ઊલટાય છે. સંમિતતાના Aᵀ=A અને Bᵀ=B મૂકવાથી પરિણામ પોતાના ઋણ જેટલું મળે છે. AB=BA હોવાની શરત આપેલી નથી તેથી સામાન્ય રીતે શૂન્ય કહી શકાતું નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-33-12",
+    "chapter": 3,
+    "section": "3.3",
+    "number": "12",
+    "page": 55,
+    "prompt": "$A=\\begin{bmatrix}\\cos\\alpha&-\\sin\\alpha\\\\\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$ માટે $A+A^T=I$ થાય તેવો વિકલ્પ પસંદ કરો: (A) $\\pi/6$ (B) $\\pi/3$ (C) $\\pi$ (D) $3\\pi/2$.",
+    "steps": [
+      "$A^T=\\begin{bmatrix}\\cos\\alpha&\\sin\\alpha\\\\-\\sin\\alpha&\\cos\\alpha\\end{bmatrix}$",
+      "$A+A^T=\\begin{bmatrix}2\\cos\\alpha&0\\\\0&2\\cos\\alpha\\end{bmatrix}=I$",
+      "$2\\cos\\alpha=1\\Rightarrow\\cos\\alpha=\\frac12$",
+      "$\\cos\\frac\\pi3=\\frac12\\Rightarrow\\alpha=\\frac\\pi3$"
+    ],
+    "answer": "વિકલ્પ B: $\\alpha=\\pi/3$",
+    "explanation": [
+      "પ્રશ્ન આપેલા વિકલ્પોમાંથી એક મૂલ્ય પસંદ કરવાનું કહે છે. સામાન્ય ઉકેલ α=2kπ±π/3 છે, પરંતુ આપેલા વિકલ્પોમાં માત્ર π/3 છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/69.webp",
+      "printedPage": 55,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-34-1",
+    "chapter": 3,
+    "section": "3.4",
+    "number": "1",
+    "page": 57,
+    "prompt": "A અને B એકબીજાના વ્યસ્ત શ્રેણિક ક્યારે છે? (A) AB=BA (B) AB=BA=O (C) AB=O, BA=I (D) AB=BA=I.",
+    "steps": [
+      "$B=A^{-1}\\Rightarrow AB=AA^{-1}=I$",
+      "$BA=A^{-1}A=I$",
+      "$AB=BA=I\\Leftrightarrow B=A^{-1}$"
+    ],
+    "answer": "વિકલ્પ D: $AB=BA=I$",
+    "explanation": [
+      "વ્યસ્તની વ્યાખ્યા પ્રમાણે બંને ક્રમનો ગુણાકાર એકમ શ્રેણિક છે. માત્ર AB=BA હોવું પૂરતું નથી; A=B=Oમાં બંને ગુણાકાર સમાન હોવા છતાં વ્યસ્ત મળતો નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનો ચકાસેલો પ્રશ્ન.",
+    "verification": {
+      "source": "book/71.webp",
+      "printedPage": 57,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched every matrix and subpart to uploaded Gujarati textbook.",
+        "Independent entrywise multiplication, exact transpose/sum checks or general algebraic proof; exercise33.py."
+      ]
+    }
+  }
+]
