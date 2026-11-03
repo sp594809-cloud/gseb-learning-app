@@ -1,0 +1,940 @@
+[
+  {
+    "id": "tb3-Example-1",
+    "chapter": 3,
+    "section": "Example",
+    "number": "1",
+    "page": 34,
+    "prompt": "કારખાનાં I,II,IIIમાં પુરુષ કર્મચારીઓ અનુક્રમે 30,25,27 અને સ્ત્રી કર્મચારીઓ 25,31,26 છે. માહિતીને 3×2 શ્રેણિકમાં રજૂ કરો. ત્રીજી હાર અને બીજા સ્તંભનો ઘટક શું સૂચવે?",
+    "steps": [
+      "હારનો ક્રમ: I, II, III; સ્તંભનો ક્રમ: પુરુષ, સ્ત્રી.",
+      "$A=\\begin{bmatrix}30&25\\\\25&31\\\\27&26\\end{bmatrix}$",
+      "$a_{32}=26$ ⇒ કારખાના IIIમાં 26 સ્ત્રી કર્મચારી."
+    ],
+    "answer": "$A=\\begin{bmatrix}30&25\\\\25&31\\\\27&26\\end{bmatrix}$; $a_{32}=26$ ⇒ કારખાના IIIની સ્ત્રી કર્મચારીઓની સંખ્યા.",
+    "explanation": [
+      "દરેક હાર એક કારખાનું અને દરેક સ્તંભ એક કર્મચારી-જૂથ દર્શાવે છે. a₃₂માં 3 હારનો અને 2 સ્તંભનો ક્રમ છે; તેથી યોગ્ય લેબલથી અર્થ આપવો જરૂરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/48.webp",
+      "printedPage": 34,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-2",
+    "chapter": 3,
+    "section": "Example",
+    "number": "2",
+    "page": 34,
+    "prompt": "બરાબર 8 ઘટકો ધરાવતા શ્રેણિકની શક્ય કક્ષાઓ શોધો.",
+    "steps": [
+      "$m\\times n\\Rightarrow mn=8,\\quad m,n\\in\\mathbb N$",
+      "$m=1,2,4,8\\Rightarrow n=8,4,2,1$",
+      "$(m,n)=(1,8),(2,4),(4,2),(8,1)$",
+      "$1\\times8,\\ 2\\times4,\\ 4\\times2,\\ 8\\times1$"
+    ],
+    "answer": "$1\\times8,\\ 2\\times4,\\ 4\\times2,\\ 8\\times1$",
+    "explanation": [
+      "હાર અને સ્તંભની સંખ્યા ધન પૂર્ણાંક છે. 8ના બધા ધન અવયવ લઈને અનુરૂપ n=8/m ગણીએ. હાર અને સ્તંભનો ક્રમ મહત્વનો હોવાથી 2×4 અને 4×2 બંને સામેલ છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/48.webp",
+      "printedPage": 34,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-3",
+    "chapter": 3,
+    "section": "Example",
+    "number": "3",
+    "page": 34,
+    "prompt": "$a_{ij}=\\frac12|i-3j|$ દ્વારા મળતા 3×2 શ્રેણિકની રચના કરો.",
+    "steps": [
+      "$i=1,2,3;\\quad j=1,2$",
+      "$a_{11}=\\frac12|1-3(1)|=1$",
+      "$a_{12}=\\frac12|1-3(2)|=\\frac{5}{2}$",
+      "$a_{21}=\\frac12|2-3(1)|=\\frac{1}{2}$",
+      "$a_{22}=\\frac12|2-3(2)|=2$",
+      "$a_{31}=\\frac12|3-3(1)|=0$",
+      "$a_{32}=\\frac12|3-3(2)|=\\frac{3}{2}$",
+      "$A=\\begin{bmatrix}1&\\frac{5}{2}\\\\\\frac{1}{2}&2\\\\0&\\frac{3}{2}\\end{bmatrix}$"
+    ],
+    "answer": "$\\begin{bmatrix}1&\\frac{5}{2}\\\\\\frac{1}{2}&2\\\\0&\\frac{3}{2}\\end{bmatrix}$",
+    "explanation": [
+      "3 હાર અને 2 સ્તંભ માટે i,jનાં છ સંયોજન છે. દરેક માટે સૂચકાંક મૂકી નિરપેક્ષ મૂલ્ય લીધા પછી 2થી ભાગવાનું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/48.webp",
+      "printedPage": 34,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-4",
+    "chapter": 3,
+    "section": "Example",
+    "number": "4",
+    "page": 36,
+    "prompt": "જો $\\begin{bmatrix}x + 3&z + 4&2 y - 7\\\\-6&a - 1&0\\\\b - 3&-21&0\\end{bmatrix}=\\begin{bmatrix}0&6&3 y - 2\\\\-6&-3&2 c + 2\\\\2 b + 4&-21&0\\end{bmatrix}$ હોય તો a,b,c,x,y,z શોધો.",
+    "steps": [
+      "$x+3=0\\Rightarrow x=-3$",
+      "$z+4=6\\Rightarrow z=2$",
+      "$2y-7=3y-2\\Rightarrow-y=5\\Rightarrow y=-5$",
+      "$a-1=-3\\Rightarrow a=-2$",
+      "$0=2c+2\\Rightarrow c=-1$",
+      "$b-3=2b+4\\Rightarrow-b=7\\Rightarrow b=-7$",
+      "$\\text{LHS}=\\begin{bmatrix}0&6&-17\\\\-6&-3&0\\\\-10&-21&0\\end{bmatrix}=\\text{RHS}$"
+    ],
+    "answer": "$a=-2,b=-7,c=-1,x=-3,y=-5,z=2$",
+    "explanation": [
+      "સમાન શ્રેણિકના અનુરૂપ ઘટકો સરખાવવાથી છ અજ્ઞાત માટે છ સમીકરણ મળે છે. મળેલા મૂલ્યોથી નવેય ઘટક મૂળ સમાનતામાં ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/50.webp",
+      "printedPage": 36,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-5",
+    "chapter": 3,
+    "section": "Example",
+    "number": "5",
+    "page": 36,
+    "prompt": "$\\begin{bmatrix}2 a + b&a - 2 b\\\\5 c - d&4 c + 3 d\\end{bmatrix}=\\begin{bmatrix}4&-3\\\\11&24\\end{bmatrix}$ માંથી a,b,c,d શોધો.",
+    "steps": [
+      "$2a+b=4,\\quad a-2b=-3$",
+      "$(2a+b)-2(a-2b)=4-2(-3)\\Rightarrow5b=10$",
+      "$b=2\\Rightarrow a=1$",
+      "$5c-d=11\\Rightarrow d=5c-11$",
+      "$4c+3(5c-11)=24\\Rightarrow19c=57$",
+      "$c=3\\Rightarrow d=4$",
+      "$2(1)+2=4,\\ 1-2(2)=-3$",
+      "$5(3)-4=11,\\ 4(3)+3(4)=24$"
+    ],
+    "answer": "$a=1,b=2,c=3,d=4$",
+    "explanation": [
+      "પહેલી હારથી a,b અને બીજી હારથી c,d માટે બે-બે સમીકરણ મળે છે. એક અજ્ઞાત દૂર કરીને દરેક જોડ ઉકેલીએ; ચારેય મૂળ ઘટક ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/50.webp",
+      "printedPage": 36,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-6",
+    "chapter": 3,
+    "section": "Example",
+    "number": "6",
+    "page": 38,
+    "prompt": "જો $A=\\begin{bmatrix}\\sqrt{3}&1&-1\\\\2&3&0\\end{bmatrix}$, $B=\\begin{bmatrix}2&\\sqrt{5}&1\\\\-2&3&\\frac{1}{2}\\end{bmatrix}$ હોય તો A+B શોધો.",
+    "steps": [
+      "$\\text{order}(A)=\\text{order}(B)=2\\times3$",
+      "$A+B=\\begin{bmatrix}\\sqrt3+2&1+\\sqrt5&-1+1\\\\2-2&3+3&0+\\frac12\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\sqrt{3} + 2&1 + \\sqrt{5}&0\\\\0&6&\\frac{1}{2}\\end{bmatrix}$"
+    ],
+    "answer": "$A+B=\\begin{bmatrix}\\sqrt{3} + 2&1 + \\sqrt{5}&0\\\\0&6&\\frac{1}{2}\\end{bmatrix}$",
+    "explanation": [
+      "બંને શ્રેણિકની કક્ષા સમાન હોવાથી સરવાળો વ્યાખ્યાયિત છે. અનુરૂપ ઘટકોને જ ઉમેરવાના છે; કરણીવાળા અસમાન પદો જોડાયેલા સ્વરૂપે રહે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/52.webp",
+      "printedPage": 38,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-7",
+    "chapter": 3,
+    "section": "Example",
+    "number": "7",
+    "page": 39,
+    "prompt": "જો $A=\\begin{bmatrix}1&2&3\\\\2&3&1\\end{bmatrix}$, $B=\\begin{bmatrix}3&-1&3\\\\-1&0&2\\end{bmatrix}$ હોય તો 2A−B શોધો.",
+    "steps": [
+      "$2A=\\begin{bmatrix}2&4&6\\\\4&6&2\\end{bmatrix}$",
+      "$2A-B=\\begin{bmatrix}2-3&4-(-1)&6-3\\\\4-(-1)&6-0&2-2\\end{bmatrix}$",
+      "$=\\begin{bmatrix}-1&5&3\\\\5&6&0\\end{bmatrix}$"
+    ],
+    "answer": "$\\begin{bmatrix}-1&5&3\\\\5&6&0\\end{bmatrix}$",
+    "explanation": [
+      "પહેલા Aના દરેક ઘટકને 2થી ગુણીએ. પછી Bનો અનુરૂપ ઘટક બાદ કરીએ. ઋણ ઘટક બાદ કરતાં ધન થાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/53.webp",
+      "printedPage": 39,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-8",
+    "chapter": 3,
+    "section": "Example",
+    "number": "8",
+    "page": 41,
+    "prompt": "જો $A=\\begin{bmatrix}8&0\\\\4&-2\\\\3&6\\end{bmatrix}$, $B=\\begin{bmatrix}2&-2\\\\4&2\\\\-5&1\\end{bmatrix}$ હોય તો $2A+3X=5B$ ઉકેલો.",
+    "steps": [
+      "$3X=5B-2A$",
+      "$5B=\\begin{bmatrix}10&-10\\\\20&10\\\\-25&5\\end{bmatrix}$, $2A=\\begin{bmatrix}16&0\\\\8&-4\\\\6&12\\end{bmatrix}$",
+      "$3X=\\begin{bmatrix}10&-10\\\\20&10\\\\-25&5\\end{bmatrix}-\\begin{bmatrix}16&0\\\\8&-4\\\\6&12\\end{bmatrix}=\\begin{bmatrix}-6&-10\\\\12&14\\\\-31&-7\\end{bmatrix}$",
+      "$X=\\frac13\\begin{bmatrix}-6&-10\\\\12&14\\\\-31&-7\\end{bmatrix}=\\begin{bmatrix}-2&- \\frac{10}{3}\\\\4&\\frac{14}{3}\\\\- \\frac{31}{3}&- \\frac{7}{3}\\end{bmatrix}$",
+      "$2A+3X=\\begin{bmatrix}10&-10\\\\20&10\\\\-25&5\\end{bmatrix}=5B$"
+    ],
+    "answer": "$X=\\begin{bmatrix}-2&- \\frac{10}{3}\\\\4&\\frac{14}{3}\\\\- \\frac{31}{3}&- \\frac{7}{3}\\end{bmatrix}$",
+    "explanation": [
+      "અજ્ઞાત શ્રેણિકને એક બાજુ રાખીને સામાન્ય સમીકરણની જેમ ઉકેલી શકાય છે. અદિશ 3થી ભાગ દરેક ઘટક પર લાગુ પડે છે. છેલ્લે મૂળ સમીકરણ ફરી રચીને ચકાસ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/55.webp",
+      "printedPage": 41,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-9",
+    "chapter": 3,
+    "section": "Example",
+    "number": "9",
+    "page": 41,
+    "prompt": "જો $X+Y=\\begin{bmatrix}5&2\\\\0&9\\end{bmatrix}$ અને $X-Y=\\begin{bmatrix}3&6\\\\0&-1\\end{bmatrix}$ હોય તો X,Y શોધો.",
+    "steps": [
+      "$2X=(X+Y)+(X-Y)=\\begin{bmatrix}5&2\\\\0&9\\end{bmatrix}+\\begin{bmatrix}3&6\\\\0&-1\\end{bmatrix}=\\begin{bmatrix}8&8\\\\0&8\\end{bmatrix}$",
+      "$X=\\frac12\\begin{bmatrix}8&8\\\\0&8\\end{bmatrix}=\\begin{bmatrix}4&4\\\\0&4\\end{bmatrix}$",
+      "$2Y=(X+Y)-(X-Y)=\\begin{bmatrix}5&2\\\\0&9\\end{bmatrix}-\\begin{bmatrix}3&6\\\\0&-1\\end{bmatrix}=\\begin{bmatrix}2&-4\\\\0&10\\end{bmatrix}$",
+      "$Y=\\frac12\\begin{bmatrix}2&-4\\\\0&10\\end{bmatrix}=\\begin{bmatrix}1&-2\\\\0&5\\end{bmatrix}$",
+      "$X+Y=\\begin{bmatrix}5&2\\\\0&9\\end{bmatrix}$, $X-Y=\\begin{bmatrix}3&6\\\\0&-1\\end{bmatrix}$"
+    ],
+    "answer": "$X=\\begin{bmatrix}4&4\\\\0&4\\end{bmatrix}$, $Y=\\begin{bmatrix}1&-2\\\\0&5\\end{bmatrix}$",
+    "explanation": [
+      "બંને સમીકરણ ઉમેરવાથી Y રદ થાય છે અને બાદ કરવાથી X રદ થાય છે. દરેક પરિણામને 2થી ભાગીને જવાબ મેળવીએ."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/55.webp",
+      "printedPage": 41,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-10",
+    "chapter": 3,
+    "section": "Example",
+    "number": "10",
+    "page": 42,
+    "prompt": "$2\\begin{bmatrix}x&5\\\\7&y-3\\end{bmatrix}+\\begin{bmatrix}3&-4\\\\1&2\\end{bmatrix}=\\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}$ માંથી x,y શોધો.",
+    "steps": [
+      "$\\begin{bmatrix}2x+3&6\\\\15&2y-4\\end{bmatrix}=\\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}$",
+      "$2x+3=7\\Rightarrow2x=4\\Rightarrow x=2$",
+      "$2y-4=14\\Rightarrow2y=18\\Rightarrow y=9$",
+      "$2\\begin{bmatrix}2&5\\\\7&6\\end{bmatrix}+\\begin{bmatrix}3&-4\\\\1&2\\end{bmatrix}=\\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}$"
+    ],
+    "answer": "$x=2,y=9$",
+    "explanation": [
+      "અદિશ 2 કૌંસની અંદર y−3 બંને પદને ગુણશે. એટલે (2,2) ઘટક 2y−6+2=2y−4 થાય છે. પછી વિકર્ણના અનુરૂપ ઘટકો સરખાવીએ."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/56.webp",
+      "printedPage": 42,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-11",
+    "chapter": 3,
+    "section": "Example",
+    "number": "11",
+    "page": 42,
+    "prompt": "રામકિશન અને ગુરુચરણસિંહનું સપ્ટેમ્બર તથા ઑક્ટોબરનું ચોખાનું વેચાણ (₹) અનુક્રમે $A=\\begin{bmatrix}10000&20000&30000\\\\50000&30000&10000\\end{bmatrix}$, $B=\\begin{bmatrix}5000&10000&6000\\\\20000&10000&10000\\end{bmatrix}$ છે. હાર ખેડૂતો અને સ્તંભ બાસમતી, પરમલ, નોરા દર્શાવે છે. (i) બે મહિનાનું સંયુક્ત વેચાણ (ii) વેચાણમાં ઘટાડો (iii) 2% નફાના દરે ઑક્ટોબરમાં દરેક ખેડૂતને દરેક પ્રકારનો નફો શોધો.",
+    "steps": [
+      "(i) $A+B=\\begin{bmatrix}10000&20000&30000\\\\50000&30000&10000\\end{bmatrix}+\\begin{bmatrix}5000&10000&6000\\\\20000&10000&10000\\end{bmatrix}=\\begin{bmatrix}15000&30000&36000\\\\70000&40000&20000\\end{bmatrix}$",
+      "(ii) $A-B=\\begin{bmatrix}10000&20000&30000\\\\50000&30000&10000\\end{bmatrix}-\\begin{bmatrix}5000&10000&6000\\\\20000&10000&10000\\end{bmatrix}=\\begin{bmatrix}5000&10000&24000\\\\30000&20000&0\\end{bmatrix}$",
+      "(iii) $2\\%=\\frac2{100}=\\frac1{50}$",
+      "$\\frac1{50}B=\\begin{bmatrix}100&200&120\\\\400&200&200\\end{bmatrix}$"
+    ],
+    "answer": "$A+B=\\begin{bmatrix}15000&30000&36000\\\\70000&40000&20000\\end{bmatrix}$; $A-B=\\begin{bmatrix}5000&10000&24000\\\\30000&20000&0\\end{bmatrix}$; નફો $\\begin{bmatrix}100&200&120\\\\400&200&200\\end{bmatrix}$ રૂપિયા.",
+    "explanation": [
+      "હાર અને સ્તંભના લેબલ દરેક પરિણામમાં યથાવત રહે છે. કુલ વેચાણ માટે ઉમેરો, ઘટાડા માટે સપ્ટેમ્બરમાંથી ઑક્ટોબર બાદ કરો, અને ઑક્ટોબરના વેચાણ Bના દરેક ઘટકના 2% લો."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/56.webp",
+      "printedPage": 42,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-12",
+    "chapter": 3,
+    "section": "Example",
+    "number": "12",
+    "page": 45,
+    "prompt": "જો $A=\\begin{bmatrix}6&9\\\\2&3\\end{bmatrix}$, $B=\\begin{bmatrix}2&6&0\\\\7&9&8\\end{bmatrix}$ હોય તો AB શોધો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}6&9\\\\2&3\\end{bmatrix}\\begin{bmatrix}2&6&0\\\\7&9&8\\end{bmatrix}$",
+      "$(AB)_{11}=(6)(2)+(9)(7)=75$",
+      "$(AB)_{12}=(6)(6)+(9)(9)=117$",
+      "$(AB)_{13}=(6)(0)+(9)(8)=72$",
+      "$(AB)_{21}=(2)(2)+(3)(7)=25$",
+      "$(AB)_{22}=(2)(6)+(3)(9)=39$",
+      "$(AB)_{23}=(2)(0)+(3)(8)=24$",
+      "$AB=\\begin{bmatrix}75&117&72\\\\25&39&24\\end{bmatrix}$"
+    ],
+    "answer": "$AB=\\begin{bmatrix}75&117&72\\\\25&39&24\\end{bmatrix}$",
+    "explanation": [
+      "દરેક ઘટક માટે પ્રથમ શ્રેણિકની હાર અને બીજા શ્રેણિકનો સ્તંભ ગુણીએ. મુખ્ય ઉકેલમાં દરેક ગુણનફળનો સરવાળો અલગથી આપેલો છે.",
+      "AB વ્યાખ્યાયિત છે, પણ BA માટે અંદરની કક્ષાઓ 3 અને 2 અલગ હોવાથી BA વ્યાખ્યાયિત નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/59.webp",
+      "printedPage": 45,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-13",
+    "chapter": 3,
+    "section": "Example",
+    "number": "13",
+    "page": 45,
+    "prompt": "જો $A=\\begin{bmatrix}1&-2&3\\\\-4&2&5\\end{bmatrix}$, $B=\\begin{bmatrix}2&3\\\\4&5\\\\2&1\\end{bmatrix}$ હોય તો AB,BA શોધીને AB≠BA દર્શાવો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}1&-2&3\\\\-4&2&5\\end{bmatrix}\\begin{bmatrix}2&3\\\\4&5\\\\2&1\\end{bmatrix}$",
+      "$(AB)_{11}=(1)(2)+(-2)(4)+(3)(2)=0$",
+      "$(AB)_{12}=(1)(3)+(-2)(5)+(3)(1)=-4$",
+      "$(AB)_{21}=(-4)(2)+(2)(4)+(5)(2)=10$",
+      "$(AB)_{22}=(-4)(3)+(2)(5)+(5)(1)=3$",
+      "$AB=\\begin{bmatrix}0&-4\\\\10&3\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}2&3\\\\4&5\\\\2&1\\end{bmatrix}\\begin{bmatrix}1&-2&3\\\\-4&2&5\\end{bmatrix}$",
+      "$(BA)_{11}=(2)(1)+(3)(-4)=-10$",
+      "$(BA)_{12}=(2)(-2)+(3)(2)=2$",
+      "$(BA)_{13}=(2)(3)+(3)(5)=21$",
+      "$(BA)_{21}=(4)(1)+(5)(-4)=-16$",
+      "$(BA)_{22}=(4)(-2)+(5)(2)=2$",
+      "$(BA)_{23}=(4)(3)+(5)(5)=37$",
+      "$(BA)_{31}=(2)(1)+(1)(-4)=-2$",
+      "$(BA)_{32}=(2)(-2)+(1)(2)=-2$",
+      "$(BA)_{33}=(2)(3)+(1)(5)=11$",
+      "$BA=\\begin{bmatrix}-10&2&21\\\\-16&2&37\\\\-2&-2&11\\end{bmatrix}$",
+      "$AB\\ne BA$"
+    ],
+    "answer": "$AB=\\begin{bmatrix}0&-4\\\\10&3\\end{bmatrix}$; $BA=\\begin{bmatrix}-10&2&21\\\\-16&2&37\\\\-2&-2&11\\end{bmatrix}$; $AB\\ne BA$",
+    "explanation": [
+      "દરેક ઘટક માટે પ્રથમ શ્રેણિકની હાર અને બીજા શ્રેણિકનો સ્તંભ ગુણીએ. મુખ્ય ઉકેલમાં દરેક ગુણનફળનો સરવાળો અલગથી આપેલો છે.",
+      "ABની કક્ષા 2×2 અને BAની 3×3 છે. જુદી કક્ષા હોવાથી તે સમાન હોઈ શકતા નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/59.webp",
+      "printedPage": 45,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-14",
+    "chapter": 3,
+    "section": "Example",
+    "number": "14",
+    "page": 45,
+    "prompt": "જો $A=\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$, $B=\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$ હોય તો AB,BA શોધીને AB≠BA દર્શાવો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}$",
+      "$(AB)_{11}=(1)(0)+(0)(1)=0$",
+      "$(AB)_{12}=(1)(1)+(0)(0)=1$",
+      "$(AB)_{21}=(0)(0)+(-1)(1)=-1$",
+      "$(AB)_{22}=(0)(1)+(-1)(0)=0$",
+      "$AB=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}0&1\\\\1&0\\end{bmatrix}\\begin{bmatrix}1&0\\\\0&-1\\end{bmatrix}$",
+      "$(BA)_{11}=(0)(1)+(1)(0)=0$",
+      "$(BA)_{12}=(0)(0)+(1)(-1)=-1$",
+      "$(BA)_{21}=(1)(1)+(0)(0)=1$",
+      "$(BA)_{22}=(1)(0)+(0)(-1)=0$",
+      "$BA=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$",
+      "$AB\\ne BA$"
+    ],
+    "answer": "$AB=\\begin{bmatrix}0&1\\\\-1&0\\end{bmatrix}$; $BA=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}$; $AB\\ne BA$",
+    "explanation": [
+      "દરેક ઘટક માટે પ્રથમ શ્રેણિકની હાર અને બીજા શ્રેણિકનો સ્તંભ ગુણીએ. મુખ્ય ઉકેલમાં દરેક ગુણનફળનો સરવાળો અલગથી આપેલો છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/59.webp",
+      "printedPage": 45,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-15",
+    "chapter": 3,
+    "section": "Example",
+    "number": "15",
+    "page": 46,
+    "prompt": "જો $A=\\begin{bmatrix}0&-1\\\\0&2\\end{bmatrix}$, $B=\\begin{bmatrix}3&5\\\\0&0\\end{bmatrix}$ હોય તો AB શોધો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}0&-1\\\\0&2\\end{bmatrix}\\begin{bmatrix}3&5\\\\0&0\\end{bmatrix}$",
+      "$(AB)_{11}=(0)(3)+(-1)(0)=0$",
+      "$(AB)_{12}=(0)(5)+(-1)(0)=0$",
+      "$(AB)_{21}=(0)(3)+(2)(0)=0$",
+      "$(AB)_{22}=(0)(5)+(2)(0)=0$",
+      "$AB=\\begin{bmatrix}0&0\\\\0&0\\end{bmatrix}$",
+      "$A\\ne O,\\ B\\ne O,\\ AB=O$"
+    ],
+    "answer": "$AB=\\begin{bmatrix}0&0\\\\0&0\\end{bmatrix}$",
+    "explanation": [
+      "દરેક ઘટક માટે પ્રથમ શ્રેણિકની હાર અને બીજા શ્રેણિકનો સ્તંભ ગુણીએ. મુખ્ય ઉકેલમાં દરેક ગુણનફળનો સરવાળો અલગથી આપેલો છે.",
+      "બે શૂન્યેતર શ્રેણિકોનો ગુણાકાર પણ શૂન્ય હોઈ શકે છે. વાસ્તવિક સંખ્યાઓ માટેનો શૂન્ય-ગુણાકાર નિયમ શ્રેણિકો માટે સામાન્ય રીતે લાગુ પડતો નથી."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/60.webp",
+      "printedPage": 46,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-16",
+    "chapter": 3,
+    "section": "Example",
+    "number": "16",
+    "page": 46,
+    "prompt": "જો $A=\\begin{bmatrix}1&1&-1\\\\2&0&3\\\\3&-1&2\\end{bmatrix}$, $B=\\begin{bmatrix}1&3\\\\0&2\\\\-1&4\\end{bmatrix}$, $C=\\begin{bmatrix}1&2&3&-4\\\\2&0&-2&1\\end{bmatrix}$ હોય તો A(BC),(AB)C શોધીને સમાનતા ચકાસો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}1&1&-1\\\\2&0&3\\\\3&-1&2\\end{bmatrix}\\begin{bmatrix}1&3\\\\0&2\\\\-1&4\\end{bmatrix}$",
+      "$(AB)_{11}=(1)(1)+(1)(0)+(-1)(-1)=2$",
+      "$(AB)_{12}=(1)(3)+(1)(2)+(-1)(4)=1$",
+      "$(AB)_{21}=(2)(1)+(0)(0)+(3)(-1)=-1$",
+      "$(AB)_{22}=(2)(3)+(0)(2)+(3)(4)=18$",
+      "$(AB)_{31}=(3)(1)+(-1)(0)+(2)(-1)=1$",
+      "$(AB)_{32}=(3)(3)+(-1)(2)+(2)(4)=15$",
+      "$AB=\\begin{bmatrix}2&1\\\\-1&18\\\\1&15\\end{bmatrix}$",
+      "$(AB)C=\\begin{bmatrix}2&1\\\\-1&18\\\\1&15\\end{bmatrix}\\begin{bmatrix}1&2&3&-4\\\\2&0&-2&1\\end{bmatrix}$",
+      "$((AB)C)_{11}=(2)(1)+(1)(2)=4$",
+      "$((AB)C)_{12}=(2)(2)+(1)(0)=4$",
+      "$((AB)C)_{13}=(2)(3)+(1)(-2)=4$",
+      "$((AB)C)_{14}=(2)(-4)+(1)(1)=-7$",
+      "$((AB)C)_{21}=(-1)(1)+(18)(2)=35$",
+      "$((AB)C)_{22}=(-1)(2)+(18)(0)=-2$",
+      "$((AB)C)_{23}=(-1)(3)+(18)(-2)=-39$",
+      "$((AB)C)_{24}=(-1)(-4)+(18)(1)=22$",
+      "$((AB)C)_{31}=(1)(1)+(15)(2)=31$",
+      "$((AB)C)_{32}=(1)(2)+(15)(0)=2$",
+      "$((AB)C)_{33}=(1)(3)+(15)(-2)=-27$",
+      "$((AB)C)_{34}=(1)(-4)+(15)(1)=11$",
+      "$(AB)C=\\begin{bmatrix}4&4&4&-7\\\\35&-2&-39&22\\\\31&2&-27&11\\end{bmatrix}$",
+      "$BC=\\begin{bmatrix}1&3\\\\0&2\\\\-1&4\\end{bmatrix}\\begin{bmatrix}1&2&3&-4\\\\2&0&-2&1\\end{bmatrix}$",
+      "$(BC)_{11}=(1)(1)+(3)(2)=7$",
+      "$(BC)_{12}=(1)(2)+(3)(0)=2$",
+      "$(BC)_{13}=(1)(3)+(3)(-2)=-3$",
+      "$(BC)_{14}=(1)(-4)+(3)(1)=-1$",
+      "$(BC)_{21}=(0)(1)+(2)(2)=4$",
+      "$(BC)_{22}=(0)(2)+(2)(0)=0$",
+      "$(BC)_{23}=(0)(3)+(2)(-2)=-4$",
+      "$(BC)_{24}=(0)(-4)+(2)(1)=2$",
+      "$(BC)_{31}=(-1)(1)+(4)(2)=7$",
+      "$(BC)_{32}=(-1)(2)+(4)(0)=-2$",
+      "$(BC)_{33}=(-1)(3)+(4)(-2)=-11$",
+      "$(BC)_{34}=(-1)(-4)+(4)(1)=8$",
+      "$BC=\\begin{bmatrix}7&2&-3&-1\\\\4&0&-4&2\\\\7&-2&-11&8\\end{bmatrix}$",
+      "$A(BC)=\\begin{bmatrix}1&1&-1\\\\2&0&3\\\\3&-1&2\\end{bmatrix}\\begin{bmatrix}7&2&-3&-1\\\\4&0&-4&2\\\\7&-2&-11&8\\end{bmatrix}$",
+      "$(A(BC))_{11}=(1)(7)+(1)(4)+(-1)(7)=4$",
+      "$(A(BC))_{12}=(1)(2)+(1)(0)+(-1)(-2)=4$",
+      "$(A(BC))_{13}=(1)(-3)+(1)(-4)+(-1)(-11)=4$",
+      "$(A(BC))_{14}=(1)(-1)+(1)(2)+(-1)(8)=-7$",
+      "$(A(BC))_{21}=(2)(7)+(0)(4)+(3)(7)=35$",
+      "$(A(BC))_{22}=(2)(2)+(0)(0)+(3)(-2)=-2$",
+      "$(A(BC))_{23}=(2)(-3)+(0)(-4)+(3)(-11)=-39$",
+      "$(A(BC))_{24}=(2)(-1)+(0)(2)+(3)(8)=22$",
+      "$(A(BC))_{31}=(3)(7)+(-1)(4)+(2)(7)=31$",
+      "$(A(BC))_{32}=(3)(2)+(-1)(0)+(2)(-2)=2$",
+      "$(A(BC))_{33}=(3)(-3)+(-1)(-4)+(2)(-11)=-27$",
+      "$(A(BC))_{34}=(3)(-1)+(-1)(2)+(2)(8)=11$",
+      "$A(BC)=\\begin{bmatrix}4&4&4&-7\\\\35&-2&-39&22\\\\31&2&-27&11\\end{bmatrix}$",
+      "$(AB)C=A(BC)$"
+    ],
+    "answer": "$(AB)C=A(BC)=\\begin{bmatrix}4&4&4&-7\\\\35&-2&-39&22\\\\31&2&-27&11\\end{bmatrix}$",
+    "explanation": [
+      "જુથનનો નિયમ ગુણાકારનો ક્રમ બદલતો નથી; માત્ર પહેલાં કયા બે શ્રેણિક ગુણવા તે બદલાય છે. બંને રીતે મધ્યવર્તી ગુણાકાર અને દરેક અંતિમ ઘટક ગણ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/60.webp",
+      "printedPage": 46,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-17",
+    "chapter": 3,
+    "section": "Example",
+    "number": "17",
+    "page": 47,
+    "prompt": "જો $A=\\begin{bmatrix}0&6&7\\\\-6&0&8\\\\7&-8&0\\end{bmatrix}$, $B=\\begin{bmatrix}0&1&1\\\\1&0&2\\\\1&2&0\\end{bmatrix}$, $C=\\begin{bmatrix}2\\\\-2\\\\3\\end{bmatrix}$ હોય તો AC,BC,(A+B)C શોધો અને $(A+B)C=AC+BC$ ચકાસો.",
+    "steps": [
+      "$AC=\\begin{bmatrix}0&6&7\\\\-6&0&8\\\\7&-8&0\\end{bmatrix}\\begin{bmatrix}2\\\\-2\\\\3\\end{bmatrix}$",
+      "$(AC)_{11}=(0)(2)+(6)(-2)+(7)(3)=9$",
+      "$(AC)_{21}=(-6)(2)+(0)(-2)+(8)(3)=12$",
+      "$(AC)_{31}=(7)(2)+(-8)(-2)+(0)(3)=30$",
+      "$AC=\\begin{bmatrix}9\\\\12\\\\30\\end{bmatrix}$",
+      "$BC=\\begin{bmatrix}0&1&1\\\\1&0&2\\\\1&2&0\\end{bmatrix}\\begin{bmatrix}2\\\\-2\\\\3\\end{bmatrix}$",
+      "$(BC)_{11}=(0)(2)+(1)(-2)+(1)(3)=1$",
+      "$(BC)_{21}=(1)(2)+(0)(-2)+(2)(3)=8$",
+      "$(BC)_{31}=(1)(2)+(2)(-2)+(0)(3)=-2$",
+      "$BC=\\begin{bmatrix}1\\\\8\\\\-2\\end{bmatrix}$",
+      "$A+B=\\begin{bmatrix}0&7&8\\\\-5&0&10\\\\8&-6&0\\end{bmatrix}$",
+      "$(A+B)C=\\begin{bmatrix}0&7&8\\\\-5&0&10\\\\8&-6&0\\end{bmatrix}\\begin{bmatrix}2\\\\-2\\\\3\\end{bmatrix}$",
+      "$((A+B)C)_{11}=(0)(2)+(7)(-2)+(8)(3)=10$",
+      "$((A+B)C)_{21}=(-5)(2)+(0)(-2)+(10)(3)=20$",
+      "$((A+B)C)_{31}=(8)(2)+(-6)(-2)+(0)(3)=28$",
+      "$(A+B)C=\\begin{bmatrix}10\\\\20\\\\28\\end{bmatrix}$",
+      "$AC+BC=\\begin{bmatrix}9\\\\12\\\\30\\end{bmatrix}+\\begin{bmatrix}1\\\\8\\\\-2\\end{bmatrix}=\\begin{bmatrix}10\\\\20\\\\28\\end{bmatrix}$",
+      "$(A+B)C=AC+BC$"
+    ],
+    "answer": "$AC=\\begin{bmatrix}9\\\\12\\\\30\\end{bmatrix}$; $BC=\\begin{bmatrix}1\\\\8\\\\-2\\end{bmatrix}$; $(A+B)C=AC+BC=\\begin{bmatrix}10\\\\20\\\\28\\end{bmatrix}$",
+    "explanation": [
+      "પહેલા AC અને BC અલગથી કરીએ. પછી A+B બનાવી તેને Cથી ગુણીએ. બંને બાજુ સમાન 3×1 સ્તંભ મળતાં વિભાજનનો નિયમ ચકાસાય છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/61.webp",
+      "printedPage": 47,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-18",
+    "chapter": 3,
+    "section": "Example",
+    "number": "18",
+    "page": 47,
+    "prompt": "જો $A=\\begin{bmatrix}1&2&3\\\\3&-2&1\\\\4&2&1\\end{bmatrix}$ હોય તો $A^3-23A-40I=O$ સાબિત કરો.",
+    "steps": [
+      "$A^2=\\begin{bmatrix}1&2&3\\\\3&-2&1\\\\4&2&1\\end{bmatrix}\\begin{bmatrix}1&2&3\\\\3&-2&1\\\\4&2&1\\end{bmatrix}$",
+      "$(A^2)_{11}=(1)(1)+(2)(3)+(3)(4)=19$",
+      "$(A^2)_{12}=(1)(2)+(2)(-2)+(3)(2)=4$",
+      "$(A^2)_{13}=(1)(3)+(2)(1)+(3)(1)=8$",
+      "$(A^2)_{21}=(3)(1)+(-2)(3)+(1)(4)=1$",
+      "$(A^2)_{22}=(3)(2)+(-2)(-2)+(1)(2)=12$",
+      "$(A^2)_{23}=(3)(3)+(-2)(1)+(1)(1)=8$",
+      "$(A^2)_{31}=(4)(1)+(2)(3)+(1)(4)=14$",
+      "$(A^2)_{32}=(4)(2)+(2)(-2)+(1)(2)=6$",
+      "$(A^2)_{33}=(4)(3)+(2)(1)+(1)(1)=15$",
+      "$A^2=\\begin{bmatrix}19&4&8\\\\1&12&8\\\\14&6&15\\end{bmatrix}$",
+      "$A^3=\\begin{bmatrix}1&2&3\\\\3&-2&1\\\\4&2&1\\end{bmatrix}\\begin{bmatrix}19&4&8\\\\1&12&8\\\\14&6&15\\end{bmatrix}$",
+      "$(A^3)_{11}=(1)(19)+(2)(1)+(3)(14)=63$",
+      "$(A^3)_{12}=(1)(4)+(2)(12)+(3)(6)=46$",
+      "$(A^3)_{13}=(1)(8)+(2)(8)+(3)(15)=69$",
+      "$(A^3)_{21}=(3)(19)+(-2)(1)+(1)(14)=69$",
+      "$(A^3)_{22}=(3)(4)+(-2)(12)+(1)(6)=-6$",
+      "$(A^3)_{23}=(3)(8)+(-2)(8)+(1)(15)=23$",
+      "$(A^3)_{31}=(4)(19)+(2)(1)+(1)(14)=92$",
+      "$(A^3)_{32}=(4)(4)+(2)(12)+(1)(6)=46$",
+      "$(A^3)_{33}=(4)(8)+(2)(8)+(1)(15)=63$",
+      "$A^3=\\begin{bmatrix}63&46&69\\\\69&-6&23\\\\92&46&63\\end{bmatrix}$",
+      "$23A=\\begin{bmatrix}23&46&69\\\\69&-46&23\\\\92&46&23\\end{bmatrix}$",
+      "$40I=\\begin{bmatrix}40&0&0\\\\0&40&0\\\\0&0&40\\end{bmatrix}$",
+      "$A^3-23A-40I=\\begin{bmatrix}63&46&69\\\\69&-6&23\\\\92&46&63\\end{bmatrix}-\\begin{bmatrix}23&46&69\\\\69&-46&23\\\\92&46&23\\end{bmatrix}-\\begin{bmatrix}40&0&0\\\\0&40&0\\\\0&0&40\\end{bmatrix}$",
+      "$63-(23)-40=0$",
+      "$46-(46)-0=0$",
+      "$69-(69)-0=0$",
+      "$69-(69)-0=0$",
+      "$-6-(-46)-40=0$",
+      "$23-(23)-0=0$",
+      "$92-(92)-0=0$",
+      "$46-(46)-0=0$",
+      "$63-(23)-40=0$",
+      "$A^3-23A-40I=\\begin{bmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{bmatrix}=O$"
+    ],
+    "answer": "$A^3-23A-40I=O$",
+    "explanation": [
+      "A² અને A³ માટે સંપૂર્ણ શ્રેણિક ગુણાકાર કરવો. 40Iમાં માત્ર વિકર્ણના ઘટક 40 છે. છેલ્લે નવેય સ્થાન પર શૂન્ય મળે છે તે દર્શાવ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/61.webp",
+      "printedPage": 47,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-19",
+    "chapter": 3,
+    "section": "Example",
+    "number": "19",
+    "page": 48,
+    "prompt": "ચૂંટણીપ્રચારમાં સંપર્કદીઠ ટેલિફોનનો ખર્ચ 40 પૈસા, પ્રત્યક્ષ મુલાકાતનો 100 પૈસા અને પત્રનો 50 પૈસા છે. શહેર Xમાં અનુક્રમે 1000,500,5000 અને Yમાં 3000,1000,10000 સંપર્કો થયા. દરેક શહેરનો કુલ ખર્ચ શોધો.",
+    "steps": [
+      "$A=\\begin{bmatrix}40\\\\100\\\\50\\end{bmatrix}$ પૈસા; $B=\\begin{bmatrix}1000&500&5000\\\\3000&1000&10000\\end{bmatrix}$",
+      "$BA=\\begin{bmatrix}1000&500&5000\\\\3000&1000&10000\\end{bmatrix}\\begin{bmatrix}40\\\\100\\\\50\\end{bmatrix}$",
+      "$(BA)_{11}=(1000)(40)+(500)(100)+(5000)(50)=340000$",
+      "$(BA)_{21}=(3000)(40)+(1000)(100)+(10000)(50)=720000$",
+      "$BA=\\begin{bmatrix}340000\\\\720000\\end{bmatrix}$",
+      "$\\frac1{100}BA=\\begin{bmatrix}3400\\\\7200\\end{bmatrix}$ રૂપિયા."
+    ],
+    "answer": "શહેર X: ₹3400; શહેર Y: ₹7200.",
+    "explanation": [
+      "સંપર્કોની સંખ્યા હારમાં અને ખર્ચનો દર સ્તંભમાં રાખવાથી BA દરેક શહેરનો ખર્ચ પૈસામાં આપે છે. રૂપિયા મેળવવા 100થી ભાગવું જરૂરી છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/62.webp",
+      "printedPage": 48,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-20",
+    "chapter": 3,
+    "section": "Example",
+    "number": "20",
+    "page": 51,
+    "prompt": "જો $A=\\begin{bmatrix}3&\\sqrt{3}&2\\\\4&2&0\\end{bmatrix}$, $B=\\begin{bmatrix}2&-1&2\\\\1&2&4\\end{bmatrix}$ હોય તો (i) $(A^T)^T=A$ (ii) $(A+B)^T=A^T+B^T$ (iii) કોઈ અચળ k માટે $(kB)^T=kB^T$ ચકાસો.",
+    "steps": [
+      "(i) $A^T=\\begin{bmatrix}3&4\\\\\\sqrt{3}&2\\\\2&0\\end{bmatrix}$",
+      "$(A^T)^T=\\begin{bmatrix}3&\\sqrt{3}&2\\\\4&2&0\\end{bmatrix}=A$",
+      "(ii) $A+B=\\begin{bmatrix}5&-1 + \\sqrt{3}&4\\\\5&4&4\\end{bmatrix}$",
+      "$(A+B)^T=\\begin{bmatrix}5&5\\\\-1 + \\sqrt{3}&4\\\\4&4\\end{bmatrix}$",
+      "$A^T+B^T=\\begin{bmatrix}3&4\\\\\\sqrt{3}&2\\\\2&0\\end{bmatrix}+\\begin{bmatrix}2&1\\\\-1&2\\\\2&4\\end{bmatrix}=\\begin{bmatrix}5&5\\\\-1 + \\sqrt{3}&4\\\\4&4\\end{bmatrix}$",
+      "$(A+B)^T=A^T+B^T$",
+      "(iii) $kB=\\begin{bmatrix}2 k&- k&2 k\\\\k&2 k&4 k\\end{bmatrix}$",
+      "$(kB)^T=\\begin{bmatrix}2 k&k\\\\- k&2 k\\\\2 k&4 k\\end{bmatrix}$",
+      "$kB^T=k\\begin{bmatrix}2&1\\\\-1&2\\\\2&4\\end{bmatrix}=\\begin{bmatrix}2 k&k\\\\- k&2 k\\\\2 k&4 k\\end{bmatrix}$",
+      "$(kB)^T=kB^T$"
+    ],
+    "answer": "$(A^T)^T=A$; $(A+B)^T=A^T+B^T$; $(kB)^T=kB^T$",
+    "explanation": [
+      "પરિવર્તમાં હાર–સ્તંભ બદલાય છે. બે વાર બદલવાથી મૂળ શ્રેણિક મળે છે. સરવાળા અને અદિશ ગુણાકારના ગુણધર્મ માટે બંને બાજુ સ્વતંત્ર રીતે ગણીને સમાન પરિણામ બતાવ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/65.webp",
+      "printedPage": 51,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-21",
+    "chapter": 3,
+    "section": "Example",
+    "number": "21",
+    "page": 52,
+    "prompt": "જો $A=\\begin{bmatrix}-2\\\\4\\\\5\\end{bmatrix}$, $B=\\begin{bmatrix}1&3&-6\\end{bmatrix}$ હોય તો $(AB)^T=B^TA^T$ ચકાસો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}-2\\\\4\\\\5\\end{bmatrix}\\begin{bmatrix}1&3&-6\\end{bmatrix}$",
+      "$(AB)_{11}=(-2)(1)=-2$",
+      "$(AB)_{12}=(-2)(3)=-6$",
+      "$(AB)_{13}=(-2)(-6)=12$",
+      "$(AB)_{21}=(4)(1)=4$",
+      "$(AB)_{22}=(4)(3)=12$",
+      "$(AB)_{23}=(4)(-6)=-24$",
+      "$(AB)_{31}=(5)(1)=5$",
+      "$(AB)_{32}=(5)(3)=15$",
+      "$(AB)_{33}=(5)(-6)=-30$",
+      "$AB=\\begin{bmatrix}-2&-6&12\\\\4&12&-24\\\\5&15&-30\\end{bmatrix}$",
+      "$(AB)^T=\\begin{bmatrix}-2&4&5\\\\-6&12&15\\\\12&-24&-30\\end{bmatrix}$",
+      "$B^T=\\begin{bmatrix}1\\\\3\\\\-6\\end{bmatrix}$, $A^T=\\begin{bmatrix}-2&4&5\\end{bmatrix}$",
+      "$B^TA^T=\\begin{bmatrix}1\\\\3\\\\-6\\end{bmatrix}\\begin{bmatrix}-2&4&5\\end{bmatrix}$",
+      "$(B^TA^T)_{11}=(1)(-2)=-2$",
+      "$(B^TA^T)_{12}=(1)(4)=4$",
+      "$(B^TA^T)_{13}=(1)(5)=5$",
+      "$(B^TA^T)_{21}=(3)(-2)=-6$",
+      "$(B^TA^T)_{22}=(3)(4)=12$",
+      "$(B^TA^T)_{23}=(3)(5)=15$",
+      "$(B^TA^T)_{31}=(-6)(-2)=12$",
+      "$(B^TA^T)_{32}=(-6)(4)=-24$",
+      "$(B^TA^T)_{33}=(-6)(5)=-30$",
+      "$B^TA^T=\\begin{bmatrix}-2&4&5\\\\-6&12&15\\\\12&-24&-30\\end{bmatrix}$",
+      "$(AB)^T=B^TA^T$"
+    ],
+    "answer": "$(AB)^T=B^TA^T=\\begin{bmatrix}-2&4&5\\\\-6&12&15\\\\12&-24&-30\\end{bmatrix}$",
+    "explanation": [
+      "AB કરીને તેનો પરિવર્ત મેળવીએ અને ઊલટા ક્રમમાં BᵀAᵀ અલગથી ગણીએ. બંને નવ-ઘટકવાળા પરિણામ સમાન છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/66.webp",
+      "printedPage": 52,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-22",
+    "chapter": 3,
+    "section": "Example",
+    "number": "22",
+    "page": 53,
+    "prompt": "$B=\\begin{bmatrix}2&-2&-4\\\\-1&3&4\\\\1&-2&-3\\end{bmatrix}$ને એક સંમિત અને એક વિસંમિત શ્રેણિકના સરવાળા તરીકે દર્શાવો.",
+    "steps": [
+      "$B^T=\\begin{bmatrix}2&-1&1\\\\-2&3&-2\\\\-4&4&-3\\end{bmatrix}$",
+      "$P=\\frac12(B+B^T)=\\frac12\\begin{bmatrix}4&-3&-3\\\\-3&6&2\\\\-3&2&-6\\end{bmatrix}=\\begin{bmatrix}2&- \\frac{3}{2}&- \\frac{3}{2}\\\\- \\frac{3}{2}&3&1\\\\- \\frac{3}{2}&1&-3\\end{bmatrix}$",
+      "$Q=\\frac12(B-B^T)=\\frac12\\begin{bmatrix}0&-1&-5\\\\1&0&6\\\\5&-6&0\\end{bmatrix}=\\begin{bmatrix}0&- \\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&0&3\\\\\\frac{5}{2}&-3&0\\end{bmatrix}$",
+      "$P^T=\\begin{bmatrix}2&- \\frac{3}{2}&- \\frac{3}{2}\\\\- \\frac{3}{2}&3&1\\\\- \\frac{3}{2}&1&-3\\end{bmatrix}=P$ ⇒ સંમિત.",
+      "$Q^T=\\begin{bmatrix}0&\\frac{1}{2}&\\frac{5}{2}\\\\- \\frac{1}{2}&0&-3\\\\- \\frac{5}{2}&3&0\\end{bmatrix}=-Q$ ⇒ વિસંમિત.",
+      "$P+Q=\\begin{bmatrix}2&- \\frac{3}{2}&- \\frac{3}{2}\\\\- \\frac{3}{2}&3&1\\\\- \\frac{3}{2}&1&-3\\end{bmatrix}+\\begin{bmatrix}0&- \\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&0&3\\\\\\frac{5}{2}&-3&0\\end{bmatrix}=\\begin{bmatrix}2&-2&-4\\\\-1&3&4\\\\1&-2&-3\\end{bmatrix}=B$"
+    ],
+    "answer": "$B=\\begin{bmatrix}2&- \\frac{3}{2}&- \\frac{3}{2}\\\\- \\frac{3}{2}&3&1\\\\- \\frac{3}{2}&1&-3\\end{bmatrix}+\\begin{bmatrix}0&- \\frac{1}{2}&- \\frac{5}{2}\\\\\\frac{1}{2}&0&3\\\\\\frac{5}{2}&-3&0\\end{bmatrix}$",
+    "explanation": [
+      "અડધો સરવાળો સંમિત ભાગ અને અડધો તફાવત વિસંમિત ભાગ આપે છે. બંને પ્રકાર અને મૂળ B પાછો મળે છે તે ચકાસ્યા છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/67.webp",
+      "printedPage": 53,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-23",
+    "chapter": 3,
+    "section": "Example",
+    "number": "23",
+    "page": 57,
+    "prompt": "જો $A=\\begin{bmatrix}\\cos{\\left(\\theta \\right)}&\\sin{\\left(\\theta \\right)}\\\\- \\sin{\\left(\\theta \\right)}&\\cos{\\left(\\theta \\right)}\\end{bmatrix}$ હોય તો દરેક $n\\in\\mathbb N$ માટે $A^n=\\begin{bmatrix}\\cos n\\theta&\\sin n\\theta\\\\-\\sin n\\theta&\\cos n\\theta\\end{bmatrix}$ સાબિત કરો.",
+    "steps": [
+      "ગાણિતિક અનુમાન:",
+      "(i) $n=1:\\quad A^1=\\begin{bmatrix}\\cos{\\left(\\theta \\right)}&\\sin{\\left(\\theta \\right)}\\\\- \\sin{\\left(\\theta \\right)}&\\cos{\\left(\\theta \\right)}\\end{bmatrix}$ ⇒ સત્ય.",
+      "(ii) ધારો કે $A^k=\\begin{bmatrix}\\cos k\\theta&\\sin k\\theta\\\\-\\sin k\\theta&\\cos k\\theta\\end{bmatrix}$.",
+      "(iii) $A^{k+1}=A^kA$",
+      "$=\\begin{bmatrix}\\cos k\\theta&\\sin k\\theta\\\\-\\sin k\\theta&\\cos k\\theta\\end{bmatrix}\\begin{bmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\cos k\\theta\\cos\\theta-\\sin k\\theta\\sin\\theta&\\cos k\\theta\\sin\\theta+\\sin k\\theta\\cos\\theta\\\\-\\sin k\\theta\\cos\\theta-\\cos k\\theta\\sin\\theta&-\\sin k\\theta\\sin\\theta+\\cos k\\theta\\cos\\theta\\end{bmatrix}$",
+      "$=\\begin{bmatrix}\\cos(k+1)\\theta&\\sin(k+1)\\theta\\\\-\\sin(k+1)\\theta&\\cos(k+1)\\theta\\end{bmatrix}$",
+      "આથી $P(1)$ સત્ય અને $P(k)\\Rightarrow P(k+1)$. તેથી સર્વ $n\\in\\mathbb N$ માટે પરિણામ સત્ય."
+    ],
+    "answer": "$A^n=\\begin{bmatrix}\\cos n\\theta&\\sin n\\theta\\\\-\\sin n\\theta&\\cos n\\theta\\end{bmatrix}$",
+    "explanation": [
+      "ગાણિતિક અનુમાનમાં આધાર n=1, n=k માટે ધારણા, અને n=k+1 માટે નિષ્કર્ષ—ત્રણેય ભાગ જરૂરી છે.",
+      "ગુણાકારના ચાર ઘટકો ત્રિકોણમિતિનાં યોગનાં સૂત્રોથી સાદા થાય છે. સ્વતંત્ર રીતે કોઈપણ બે કોણ માટેનો ગુણાકાર પણ ચકાસ્યો છે; તેને v=kθ માટે લગાડી અનુમાનનું પગલું મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/71.webp",
+      "printedPage": 57,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-24",
+    "chapter": 3,
+    "section": "Example",
+    "number": "24",
+    "page": 57,
+    "prompt": "સમાન કક્ષાના સંમિત શ્રેણિકો A,B માટે AB સંમિત હોય તો અને તો જ AB=BA સાબિત કરો.",
+    "steps": [
+      "$A^T=A,\\quad B^T=B$",
+      "$(AB)^T=B^TA^T=BA$",
+      "(⇒) AB સંમિત હોય તો $(AB)^T=AB$.",
+      "$BA=(AB)^T=AB\\Rightarrow AB=BA$",
+      "(⇐) $AB=BA$ ધારો.",
+      "$(AB)^T=BA=AB$ ⇒ AB સંમિત."
+    ],
+    "answer": "$AB$ સંમિત $\\Leftrightarrow AB=BA$",
+    "explanation": [
+      "જો અને તો જના પુરાવામાં બંને દિશા લખવી જરૂરી છે. સામાન્ય નિયમ (AB)ᵀ=BAમાંથી એક દિશામાં સંમિતતા વાપરી ક્રમવિનિમય મળે છે અને બીજી દિશામાં ક્રમવિનિમયથી સંમિતતા મળે છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/71.webp",
+      "printedPage": 57,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  },
+  {
+    "id": "tb3-Example-25",
+    "chapter": 3,
+    "section": "Example",
+    "number": "25",
+    "page": 58,
+    "prompt": "જો $A=\\begin{bmatrix}2&-1\\\\3&4\\end{bmatrix}$, $B=\\begin{bmatrix}5&2\\\\7&4\\end{bmatrix}$, $C=\\begin{bmatrix}2&5\\\\3&8\\end{bmatrix}$ હોય તો $CD-AB=O$ થાય એવો D શોધો.",
+    "steps": [
+      "$AB=\\begin{bmatrix}2&-1\\\\3&4\\end{bmatrix}\\begin{bmatrix}5&2\\\\7&4\\end{bmatrix}$",
+      "$(AB)_{11}=(2)(5)+(-1)(7)=3$",
+      "$(AB)_{12}=(2)(2)+(-1)(4)=0$",
+      "$(AB)_{21}=(3)(5)+(4)(7)=43$",
+      "$(AB)_{22}=(3)(2)+(4)(4)=22$",
+      "$AB=\\begin{bmatrix}3&0\\\\43&22\\end{bmatrix}$",
+      "$CD=AB=\\begin{bmatrix}3&0\\\\43&22\\end{bmatrix}$",
+      "$D=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}$",
+      "$CD=\\begin{bmatrix}2a+5c&2b+5d\\\\3a+8c&3b+8d\\end{bmatrix}$",
+      "$2a+5c=3,\\quad3a+8c=43$",
+      "$2(3a+8c)-3(2a+5c)=86-9\\Rightarrow c=77$",
+      "$2a+5(77)=3\\Rightarrow2a=-382\\Rightarrow a=-191$",
+      "$2b+5d=0,\\quad3b+8d=22$",
+      "$2(3b+8d)-3(2b+5d)=44\\Rightarrow d=44$",
+      "$2b+5(44)=0\\Rightarrow b=-110$",
+      "$D=\\begin{bmatrix}-191&-110\\\\77&44\\end{bmatrix}$",
+      "$CD=\\begin{bmatrix}2&5\\\\3&8\\end{bmatrix}\\begin{bmatrix}-191&-110\\\\77&44\\end{bmatrix}=\\begin{bmatrix}3&0\\\\43&22\\end{bmatrix}=AB$",
+      "$CD-AB=O$"
+    ],
+    "answer": "$D=\\begin{bmatrix}-191&-110\\\\77&44\\end{bmatrix}$",
+    "explanation": [
+      "પહેલા AB ગણીએ અને અજ્ઞાત Dના ચાર ઘટક a,b,c,d લઈ CD=ABમાં સરખાવીએ. બે રેખીય સમીકરણની બે જોડ મળે છે.",
+      "પ્રથમ જોડમાં 2×બીજું − 3×પહેલું કરતાં c મળે છે; બીજી જોડમાં એ જ રીતથી d મળે છે. પછી a,b શોધીને CD−ABના ચારેય ઘટક શૂન્ય થાય છે તે ચકાસ્યું છે."
+    ],
+    "kind": "Textbook",
+    "graph": null,
+    "gu": "મૂળ ગુજરાતી પાઠ્યપુસ્તકનું ચકાસેલું ઉદાહરણ.",
+    "verification": {
+      "source": "book/72.webp",
+      "printedPage": 58,
+      "checkedOn": "2026-11-03",
+      "passes": [
+        "Visually matched original uploaded textbook example, matrices, units and all subparts.",
+        "Exact independent component calculations, original-equation substitutions, transpose tests or full two-direction/induction proof; examples3.py."
+      ]
+    }
+  }
+]
