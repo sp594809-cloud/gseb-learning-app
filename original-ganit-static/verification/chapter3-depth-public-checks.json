@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "applicationCommit": "c34e513909d44d0634351665a33c08de6033bd75",
+  "renderDeployment": "dep-dbm672hph17c73dpqge0",
+  "publicUrl": "https://ganit-original-preview.onrender.com/#chapter/3",
+  "scope": "Detailed working for all existing 81 Chapter 3 entries; no invented or duplicate questions",
+  "steps": {
+    "before": 881,
+    "after": 2202,
+    "bySection": {
+      "Example": 683,
+      "3.1": 189,
+      "3.2": 730,
+      "3.3": 403,
+      "3.4": 9,
+      "Misc": 188
+    }
+  },
+  "verificationBeforeUpload": {
+    "exactSymbolicAndEntrywiseChecks": 360,
+    "independentNumericEqualities": 542,
+    "method": "SymPy exact matrix/identity checks plus separate Fraction/AST numeric evaluator",
+    "sourcePreservation": "Every question, answer, explanation, source and other-chapter entry compared against verified baseline; unchanged",
+    "regressionsPassed": 7,
+    "chapter3Inventory": 81,
+    "mathematicalExpressions": 2524,
+    "matrixRenderings": 807,
+    "exercise31IndependentChecks": "passed"
+  },
+  "publicChecks": {
+    "routes": 81,
+    "visibleSteps": 2202,
+    "finalAnswersVisible": 81,
+    "explanationToggles": 81,
+    "invalidMatrices": 0,
+    "mobile": {
+      "viewport": 390,
+      "documentWidth": 375,
+      "samples": [
+        "tb3-31-6",
+        "tb3-32-3",
+        "tb3-33-10",
+        "tb3-Example-16",
+        "tb3-Example-23"
+      ],
+      "method": "Same-origin phone-width iframe, DOM geometry and screenshot inspection"
+    }
+  },
+  "limits": [
+    "Physical-device testing and independent teacher review not performed"
+  ]
+}
