@@ -97,3 +97,19 @@ if(!process.argv.includes('--original')) {
  let next=0;content.solutions=content.solutions.map(q=>q.chapter===3?sorted[next++]:q);
  await writeFile(contentPath,JSON.stringify(content));
 }
+
+// Smaller, reviewed calculation steps; verified questions, answers and explanations stay intact.
+if(!process.argv.includes('--original')) {
+ const contentPath=path.join(root,'dist/content.json');
+ const content=JSON.parse(await readFile(contentPath,'utf8'));
+ const expanded=JSON.parse(await readFile(path.join(root,'chapter3-expanded-steps.json'),'utf8'));
+ const seen=new Set();
+ for(const item of expanded){
+  const q=content.solutions.find(q=>q.id===item.id);
+  if(!q||q.chapter!==3||seen.has(item.id)||!item.steps?.length||item.steps.some(s=>typeof s!=='string'||!s.trim()))throw Error('Invalid Chapter 3 expansion '+item.id);
+  if(item.steps.length<=q.steps.length)throw Error('Expansion must add meaningful intermediate working: '+item.id);
+  seen.add(item.id);q.steps=item.steps;
+ }
+ await writeFile(contentPath,JSON.stringify(content));
+ console.log('Applied detailed working to '+seen.size+' Chapter 3 solutions.');
+}
