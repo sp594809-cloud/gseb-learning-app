@@ -13,3 +13,10 @@
 - Remaining: other chapters' missing/unverified textbook content. Independent teacher review and physical-device testing are not claimed complete. No Chapter 3 numbered entry remains missing in the uploaded edition.
 - Exact next action: choose the next unfinished chapter from CONTENT_STATUS.json, verify its source inventory and calculations, then deploy a small complete exercise.
 - Build: npm --prefix original-ganit-static run build. Publish: original-ganit-static/dist. No running server. Original source/ assets immutable; existing production services unchanged.
+
+## 5 November: detailed-working milestone 1
+
+- Application commit: ae8dbb4890413af272f5eba7a61cc0a34a11b0a0.
+- Exercise 3.1 expanded from 76 to 189 steps; all ten public routes and visible answers checked.
+- Build, seven regressions, Chapter 3 math rendering and independent Exercise 3.1 answer checks passed before upload.
+- Next: expand and independently verify the remaining Chapter 3 calculations and proofs. Existing 81 questions and answers remain intact.
