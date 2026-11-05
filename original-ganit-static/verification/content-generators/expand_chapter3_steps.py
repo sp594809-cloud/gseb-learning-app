@@ -51,7 +51,7 @@ setq('31-8',['ચોરસ શ્રેણિક માટે હારોની
 setq('31-9',[F(r'3x+7=0\quad(1)'),F(r'5=y-2\quad(2)'),F(r'y+1=8\quad(3)'),F(r'2-3x=4\quad(4)'),F(r'(1):\quad3x=0-7=-7'),F(r'x=-\frac73'),F(r'(4):\quad-3x=4-2=2'),F(r'x=-\frac23'),F(r'-\frac73\ne-\frac23')+' ⇒ એક જ x બંને શરતો સંતોષતું નથી.',F(r'(2):\quad y=5+2=7'),F(r'(3):\quad y=8-1=7'),'yની શરતો મળે છે; xની શરતો વિરોધાભાસી છે.','અતઃ કોઈ ઉકેલ નથી; વિકલ્પ (B).'])
 setq('31-10',[F(r'\text{positions}=3\times3=9'),'પ્રથમ સ્થાન માટે 0 અથવા 1: '+F('2')+' પસંદગી.','બીજા સ્થાન માટે પણ '+F('2')+' સ્વતંત્ર પસંદગી.',F(r'\text{first two positions}=2\times2=4'),F(r'\text{first three positions}=2\times2\times2=8'),'આ જ રીતે નવેય સ્થાન માટે ગુણાકારનો નિયમ:',F(r'N=2\times2\times2\times2\times2\times2\times2\times2\times2'),F('N=2^9=512'),'અતઃ વિકલ્પ (D).'])
 # Numeric equalities used in the new small-step construction are checked independently.
-assert (s.Symbol('x')-2)*(s.Symbol('x')-4)==s.expand((s.Symbol('x')-2)*(s.Symbol('x')-4)) or s.expand((s.Symbol('x')-2)*(s.Symbol('x')-4))==s.Symbol('x')**2-6*s.Symbol('x')+8
+assert s.expand((s.Symbol('x')-2)*(s.Symbol('x')-4))==s.Symbol('x')**2-6*s.Symbol('x')+8
 for x,y in [(2,4),(4,2)]:assert x+y==6 and x*y==8
 assert [1-2,2+3,2-2,3*3+4]==[-1,5,0,13]
 assert 2**9==512
@@ -214,3 +214,5 @@ for item in selected:
  assert item['id'] in base and len(item['steps'])>len(base[item['id']]['steps']),item['id']
 (R/'chapter3-expanded-steps.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2)+'\n')
 print('Expanded',len(selected),'solutions:',sum(len(base[q['id']]['steps']) for q in selected),'→',sum(len(q['steps']) for q in selected),'steps; question/answer data untouched.')
+
+print('Exact symbolic/entrywise expansion checks:',len(numchecks))
