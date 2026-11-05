@@ -1,22 +1,16 @@
 # Work status
 
-- Last verified application commit: 416fa53a721de1020193f781cecf69d4e1380f3d.
-- Last successful Render deployment: dep-dbktkbqtnucc73fmkbt0 (live, 3 November 2026).
+- Last verified application commit: c34e513909d44d0634351665a33c08de6033bd75.
+- Last successful application Render deployment: dep-dbm672hph17c73dpqge0 (live, 5 November 2026).
 - Public preview: https://ganit-original-preview.onrender.com/#chapter/3
 - Branch: feature/ganit-original-static. Project directory: original-ganit-static.
-- Completed milestone: Chapter 3 complete for uploaded Gujarati edition: Examples 1–25; Exercise 3.1 Q1–10; 3.2 Q1–22; 3.3 Q1–12; 3.4 Q1; Miscellaneous Q1–11. Total 81 entries, all subparts. 71 entries added this session.
-- Solutions: full mathematical working and final answers shown by default; optional Gujarati understanding panels. Matrix rows, fractions, radicals and Greek letters render; long formulas scroll inside the phone-width notebook.
-- Before upload: every question compared with the uploaded textbook; exact calculations, substitutions and proofs independently checked. Reproduce with Python + verification/requirements.txt and verification/content-generators/*.py.
-- Verification: production build has 311 solutions; original 110 records preserved. Seven regression tests, complete 81-entry inventory, 1246 math expressions, 726 matrix renderings, Exercise 3.1 checks, and Chapter 6 checks (119 entries, 80 derivatives) pass. All 81 public routes matched identities, visible answers and working explanations. Filtering, Gujarati search, bookmark/progress persistence and five 390px mobile samples pass. See verification/chapter3-public-checks.json.
-- Confirmed issue fixed: Example16 forced the mobile grid wider than its viewport. Its notebook now fits; formulas scroll internally.
-- Previously complete: Chapter 6, 119 numbered entries.
-- Remaining: other chapters' missing/unverified textbook content. Independent teacher review and physical-device testing are not claimed complete. No Chapter 3 numbered entry remains missing in the uploaded edition.
-- Exact next action: choose the next unfinished chapter from CONTENT_STATUS.json, verify its source inventory and calculations, then deploy a small complete exercise.
-- Build: npm --prefix original-ganit-static run build. Publish: original-ganit-static/dist. No running server. Original source/ assets immutable; existing production services unchanged.
-
-## 5 November: detailed-working milestone 1
-
-- Application commit: ae8dbb4890413af272f5eba7a61cc0a34a11b0a0.
-- Exercise 3.1 expanded from 76 to 189 steps; all ten public routes and visible answers checked.
-- Build, seven regressions, Chapter 3 math rendering and independent Exercise 3.1 answer checks passed before upload.
-- Next: expand and independently verify the remaining Chapter 3 calculations and proofs. Existing 81 questions and answers remain intact.
+- Completed milestone: all 81 Chapter 3 entries now have more detailed mathematical working: 881 → 2202 steps. Examples 1–25; Ex3.1 Q1–10; Ex3.2 Q1–22; Ex3.3 Q1–12; Ex3.4 Q1; Misc Q1–11. No numbered question is missing from this uploaded edition.
+- Improvements: individual entry substitutions, separate matrix-component arithmetic, intermediate products and sums, equation rearrangements, factorisation, substitution checks, transpose mappings, four-entry trigonometric reductions and smaller logical proof steps.
+- Before upload: 360 exact symbolic/entrywise expansion checks and 542 independently evaluated numeric equalities passed. All questions, answers, Gujarati explanation panels and source references remain identical to the verified baseline. All other chapters remain identical. Seven regression tests, Chapter 3 inventory/rendering and independent Ex3.1 answer checks pass.
+- Public verification: 81/81 routes matched identities, all 2202 steps and 81 answers were visible, all explanation toggles worked. Five long solutions checked at 390px: document width 375px with internal formula scrolling. See verification/chapter3-depth-public-checks.json.
+- Saved milestones: detailed Ex3.1 (76 → 189 steps) deployed and tested before the remaining 71 entries were expanded. Both milestones pushed to GitHub.
+- Earlier completion preserved: Chapter 6 has 119 entries. Total application 311 solutions; original 110 source records preserved.
+- Remaining: other chapters' unfinished content; independent teacher review and physical-device testing. Chapter 3 content and this requested depth expansion are complete.
+- Exact next action: continue the next requested chapter in small verified exercise batches, using this detailed-working standard.
+- Reproduce: install verification/requirements.txt; run verification/content-generators/expand_chapter3_steps.py, production build, verification/chapter3-depth-checks.mjs and verification/chapter3-numeric-depth-checks.py.
+- Hosting: build npm --prefix original-ganit-static run build; publish original-ganit-static/dist. Static hosting; original source/ assets and other production services unchanged.
