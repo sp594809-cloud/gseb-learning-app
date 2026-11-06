@@ -1,5 +1,16 @@
 # Work status
 
+- Latest completed feature: restartable guided solution practice (6 November 2026).
+- Last verified application commit: 9a558a15137a724dad091c69452467b79da4af37.
+- Last successful Render deployment: dep-dbmkl69srm7s73blk4qg (live).
+- Public preview: https://ganit-original-preview.onrender.com/#solution/tb3-31-6
+- Feature: full solutions initially visible; optional zero-step start, next-step reveal, restart, live step count, show full solution, reduced-motion-aware animation. Gujarati understanding panel remains optional. No content changed.
+- Validation: seven regression tests pass; Chapter 3 depth/preservation check passes. Local desktop and 390px phone frame controls checked. Public Render controls verified: start 0/31, next 1/31 with answer hidden, restart 0/31, full 31/31 with answer visible.
+- Remaining: wider device testing; other chapters' unfinished content. No new graphs added in this milestone.
+- Exact next action: add a small interactive matrix row-by-column demonstration, using existing verified Chapter 3 data and preserving notebook design.
+
+## Previous content milestone
+
 - Last verified application commit: c34e513909d44d0634351665a33c08de6033bd75.
 - Last successful application Render deployment: dep-dbm672hph17c73dpqge0 (live, 5 November 2026).
 - Public preview: https://ganit-original-preview.onrender.com/#chapter/3
