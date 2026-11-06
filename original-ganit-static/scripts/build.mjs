@@ -141,14 +141,43 @@ if(!process.argv.includes('--original')) {
  $('#reveal').onclick=()=>reveal(true);
  $('#print').onclick=()=>{reveal(true);window.print();};
  updateSteps();
+
+ // Follow textbook order among the available solutions in this section.
+ if(q.kind==='Textbook'){
+  const sectionSolutions=data.solutions
+   .filter(item=>item.kind==='Textbook'&&item.chapter===q.chapter&&item.section===q.section)
+   .sort((a,b)=>Number(a.number)-Number(b.number));
+  if(sectionSolutions.length>1){
+   const current=sectionSolutions.findIndex(item=>item.id===q.id);
+   const previous=sectionSolutions[current-1];
+   const next=sectionSolutions[current+1];
+   const navigation=document.createElement('nav');
+   navigation.className='question-actions solution-pagination';
+   navigation.setAttribute('aria-label','વિભાગના ઉકેલો / Solutions in this section');
+   const position=document.createElement('span');
+   position.textContent=(current+1)+' / '+sectionSolutions.length+' ઉપલબ્ધ ઉકેલો · available solutions';
+   navigation.append(position);
+   for(const [item,label] of [[previous,'← પાછલો / Previous'],[next,'આગળનો / Next →']]){
+    if(!item)continue;
+    const link=document.createElement('a');
+    link.className='secondary';
+    link.href='#solution/'+encodeURIComponent(item.id);
+    link.textContent=label+' · '+item.number;
+    navigation.append(link);
+   }
+   $('#print').closest('.question-actions').after(navigation);
+  }
+ }
  `;
  app=app.slice(0,start)+controls+app.slice(end);
  const practiceCSS=`
  .guided-controls{align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px}
  #step-count{font-size:.85rem;line-height:1.6}
+ .solution-pagination{align-items:center;flex-wrap:wrap;gap:10px}
+ .solution-pagination span{flex-basis:100%;font-size:.85rem;line-height:1.6}
  .step[hidden],#next-step[hidden],#answer[hidden]{display:none!important}
  @media(prefers-reduced-motion:no-preference){.step-enter{animation:guided-reveal .22s ease-out}@keyframes guided-reveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
- @media print{.guided-controls,#next-step,#reveal{display:none!important}#steps .step[hidden],#answer[hidden]{display:flex!important}}
+ @media print{.guided-controls,.solution-pagination,#next-step,#reveal{display:none!important}#steps .step[hidden],#answer[hidden]{display:flex!important}}
  `;
  app+='\n{const style=document.createElement("style");style.textContent='+JSON.stringify(practiceCSS)+';document.head.append(style); }';
  await writeFile(appPath,app);
