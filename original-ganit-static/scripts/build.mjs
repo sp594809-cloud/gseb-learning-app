@@ -113,3 +113,43 @@ if(!process.argv.includes('--original')) {
  await writeFile(contentPath,JSON.stringify(content));
  console.log('Applied detailed working to '+seen.size+' Chapter 3 solutions.');
 }
+
+// Optional guided practice; leave verified mathematical content untouched.
+if(!process.argv.includes('--original')) {
+ const appPath=path.join(root,'dist/app.js');let app=await readFile(appPath,'utf8');
+ const start=app.indexOf('let revealed=q.explanation?q.steps.length:1;');
+ const end=app.indexOf("$('#bookmark').onclick",start);
+ if(start<0||end<0)throw Error('Solution controls changed; review practice integration.');
+ const controls=`let revealed=q.steps.length;
+ const steps=[...document.querySelectorAll('#steps .step')];
+ const toolbar=document.createElement('div');toolbar.className='question-actions guided-controls';
+ toolbar.innerHTML='<button type="button" class="secondary" id="practice-steps">જાતે પ્રયત્ન કરો / Try step by step</button><span id="step-count" role="status" aria-live="polite" aria-atomic="true"></span>';
+ $('#steps').before(toolbar);
+ $('#reveal').textContent='સંપૂર્ણ ઉકેલ / Show full solution';
+ $('#next-step').textContent='આગળનું પગલું / Next step →';
+ const updateSteps=(animate=false)=>{
+  steps.forEach((el,i)=>{el.hidden=i>=revealed;el.classList.remove('step-enter');});
+  if(animate&&revealed>0)steps[revealed-1].classList.add('step-enter');
+  $('#answer').hidden=revealed<steps.length;
+  $('#next-step').hidden=revealed>=steps.length;
+  $('#step-count').textContent= revealed+' / '+steps.length+' પગલાં · steps shown';
+  $('#practice-steps').textContent=revealed<steps.length?'ફરી શરૂ કરો / Restart practice':'જાતે પ્રયત્ન કરો / Try step by step';
+ };
+ const reveal=all=>{revealed=all?steps.length:Math.min(revealed+1,steps.length);updateSteps(!all);};
+ $('#practice-steps').onclick=()=>{revealed=0;document.querySelectorAll('details.understanding').forEach(el=>el.open=false);updateSteps();$('#next-step').focus();};
+ $('#next-step').onclick=()=>{reveal(false);if(revealed===steps.length)$('#reveal').focus();};
+ $('#reveal').onclick=()=>reveal(true);
+ $('#print').onclick=()=>{reveal(true);window.print();};
+ updateSteps();
+ `;
+ app=app.slice(0,start)+controls+app.slice(end);
+ const practiceCSS=`
+ .guided-controls{align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+ #step-count{font-size:.85rem;line-height:1.6}
+ .step[hidden],#next-step[hidden],#answer[hidden]{display:none!important}
+ @media(prefers-reduced-motion:no-preference){.step-enter{animation:guided-reveal .22s ease-out}@keyframes guided-reveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+ @media print{.guided-controls,#next-step,#reveal{display:none!important}#steps .step[hidden],#answer[hidden]{display:flex!important}}
+ `;
+ app+='\n{const style=document.createElement("style");style.textContent='+JSON.stringify(practiceCSS)+';document.head.append(style); }';
+ await writeFile(appPath,app);
+}
