@@ -1,5 +1,16 @@
 # Work status
 
+- Latest completed milestone: previous and next question navigation (6 November 2026).
+- Last verified application commit: 9066e4c78701f0af10b20c77d5473c10c4e65f5f.
+- Last successful Render deployment: dep-dbmkpkdg1s2s73d3b9u0 (live).
+- Public preview: https://ganit-original-preview.onrender.com/#solution/tb3-31-6
+- Branch: feature/ganit-original-static. Project directory: original-ganit-static.
+- Bilingual Previous and Next links and a position counter appear below the solution actions when a section has multiple available solutions. Links follow textbook numbering within the same chapter and section.
+- Verification: production build, seven regression tests, and Chapter 3 content preservation passed. Local browser checked Exercise 3.1 first and last question boundaries and a 390px layout. Public Render browser checked Question 6 → 7 → 6 and guided step reveal.
+- Remaining: review Antigravity's matrix demo draft PR and Grok's Chapter 4 inventory and first exercise when supplied. Exact next action: verify the first received contribution against the current branch and deploy it separately once it passes.
+
+## Previous feature milestone
+
 - Latest completed feature: restartable guided solution practice (6 November 2026).
 - Last verified application commit: 9a558a15137a724dad091c69452467b79da4af37.
 - Last successful Render deployment: dep-dbmkl69srm7s73blk4qg (live).
